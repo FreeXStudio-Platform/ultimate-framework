@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.GOAL_LOCK",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.GOAL_LOCK.001",
+      "concept_id": "ABS.CONCEPT.GOAL_LOCK",
+      "statement": "Every material action shall link to the active mission or to required support, risk reduction, verification, recovery, or maintenance; unrelated work is rejected or deferred.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.GOAL_LOCK.002",
+      "concept_id": "ABS.CONCEPT.GOAL_LOCK",
+      "statement": "The control plane shall record the parent goal for each work packet and reject material actions without a valid upward goal link.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.GOAL_LOCK.003",
+      "concept_id": "ABS.CONCEPT.GOAL_LOCK",
+      "statement": "Goal-lock checks shall be rerun when scope, project identity, mission, or authority changes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

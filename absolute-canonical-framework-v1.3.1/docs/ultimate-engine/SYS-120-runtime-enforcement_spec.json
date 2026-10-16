@@ -1,0 +1,66 @@
+[
+  {
+    "caption": "The single permitted project action advances through the runtime rail in source order.",
+    "code": "flowchart TB\n  S1_INSTALL[\"S1.INSTALL \u00b7 init\"]\n  S2_GOAL_LOCK[\"S2.GOAL_LOCK \u00b7 goal set\"]\n  S1_INSTALL --> S2_GOAL_LOCK\n  S3_WORK_OPENED[\"S3.WORK_OPENED \u00b7 wp new\"]\n  S2_GOAL_LOCK --> S3_WORK_OPENED\n  S4_DOCUMENTS_CREATED[\"S4.DOCUMENTS_CREATED \u00b7 doc new\"]\n  S3_WORK_OPENED --> S4_DOCUMENTS_CREATED\n  S5_DOCUMENTS_AUTHORED[\"S5.DOCUMENTS_AUTHORED \u00b7 doc step\"]\n  S4_DOCUMENTS_CREATED --> S5_DOCUMENTS_AUTHORED\n  S6_DOCUMENTS_SEALED[\"S6.DOCUMENTS_SEALED \u00b7 doc seal\"]\n  S5_DOCUMENTS_AUTHORED --> S6_DOCUMENTS_SEALED\n  S7_EVIDENCE[\"S7.EVIDENCE \u00b7 evidence add\"]\n  S6_DOCUMENTS_SEALED --> S7_EVIDENCE\n  S8_GATE[\"S8.GATE \u00b7 gate run\"]\n  S7_EVIDENCE --> S8_GATE\n  S9_WORK_COMPLETED[\"S9.WORK_COMPLETED \u00b7 wp complete\"]\n  S8_GATE --> S9_WORK_COMPLETED\n  S10_CHECKPOINT[\"S10.CHECKPOINT \u00b7 checkpoint\"]\n  S9_WORK_COMPLETED --> S10_CHECKPOINT\n  S11_SECOND_PASS[\"S11.SECOND_PASS \u00b7 pass2\"]\n  S10_CHECKPOINT --> S11_SECOND_PASS\n  S12_VERIFIED[\"S12.VERIFIED \u00b7 verify --record\"]\n  S11_SECOND_PASS --> S12_VERIFIED\n  S13_RELEASED[\"S13.RELEASED \u00b7 release\"]\n  S12_VERIFIED --> S13_RELEASED",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "runtime/rail.py",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "project-rail",
+    "insight": "The rail puts document creation and sealing before evidence and gates, then requires checkpoint, a non-author pass, recorded verification, and release.",
+    "kind": "mermaid",
+    "reader_question": "What is the project's enforced runtime sequence?",
+    "title": "Project rail"
+  },
+  {
+    "caption": "A document package advances through each representation in source order.",
+    "code": "flowchart TB\n  D1_SCOPE[\"D1.SCOPE\"]\n  D2_NARRATIVE[\"D2.NARRATIVE\"]\n  D1_SCOPE --> D2_NARRATIVE\n  D3_MANIFEST[\"D3.MANIFEST\"]\n  D2_NARRATIVE --> D3_MANIFEST\n  D4_REQUIREMENTS[\"D4.REQUIREMENTS\"]\n  D3_MANIFEST --> D4_REQUIREMENTS\n  D5_BLUEPRINT[\"D5.BLUEPRINT\"]\n  D4_REQUIREMENTS --> D5_BLUEPRINT\n  D6_VISUAL[\"D6.VISUAL\"]\n  D5_BLUEPRINT --> D6_VISUAL\n  D7_MACHINE[\"D7.MACHINE\"]\n  D6_VISUAL --> D7_MACHINE\n  D8_TESTS[\"D8.TESTS\"]\n  D7_MACHINE --> D8_TESTS\n  D9_INTEGRATION[\"D9.INTEGRATION\"]\n  D8_TESTS --> D9_INTEGRATION\n  D10_PUBLICATION[\"D10.PUBLICATION\"]\n  D9_INTEGRATION --> D10_PUBLICATION\n  D11_CHANGELOG[\"D11.CHANGELOG\"]\n  D10_PUBLICATION --> D11_CHANGELOG",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "runtime/documents.py",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "document-rail",
+    "insight": "Narrative precedes machine and visual forms, and publication follows tests and integration; sealing is impossible while any step or template marker remains.",
+    "kind": "mermaid",
+    "reader_question": "In what order does the runtime author a canonical document package?",
+    "title": "Governed document authoring rail"
+  },
+  {
+    "caption": "Every mutating command follows the same write order.",
+    "code": "sequenceDiagram\n  participant CLI\n  participant Rail\n  participant Artifact\n  participant Ledger\n  participant State\n  CLI->>Rail: authorize requested command\n  Rail-->>CLI: permitted step or refusal\n  CLI->>Artifact: write bounded artifact\n  CLI->>Ledger: append hash-chained entry\n  CLI->>State: update durable state\n  State-->>CLI: exact next action",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "runtime/engine.py",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "governed-mutation",
+    "insight": "Authorization precedes every write; the ledger entry precedes the state update so a crash leaves evidence of an unapplied action rather than unrecorded state.",
+    "kind": "mermaid",
+    "reader_question": "What is written first, and what may not happen until when?",
+    "title": "Governed mutation write order"
+  },
+  {
+    "caption": "One release version lives in four artifacts; the labeled edges name the check codes that compare each one back to VERSION.",
+    "code": "flowchart LR\n  Version[\"VERSION\"] --> Manifest[\"MODULE_MANIFEST.yaml \u00d7 33\"]\n  Version --> Narrative[\"MODULE.md front matter \u00d7 33\"]\n  Version --> Framework[\"docs/registries/FRAMEWORK.json\"]\n  Version --> Allowlist[\"RELEASE_ALLOWLIST.json\"]\n  Manifest -.->|\"MODULE_RELEASE_PIN_DRIFT\"| Version\n  Narrative -.->|\"MODULE_NARRATIVE_MISSING, MODULE_NARRATIVE_RELEASE_DRIFT\"| Version\n  Framework -.->|\"FRAMEWORK_REGISTRY_RELEASE_DRIFT\"| Version\n  Allowlist -.->|\"ALLOWLIST_RELEASE_DRIFT\"| Version",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "runtime/verify.py",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "cross-representation-pin",
+    "insight": "Four structure codes and one governance code turn a decorative pin into a read one; before 1.3.0 nothing compared the narrative to its manifest.",
+    "kind": "mermaid",
+    "reader_question": "One release version lives in four artifacts \u2014 what compares them?",
+    "title": "Cross-representation release pin"
+  }
+]

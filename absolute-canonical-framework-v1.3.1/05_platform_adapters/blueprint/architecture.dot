@@ -1,0 +1,8 @@
+digraph module {
+graph [rankdir=LR,bgcolor="transparent",pad="0.2"];
+node [shape=box,style="rounded",fontname="Arial",fontsize=10];
+edge [fontname="Arial",fontsize=9];
+input [label="Governed inputs"]; gate [label="Authority + policy",shape=diamond]; op [label="ChatGPT/Codex, Claude Code, Cursor, local, and generic adapters"]; evidence [label="Evidence + checks",shape=diamond]; output [label="Validated output"];
+input -> gate [label="scope + identity"]; gate -> op [label="authorized"]; op -> evidence [label="claims"]; evidence -> output [label="pass / truthful state"]; evidence -> op [label="finding",style=dashed];
+label="ABS.MODULE.ADAPTERS.PLATFORMS: How does this host translate the framework without changing authority?";
+}

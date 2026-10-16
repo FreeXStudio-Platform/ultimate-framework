@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/improvement-opportunity.schema.json",
+  "title": "Improvement Opportunity",
+  "type": "object",
+  "required": [
+    "opportunity_id",
+    "title",
+    "priority",
+    "problem_or_benefit",
+    "default_disposition"
+  ],
+  "properties": {
+    "opportunity_id": {
+      "type": "string",
+      "pattern": "^ABS\\.OPPORTUNITY\\."
+    },
+    "title": {
+      "type": "string"
+    },
+    "priority": {
+      "enum": [
+        "MUST",
+        "SHOULD",
+        "COULD",
+        "NICE_TO_HAVE",
+        "DEFERRED_WITH_TRIGGER",
+        "REJECTED_WITH_REASON"
+      ]
+    },
+    "problem_or_benefit": {
+      "type": "string"
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affected_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "value": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "risk": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "effort": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "portability_risk": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "adoption_trigger": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "owner_decision_required": {
+      "type": "boolean"
+    },
+    "rollback": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "default_disposition": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KNOWLEDGE.VISUALS",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.VISUAL_RENDERING.001",
+      "concept_id": "ABS.CONCEPT.VISUAL_RENDERING",
+      "statement": "Every visual shall answer a defined reader question using a structured semantic source, declared data/evidence, visual grammar, semantic encodings, accessibility, renderer identity, and output manifest.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.VISUAL_RENDERING.002",
+      "concept_id": "ABS.CONCEPT.VISUAL_RENDERING",
+      "statement": "Visual routing shall select the simplest sufficient approved renderer; 3D, animation, and motion are allowed only when they materially improve understanding.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.VISUAL_RENDERING.003",
+      "concept_id": "ABS.CONCEPT.VISUAL_RENDERING",
+      "statement": "Generated visuals shall have editable semantic source and static accessible fallback, and rendering shall be validated for meaning, parity, labels, contrast, navigation, and export.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

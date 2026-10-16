@@ -1,0 +1,20 @@
+schema_version: 1.0.0
+module_id: ABS.MODULE.CONTROL.STATE
+canonical_sources:
+- ../MODULE.md
+- ../requirements.json
+- ../blueprint/BLUEPRINT.md
+- ../machine/policy.json
+derivatives:
+- path: plain_english.md
+  profile: PLAIN_ENGLISH
+  status: GENERATED_REVIEW_REQUIRED
+- path: quick_reference.md
+  profile: ENGINEERING_QUICK_REFERENCE
+  status: GENERATED_REVIEW_REQUIRED
+invalidation_triggers:
+- canonical_hash
+- requirement
+- interface
+- security
+manual_edit_policy: DO_NOT_EDIT_DERIVATIVES_AS_PRIMARY_SOURCE

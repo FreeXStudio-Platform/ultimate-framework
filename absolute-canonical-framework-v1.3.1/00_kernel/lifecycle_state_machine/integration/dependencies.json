@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.LIFECYCLE",
+  "dependencies": [
+    {
+      "module_id": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    }
+  ],
+  "optional_dependencies": [],
+  "cycle_policy": "FORBIDDEN"
+}

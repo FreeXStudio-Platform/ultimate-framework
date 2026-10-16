@@ -1,0 +1,14 @@
+digraph module {
+graph [rankdir=LR,bgcolor="transparent",pad="0.2"];
+node [shape=box,style="rounded",fontname="Arial",fontsize=10];
+edge [fontname="Arial",fontsize=9];
+input [label="Governed inputs"]; gate [label="Authority + policy",shape=diamond]; op [label="Canonical module package and scoped representations"]; evidence [label="Evidence + checks",shape=diamond]; output [label="Validated output"];
+input -> gate [label="scope + identity"]; gate -> op [label="authorized"]; op -> evidence [label="claims"]; evidence -> output [label="pass / truthful state"]; evidence -> op [label="finding",style=dashed];
+c0 [label="Consumes\nIDENTITY.ALLOCATE",shape=note];
+c0 -> input [style=dotted];
+c1 [label="Consumes\nGRAPH.QUERY",shape=note];
+c1 -> input [style=dotted];
+p0 [label="Provides\nMODULE.PACKAGE",shape=note];
+output -> p0 [style=dotted];
+label="ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE: Does this package represent one coherent, testable semantic scope?";
+}

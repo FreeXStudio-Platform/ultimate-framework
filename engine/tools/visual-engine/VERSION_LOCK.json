@@ -1,0 +1,13 @@
+{
+  "locked": "2026-08-08",
+  "node_tested": "v26.5.0",
+  "npm_lockfile_sha256": "652e0d2299b84539d0476d1b8870b7b934fa123e7ba897e156b9962255117c5d",
+  "pinned": {
+    "echarts": "6.1.0",
+    "@resvg/resvg-js": "2.6.2",
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "3.25.76"
+  },
+  "policy": "Exact pins, no floating ranges (spec §6). Upgrades run tests/ + visual regression (renders/golden) and record diffs under renders/diffs/ before re-pinning.",
+  "_npm_lockfile_sha256_note": "Re-derived 2026-09-18 (Dependabot alerts #1-#9). Transitive-only bump — the four exact pins above are unchanged — of qs 6.15.3→6.16.0, hono 4.13.1→4.13.8, fast-uri 3.1.5→3.1.8, all within their parents' declared semver ranges. `npm test` (33/33) and `npm audit` (0 vulnerabilities) verified before re-deriving. Previous value ff66cda9685f1696… was correct for the pre-update lockfile. Re-derive with: python3 -c \"import hashlib,pathlib;print(hashlib.sha256(pathlib.Path('tools/visual-engine/package-lock.json').read_bytes()).hexdigest())\""
+}

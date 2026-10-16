@@ -1,0 +1,33 @@
+{
+  "blocking_findings": 0,
+  "bypass": false,
+  "gate_id": "C10",
+  "gate_name": "Executable Surface Closure",
+  "inconclusive_required_checks": 0,
+  "not_run_required_checks": 0,
+  "prerequisites": [
+    "C9"
+  ],
+  "release_id": "ABS.RELEASE.1.3.0",
+  "required_check_state": "PASS",
+  "schema": "absolute.gate_evidence.v1",
+  "stale": false,
+  "status": "PASS",
+  "summary": "Executable Surface Closure evaluated from FRAMEWORK_SECURITY, FRAMEWORK_RUNTIME. The candidate identity this evidence is bound to is recorded in .absolute/release/gate_binding.json, not here, to keep the digest non-circular.",
+  "supporting_results": [
+    {
+      "checks": 1104,
+      "detail": "Hygiene, secret exposure, unsafe paths, and supply-chain pinning.",
+      "finding_count": 0,
+      "name": "FRAMEWORK_SECURITY",
+      "status": "PASS"
+    },
+    {
+      "checks": 43,
+      "detail": "Runtime invariants: rail ordering, refusal behavior, and no source mutation.",
+      "finding_count": 0,
+      "name": "FRAMEWORK_RUNTIME",
+      "status": "PASS"
+    }
+  ]
+}

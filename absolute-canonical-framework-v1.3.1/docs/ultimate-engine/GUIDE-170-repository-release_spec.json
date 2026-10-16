@@ -1,0 +1,74 @@
+[
+  {
+    "caption": "Nodes are the release procedure's own numbered steps, in order, so this figure cannot drift from the normative procedure it summarizes.",
+    "code": "flowchart TB\n  step0[\"0. Environment\"]\n  step1[\"1. Freeze the payload\"]\n  step0 --> step1\n  step2[\"2. Regenerate the release allowlist\"]\n  step1 --> step2\n  step3[\"3. Bind the release metadata\"]\n  step2 --> step3\n  step4[\"4. Verify \u2014 all of it, in a fresh process\"]\n  step3 --> step4\n  step5[\"5. Build\"]\n  step4 --> step5\n  step6[\"6. Verify the artifact, not the working tree\"]\n  step5 --> step6\n  step7[\"7. Reproduce\"]\n  step6 --> step7\n  step8[\"8. Record\"]\n  step7 --> step8\n  step9[\"9. Do not rename it\"]\n  step8 --> step9",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "01_control_plane/manifests_releases/RELEASE_PROCEDURE.md",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "release-pipeline",
+    "insight": "Metadata binds to the frozen payload, the artifact is verified rather than the tree it was built from, and reproduction is a separate step from building.",
+    "kind": "mermaid",
+    "reader_question": "How does a repository become a sealed, verifiable release?",
+    "title": "Release pipeline"
+  },
+  {
+    "caption": "Counts of tracked files whose bytes carry the current release version, bucketed by what kind of artifact they are.",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "git ls-files; runtime/verify.py",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "height": 540,
+    "id": "release-pin-surface",
+    "insight": "The version is one string in VERSION and a pin in dozens of files across eight other classes; three of those four representation classes were unchecked before 1.3.0.",
+    "items": [
+      {
+        "label": "allowlist",
+        "value": 1
+      },
+      {
+        "label": "governance",
+        "value": 2
+      },
+      {
+        "label": "module_manifests",
+        "value": 33
+      },
+      {
+        "label": "module_narratives",
+        "value": 33
+      },
+      {
+        "label": "registries",
+        "value": 1
+      },
+      {
+        "label": "release_tooling",
+        "value": 1
+      },
+      {
+        "label": "schemas",
+        "value": 3
+      },
+      {
+        "label": "test_manifest",
+        "value": 1
+      },
+      {
+        "label": "version_file",
+        "value": 1
+      }
+    ],
+    "kind": "bar",
+    "reader_question": "How many artifacts must move when the release version moves?",
+    "title": "Tracked files pinned to the release version, by class",
+    "unit": " files",
+    "width": 1800
+  }
+]

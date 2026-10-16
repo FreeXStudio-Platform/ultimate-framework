@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_KERNEL_EVIDENCE_GATES.EXAMPLE",
+  "state": "NOT_RUN",
+  "requirement_evidence": [],
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "limitations": [
+    "Expected schema failure: empty evidence."
+  ],
+  "updated_at": "2026-08-13T18:00:00Z"
+}

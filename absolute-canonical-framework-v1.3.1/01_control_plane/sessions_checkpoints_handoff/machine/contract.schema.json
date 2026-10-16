@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:absolute:abs_module_control_sessions:contract:1.0.0",
+  "title": "Sessions, checkpoints, context, and handoff Contract Instance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "module_id",
+    "scope_id",
+    "state",
+    "requirement_evidence",
+    "candidate_hash",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "module_id": {
+      "const": "ABS.MODULE.CONTROL.SESSIONS"
+    },
+    "scope_id": {
+      "type": "string",
+      "pattern": "^ABS\\.SCOPE\\."
+    },
+    "state": {
+      "enum": [
+        "HEALTHY",
+        "CHECKPOINT_REQUIRED",
+        "FRESH_CONTEXT_REQUIRED",
+        "PAUSED_SAFE",
+        "RESUMED"
+      ]
+    },
+    "requirement_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "requirement_id",
+          "evidence_ids",
+          "result"
+        ],
+        "properties": {
+          "requirement_id": {
+            "enum": [
+              "ABS.REQ.SESSIONS_HANDOFF.001",
+              "ABS.REQ.SESSIONS_HANDOFF.002",
+              "ABS.REQ.SESSIONS_HANDOFF.003"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^ABS\\.EVIDENCE\\."
+            }
+          },
+          "result": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "BLOCKED",
+              "NOT_RUN",
+              "INCONCLUSIVE",
+              "STALE"
+            ]
+          }
+        }
+      }
+    },
+    "candidate_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

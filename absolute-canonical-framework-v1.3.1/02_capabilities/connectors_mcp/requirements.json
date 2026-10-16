@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CAPABILITY.CONNECTORS",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.001",
+      "concept_id": "ABS.CONCEPT.CONNECTORS_MCP",
+      "statement": "Connectors, MCP servers, plugins, repositories, document stores, and issue systems shall be optional capabilities with verified availability, data boundaries, health, and least-privilege permission.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.002",
+      "concept_id": "ABS.CONCEPT.CONNECTORS_MCP",
+      "statement": "Retrieved external content shall be treated as untrusted data and may not redefine authority, instructions, permissions, or publication rights.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.003",
+      "concept_id": "ABS.CONCEPT.CONNECTORS_MCP",
+      "statement": "Every consequential connector shall have a fallback, disable/revoke path, version pin/update policy, and recorded rollback.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

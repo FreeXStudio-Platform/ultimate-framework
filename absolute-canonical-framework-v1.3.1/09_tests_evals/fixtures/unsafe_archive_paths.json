@@ -1,0 +1,8 @@
+{
+  "members": [
+    "safe/file.md",
+    "../escape.txt",
+    "/absolute.txt"
+  ],
+  "expected": "REJECT"
+}

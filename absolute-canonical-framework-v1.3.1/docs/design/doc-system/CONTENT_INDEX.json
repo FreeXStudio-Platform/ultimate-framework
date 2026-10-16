@@ -1,0 +1,86 @@
+{
+  "counts": {
+    "manifest_rows": 8,
+    "non_public_excluded": 2,
+    "public": 8
+  },
+  "entries": [
+    {
+      "id": "GUIDE-100",
+      "path": "docs/ultimate-engine/GUIDE-100-project-guide.md",
+      "status": "review",
+      "surface": "web",
+      "tier": "public",
+      "title": "Absolute Canonical Framework Project Guide",
+      "type_prefix": "GUIDE"
+    },
+    {
+      "id": "GUIDE-140",
+      "path": "docs/ultimate-engine/GUIDE-140-operations-verification.md",
+      "status": "review",
+      "surface": "web",
+      "tier": "public",
+      "title": "Absolute Operations and Verification Guide",
+      "type_prefix": "GUIDE"
+    },
+    {
+      "id": "GUIDE-170",
+      "path": "docs/ultimate-engine/GUIDE-170-repository-release.md",
+      "status": "review",
+      "surface": "web",
+      "tier": "public",
+      "title": "Absolute Repository, Versioning and Release Operations",
+      "type_prefix": "GUIDE"
+    },
+    {
+      "id": "REF-130",
+      "path": "docs/ultimate-engine/REF-130-extension-points.md",
+      "status": "review",
+      "surface": "web",
+      "tier": "public",
+      "title": "Absolute Extension Points and Change Risk",
+      "type_prefix": "REF"
+    },
+    {
+      "id": "REF-150",
+      "path": "docs/ultimate-engine/REF-150-evidence-limitations.md",
+      "status": "review",
+      "surface": "web",
+      "tier": "public",
+      "title": "Absolute Evidence Limitations and Audit Notes",
+      "type_prefix": "REF"
+    },
+    {
+      "id": "REF-160",
+      "path": "docs/ultimate-engine/REF-160-agent-blueprint-guide.md",
+      "status": "review",
+      "surface": "web",
+      "tier": "public",
+      "title": "Absolute Agent Blueprint Guide",
+      "type_prefix": "REF"
+    },
+    {
+      "id": "SYS-110",
+      "path": "docs/ultimate-engine/SYS-110-architecture.md",
+      "status": "review",
+      "surface": "repo",
+      "tier": "public",
+      "title": "Absolute Architecture and Domain Map",
+      "type_prefix": "SYS"
+    },
+    {
+      "id": "SYS-120",
+      "path": "docs/ultimate-engine/SYS-120-runtime-enforcement.md",
+      "status": "review",
+      "surface": "repo",
+      "tier": "public",
+      "title": "Absolute Runtime and Enforcement",
+      "type_prefix": "SYS"
+    }
+  ],
+  "generated_from": {
+    "docs_root": "docs/ultimate-engine",
+    "manifest": "docs/design/doc-system/DOC_MANIFEST.md"
+  },
+  "schema": ".doc-system.content-index/v1"
+}

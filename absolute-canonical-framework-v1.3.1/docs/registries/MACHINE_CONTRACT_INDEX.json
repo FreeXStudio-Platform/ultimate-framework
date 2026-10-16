@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0.0",
+  "framework_id": "ABS.FRAMEWORK.CANONICAL",
+  "release_id": "ABS.RELEASE.1.0.0-RC3",
+  "status": "RELEASE_CANDIDATE_INDEPENDENT_VERIFICATION_PENDING",
+  "v2_contract_suite": {
+    "schema_root": "04_enforcement/schemas/coverage_closure_v2",
+    "schema_count": 13,
+    "validator": "tools/validate_v2_contracts.py",
+    "positive_fixture_registry": "09_tests_evals/fixtures/v2_contracts/POSITIVE_FIXTURES.json",
+    "positive_fixture_count": 13,
+    "required_field_negative_count": 86,
+    "semantic_negative_count": 13,
+    "compatibility_manifest": "governance/coverage_closure_v3/v2_contracts/CONTRACT_COMPATIBILITY_MANIFEST.json"
+  },
+  "schemas": [
+    {
+      "schema_id": "https://absolute.local/v2/certification-handoff.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/certification-handoff.schema.json",
+      "sha256": "f60e3df0267345596f099be7d2b6f6eef7bf3230bd882c239cbd78b62ccbd77c",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["HANDOFF"],
+        "actual_instance": {
+          "scope": "HANDOFF",
+          "path": "RC3_HANDOFF::CERTIFICATION_HANDOFF.json",
+          "resolution_policy": "EXTERNAL_PACKAGE_REQUIRED"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/configuration-record.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/configuration-record.schema.json",
+      "sha256": "03a1f0dc384356b9e293c7c6902c3b8337b548603fb572dad42eab9cb0e1d449",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["CLEAN", "EVIDENCE"],
+        "actual_instance": {
+          "scope": "CLEAN",
+          "path": "governance/coverage_closure_v3/v2_contracts/CONFIGURATION_RECORDS.jsonl",
+          "resolution_policy": "LOCAL_FILE_REQUIRED"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/conversation-decision.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/conversation-decision.schema.json",
+      "sha256": "8f2cb4eca60530d19b34c6a40b6545fe963255721368672c8ee3a40fd90ea66a",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["CLEAN", "EVIDENCE"],
+        "actual_instance": {
+          "scope": "CLEAN",
+          "path": "governance/coverage_closure_v3/v2_contracts/CONVERSATION_DECISION_EXECUTION.jsonl",
+          "resolution_policy": "LOCAL_FILE_REQUIRED"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/coverage-scoreboard.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/coverage-scoreboard.schema.json",
+      "sha256": "516eed3f58c9ed3f755ee743292890bd19541465f23b95266bdaeb98a7cc0953",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["EVIDENCE"],
+        "actual_instance": {
+          "scope": "EVIDENCE",
+          "path": "RC3_BUILD_EVIDENCE::04_COVERAGE/COVERAGE_SCOREBOARD.json",
+          "resolution_policy": "EXTERNAL_PACKAGE_REQUIRED"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/executable-surface-record.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/executable-surface-record.schema.json",
+      "sha256": "29e9f9c7b8784f9aef74c545d5c750e6b416a83648c7e07a26c169da057333c7",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["CLEAN", "EVIDENCE"],
+        "actual_instance": {
+          "scope": "CLEAN",
+          "path": "governance/coverage_closure_v3/v2_contracts/EXECUTABLE_SURFACE_RECORDS.jsonl",
+          "resolution_policy": "LOCAL_FILE_REQUIRED"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/finding.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/finding.schema.json",
+      "sha256": "7752afe5bc53f4c1b16e8d93a9203aa39aff471901ef2252e0a2dfe4bdcdb59f",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["EVIDENCE"],
+        "actual_instance": {
+          "scope": "EVIDENCE",
+          "path": "RC3_BUILD_EVIDENCE::03_FINDINGS/*.jsonl",
+          "resolution_policy": "EXTERNAL_PACKAGE_REQUIRED"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/gate-control-record.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/gate-control-record.schema.json",
+      "sha256": "aaecbe2294c287cc0dce05944827eac335171e696d99bc4201fb27282acaac28",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["EVIDENCE", "HANDOFF"],
+        "actual_instance": {
+          "scope": "EVIDENCE",
+          "path": "RC3_BUILD_EVIDENCE::05_GATES/GATE_AND_CONTROL_REGISTRY.jsonl",
+          "resolution_policy": "EXTERNAL_PACKAGE_REQUIRED"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/gate-report.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/gate-report.schema.json",
+      "sha256": "3121e96ff32b5b14ddccaa68686c54177e9d9bdc5ab95efd276ce7b56237d85c",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["EVIDENCE", "HANDOFF"],
+        "actual_instance": {
+          "scope": "EVIDENCE",
+          "path": "RC3_BUILD_EVIDENCE::05_GATES/GATE_REPORTS/*.json",
+          "resolution_policy": "EXTERNAL_PACKAGE_REQUIRED"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/improvement-opportunity.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/improvement-opportunity.schema.json",
+      "sha256": "5e3bfbef78b7621bf510931ec132d0aecc41e0001a4d9fea465c52dd18f33e4c",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["EVIDENCE"],
+        "actual_instance": {
+          "scope": "EVIDENCE",
+          "path": "RC3_BUILD_EVIDENCE::04_COVERAGE/IMPROVEMENT_OPPORTUNITY_REGISTRY.jsonl",
+          "resolution_policy": "EXTERNAL_PACKAGE_REQUIRED_ZERO_OR_MORE_RECORDS"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/knowledge-unit.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/knowledge-unit.schema.json",
+      "sha256": "3aa7ce7a1b51cb3530789fe1bc3395378111515a4877462e0ddbbc418ac1f943",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["EVIDENCE"],
+        "actual_instance": {
+          "scope": "EVIDENCE",
+          "path": "RC3_BUILD_EVIDENCE::02_REQUIREMENTS/KNOWLEDGE_UNIT_REGISTRY.jsonl",
+          "resolution_policy": "EXTERNAL_PACKAGE_REQUIRED"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/projection-profile.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/projection-profile.schema.json",
+      "sha256": "ead885a9e3c2c4169d92ca3b2d561796115b181012a63a85e2a51c1fac0251e7",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["EVIDENCE"],
+        "actual_instance": {
+          "scope": "EVIDENCE",
+          "path": "RC3_BUILD_EVIDENCE::04_COVERAGE/PROJECTION_PROFILE_REGISTRY.jsonl",
+          "resolution_policy": "EXTERNAL_PACKAGE_REQUIRED"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/simulation-scenario.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/simulation-scenario.schema.json",
+      "sha256": "91c8938f3e32118c59c8c673c422ead1453756219c74836c6558910eaf775fa0",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["EVIDENCE", "HANDOFF"],
+        "actual_instance": {
+          "scope": "EVIDENCE",
+          "path": "RC3_BUILD_EVIDENCE::06_TESTS/SIMULATION_SCENARIO_REGISTRY.jsonl",
+          "resolution_policy": "EXTERNAL_PACKAGE_REQUIRED"
+        }
+      }
+    },
+    {
+      "schema_id": "https://absolute.local/v2/source-record.schema.json",
+      "path": "04_enforcement/schemas/coverage_closure_v2/source-record.schema.json",
+      "sha256": "10ba4a49a82e5bb3e40a0b1fe49c8202e589d6e0a0ae436a8d258f588d5d459a",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicability": {
+        "scopes": ["EVIDENCE"],
+        "actual_instance": {
+          "scope": "EVIDENCE",
+          "path": "RC3_BUILD_EVIDENCE::01_SOURCE_ADMISSION/SOURCE_RECORD_REGISTRY.jsonl",
+          "resolution_policy": "EXTERNAL_PACKAGE_REQUIRED"
+        }
+      }
+    }
+  ],
+  "semantic_invariants": [
+    "V2 compatibility records never replace canonical RC3 truth.",
+    "Every verified conversation decision has implementation and test references.",
+    "Every verified active executable surface resolves to a clean-package file.",
+    "State-changing surfaces cannot declare read-only authorization.",
+    "Non-waivable mutation and self-certification configurations remain false-only.",
+    "PASS gates, resolved findings, accessible sources, and observed simulations require evidence.",
+    "Inactive projections have no write permission or synchronization direction.",
+    "Internal validation never emits external FINAL or CERTIFIED authority."
+  ]
+}

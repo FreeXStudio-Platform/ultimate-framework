@@ -1,0 +1,94 @@
+{
+  "$id": "urn:absolute:abs_module_runtime_executor:contract:1.0.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "candidate_hash": {
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "module_id": {
+      "const": "ABS.MODULE.RUNTIME.EXECUTOR"
+    },
+    "requirement_evidence": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "evidence_ids": {
+            "items": {
+              "pattern": "^ABS\\.EVIDENCE\\.",
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "requirement_id": {
+            "enum": [
+              "ABS.REQ.RUNTIME_EXECUTION.001",
+              "ABS.REQ.RUNTIME_EXECUTION.002",
+              "ABS.REQ.RUNTIME_EXECUTION.003"
+            ]
+          },
+          "result": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "BLOCKED",
+              "NOT_RUN",
+              "INCONCLUSIVE",
+              "STALE"
+            ]
+          }
+        },
+        "required": [
+          "requirement_id",
+          "evidence_ids",
+          "result"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "scope_id": {
+      "pattern": "^ABS\\.SCOPE\\.",
+      "type": "string"
+    },
+    "state": {
+      "enum": [
+        "UNINSTALLED",
+        "DISCOVERY",
+        "ARCHITECTURE_FROZEN",
+        "CANDIDATE",
+        "SECOND_PASS",
+        "INDEPENDENT_REVIEW",
+        "RELEASED",
+        "BLOCKED"
+      ]
+    },
+    "updated_at": {
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "module_id",
+    "scope_id",
+    "state",
+    "requirement_evidence",
+    "candidate_hash",
+    "limitations"
+  ],
+  "title": "Runtime execution, rail enforcement, and source-of-truth stamping Contract Instance",
+  "type": "object"
+}

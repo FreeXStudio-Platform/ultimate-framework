@@ -1,0 +1,2 @@
+# Skill Template
+Record skill ID, version, owner, bounded task class, trigger and non-trigger conditions, prerequisites, required capabilities, input sensitivity, workflow, checkpoints, stop conditions, canonical outputs, permissions, positive/negative/adversarial validation, failures, fallbacks, compatibility, migration, and deprecation. Keep the entry concise and load detailed references only when triggered.

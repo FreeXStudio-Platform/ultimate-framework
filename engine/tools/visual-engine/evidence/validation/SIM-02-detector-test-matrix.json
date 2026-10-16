@@ -1,0 +1,16 @@
+{
+  "_readme": "Gate G9 render-evidence record, written by writeEvidence() (adapters/echarts/render.mjs). Documentation/audit trail only — no code in this engine reads this file back; shape is schemas/render-result.schema.json (also unvalidated, see its own _status).",
+  "visual_id": "SIM-02-detector-test-matrix",
+  "selected_visual": "heatmap",
+  "preset": "detector-test-matrix",
+  "theme": "project-theme",
+  "classification": "internal",
+  "engine": "echarts@6.1.0",
+  "adapter": "visual-engine@1.0.0",
+  "width": 800,
+  "height": 480,
+  "svg_sha256": "e387f5ebeb63a1cb35edaf482874bee0ab97b64224dc6a03ea906d508b2ca1a5",
+  "option_sha256": "2eae8457a67fc8ef001cd04ef899fad657dd7939c73a5832aba9ec055657be7f",
+  "job_sha256": "2867f41243a161590e3209175a67d264da83e0f0eb5205c8d017f61817558c8b",
+  "warnings": []
+}

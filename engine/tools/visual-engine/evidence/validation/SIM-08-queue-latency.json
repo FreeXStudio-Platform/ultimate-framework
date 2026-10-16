@@ -1,0 +1,16 @@
+{
+  "_readme": "Gate G9 render-evidence record, written by writeEvidence() (adapters/echarts/render.mjs). Documentation/audit trail only — no code in this engine reads this file back; shape is schemas/render-result.schema.json (also unvalidated, see its own _status).",
+  "visual_id": "SIM-08-queue-latency",
+  "selected_visual": "line",
+  "preset": "queue-latency",
+  "theme": "project-theme",
+  "classification": "internal",
+  "engine": "echarts@6.1.0",
+  "adapter": "visual-engine@1.0.0",
+  "width": 800,
+  "height": 480,
+  "svg_sha256": "6fbb54be486b723f7711f196e38be0c1db903a8efd1b4f697ab10465c3690f57",
+  "option_sha256": "eca551875e2575143f70a30471f0e72ecbbe59b21f526bed3579fe2aed57529f",
+  "job_sha256": "f7a1f7eb8edfed3fa72b6d161823cbb5835d4cc220dfab93939b23852fddc7d5",
+  "warnings": []
+}

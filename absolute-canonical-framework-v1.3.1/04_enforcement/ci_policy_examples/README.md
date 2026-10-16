@@ -1,0 +1,2 @@
+# CI and Policy Examples
+These are provider-neutral reference patterns. Replace every placeholder action with an independently reviewed full commit SHA; do not treat an example file as proof that CI is enabled. Required lanes are schema/semantic validation, link and graph integrity, secret scanning, positive and negative tests, package hygiene, deterministic release build, extraction verification, and stale-review invalidation.

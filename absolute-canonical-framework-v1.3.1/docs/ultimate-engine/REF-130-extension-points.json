@@ -1,0 +1,19 @@
+{
+  "gate": {
+    "findings": [],
+    "gate": "build+run_gates",
+    "ok": true
+  },
+  "header": {
+    "audience": "technical",
+    "classification": "public",
+    "export_allowed": true,
+    "id": "REF-130",
+    "last_reviewed": "2026-09-07",
+    "owner": "framework-documentation",
+    "status": "approved",
+    "surface": "web",
+    "title": "Absolute Extension Points and Change Risk",
+    "variants": []
+  }
+}

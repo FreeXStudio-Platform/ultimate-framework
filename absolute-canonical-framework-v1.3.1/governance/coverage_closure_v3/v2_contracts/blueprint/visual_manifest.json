@@ -1,0 +1,14 @@
+{
+  "rendered": "architecture.svg",
+  "schema": "absolute.visual_manifest.v1",
+  "scope_id": "ABS.BLUEPRINT.RC3.V2_CONTRACT_COMPATIBILITY",
+  "semantic_nodes": [
+    "canonical",
+    "adapter",
+    "schemas",
+    "tests",
+    "handoff"
+  ],
+  "source": "architecture.dot",
+  "status": "PARITY_VERIFIED"
+}

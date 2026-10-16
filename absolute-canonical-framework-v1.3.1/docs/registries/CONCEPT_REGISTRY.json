@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.0.0",
+  "concepts": [
+    {
+      "concept_id": "ABS.CONCEPT.GOAL_LOCK",
+      "owner": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.GOAL_LOCK.001",
+        "ABS.REQ.GOAL_LOCK.002",
+        "ABS.REQ.GOAL_LOCK.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.PROJECT_IDENTITY",
+      "owner": "ABS.MODULE.KERNEL.IDENTITY",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.PROJECT_IDENTITY.001",
+        "ABS.REQ.PROJECT_IDENTITY.002",
+        "ABS.REQ.PROJECT_IDENTITY.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.AUTHORITY_TRUTH",
+      "owner": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.AUTHORITY_TRUTH.001",
+        "ABS.REQ.AUTHORITY_TRUTH.002",
+        "ABS.REQ.AUTHORITY_TRUTH.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.LIFECYCLE_TWO_PASS",
+      "owner": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.LIFECYCLE_TWO_PASS.001",
+        "ABS.REQ.LIFECYCLE_TWO_PASS.002",
+        "ABS.REQ.LIFECYCLE_TWO_PASS.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.EVIDENCE_GATES_HEALTH",
+      "owner": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.EVIDENCE_GATES_HEALTH.001",
+        "ABS.REQ.EVIDENCE_GATES_HEALTH.002",
+        "ABS.REQ.EVIDENCE_GATES_HEALTH.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.CHANGE_DEVIATION_RECOVERY",
+      "owner": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.CHANGE_DEVIATION_RECOVERY.001",
+        "ABS.REQ.CHANGE_DEVIATION_RECOVERY.002",
+        "ABS.REQ.CHANGE_DEVIATION_RECOVERY.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.PROJECT_STATE",
+      "owner": "ABS.MODULE.CONTROL.STATE",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.PROJECT_STATE.001",
+        "ABS.REQ.PROJECT_STATE.002",
+        "ABS.REQ.PROJECT_STATE.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.WORK_REGISTRY",
+      "owner": "ABS.MODULE.CONTROL.WORK",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.WORK_REGISTRY.001",
+        "ABS.REQ.WORK_REGISTRY.002",
+        "ABS.REQ.WORK_REGISTRY.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.SESSIONS_HANDOFF",
+      "owner": "ABS.MODULE.CONTROL.SESSIONS",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.SESSIONS_HANDOFF.001",
+        "ABS.REQ.SESSIONS_HANDOFF.002",
+        "ABS.REQ.SESSIONS_HANDOFF.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS",
+      "owner": "ABS.MODULE.CONTROL.DECISIONS",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.001",
+        "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.002",
+        "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.MANIFEST_RELEASE",
+      "owner": "ABS.MODULE.CONTROL.RELEASE",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.MANIFEST_RELEASE.001",
+        "ABS.REQ.MANIFEST_RELEASE.002",
+        "ABS.REQ.MANIFEST_RELEASE.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.CAPABILITY_MANAGER",
+      "owner": "ABS.MODULE.CAPABILITY.MANAGER",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.CAPABILITY_MANAGER.001",
+        "ABS.REQ.CAPABILITY_MANAGER.002",
+        "ABS.REQ.CAPABILITY_MANAGER.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.SKILLS_DELEGATION",
+      "owner": "ABS.MODULE.CAPABILITY.SKILLS",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.SKILLS_DELEGATION.001",
+        "ABS.REQ.SKILLS_DELEGATION.002",
+        "ABS.REQ.SKILLS_DELEGATION.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.CONNECTORS_MCP",
+      "owner": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.CONNECTORS_MCP.001",
+        "ABS.REQ.CONNECTORS_MCP.002",
+        "ABS.REQ.CONNECTORS_MCP.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.MODEL_ROUTING",
+      "owner": "ABS.MODULE.CAPABILITY.ROUTING",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.MODEL_ROUTING.001",
+        "ABS.REQ.MODEL_ROUTING.002",
+        "ABS.REQ.MODEL_ROUTING.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.CANONICAL_MODULE_PACKAGE",
+      "owner": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.CANONICAL_MODULE_PACKAGE.001",
+        "ABS.REQ.CANONICAL_MODULE_PACKAGE.002",
+        "ABS.REQ.CANONICAL_MODULE_PACKAGE.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.DOCUMENT_BLUEPRINT_PARITY",
+      "owner": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.001",
+        "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.002",
+        "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY",
+      "owner": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.PUBLICATION_CONFIDENTIALITY.001",
+        "ABS.REQ.PUBLICATION_CONFIDENTIALITY.002",
+        "ABS.REQ.PUBLICATION_CONFIDENTIALITY.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.VISUAL_RENDERING",
+      "owner": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.VISUAL_RENDERING.001",
+        "ABS.REQ.VISUAL_RENDERING.002",
+        "ABS.REQ.VISUAL_RENDERING.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.REGISTRIES_GRAPH_CONTEXT",
+      "owner": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.001",
+        "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.002",
+        "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.SCHEMAS_VALIDATORS_HOOKS",
+      "owner": "ABS.MODULE.ENFORCEMENT.CORE",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.001",
+        "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.002",
+        "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION",
+      "owner": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.SECURITY_PRIVACY_INJECTION.001",
+        "ABS.REQ.SECURITY_PRIVACY_INJECTION.002",
+        "ABS.REQ.SECURITY_PRIVACY_INJECTION.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.TEST_EVALUATION",
+      "owner": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.TEST_EVALUATION.001",
+        "ABS.REQ.TEST_EVALUATION.002",
+        "ABS.REQ.TEST_EVALUATION.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.OBSERVABILITY_INCIDENT",
+      "owner": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.OBSERVABILITY_INCIDENT.001",
+        "ABS.REQ.OBSERVABILITY_INCIDENT.002",
+        "ABS.REQ.OBSERVABILITY_INCIDENT.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.MODULAR_ARCHITECTURE",
+      "owner": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.MODULAR_ARCHITECTURE.001",
+        "ABS.REQ.MODULAR_ARCHITECTURE.002",
+        "ABS.REQ.MODULAR_ARCHITECTURE.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.PLATFORM_ADAPTERS",
+      "owner": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.PLATFORM_ADAPTERS.001",
+        "ABS.REQ.PLATFORM_ADAPTERS.002",
+        "ABS.REQ.PLATFORM_ADAPTERS.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.PROJECT_PROFILES",
+      "owner": "ABS.MODULE.PROFILES.PROJECT",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.PROJECT_PROFILES.001",
+        "ABS.REQ.PROJECT_PROFILES.002",
+        "ABS.REQ.PROJECT_PROFILES.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.OPTIONAL_RAG_GRAPH",
+      "owner": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.OPTIONAL_RAG_GRAPH.001",
+        "ABS.REQ.OPTIONAL_RAG_GRAPH.002",
+        "ABS.REQ.OPTIONAL_RAG_GRAPH.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.OPTIONAL_OPERATIONS",
+      "owner": "ABS.MODULE.ADDON.OPERATIONS",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.OPTIONAL_OPERATIONS.001",
+        "ABS.REQ.OPTIONAL_OPERATIONS.002",
+        "ABS.REQ.OPTIONAL_OPERATIONS.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.SOURCE_ADMISSION_RECONCILIATION",
+      "owner": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.001",
+        "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.002",
+        "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.INDEPENDENT_VERIFICATION",
+      "owner": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.INDEPENDENT_VERIFICATION.001",
+        "ABS.REQ.INDEPENDENT_VERIFICATION.002",
+        "ABS.REQ.INDEPENDENT_VERIFICATION.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.AUDITHUNT_INSTALLATION_PROFILE",
+      "owner": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.001",
+        "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.002",
+        "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    },
+    {
+      "concept_id": "ABS.CONCEPT.RUNTIME_EXECUTION",
+      "owner": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "authority_state": "APPROVED",
+      "canonical_requirement_ids": [
+        "ABS.REQ.RUNTIME_EXECUTION.001",
+        "ABS.REQ.RUNTIME_EXECUTION.002",
+        "ABS.REQ.RUNTIME_EXECUTION.003"
+      ],
+      "source_role": "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+    }
+  ]
+}

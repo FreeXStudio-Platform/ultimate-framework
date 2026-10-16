@@ -1,0 +1,231 @@
+{
+  "document_rail": [
+    {
+      "artifacts": [
+        "scope.json"
+      ],
+      "id": "D1.SCOPE",
+      "intent": "Name exactly one question this package owns, and where its truth comes from.",
+      "ordinal": 1,
+      "title": "Declare the canonical scope and source evidence"
+    },
+    {
+      "artifacts": [
+        "MODULE.md"
+      ],
+      "id": "D2.NARRATIVE",
+      "intent": "Human-authoritative meaning. Every other representation derives its intent from here.",
+      "ordinal": 2,
+      "title": "Write the narrative meaning"
+    },
+    {
+      "artifacts": [
+        "MODULE_MANIFEST.yaml"
+      ],
+      "id": "D3.MANIFEST",
+      "intent": "Machine-readable identity, scope boundary, interfaces, and canonical paths.",
+      "ordinal": 3,
+      "title": "Declare the manifest"
+    },
+    {
+      "artifacts": [
+        "requirements.json"
+      ],
+      "id": "D4.REQUIREMENTS",
+      "intent": "Each requirement is testable and owned here and nowhere else.",
+      "ordinal": 4,
+      "title": "Enumerate normative requirements"
+    },
+    {
+      "artifacts": [
+        "blueprint/BLUEPRINT.md"
+      ],
+      "id": "D5.BLUEPRINT",
+      "intent": "Components, sequence, dependencies, error design, and quality attributes.",
+      "ordinal": 5,
+      "title": "Write the blueprint"
+    },
+    {
+      "artifacts": [
+        "blueprint/architecture.dot",
+        "blueprint/architecture.svg",
+        "blueprint/visual_manifest.json"
+      ],
+      "id": "D6.VISUAL",
+      "intent": "A semantic source graph plus its rendered derivative and a manifest binding them.",
+      "ordinal": 6,
+      "title": "Author the visual contract"
+    },
+    {
+      "artifacts": [
+        "machine/contract.schema.json",
+        "machine/policy.json",
+        "machine/examples/valid.json"
+      ],
+      "id": "D7.MACHINE",
+      "intent": "The schema and policy that make the narrative deterministically checkable.",
+      "ordinal": 7,
+      "title": "Author the machine contract"
+    },
+    {
+      "artifacts": [
+        "tests/TEST_PLAN.md",
+        "tests/positive/valid_instance.json",
+        "tests/negative/missing_evidence.json",
+        "tests/adversarial/authority_override.json"
+      ],
+      "id": "D8.TESTS",
+      "intent": "A contract nothing can fail is not a contract.",
+      "ordinal": 8,
+      "title": "Author positive, negative, and adversarial tests"
+    },
+    {
+      "artifacts": [
+        "integration/provided_interfaces.json",
+        "integration/consumed_interfaces.json",
+        "integration/dependencies.json"
+      ],
+      "id": "D9.INTEGRATION",
+      "intent": "Provided and consumed interfaces and dependencies, resolvable against the registry.",
+      "ordinal": 9,
+      "title": "Declare integration surfaces"
+    },
+    {
+      "artifacts": [
+        "publication/plain_english.md",
+        "publication/quick_reference.md",
+        "publication/publication_manifest.yaml"
+      ],
+      "id": "D10.PUBLICATION",
+      "intent": "Plain-English and quick-reference derivatives, classified and audience-bound.",
+      "ordinal": 10,
+      "title": "Derive the governed publications"
+    },
+    {
+      "artifacts": [
+        "CHANGELOG.md"
+      ],
+      "id": "D11.CHANGELOG",
+      "intent": "Every later substantive change to this package must land here.",
+      "ordinal": 11,
+      "title": "Open the changelog"
+    }
+  ],
+  "mutation_order": [
+    "authorize against rail",
+    "write artifact",
+    "append ledger entry",
+    "update project state"
+  ],
+  "project_rail": [
+    {
+      "command": "init",
+      "id": "S1.INSTALL",
+      "ordinal": 1,
+      "repeatable": false,
+      "title": "Install the control namespace",
+      "why": "Nothing can be governed until the project has a frozen identity and a source of truth."
+    },
+    {
+      "command": "goal set",
+      "id": "S2.GOAL_LOCK",
+      "ordinal": 2,
+      "repeatable": false,
+      "title": "Lock the active goal",
+      "why": "ABS.REQ.GOAL_LOCK.002 rejects material action that has no valid upward goal link."
+    },
+    {
+      "command": "wp new",
+      "id": "S3.WORK_OPENED",
+      "ordinal": 3,
+      "repeatable": true,
+      "title": "Open one bounded work packet",
+      "why": "Work is executed as one reversible, bounded unit with declared rollback."
+    },
+    {
+      "command": "doc new",
+      "id": "S4.DOCUMENTS_CREATED",
+      "ordinal": 4,
+      "repeatable": true,
+      "title": "Create the governed documents",
+      "why": "The framework's unit of knowledge is the canonical module package, not a loose file."
+    },
+    {
+      "command": "doc step",
+      "id": "S5.DOCUMENTS_AUTHORED",
+      "ordinal": 5,
+      "repeatable": true,
+      "title": "Author every representation in lockstep",
+      "why": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.002 requires representations to be authored section-by-section, not back-filled."
+    },
+    {
+      "command": "doc seal",
+      "id": "S6.DOCUMENTS_SEALED",
+      "ordinal": 6,
+      "repeatable": true,
+      "title": "Seal and stamp every document into the source of truth",
+      "why": "An unstamped document has no identity, so no later claim can be bound to it."
+    },
+    {
+      "command": "evidence add",
+      "id": "S7.EVIDENCE",
+      "ordinal": 7,
+      "repeatable": true,
+      "title": "Record evidence for the active work packet",
+      "why": "ABS.REQ.EVIDENCE_GATES: a completion claim without evidence bound to an exact hash is not a claim."
+    },
+    {
+      "command": "gate run",
+      "id": "S8.GATE",
+      "ordinal": 8,
+      "repeatable": true,
+      "title": "Evaluate the evidence gate",
+      "why": "The gate is what converts recorded evidence into a permitted state change."
+    },
+    {
+      "command": "wp complete",
+      "id": "S9.WORK_COMPLETED",
+      "ordinal": 9,
+      "repeatable": true,
+      "title": "Complete the bounded work packet",
+      "why": "A packet may only close once its own gate passed against the current identity."
+    },
+    {
+      "command": "checkpoint",
+      "id": "S10.CHECKPOINT",
+      "ordinal": 10,
+      "repeatable": true,
+      "title": "Write a restart-safe session checkpoint",
+      "why": "Recovery must not depend on a live context that can be lost."
+    },
+    {
+      "command": "pass2",
+      "id": "S11.SECOND_PASS",
+      "ordinal": 11,
+      "repeatable": false,
+      "title": "Review the frozen whole (pass 2)",
+      "why": "ABS.REQ.LIFECYCLE_TWO_PASS.002: pass 1 builds the candidate, pass 2 reviews it frozen."
+    },
+    {
+      "command": "verify --record",
+      "id": "S12.VERIFIED",
+      "ordinal": 12,
+      "repeatable": false,
+      "title": "Run deterministic deep verification and record it",
+      "why": "Every claim in the project must be reproducible from raw bytes by a fresh process."
+    },
+    {
+      "command": "release",
+      "id": "S13.RELEASED",
+      "ordinal": 13,
+      "repeatable": false,
+      "title": "Assemble the release",
+      "why": "Release is the only step that produces an externally shippable identity."
+    }
+  ],
+  "sources": [
+    "runtime/rail.py",
+    "runtime/documents.py",
+    "docs/RUNTIME_GUIDE.md"
+  ]
+}

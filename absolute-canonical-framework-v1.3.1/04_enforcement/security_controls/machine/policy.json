@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ENFORCEMENT.SECURITY",
+  "policy_version": "1.0.0",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_ENFORCEMENT_SECURITY.OPERATING_CONTRACT",
+  "truth_scope": [
+    "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION"
+  ],
+  "default_action": "DENY_UNLESS_SCOPE_AUTHORITY_PERMISSION_AND_EVIDENCE_ARE_VALID",
+  "rules": [
+    {
+      "rule_id": "ABS.MODULE.ENFORCEMENT.SECURITY.RULE.001",
+      "requirement_id": "ABS.REQ.SECURITY_PRIVACY_INJECTION.001",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    },
+    {
+      "rule_id": "ABS.MODULE.ENFORCEMENT.SECURITY.RULE.002",
+      "requirement_id": "ABS.REQ.SECURITY_PRIVACY_INJECTION.002",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    },
+    {
+      "rule_id": "ABS.MODULE.ENFORCEMENT.SECURITY.RULE.003",
+      "requirement_id": "ABS.REQ.SECURITY_PRIVACY_INJECTION.003",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    }
+  ],
+  "states": [
+    "UNASSESSED",
+    "PERMITTED_READ",
+    "PERMITTED_SCOPED_WRITE",
+    "APPROVAL_REQUIRED",
+    "DENIED",
+    "QUARANTINED"
+  ],
+  "transitions": [
+    {
+      "from": "UNASSESSED",
+      "to": "PERMITTED_READ",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "PERMITTED_READ",
+      "to": "PERMITTED_SCOPED_WRITE",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "PERMITTED_SCOPED_WRITE",
+      "to": "APPROVAL_REQUIRED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "APPROVAL_REQUIRED",
+      "to": "DENIED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "DENIED",
+      "to": "QUARANTINED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    }
+  ],
+  "fail_closed_on": [
+    "secret, prompt injection, or destructive action crosses boundary",
+    "missing authority",
+    "stale evidence",
+    "semantic contradiction"
+  ],
+  "recovery": [
+    "stop affected action",
+    "restore checkpoint or safe state",
+    "repair canonical source/policy",
+    "rerun transitive checks"
+  ],
+  "approval_boundary": [
+    "external_write",
+    "destructive_action",
+    "credential_access",
+    "publication",
+    "financial_commitment",
+    "permission_expansion"
+  ],
+  "invalidation_triggers": [
+    "requirement_change",
+    "schema_change",
+    "policy_change",
+    "interface_change",
+    "security_change",
+    "candidate_hash_change"
+  ]
+}

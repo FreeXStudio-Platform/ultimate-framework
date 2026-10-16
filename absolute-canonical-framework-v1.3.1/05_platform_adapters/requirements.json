@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ADAPTERS.PLATFORMS",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.PLATFORM_ADAPTERS.001",
+      "concept_id": "ABS.CONCEPT.PLATFORM_ADAPTERS",
+      "statement": "ChatGPT/Codex, Claude Code, Cursor, local-agent, and generic-host adapters shall translate kernel contracts into host-specific files, hooks, permissions, context loading, and commands.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PLATFORM_ADAPTERS.002",
+      "concept_id": "ABS.CONCEPT.PLATFORM_ADAPTERS",
+      "statement": "Adapters shall declare required capabilities, limitations, fallbacks, generated artifacts, approval boundaries, and non-authoritative surfaces.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PLATFORM_ADAPTERS.003",
+      "concept_id": "ABS.CONCEPT.PLATFORM_ADAPTERS",
+      "statement": "Host-specific behavior shall not contaminate kernel invariants, and adapter compatibility shall be versioned and tested.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

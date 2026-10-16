@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.HEALTH.REPORT",
+      "name": "fault-seeking health and incident reporting",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.STATE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_health_report.schema.json"
+    }
+  ]
+}

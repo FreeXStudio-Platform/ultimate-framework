@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.OBSERVABILITY_INCIDENT.001",
+      "concept_id": "ABS.CONCEPT.OBSERVABILITY_INCIDENT",
+      "statement": "Observability shall expose state, health, errors, dependencies, freshness, and evidence without treating absence of alerts as health.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OBSERVABILITY_INCIDENT.002",
+      "concept_id": "ABS.CONCEPT.OBSERVABILITY_INCIDENT",
+      "statement": "Errors and incidents shall use stable taxonomy, severity, scope, root-cause state, containment, recovery, evidence, and follow-up records.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OBSERVABILITY_INCIDENT.003",
+      "concept_id": "ABS.CONCEPT.OBSERVABILITY_INCIDENT",
+      "statement": "Watchdogs and health reporters shall be tested with fault injection and shall fail truthfully when dependencies or their own reporting path are unavailable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

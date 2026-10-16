@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.001",
+      "concept_id": "ABS.CONCEPT.EVIDENCE_GATES_HEALTH",
+      "statement": "PASS, COMPLETE, VERIFIED, HEALTHY, INSTALLED, DEPLOYED, and RELEASED claims shall cite current evidence bound to exact scope and candidate identity.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.002",
+      "concept_id": "ABS.CONCEPT.EVIDENCE_GATES_HEALTH",
+      "statement": "Canonical gate states shall be PASS, FAIL, BLOCKED, NOT_RUN, INCONCLUSIVE, STALE, INVALID_REPORT, or WAIVED_WITH_APPROVED_EXPIRY; legacy accepted-risk states migrate to PASS plus an explicit risk/waiver record.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.003",
+      "concept_id": "ABS.CONCEPT.EVIDENCE_GATES_HEALTH",
+      "statement": "Health shall distinguish healthy, degraded, partial, dependency-failed, unknown, untested, stale, misconfigured, and root-cause-unknown, and shall test the reporter itself.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

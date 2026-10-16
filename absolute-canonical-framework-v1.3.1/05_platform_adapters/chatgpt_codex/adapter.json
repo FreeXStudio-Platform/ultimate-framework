@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "adapter_id": "ABS.ADAPTER.CHATGPT_CODEX",
+  "name": "ChatGPT/Codex Adapter",
+  "version": "1.0.0",
+  "host": "ChatGPT/Codex",
+  "status": "CANDIDATE",
+  "authority": "Host translation only; governing semantics, project truth, permissions, and evidence remain outside the adapter.",
+  "preflight_required": true,
+  "permissions_default": "READ_ONLY",
+  "interface_mappings": [
+    {
+      "interface_id": "ABS.IFACE.GOAL_LINK.VALIDATE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.IDENTITY.ALLOCATE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.TRUTH.CLASSIFY",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.LIFECYCLE.TRANSITION",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.EVIDENCE.RECORD",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.GATE.EVALUATE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.CHANGE.INVALIDATE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.RECOVERY.CHECKPOINT",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.STATE.ATOMIC_UPDATE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.WORK.PACKET",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.SESSION.HANDOFF",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.DECISION.RECORD",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.RELEASE.ASSEMBLE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.CAPABILITY.SELECT",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.SKILL.EXECUTE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.CONNECTOR.INVOKE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.MODEL.ROUTE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.MODULE.PACKAGE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.PARITY.VALIDATE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.PUBLICATION.DERIVE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.VISUAL.RENDER",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.GRAPH.QUERY",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.SOURCE.ADMIT",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.SCHEMA.VALIDATE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.SECURITY.AUTHORIZE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.TEST.EVALUATE",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.HEALTH.REPORT",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.DEPENDENCY.REGISTER",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    },
+    {
+      "interface_id": "ABS.IFACE.VERIFICATION.INDEPENDENT",
+      "mapping": "Use project/file tools and bounded tool calls; persist state in repository files; verify actual connector and writable-sandbox availability.",
+      "state": "UNTESTED"
+    }
+  ],
+  "unsupported_behaviors": [
+    "assumed access",
+    "implicit write permission",
+    "chat-memory-only state",
+    "self-certification",
+    "silent provider fallback",
+    "unrecorded external effects"
+  ],
+  "fallbacks": [
+    "repository-backed generic workflow",
+    "manual deterministic validation",
+    "safe checkpoint and host switch"
+  ],
+  "conformance_state": "UNTESTED",
+  "rollback": "Disable the adapter, revoke scoped grants, restore the prior host configuration, and resume from durable checkpoint."
+}

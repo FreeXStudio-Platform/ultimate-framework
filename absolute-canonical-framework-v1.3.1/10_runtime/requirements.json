@@ -1,0 +1,27 @@
+{
+  "module_id": "ABS.MODULE.RUNTIME.EXECUTOR",
+  "requirements": [
+    {
+      "level": "MUST",
+      "owner_module": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.001",
+      "statement": "The runtime shall permit exactly one next action at any project state, and shall refuse any command whose rail step is not that action, naming both the refusing rule and the permitted action.",
+      "verification": "schema + semantic validation + live adversarial simulation"
+    },
+    {
+      "level": "MUST",
+      "owner_module": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.002",
+      "statement": "Every governed mutation shall be written to the append-only hash-chained source of truth before project state is updated, so that no state can exist without a prior record of the action that produced it.",
+      "verification": "schema + semantic validation + live adversarial simulation"
+    },
+    {
+      "level": "MUST",
+      "owner_module": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.003",
+      "statement": "The runtime shall bind every evidence record, gate decision, document seal, and verification result to the exact tree identity it was computed against, and shall treat any record bound to a superseded identity as stale.",
+      "verification": "schema + semantic validation + live adversarial simulation"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

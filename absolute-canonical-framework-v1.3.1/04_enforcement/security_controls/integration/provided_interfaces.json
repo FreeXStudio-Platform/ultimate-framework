@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ENFORCEMENT.SECURITY",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.SECURITY.AUTHORIZE",
+      "name": "least-privilege action authorization",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.CONNECTORS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_security_authorize.schema.json"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "absolute.release_integrity_model.v1",
+  "release_id": "ABS.RELEASE.1.0.0",
+  "candidate_tree_hash_algorithm": "sha256-canonical-path-size-content-v1",
+  "candidate_tree_exclusions": [
+    "MANIFEST.json",
+    "CANDIDATE_SOURCE_MANIFEST.json",
+    "SHA256SUMS.txt",
+    ".absolute/release/release_identity.json",
+    ".absolute/release/authority_record.json",
+    ".absolute/release/gate_binding.json"
+  ],
+  "reason": "Hash-binding metadata is excluded from the candidate source-tree hash to prevent circular digests.",
+  "manifest_scope": "all governed payload files outside the exclusions",
+  "checksum_scope": "every release file except SHA256SUMS.txt itself; therefore MANIFEST.json is checksum-bound",
+  "checksum_self_reference": false,
+  "archive_binding": "The detached clean-ZIP SHA-256 binds all files including integrity metadata and SHA256SUMS.txt.",
+  "version": "1.0.0",
+  "archive_mode_policy": "fixed-path-allowlist-v1",
+  "executable_paths": [
+    "01_control_plane/manifests_releases/tools/build_release.py",
+    "01_control_plane/manifests_releases/tools/release_integrity.py",
+    "01_control_plane/manifests_releases/tools/verify_release.py",
+    "04_enforcement/hooks/post_edit_validation.sh",
+    "04_enforcement/hooks/pre_write_authority_check.py",
+    "04_enforcement/validators/absolute_validate.py",
+    "09_tests_evals/run_all.py",
+    "tests/run_successor_controls.py",
+    "tools/secure_release_builder.py",
+    "tools/validate_ci_pins.py",
+    "tools/verify_successor_release.py"
+  ],
+  "default_file_mode": "0644",
+  "executable_file_mode": "0755",
+  "candidate_tree_mode_binding": "file modes are outside the source-tree byte hash but are fixed by policy and bound by the detached ZIP SHA-256",
+  "candidate_manifest_scope": "all governed payload files outside candidate-tree exclusions",
+  "release_manifest_scope": "every release file except MANIFEST.json and SHA256SUMS.txt, which are explicit non-self-referential integrity roots",
+  "release_manifest_exclusions": [
+    "MANIFEST.json",
+    "SHA256SUMS.txt"
+  ],
+  "complete_file_binding": "payload and metadata are manifest-bound; MANIFEST.json is checksum-bound; SHA256SUMS.txt and all archive attributes are detached-ZIP-hash-bound"
+}

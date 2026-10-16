@@ -1,0 +1,2 @@
+# Test and Evaluation Guide
+Run `python 09_tests_evals/run_all.py`. A release decision requires both expected positive passes and expected negative rejections. Extend the suite with downstream profile, adapter, outage, permission-denial, malformed-input, recovery, idempotence, order-invariance, mutation, retrieval, and clean-state rebuild tests. Do not convert unavailable or not-run host tests into package-level PASS.

@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:absolute:schema:module-policy:1.0.0",
+  "title": "Absolute Module Policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "module_id",
+    "policy_version",
+    "scope_id",
+    "truth_scope",
+    "default_action",
+    "rules",
+    "states",
+    "transitions",
+    "fail_closed_on",
+    "recovery",
+    "approval_boundary",
+    "invalidation_triggers"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "module_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "policy_version": {
+      "const": "1.0.0"
+    },
+    "scope_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "truth_scope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+      }
+    },
+    "default_action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "rule_id",
+          "requirement_id",
+          "condition",
+          "effect",
+          "on_failure"
+        ],
+        "properties": {
+          "rule_id": {
+            "type": "string",
+            "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+          },
+          "requirement_id": {
+            "type": "string",
+            "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+          },
+          "condition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "effect": {
+            "type": "string",
+            "minLength": 1
+          },
+          "on_failure": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "states": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "from",
+          "to",
+          "requires"
+        ],
+        "properties": {
+          "from": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to": {
+            "type": "string",
+            "minLength": 1
+          },
+          "requires": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "fail_closed_on": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "recovery": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "approval_boundary": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "invalidation_triggers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

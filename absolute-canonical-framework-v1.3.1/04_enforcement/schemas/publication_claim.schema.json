@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:absolute:schema:publication-claim:1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "claim_id",
+    "statement",
+    "truth_state",
+    "source_claim_ids",
+    "source_hash",
+    "classification",
+    "allowed_audiences",
+    "sanitization_policy",
+    "approval_state",
+    "last_verified_at",
+    "invalidation_triggers"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "truth_state": {
+      "enum": [
+        "VERIFIED_FACT",
+        "VERIFIED_EXTERNAL_FACT",
+        "APPROVED_NORMATIVE_REQUIREMENT",
+        "APPROVED_DESIGN_DECISION",
+        "REASONED_INFERENCE",
+        "RECOMMENDATION_PENDING_APPROVAL",
+        "PLANNED_NOT_IMPLEMENTED",
+        "PARTIALLY_IMPLEMENTED",
+        "UNKNOWN_REQUIRES_EVIDENCE",
+        "CONFLICT_REQUIRES_RECONCILIATION",
+        "SUPERSEDED",
+        "HISTORICAL_ONLY",
+        "INVALID_OR_REJECTED"
+      ]
+    },
+    "source_claim_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+      }
+    },
+    "source_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "classification": {
+      "enum": [
+        "PUBLIC",
+        "INTERNAL",
+        "CONFIDENTIAL",
+        "RESTRICTED"
+      ]
+    },
+    "allowed_audiences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "sanitization_policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approval_state": {
+      "enum": [
+        "DRAFT",
+        "REVIEW_REQUIRED",
+        "APPROVED",
+        "REJECTED",
+        "STALE"
+      ]
+    },
+    "last_verified_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "invalidation_triggers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

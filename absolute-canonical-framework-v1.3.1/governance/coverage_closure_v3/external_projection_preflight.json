@@ -1,0 +1,10 @@
+{
+  "figma_connector_available": false,
+  "future_projection_status": "BLOCKED_UNTIL_CONNECTOR_PREFLIGHT_AND_EXPLICIT_AUTHORITY",
+  "notion_connector_available": false,
+  "remote_artifacts_created": false,
+  "repository_fallback_required": true,
+  "schema": "absolute.coverage_closure.external_projection_preflight.v1",
+  "scope": "RC2_SUCCESSOR_ONLY",
+  "source_hash_binding_required_for_future_projection": true
+}

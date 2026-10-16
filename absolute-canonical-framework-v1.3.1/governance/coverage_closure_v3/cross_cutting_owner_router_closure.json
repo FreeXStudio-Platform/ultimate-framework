@@ -1,0 +1,48 @@
+{
+  "preserve_existing_interface_count": 29,
+  "preserve_existing_module_count": 32,
+  "routes": [
+    {
+      "family": "reciprocal_provenance",
+      "primary_owner": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.002",
+      "router": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.002",
+      "secondary_owners": [],
+      "source": "existing_module_semantic_match",
+      "unique_primary": true
+    },
+    {
+      "family": "canonical_synthesis_integrity",
+      "primary_owner": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "router": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "secondary_owners": [],
+      "source": "existing_module_semantic_match",
+      "unique_primary": true
+    },
+    {
+      "family": "release_authority_and_gate_binding",
+      "primary_owner": "ABS.MODULE.CONTROL.RELEASE",
+      "router": "ABS.MODULE.CONTROL.RELEASE",
+      "secondary_owners": [],
+      "source": "existing_module_semantic_match",
+      "unique_primary": true
+    },
+    {
+      "family": "archive_and_candidate_identity_safety",
+      "primary_owner": "ABS.MODULE.KERNEL.IDENTITY",
+      "router": "ABS.MODULE.KERNEL.IDENTITY",
+      "secondary_owners": [],
+      "source": "existing_module_semantic_match",
+      "unique_primary": true
+    },
+    {
+      "family": "configuration_projection_and_recovery",
+      "primary_owner": "ABS.REQ.OPTIONAL_OPERATIONS.001",
+      "router": "ABS.REQ.OPTIONAL_OPERATIONS.001",
+      "secondary_owners": [],
+      "source": "existing_module_semantic_match",
+      "unique_primary": true
+    }
+  ],
+  "schema": "absolute.coverage_closure.owner_router.v1",
+  "scope": "RC2_SUCCESSOR_ONLY"
+}

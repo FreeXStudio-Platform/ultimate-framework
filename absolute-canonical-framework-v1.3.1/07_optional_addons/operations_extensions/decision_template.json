@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "addon_id": "ABS.ADDON.OPERATIONS.EXAMPLE",
+  "state": "DISABLED",
+  "measured_problem": null,
+  "duplicate_authority_check": "NOT_RUN",
+  "permissions": [],
+  "cost_cap": null,
+  "success_metrics": {},
+  "exit_criteria": {},
+  "rollback": "Disable extension and restore canonical control-plane projection."
+}

@@ -1,0 +1,27 @@
+# Harness / session artifacts — never part of the release
+.claude/
+.codemap/
+.remember/
+.DS_Store
+__pycache__/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+
+# Engine-derived state when the engine is run against this host
+# (mirrors engine/.gitignore; kept here so host-side runs stay clean)
+.docgen/
+.health/
+.blueprint/
+graphify-out/
+node_modules/
+.docgen_cache.json
+
+# Release-procedure scratch (extracted predecessor, staging, clean-room extracts)
+/predecessor/
+/_staging/
+/_cleanroom/
+/_build/
+
+# Sealed artifacts are release assets, never committed
+/_release/

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.DEPENDENCY.REGISTER",
+      "name": "module/interface dependency registration",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "consumer_modules": [
+        "ABS.MODULE.KNOWLEDGE.GRAPH"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_dependency_register.schema.json"
+    }
+  ]
+}

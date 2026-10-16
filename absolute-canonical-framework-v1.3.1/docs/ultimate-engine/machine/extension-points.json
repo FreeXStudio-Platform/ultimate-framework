@@ -1,0 +1,52 @@
+{
+  "changes": [
+    {
+      "also_update": [
+        "MODULE.md and requirements.json in that owner package",
+        "machine/policy.json and positive/negative/adversarial fixtures",
+        "docs/registries/CANONICAL_REQUIREMENTS.json and FRAMEWORK_GRAPH.jsonl",
+        "04_enforcement validators or runtime checks only when deterministic enforcement is required"
+      ],
+      "kind": "new_rule",
+      "primary_path": "the canonical owner package named by docs/registries/MODULE_INDEX.json"
+    },
+    {
+      "also_update": [
+        "02_capabilities/capability_manager",
+        "capability health, permission, fallback, provenance, and quarantine records",
+        "profiles that opt into the capability"
+      ],
+      "kind": "new_capability",
+      "primary_path": "02_capabilities"
+    },
+    {
+      "also_update": [
+        "docs/registries/PROFILE_ADAPTER_INDEX.json",
+        "05_platform_adapters tests and integration contracts",
+        "profiles that permit the adapter"
+      ],
+      "kind": "new_platform_adapter",
+      "primary_path": "05_platform_adapters/<adapter>"
+    },
+    {
+      "also_update": [
+        "allowlist",
+        "governance",
+        "module_manifests",
+        "module_narratives",
+        "registries",
+        "release_tooling",
+        "schemas",
+        "test_manifest"
+      ],
+      "kind": "release_version",
+      "primary_path": "VERSION"
+    }
+  ],
+  "source": [
+    "docs/ARCHITECTURE.md",
+    "docs/CAPABILITY_AND_SECURITY_GUIDE.md",
+    "05_platform_adapters/MODULE.md",
+    "docs/registries/MODULE_INDEX.json"
+  ]
+}

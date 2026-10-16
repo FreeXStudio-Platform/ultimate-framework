@@ -1,0 +1,16 @@
+{
+  "module_id": "ABS.MODULE.RUNTIME.EXECUTOR",
+  "provided": [
+    {
+      "interface_id": "ABS.IFACE.RUNTIME.EXECUTE",
+      "schema_ref": "schemas/abs_iface_runtime_execute.schema.json",
+      "stability": "STABLE_1_X"
+    },
+    {
+      "interface_id": "ABS.IFACE.TRUTH.STAMP",
+      "schema_ref": "schemas/abs_iface_truth_stamp.schema.json",
+      "stability": "STABLE_1_X"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,34 @@
+{
+  "clean_record_sets": {
+    "configuration": {
+      "path": "CONFIGURATION_RECORDS.jsonl",
+      "records": 6
+    },
+    "conversation_decision": {
+      "path": "CONVERSATION_DECISION_EXECUTION.jsonl",
+      "records": 52
+    },
+    "executable_surface": {
+      "path": "EXECUTABLE_SURFACE_RECORDS.jsonl",
+      "records": 14
+    }
+  },
+  "evidence_record_sets": {
+    "certification_handoff": "RC3_HANDOFF::CERTIFICATION_HANDOFF.json",
+    "coverage_scoreboard": "RC3_BUILD_EVIDENCE::04_COVERAGE/COVERAGE_SCOREBOARD.json",
+    "finding": "RC3_BUILD_EVIDENCE::03_FINDINGS/*.jsonl",
+    "gate_control": "RC3_BUILD_EVIDENCE::05_GATES/GATE_AND_CONTROL_REGISTRY.jsonl",
+    "gate_report": "RC3_BUILD_EVIDENCE::05_GATES/GATE_REPORTS/*.json",
+    "improvement_opportunity": "RC3_BUILD_EVIDENCE::04_COVERAGE/IMPROVEMENT_OPPORTUNITY_REGISTRY.jsonl",
+    "knowledge_unit": "RC3_BUILD_EVIDENCE::02_REQUIREMENTS/KNOWLEDGE_UNIT_REGISTRY.jsonl",
+    "projection_profile": "RC3_BUILD_EVIDENCE::04_COVERAGE/PROJECTION_PROFILE_REGISTRY.jsonl",
+    "simulation_scenario": "RC3_BUILD_EVIDENCE::06_TESTS/SIMULATION_SCENARIO_REGISTRY.jsonl",
+    "source_record": "RC3_BUILD_EVIDENCE::01_SOURCE_ADMISSION/SOURCE_RECORD_REGISTRY.jsonl"
+  },
+  "policy": "Compatibility projections preserve current truth; historical V2 tool availability is not copied into RC3.",
+  "release_id": "ABS.RELEASE.1.0.0-RC3",
+  "schema": "absolute.coverage_closure.v2_compatibility_manifest.v1",
+  "schema_contracts": 13,
+  "status": "IMPLEMENTED_PENDING_FINAL_HASH_BOUND_EVIDENCE_REPLAY",
+  "validator": "tools/validate_v2_contracts.py"
+}

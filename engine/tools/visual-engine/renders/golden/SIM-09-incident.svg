@@ -1,0 +1,40 @@
+<svg data-engine="echarts" role="img" aria-label="S183 ingest-gate incident" width="800" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 800 480">
+<rect width="800" height="480" x="0" y="0" fill="none"></rect>
+<path d="M104 234.5L776 234.5" fill="none" pointer-events="visible" stroke="rgb(234,238,245)" stroke-opacity="0.18" stroke-linecap="round" class="zr-cls-0"></path>
+<path d="M162.5 234L162.5 239" fill="none" pointer-events="visible" stroke="rgb(234,238,245)" stroke-opacity="0.18" class="zr-cls-0"></path>
+<path d="M279.5 234L279.5 239" fill="none" pointer-events="visible" stroke="rgb(234,238,245)" stroke-opacity="0.18" class="zr-cls-0"></path>
+<path d="M396.5 234L396.5 239" fill="none" pointer-events="visible" stroke="rgb(234,238,245)" stroke-opacity="0.18" class="zr-cls-0"></path>
+<path d="M513.5 234L513.5 239" fill="none" pointer-events="visible" stroke="rgb(234,238,245)" stroke-opacity="0.18" class="zr-cls-0"></path>
+<path d="M630.5 234L630.5 239" fill="none" pointer-events="visible" stroke="rgb(234,238,245)" stroke-opacity="0.18" class="zr-cls-0"></path>
+<path d="M747.5 234L747.5 239" fill="none" pointer-events="visible" stroke="rgb(234,238,245)" stroke-opacity="0.18" class="zr-cls-0"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font: normal normal 10px JetBrains Mono, ui-monospace, monospace" y="5" transform="translate(162.4348 412)" fill="#8A96AE">12:00</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: normal normal 10px JetBrains Mono, ui-monospace, monospace" y="5" transform="translate(279.3043 412)" fill="#8A96AE">16:00</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: normal normal 10px JetBrains Mono, ui-monospace, monospace" y="5" transform="translate(396.1739 412)" fill="#8A96AE">20:00</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: normal normal 10px JetBrains Mono, ui-monospace, monospace" y="5" transform="translate(629.913 412)" fill="#8A96AE">04:00</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: normal normal 10px JetBrains Mono, ui-monospace, monospace" y="5" transform="translate(746.7826 412)" fill="#8A96AE">08:00</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:10px;font-family:JetBrains Mono, ui-monospace, monospace;font-weight:bold;" y="5" transform="translate(513.0435 412)" fill="#EAEEF5">4</text>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(6,0,0,6,104,174.5)" fill="#4A7FC1" fill-opacity="0.8" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr-cls-1"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(6,0,0,6,235.4783,293.5)" fill="#4A7FC1" fill-opacity="0.8" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr-cls-1"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(6,0,0,6,776,174.5)" fill="#4A7FC1" fill-opacity="0.8" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr-cls-1"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:10px;font-family:Inter, system-ui, sans-serif;" xml:space="preserve" y="-5" transform="translate(104 163.5)" fill="#333" fill-opacity="0.8" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-opacity="0.8" stroke-miterlimit="2">gate bypass detected</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:10px;font-family:Inter, system-ui, sans-serif;" xml:space="preserve" y="-5" transform="translate(235.4783 282.5)" fill="#333" fill-opacity="0.8" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-opacity="0.8" stroke-miterlimit="2">type allowlist patched</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:10px;font-family:Inter, system-ui, sans-serif;" xml:space="preserve" y="-5" transform="translate(776 163.5)" fill="#333" fill-opacity="0.8" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-opacity="0.8" stroke-miterlimit="2">re-scan clean</text>
+<path d="M104.5 404L104.5 64" fill="none" pointer-events="visible" stroke="#4A7FC1" stroke-opacity="0.3" stroke-dasharray="4,2" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr-cls-0"></path>
+<path d="M235.5 404L235.5 64" fill="none" pointer-events="visible" stroke="#4A7FC1" stroke-opacity="0.3" stroke-dasharray="4,2" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr-cls-0"></path>
+<path d="M776.5 404L776.5 64" fill="none" pointer-events="visible" stroke="#4A7FC1" stroke-opacity="0.3" stroke-dasharray="4,2" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr-cls-0"></path>
+<path d="M-5 -5l191.4 0l0 26l-191.4 0Z" transform="translate(13 11)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#3c3c41" stroke-width="0" class="zr-cls-0"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:16px;font-family:Space Grotesk, system-ui, sans-serif;font-weight:600;" xml:space="preserve" y="8" transform="translate(13 11)" fill="#EAEEF5">S183 ingest-gate incident</text>
+<style ><![CDATA[
+.zr-cls-0:hover {
+pointer-events:none;
+}
+.zr-cls-1:hover {
+cursor:pointer;
+fill:rgba(81,139,212,1);
+}
+
+]]>
+
+</style>
+</svg>
+<!-- generated-by visual-engine v1.0.0 · echarts@6.1.0 · theme:project-theme · content-sha256:3028f4fb159688591df3c8b5e18162d08d6fbeefd9ae274e08b2f86b963be1e2 -->

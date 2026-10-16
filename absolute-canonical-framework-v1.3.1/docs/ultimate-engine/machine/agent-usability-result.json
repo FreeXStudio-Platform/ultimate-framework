@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "evaluated_on": "2026-09-01",
+  "input_boundary": "blueprints, figures, and JSON only; narrative documentation and implementation source excluded",
+  "red_pass": {
+    "answered": 4,
+    "total": 5,
+    "failed_question": "What does the subject enforce, in what order, and what protects each layer?",
+    "cause": "Six verifier sections redirected the reader to implementation source instead of carrying a protection claim."
+  },
+  "green_pass": {
+    "answered": 5,
+    "total": 5,
+    "questions": [
+      {"id": "components", "result": "YES", "source": "domain-model.json"},
+      {"id": "change_location", "result": "YES", "source": "extension-points.json"},
+      {"id": "change_risk", "result": "YES", "source": "module-dependencies.json"},
+      {"id": "enforcement", "result": "YES", "source": "verification-model.json"},
+      {"id": "runtime_sequence", "result": "YES", "source": "runtime-model.json"}
+    ]
+  },
+  "verdict": "Blueprint-first navigation is faster for the five structural questions and complete for this test; narrative documentation remains necessary for semantic nuance."
+}

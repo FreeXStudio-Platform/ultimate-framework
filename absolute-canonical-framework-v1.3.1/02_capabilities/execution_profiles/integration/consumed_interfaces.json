@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CAPABILITY.ROUTING",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.CAPABILITY.SELECT",
+      "name": "smallest sufficient capability selection",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.ROUTING",
+        "ABS.MODULE.CAPABILITY.CONNECTORS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_capability_select.schema.json"
+    }
+  ]
+}

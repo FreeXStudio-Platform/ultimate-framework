@@ -1,0 +1,46 @@
+{
+  "consumed": [
+    {
+      "interface_id": "ABS.IFACE.LIFECYCLE.TRANSITION",
+      "required": true,
+      "schema_ref": "schemas/abs_iface_lifecycle_transition.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.EVIDENCE.RECORD",
+      "required": true,
+      "schema_ref": "schemas/abs_iface_evidence_record.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.GATE.EVALUATE",
+      "required": true,
+      "schema_ref": "schemas/abs_iface_gate_evaluate.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.STATE.ATOMIC_UPDATE",
+      "required": true,
+      "schema_ref": "schemas/abs_iface_state_atomic_update.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.MODULE.PACKAGE",
+      "required": true,
+      "schema_ref": "schemas/abs_iface_module_package.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.WORK.PACKET",
+      "required": true,
+      "schema_ref": "schemas/abs_iface_work_packet.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.RECOVERY.CHECKPOINT",
+      "required": true,
+      "schema_ref": "schemas/abs_iface_recovery_checkpoint.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.IDENTITY.ALLOCATE",
+      "required": true,
+      "schema_ref": "schemas/abs_iface_identity_allocate.schema.json"
+    }
+  ],
+  "module_id": "ABS.MODULE.RUNTIME.EXECUTOR",
+  "schema_version": "1.0.0"
+}

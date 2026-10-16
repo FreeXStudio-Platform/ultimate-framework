@@ -1,0 +1,19 @@
+{
+  "gate": {
+    "findings": [],
+    "gate": "build+run_gates",
+    "ok": true
+  },
+  "header": {
+    "audience": "compliance",
+    "classification": "public",
+    "export_allowed": true,
+    "id": "REF-150",
+    "last_reviewed": "2026-09-07",
+    "owner": "framework-documentation",
+    "status": "approved",
+    "surface": "web",
+    "title": "Absolute Evidence Limitations and Audit Notes",
+    "variants": []
+  }
+}

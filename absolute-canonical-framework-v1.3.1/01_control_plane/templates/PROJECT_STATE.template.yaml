@@ -1,0 +1,10 @@
+schema_version: 1.0.0
+framework_id: ABS.FRAMEWORK.CANONICAL
+project_id: ABS.PROJECT.REPLACE_ME
+active_goal_id: ABS.GOAL.REPLACE_ME
+phase: DISCOVERY
+active_work_packet: ABS.WP.REPLACE_ME
+candidate_hash: sha256:0000000000000000000000000000000000000000000000000000000000000000
+status: ACTIVE
+rollback_ref: checkpoint:replace-me
+updated_at: '2026-08-13T18:00:00Z'

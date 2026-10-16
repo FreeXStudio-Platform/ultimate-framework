@@ -1,0 +1,19 @@
+{
+  "schema": "absolute.release_identity_migration.v1",
+  "baseline": {
+    "release_id": "ABS.RELEASE.1.0.0-RC1",
+    "version": "1.0.0-rc.1",
+    "role": "IMMUTABLE_INPUT_BASELINE",
+    "clean_zip_sha256": "0cbe85257f2ad8f2496b4f25de1b1dfbe7576c5031d9be2ec3f9635752672827",
+    "build_evidence_zip_sha256": "bb563878423dedec4cae8580ff8f289a0fb35aa74936c35e77c019741af2ec11"
+  },
+  "successor": {
+    "release_id": "ABS.RELEASE.1.0.0",
+    "candidate_id": "ABS.CANDIDATE.1.0.0",
+    "version": "1.0.0",
+    "package_root": "absolute-canonical-framework-v1.0.0-rc.2"
+  },
+  "supersession": "RC2 is the proposed active successor; RC1 remains immutable provenance and rollback baseline.",
+  "in_place_rename_of_rc1": false,
+  "rc1_mutated": false
+}

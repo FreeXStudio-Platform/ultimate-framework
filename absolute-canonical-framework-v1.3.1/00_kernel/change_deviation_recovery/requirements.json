@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.001",
+      "concept_id": "ABS.CONCEPT.CHANGE_DEVIATION_RECOVERY",
+      "statement": "Material changes shall have an impact set, checkpoint, rollback route, and revalidation plan before execution.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.002",
+      "concept_id": "ABS.CONCEPT.CHANGE_DEVIATION_RECOVERY",
+      "statement": "A change shall invalidate affected and transitive evidence, parity stamps, derivatives, indexes, and compatibility claims.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.003",
+      "concept_id": "ABS.CONCEPT.CHANGE_DEVIATION_RECOVERY",
+      "statement": "Detected deviation shall stop the affected route, preserve evidence, restore or re-plan from the last valid point, and revalidate the repaired scope.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

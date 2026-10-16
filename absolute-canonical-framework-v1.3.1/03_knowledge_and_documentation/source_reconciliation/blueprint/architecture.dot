@@ -1,0 +1,12 @@
+digraph module {
+graph [rankdir=LR,bgcolor="transparent",pad="0.2"];
+node [shape=box,style="rounded",fontname="Arial",fontsize=10];
+edge [fontname="Arial",fontsize=9];
+input [label="Governed inputs"]; gate [label="Authority + policy",shape=diamond]; op [label="Source admission, lineage, no-loss reconciliation, and supersession"]; evidence [label="Evidence + checks",shape=diamond]; output [label="Validated output"];
+input -> gate [label="scope + identity"]; gate -> op [label="authorized"]; op -> evidence [label="claims"]; evidence -> output [label="pass / truthful state"]; evidence -> op [label="finding",style=dashed];
+c0 [label="Consumes\nTRUTH.CLASSIFY",shape=note];
+c0 -> input [style=dotted];
+p0 [label="Provides\nSOURCE.ADMIT",shape=note];
+output -> p0 [style=dotted];
+label="ABS.MODULE.KNOWLEDGE.RECONCILIATION: Which concepts survive each source, why, and where is every disposition?";
+}

@@ -1,0 +1,293 @@
+{
+  "binding_scope": "C0-C19_PREBUILD_SOURCE_TREE_NON_CIRCULAR",
+  "candidate_id": "ABS.CANDIDATE.1.3.0",
+  "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+  "delivery_gate": {
+    "gate_id": "C20",
+    "status": "EXTERNAL_HANDOFF_REQUIRED"
+  },
+  "evaluated_at": "2026-09-07T11:38:18Z",
+  "framework_id": "ABS.FRAMEWORK.CANONICAL",
+  "gates": [
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C0.json",
+      "evidence_sha256": "c4ab96dfae4a22ec4b75ac387d73b0f35f50654f5a30780312ac52ce79e3bf6d",
+      "gate_id": "C0",
+      "gate_name": "Bootstrap Integrity",
+      "prerequisites": [],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C1.json",
+      "evidence_sha256": "a5226a3d5aff353acdfc5d34333f2079f302ea7d37ff26c835e12df8d205e313",
+      "gate_id": "C1",
+      "gate_name": "Capability Truth",
+      "prerequisites": [
+        "C0"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C2.json",
+      "evidence_sha256": "01bcd5e7c073eede0aec5ae59d9305dfcba09f573fb6bab38e68f445574979d0",
+      "gate_id": "C2",
+      "gate_name": "Source Admission",
+      "prerequisites": [
+        "C1"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C3.json",
+      "evidence_sha256": "6f9c7b9cdc93807bff1c5b6c5fe9c2c5f0eb344d013e7bc8b06e815fdf524b1e",
+      "gate_id": "C3",
+      "gate_name": "Nested Coverage",
+      "prerequisites": [
+        "C2"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C4.json",
+      "evidence_sha256": "2a04e56bd7ca37db31113614c5f686382983a775c96eafda9751ca23bd8f6bcb",
+      "gate_id": "C4",
+      "gate_name": "Execution Continuity",
+      "prerequisites": [
+        "C3"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C5.json",
+      "evidence_sha256": "16734601c23fb936ee2eca1e43eb3c9ec7a6cb4c0f724a4daf276a469378515f",
+      "gate_id": "C5",
+      "gate_name": "Lineage Integrity",
+      "prerequisites": [
+        "C4"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C6.json",
+      "evidence_sha256": "c6096f462101e8a5b49b10638628807d49bc7af6caad058a6990a045bdaeab59",
+      "gate_id": "C6",
+      "gate_name": "Coverage Baseline",
+      "prerequisites": [
+        "C5"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C7.json",
+      "evidence_sha256": "24b77aa06712bb51566d74df8de480ea8974e1057034b03f291f7d0dbc05f4bd",
+      "gate_id": "C7",
+      "gate_name": "Knowledge No-Loss",
+      "prerequisites": [
+        "C6"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C8.json",
+      "evidence_sha256": "9567f1c9d02b2a5f9aea4a40977ff3dcfc72fb3f183323489a516b4b1969448d",
+      "gate_id": "C8",
+      "gate_name": "Synthesis Quality",
+      "prerequisites": [
+        "C7"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C9.json",
+      "evidence_sha256": "b792b8d4cf0c6fc9ebef76593fcc15c5f94968229f9c5b7e5e5deeea1a22cec0",
+      "gate_id": "C9",
+      "gate_name": "Architecture Completeness",
+      "prerequisites": [
+        "C8"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C10.json",
+      "evidence_sha256": "38e6312b164272b18374820d1f6aa630c9fb845523ae776ff3105b95b2adbc71",
+      "gate_id": "C10",
+      "gate_name": "Executable Surface Closure",
+      "prerequisites": [
+        "C9"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C11.json",
+      "evidence_sha256": "de7d5e4d61edf783c91f36acfd391efc9e17b6d66940cf87030e243f0494d4d4",
+      "gate_id": "C11",
+      "gate_name": "Control and Configuration Integrity",
+      "prerequisites": [
+        "C10"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C12.json",
+      "evidence_sha256": "6d9f5cc2198493460ca7816821894b92e1764fdcd27308a38d869d99483503b7",
+      "gate_id": "C12",
+      "gate_name": "Representation Parity",
+      "prerequisites": [
+        "C11"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C13.json",
+      "evidence_sha256": "e1cb23b00292ba426f075c28b6eb9eddd8de062d34f3e7af0881604c7ed2aa7d",
+      "gate_id": "C13",
+      "gate_name": "External Tool Truth",
+      "prerequisites": [
+        "C12"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C14.json",
+      "evidence_sha256": "2972192e567f276783e70359d3888d5b231dbf27ff99cb2e304c8cb4d1d724f4",
+      "gate_id": "C14",
+      "gate_name": "Operational Assurance",
+      "prerequisites": [
+        "C13"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C15.json",
+      "evidence_sha256": "330ecab3620e3ad50f017eea5ab91b6db25ab2a884dfd3d1cfde0f58d6071020",
+      "gate_id": "C15",
+      "gate_name": "Simulation Conformance",
+      "prerequisites": [
+        "C14"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C16.json",
+      "evidence_sha256": "a68cf7656eaf5f2d2950df5c551a59657c52fb8be0c2d9b2a257cbf2256596cc",
+      "gate_id": "C16",
+      "gate_name": "Findings Integrity",
+      "prerequisites": [
+        "C15"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C17.json",
+      "evidence_sha256": "511081bf8b38cadb0dcc403ea43692cb81d58b86adf3f83517960a5faa9e73d7",
+      "gate_id": "C17",
+      "gate_name": "Remediation Candidate",
+      "prerequisites": [
+        "C16"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C18.json",
+      "evidence_sha256": "4f801b64144b76100c3eac4ed781554991412c499b700fafb5b0ad3c4d5a234b",
+      "gate_id": "C18",
+      "gate_name": "Revalidated Release Candidate",
+      "prerequisites": [
+        "C17"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    },
+    {
+      "bypass": false,
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "evidence_ref": ".absolute/release/gate_evidence/C19.json",
+      "evidence_sha256": "9fb653aa3dc2b8ba97d5967c219a95f8c4add8e90f7252c19448922b3bf02e61",
+      "gate_id": "C19",
+      "gate_name": "Coverage Closure",
+      "prerequisites": [
+        "C18"
+      ],
+      "required_check_state": "PASS",
+      "stale": false,
+      "status": "PASS"
+    }
+  ],
+  "release_id": "ABS.RELEASE.1.3.0",
+  "schema": "absolute.gate_binding.v1"
+}

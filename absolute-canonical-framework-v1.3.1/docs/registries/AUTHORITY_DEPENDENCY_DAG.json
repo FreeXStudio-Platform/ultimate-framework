@@ -1,0 +1,1463 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at_utc": "2026-08-13T17:42:10Z",
+  "nodes": [
+    "ABS.MODULE.KERNEL.GOAL_LOCK",
+    "ABS.MODULE.KERNEL.IDENTITY",
+    "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+    "ABS.MODULE.KERNEL.LIFECYCLE",
+    "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+    "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+    "ABS.MODULE.CONTROL.STATE",
+    "ABS.MODULE.CONTROL.WORK",
+    "ABS.MODULE.CONTROL.SESSIONS",
+    "ABS.MODULE.CONTROL.DECISIONS",
+    "ABS.MODULE.CONTROL.RELEASE",
+    "ABS.MODULE.CAPABILITY.MANAGER",
+    "ABS.MODULE.CAPABILITY.SKILLS",
+    "ABS.MODULE.CAPABILITY.CONNECTORS",
+    "ABS.MODULE.CAPABILITY.ROUTING",
+    "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+    "ABS.MODULE.KNOWLEDGE.PARITY",
+    "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+    "ABS.MODULE.KNOWLEDGE.VISUALS",
+    "ABS.MODULE.KNOWLEDGE.GRAPH",
+    "ABS.MODULE.ENFORCEMENT.CORE",
+    "ABS.MODULE.ENFORCEMENT.SECURITY",
+    "ABS.MODULE.ENFORCEMENT.TESTING",
+    "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+    "ABS.MODULE.ARCHITECTURE.MODULARITY",
+    "ABS.MODULE.ADAPTERS.PLATFORMS",
+    "ABS.MODULE.PROFILES.PROJECT",
+    "ABS.MODULE.ADDON.KNOWLEDGE",
+    "ABS.MODULE.ADDON.OPERATIONS",
+    "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+    "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+    "ABS.PROFILE.PROJECT.AUDITHUNT",
+    "ABS.MODULE.RUNTIME.EXECUTOR"
+  ],
+  "edges": [
+    {
+      "source": "ABS.MODULE.CONTROL.STATE",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.STATE",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.STATE",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.STATE",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.STATE",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.STATE",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.WORK",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.WORK",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.WORK",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.WORK",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.WORK",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.WORK",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.SESSIONS",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.SESSIONS",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.SESSIONS",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.SESSIONS",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.SESSIONS",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.SESSIONS",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.DECISIONS",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.DECISIONS",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.DECISIONS",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.DECISIONS",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.DECISIONS",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.DECISIONS",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.RELEASE",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.RELEASE",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.RELEASE",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.RELEASE",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.RELEASE",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CONTROL.RELEASE",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.MANAGER",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.MANAGER",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.MANAGER",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.MANAGER",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.MANAGER",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.MANAGER",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.MANAGER",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.MANAGER",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.MANAGER",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.MANAGER",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.SKILLS",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.SKILLS",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.SKILLS",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.SKILLS",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.SKILLS",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.SKILLS",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.SKILLS",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.SKILLS",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.SKILLS",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.SKILLS",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.ROUTING",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.ROUTING",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.ROUTING",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.ROUTING",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.ROUTING",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.ROUTING",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.ROUTING",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.ROUTING",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.ROUTING",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.CAPABILITY.ROUTING",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.CORE",
+      "target": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "target": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "target": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "target": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.ENFORCEMENT.CORE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "target": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.ENFORCEMENT.CORE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.PROFILES.PROJECT",
+      "target": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.ENFORCEMENT.CORE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "target": "ABS.MODULE.PROFILES.PROJECT",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.ENFORCEMENT.CORE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.ADDON.OPERATIONS",
+      "target": "ABS.MODULE.PROFILES.PROJECT",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.ENFORCEMENT.CORE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "target": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "target": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "target": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "target": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "target": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "target": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "target": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "target": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "target": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "target": "ABS.MODULE.CONTROL.SESSIONS",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "target": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    },
+    {
+      "source": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "target": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "type": "AUTHORITY_DEPENDS_ON"
+    }
+  ],
+  "acyclic": true,
+  "authority_rule": "Edges point from a lower-authority consumer to an earlier-authority dependency; generated views and adapters never become upstream authority."
+}

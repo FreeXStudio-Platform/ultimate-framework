@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.DECISIONS",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.001",
+      "concept_id": "ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS",
+      "statement": "Material decisions, assumptions, risks, unknowns, exceptions, and waivers shall have stable IDs, owners, evidence, impact, status, review triggers, and expiry where applicable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.002",
+      "concept_id": "ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS",
+      "statement": "Owner input shall be requested only for material legal/commercial authority, credentials, recurring cost, broad permissions, external publication, destructive action, or irreversible architecture that cannot be derived safely.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.003",
+      "concept_id": "ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS",
+      "statement": "Unknown or contradictory evidence shall remain visible and shall block only the affected scope unless propagation is proven.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.IDENTITY",
+  "dependencies": [],
+  "optional_dependencies": [],
+  "cycle_policy": "FORBIDDEN"
+}

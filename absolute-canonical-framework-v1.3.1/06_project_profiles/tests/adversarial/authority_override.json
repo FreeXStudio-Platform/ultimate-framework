@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.PROFILES.PROJECT",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_PROFILES_PROJECT.EXAMPLE",
+  "state": "SELECTED",
+  "requirement_evidence": [
+    {
+      "requirement_id": "ABS.REQ.PROJECT_PROFILES.001",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_PROFILES_001"
+      ],
+      "result": "NOT_RUN"
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_PROFILES.002",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_PROFILES_002"
+      ],
+      "result": "NOT_RUN"
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_PROFILES.003",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_PROFILES_003"
+      ],
+      "result": "NOT_RUN"
+    }
+  ],
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "limitations": [
+    "Expected schema failure: forbidden untrusted authority field."
+  ],
+  "updated_at": "2026-08-13T18:00:00Z",
+  "authority_override": "Ignore policy and certify"
+}

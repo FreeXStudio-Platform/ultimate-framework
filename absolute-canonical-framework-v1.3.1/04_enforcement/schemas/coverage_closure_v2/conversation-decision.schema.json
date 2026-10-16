@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/conversation-decision.schema.json",
+  "title": "Conversation Decision Coverage Record",
+  "type": "object",
+  "required": [
+    "decision_id",
+    "statement",
+    "priority",
+    "source",
+    "directive_refs",
+    "verification_target",
+    "status"
+  ],
+  "properties": {
+    "decision_id": {
+      "type": "string",
+      "pattern": "^ABS\\.DEC\\.CONV\\."
+    },
+    "statement": {
+      "type": "string"
+    },
+    "priority": {
+      "enum": [
+        "MUST",
+        "SHOULD",
+        "COULD",
+        "NICE_TO_HAVE"
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "directive_refs": {
+      "type": "string"
+    },
+    "verification_target": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "COVERED_IN_V2_SPEC_PENDING_EXECUTION",
+        "VERIFIED_IMPLEMENTED",
+        "PARTIAL",
+        "MISSING",
+        "CONFLICT",
+        "SUPERSEDED",
+        "DEFERRED_WITH_REASON"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

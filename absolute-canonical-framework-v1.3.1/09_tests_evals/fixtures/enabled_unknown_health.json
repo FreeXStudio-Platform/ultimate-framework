@@ -1,0 +1,7 @@
+{
+  "activation_state": "ENABLED",
+  "health": {
+    "state": "UNKNOWN",
+    "checked_at": null
+  }
+}

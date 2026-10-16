@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "ABS.PROFILE.AUDITHUNT",
+  "downstream_project_type": "AUDITHUNT",
+  "mode": "INSTALLATION_MAPPING_ONLY",
+  "may_modify_project": false,
+  "may_certify_project": false,
+  "requires_fresh_discovery": true,
+  "requires_shadow_installation": true,
+  "requires_project_specific_independent_verification": true,
+  "forbidden_imports": [
+    "builder chats",
+    "raw Absolute source packages",
+    "framework evidence archive",
+    "stale AuditHunt facts"
+  ]
+}

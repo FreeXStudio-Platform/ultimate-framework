@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.PROFILE.PROJECT.AUDITHUNT",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.001",
+      "concept_id": "ABS.CONCEPT.AUDITHUNT_INSTALLATION_PROFILE",
+      "statement": "The framework release shall include an AuditHunt installation profile that maps reusable framework modules and adapters without importing AuditHunt implementation or history.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "applicable_profiles": [
+        "audithunt"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.002",
+      "concept_id": "ABS.CONCEPT.AUDITHUNT_INSTALLATION_PROFILE",
+      "statement": "The profile shall not claim AuditHunt facts, modify AuditHunt, certify AuditHunt, or expose restricted AuditHunt evidence; all project-specific state remains externally supplied and verified.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "applicable_profiles": [
+        "audithunt"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.003",
+      "concept_id": "ABS.CONCEPT.AUDITHUNT_INSTALLATION_PROFILE",
+      "statement": "Installation shall be reversible, profile-scoped, versioned, and validated against an explicitly provided AuditHunt baseline in a separate authorized program.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "applicable_profiles": [
+        "audithunt"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

@@ -1,0 +1,21 @@
+{
+  "allow_replace": false,
+  "authority_basis": {
+    "deep_verification_status": "PASS",
+    "no_loss_status": "PASS",
+    "predecessor_candidate_tree_sha256": "add66854e3b89daa077e6a5dabd9c913385fe39f7a8b0f888e87c0a5e04ca866"
+  },
+  "authority_scope": "SUCCESSOR_CANDIDATE_ONLY",
+  "authorized_action": "BUILD_CLEAN_SUCCESSOR_RELEASE",
+  "candidate_id": "ABS.CANDIDATE.1.3.0",
+  "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+  "framework_id": "ABS.FRAMEWORK.CANONICAL",
+  "issued_at": "2026-09-07T11:38:18Z",
+  "release_id": "ABS.RELEASE.1.3.0",
+  "rollback_required_on_replace": true,
+  "schema": "absolute.release_authority.v1",
+  "self_certification": false,
+  "source_tree_mutation": false,
+  "status": "RELEASE_INTERNALLY_VERIFIED_INDEPENDENT_CERTIFICATION_PENDING",
+  "version": "1.3.0"
+}

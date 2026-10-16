@@ -1,0 +1,10 @@
+digraph module {
+graph [rankdir=LR,bgcolor="transparent",pad="0.2"];
+node [shape=box,style="rounded",fontname="Arial",fontsize=10];
+edge [fontname="Arial",fontsize=9];
+input [label="Governed inputs"]; gate [label="Authority + policy",shape=diamond]; op [label="Goal lock and mission alignment"]; evidence [label="Evidence + checks",shape=diamond]; output [label="Validated output"];
+input -> gate [label="scope + identity"]; gate -> op [label="authorized"]; op -> evidence [label="claims"]; evidence -> output [label="pass / truthful state"]; evidence -> op [label="finding",style=dashed];
+p0 [label="Provides\nGOAL_LINK.VALIDATE",shape=note];
+output -> p0 [style=dotted];
+label="ABS.MODULE.KERNEL.GOAL_LOCK: Why is this action allowed, and which approved goal does it advance?";
+}

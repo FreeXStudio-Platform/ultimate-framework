@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.EVIDENCE.RECORD",
+      "name": "evidence creation and binding",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "consumer_modules": [
+        "ABS.MODULE.ENFORCEMENT.TESTING",
+        "ABS.MODULE.CONTROL.RELEASE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_evidence_record.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.GATE.EVALUATE",
+      "name": "truthful gate evaluation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.RELEASE",
+        "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_gate_evaluate.schema.json"
+    }
+  ]
+}

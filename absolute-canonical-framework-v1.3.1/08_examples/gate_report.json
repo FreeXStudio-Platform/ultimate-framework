@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "gate_id": "ABS.GATE.EXAMPLE.01",
+  "scope": [
+    "ABS.SCOPE.EXAMPLE.SHADOW_INSTALL"
+  ],
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "required_checks": [
+    "baseline preserved",
+    "validator pass"
+  ],
+  "checks_run": [
+    "baseline preserved",
+    "validator pass"
+  ],
+  "counts": {
+    "pass": 2,
+    "fail": 0,
+    "blocked": 0,
+    "not_run": 0,
+    "inconclusive": 0,
+    "stale": 0
+  },
+  "evidence_ids": [
+    "ABS.EVIDENCE.EXAMPLE.SHADOW_INSTALL"
+  ],
+  "findings": [],
+  "waivers": [],
+  "verifier": "example_gate_operator",
+  "decision": "PASS",
+  "rationale": "Both required checks have evidence in this synthetic example; the zero hash remains non-release evidence."
+}

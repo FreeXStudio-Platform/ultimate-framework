@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ADDON.OPERATIONS",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_OPERATIONS.001",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_OPERATIONS",
+      "statement": "Portfolio operations, curriculum/learning, notifications, dashboards, DesignOps, FinOps, compliance operations, and advanced release operations shall remain optional modules or enterprise-profile additions.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.OPERATIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_OPERATIONS.002",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_OPERATIONS",
+      "statement": "Each add-on shall declare activation threshold, cost, data/permission boundary, dependencies, canonical state relationship, validation, fallback, and removal path.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.OPERATIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_OPERATIONS.003",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_OPERATIONS",
+      "statement": "Optional add-ons shall not expand the kernel, block minimal-profile operation, or become an independent source of truth.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.OPERATIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

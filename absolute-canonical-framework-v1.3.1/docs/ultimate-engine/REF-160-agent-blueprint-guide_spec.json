@@ -1,0 +1,103 @@
+[
+  {
+    "caption": "Read order for an agent restricted to blueprints, figures, and JSON.",
+    "code": "flowchart TB\n  Start[\"Start with machine/document-index.json\"] --> Components[\"domain-model.json\"]\n  Components --> Dependencies[\"module-dependencies.json\"]\n  Dependencies --> Runtime[\"runtime-model.json\"]\n  Runtime --> Change[\"extension-points.json\"]\n  Change --> ReleaseModel[\"release-model.json\"]\n  ReleaseModel --> Evidence[\"evaluation-baseline.json\"]\n  Evidence --> Interactive[\"graphs/structure/graph.json\"]",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/ultimate-engine/machine/document-index.json",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "agent-navigation",
+    "insight": "The machine index routes from component identity to dependencies, runtime order, extension points, the release model, and the interactive file graph without requiring prose.",
+    "kind": "mermaid",
+    "reader_question": "How should a fresh agent navigate the generated structural layer?",
+    "title": "Blueprint-first navigation"
+  },
+  {
+    "caption": "One means the named structural artifact is the one REF-160's routing table assigns to that question and the file is present and non-empty; zero means it is not.",
+    "col_labels": [
+      "domain_model",
+      "module_dependencies",
+      "extension_points",
+      "verification_model",
+      "runtime_model",
+      "release_model"
+    ],
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/ultimate-engine/machine/document-index.json",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "height": 430,
+    "id": "question-coverage",
+    "insight": "The pack assigns at least one direct machine source to every required question, including the release-versioning question 1.3.0 added; the 2026-09-01 test independently checked whether the first five assignments were sufficient.",
+    "kind": "heatmap",
+    "matrix": [
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "max_value": 1,
+    "min_value": 0,
+    "reader_question": "Can the blueprint pack answer the six agent-usability questions without prose?",
+    "row_labels": [
+      "components",
+      "change_location",
+      "risk",
+      "enforcement",
+      "runtime_order",
+      "release"
+    ],
+    "title": "Blueprint-only question coverage",
+    "width": 1000
+  }
+]

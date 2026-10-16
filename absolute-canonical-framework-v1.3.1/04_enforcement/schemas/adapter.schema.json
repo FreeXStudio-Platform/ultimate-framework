@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:absolute:schema:adapter:1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "adapter_id",
+    "name",
+    "version",
+    "host",
+    "status",
+    "authority",
+    "preflight_required",
+    "permissions_default",
+    "interface_mappings",
+    "unsupported_behaviors",
+    "fallbacks",
+    "conformance_state",
+    "rollback"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "adapter_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "host": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "CANDIDATE",
+        "ACTIVE",
+        "DEGRADED",
+        "DEPRECATED"
+      ]
+    },
+    "authority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "preflight_required": {
+      "type": "boolean"
+    },
+    "permissions_default": {
+      "enum": [
+        "READ_ONLY",
+        "NO_ACCESS"
+      ]
+    },
+    "interface_mappings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "interface_id",
+          "mapping",
+          "state"
+        ],
+        "properties": {
+          "interface_id": {
+            "type": "string",
+            "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+          },
+          "mapping": {
+            "type": "string",
+            "minLength": 1
+          },
+          "state": {
+            "enum": [
+              "UNTESTED",
+              "SUPPORTED",
+              "PARTIAL",
+              "UNSUPPORTED"
+            ]
+          }
+        }
+      }
+    },
+    "unsupported_behaviors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "fallbacks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "conformance_state": {
+      "enum": [
+        "UNTESTED",
+        "PREFLIGHTED",
+        "CONFORMANT",
+        "DEGRADED",
+        "INCOMPATIBLE"
+      ]
+    },
+    "rollback": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

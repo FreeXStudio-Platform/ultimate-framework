@@ -1,0 +1,8 @@
+digraph module {
+graph [rankdir=LR,bgcolor="transparent",pad="0.2"];
+node [shape=box,style="rounded",fontname="Arial",fontsize=10];
+edge [fontname="Arial",fontsize=9];
+input [label="Governed inputs"]; gate [label="Authority + policy",shape=diamond]; op [label="Minimal, standard, enterprise, and downstream profiles"]; evidence [label="Evidence + checks",shape=diamond]; output [label="Validated output"];
+input -> gate [label="scope + identity"]; gate -> op [label="authorized"]; op -> evidence [label="claims"]; evidence -> output [label="pass / truthful state"]; evidence -> op [label="finding",style=dashed];
+label="ABS.MODULE.PROFILES.PROJECT: What is the smallest profile satisfying project scale and risk?";
+}

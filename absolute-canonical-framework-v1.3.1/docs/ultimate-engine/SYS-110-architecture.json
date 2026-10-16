@@ -1,0 +1,19 @@
+{
+  "gate": {
+    "findings": [],
+    "gate": "build+run_gates",
+    "ok": true
+  },
+  "header": {
+    "audience": "agents",
+    "classification": "public",
+    "export_allowed": true,
+    "id": "SYS-110",
+    "last_reviewed": "2026-09-07",
+    "owner": "framework-documentation",
+    "status": "approved",
+    "surface": "repo",
+    "title": "Absolute Architecture and Domain Map",
+    "variants": []
+  }
+}

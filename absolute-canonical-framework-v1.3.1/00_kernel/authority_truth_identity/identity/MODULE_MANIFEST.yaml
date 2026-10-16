@@ -1,0 +1,82 @@
+module_id: ABS.MODULE.KERNEL.IDENTITY
+name: Project identity and isolation
+version: 1.0.0
+schema_version: 1.0.0
+framework_release: 1.3.1
+status: CANDIDATE
+purpose: Project identity and isolation
+scope:
+  includes:
+  - Builder program, framework, release, profile, adapter, module, and downstream project identities shall use distinct
+    stable namespaces.
+  - Cross-project material shall enter only through an explicit import decision with provenance, scope, confidentiality,
+    and compatibility checks.
+  - Identity conflicts or ambiguous active project scope shall block affected writes until reconciled.
+  excludes: &id001
+  - provider-specific authority unless this is an adapter
+  - raw secrets or hidden credentials
+  - completion claims without exact evidence
+  - direct editing of generated derivatives
+responsibilities:
+- load identity, mission, scope, and current authority
+- evaluate the invariant against the proposed action or claim
+- block, permit, or require a governed decision
+- record evidence and exact state
+- invalidate and rerun when scope, source, policy, or hash changes
+non_responsibilities: *id001
+owned_concepts:
+- ABS.CONCEPT.PROJECT_IDENTITY
+requirements:
+- ABS.REQ.PROJECT_IDENTITY.001
+- ABS.REQ.PROJECT_IDENTITY.002
+- ABS.REQ.PROJECT_IDENTITY.003
+provided_interfaces:
+- ABS.IFACE.IDENTITY.ALLOCATE
+consumed_interfaces: []
+dependencies: []
+security_classification: INTERNAL
+representations:
+  narrative: REQUIRED
+  blueprint: REQUIRED
+  machine_spec: APPLICABLE
+  visual_spec: APPLICABLE
+  plain_english: REQUIRED
+  quick_reference: REQUIRED
+  tests: REQUIRED
+applicability_reasons:
+  machine_spec: States, requirements, evidence, and transitions require deterministic validation.
+  visual_spec: Which entity is acting, and can its identity be confused with another layer?
+canonical_paths:
+  narrative: MODULE.md
+  manifest: MODULE_MANIFEST.yaml
+  requirements: requirements.json
+  blueprint: blueprint/BLUEPRINT.md
+  visual_source: blueprint/architecture.dot
+  visual_output: blueprint/architecture.svg
+  visual_manifest: blueprint/visual_manifest.json
+  machine_schema: machine/contract.schema.json
+  machine_policy: machine/policy.json
+  positive_fixture: tests/positive/valid_instance.json
+  negative_fixture: tests/negative/missing_evidence.json
+  adversarial_fixture: tests/adversarial/authority_override.json
+  plain_english: publication/plain_english.md
+  quick_reference: publication/quick_reference.md
+verification:
+  candidate_hash: null
+  gate_ids:
+  - ABS.GATE.G7
+  - ABS.GATE.G8
+  - ABS.GATE.G9
+  evidence_ids: []
+  independent_status: PENDING
+  invalidation_triggers:
+  - requirement
+  - schema
+  - policy
+  - interface
+  - security
+  - candidate_hash
+owner: framework_module_owner
+reviewers:
+- fresh_semantic_verifier
+- independent_adversarial_verifier

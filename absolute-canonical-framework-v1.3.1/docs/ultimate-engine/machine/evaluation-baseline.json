@@ -1,0 +1,34 @@
+{
+  "captured_at": "2026-09-01T09:12:11Z",
+  "engine_health": {
+    "command": "PYTHONPATH=engine ENGINE_HOST_ROOT=subject python3 -m tools.health --root subject --json --no-run-log",
+    "exit_code": 1,
+    "fail": 28,
+    "pass": 3,
+    "skip": 7,
+    "total": 38
+  },
+  "engine_targeted": {
+    "blueprint_verify_exit_code": 1,
+    "corpus_check_exit_code": 1,
+    "docgen_check_exit_code": 1,
+    "graphify_exit_code": 0,
+    "graphify_links": 636,
+    "graphify_nodes": 637
+  },
+  "subject_declared_environment": {
+    "deep_verify": {
+      "checks": 2688,
+      "exit_code": 1,
+      "findings": 35,
+      "sections_passed": 8,
+      "sections_total": 10
+    },
+    "run_all_exit_code": 1
+  },
+  "source_evidence": [
+    "../evaluation-evidence/baseline-engine-health.txt",
+    "../evaluation-evidence/baseline-engine-targeted.txt",
+    "../evaluation-evidence/baseline-subject-verification-declared-env.txt"
+  ]
+}

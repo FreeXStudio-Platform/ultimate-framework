@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:absolute:abs_module_knowledge_reconciliation:contract:1.0.0",
+  "title": "Source admission, lineage, no-loss reconciliation, and supersession Contract Instance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "module_id",
+    "scope_id",
+    "state",
+    "requirement_evidence",
+    "candidate_hash",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "module_id": {
+      "const": "ABS.MODULE.KNOWLEDGE.RECONCILIATION"
+    },
+    "scope_id": {
+      "type": "string",
+      "pattern": "^ABS\\.SCOPE\\."
+    },
+    "state": {
+      "enum": [
+        "RAW",
+        "ADMITTED",
+        "CLASSIFIED",
+        "CONCEPT_MAPPED",
+        "CANDIDATE_CANONICAL",
+        "APPROVED",
+        "SUPERSEDED",
+        "QUARANTINED"
+      ]
+    },
+    "requirement_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "requirement_id",
+          "evidence_ids",
+          "result"
+        ],
+        "properties": {
+          "requirement_id": {
+            "enum": [
+              "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.001",
+              "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.002",
+              "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.003"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^ABS\\.EVIDENCE\\."
+            }
+          },
+          "result": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "BLOCKED",
+              "NOT_RUN",
+              "INCONCLUSIVE",
+              "STALE"
+            ]
+          }
+        }
+      }
+    },
+    "candidate_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

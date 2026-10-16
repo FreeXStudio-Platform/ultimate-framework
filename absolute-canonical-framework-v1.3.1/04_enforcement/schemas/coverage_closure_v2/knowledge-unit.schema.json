@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/knowledge-unit.schema.json",
+  "title": "Absolute Knowledge Unit V2",
+  "type": "object",
+  "required": [
+    "knowledge_unit_id",
+    "unit_type",
+    "normalized_meaning",
+    "source_refs",
+    "rc_mapping_state"
+  ],
+  "properties": {
+    "knowledge_unit_id": {
+      "type": "string",
+      "pattern": "^ABS\\.KU\\."
+    },
+    "unit_type": {
+      "enum": [
+        "REQUIREMENT",
+        "INVARIANT",
+        "DEFINITION",
+        "DECISION",
+        "REJECTED_ALTERNATIVE",
+        "EXCEPTION",
+        "FAILURE_MODE",
+        "STATE",
+        "TRANSITION",
+        "INTERFACE_RULE",
+        "SURFACE_RULE",
+        "GATE_RULE",
+        "CONFIGURATION_RULE",
+        "SCHEMA_FIELD",
+        "SECURITY_RULE",
+        "PERMISSION_BOUNDARY",
+        "TEST_OBLIGATION",
+        "SIMULATION_OBLIGATION",
+        "RECOVERY_OBLIGATION",
+        "LIMITATION",
+        "PROCEDURE",
+        "PACKAGING_RULE",
+        "PUBLICATION_RULE",
+        "VISUAL_SEMANTIC",
+        "ADOPTION_TRIGGER",
+        "MIGRATION_RULE",
+        "OWNER_DECISION",
+        "KNOWN_WRONG_ROAD",
+        "OTHER"
+      ]
+    },
+    "normalized_meaning": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "authority": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "location": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_hash": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "duplicate_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "conflicts_with": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rc_mapping_state": {
+      "enum": [
+        "PRESERVED_EXACT",
+        "PRESERVED_NORMALIZED",
+        "PRESERVED_AS_PARENT_RULE",
+        "PRESERVED_AS_SPECIALIZATION",
+        "MOVED_TO_ADAPTER",
+        "MOVED_TO_PROFILE",
+        "MOVED_TO_OPTIONAL_ADDON",
+        "SUPERSEDED_WITH_JUSTIFICATION",
+        "REJECTED_WITH_JUSTIFICATION",
+        "DEFERRED_WITH_TRIGGER",
+        "MISSING_FROM_RC1",
+        "DISTORTED_IN_RC1",
+        "WRONG_SCOPE_IN_RC1",
+        "UNSUPPORTED_ADDITION",
+        "UNKNOWN_REQUIRES_REVIEW"
+      ]
+    },
+    "rc_target_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,14 @@
+digraph module {
+graph [rankdir=LR,bgcolor="transparent",pad="0.2"];
+node [shape=box,style="rounded",fontname="Arial",fontsize=10];
+edge [fontname="Arial",fontsize=9];
+input [label="Governed inputs"]; gate [label="Authority + policy",shape=diamond]; op [label="Connectors, MCP, plugins, and external systems"]; evidence [label="Evidence + checks",shape=diamond]; output [label="Validated output"];
+input -> gate [label="scope + identity"]; gate -> op [label="authorized"]; op -> evidence [label="claims"]; evidence -> output [label="pass / truthful state"]; evidence -> op [label="finding",style=dashed];
+c0 [label="Consumes\nCAPABILITY.SELECT",shape=note];
+c0 -> input [style=dotted];
+c1 [label="Consumes\nSECURITY.AUTHORIZE",shape=note];
+c1 -> input [style=dotted];
+p0 [label="Provides\nCONNECTOR.INVOKE",shape=note];
+output -> p0 [style=dotted];
+label="ABS.MODULE.CAPABILITY.CONNECTORS: Is this external system available, safe, and authorized now?";
+}

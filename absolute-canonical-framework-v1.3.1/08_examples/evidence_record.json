@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "evidence_id": "ABS.EVIDENCE.EXAMPLE.SHADOW_INSTALL",
+  "supports": [
+    "ABS.WP.EXAMPLE.0001"
+  ],
+  "producer": "deterministic_validator",
+  "independent_verifier": null,
+  "method": "Run structural validation against the isolated example tree.",
+  "environment": {
+    "python": "3.13",
+    "validator": "1.0.0"
+  },
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "inputs": {
+    "profile": "ABS.PROFILE.STANDARD"
+  },
+  "raw_output_location": "validation/example-shadow.json",
+  "timestamp": "2026-08-13T18:00:00Z",
+  "result": "NOT_RUN",
+  "expected_result": "Validator passes and active baseline hash remains unchanged.",
+  "limitations": [
+    "Synthetic example; no runtime host was inspected."
+  ],
+  "reproduction": [
+    "python 04_enforcement/validators/absolute_validate.py ."
+  ],
+  "invalidation_trigger": "Any profile, schema, validator, or candidate-hash change.",
+  "classification": "INTERNAL"
+}

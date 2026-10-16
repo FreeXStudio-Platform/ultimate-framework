@@ -1,0 +1,29 @@
+{
+  "schema": "absolute.coverage_closure.v3.legacy_gate_map.v1",
+  "canonical_gate_model": "C0-C20",
+  "mapping": [
+    {"legacy_id": "C0_RAW_BYTE_ADMISSION", "canonical_id": "C0"},
+    {"legacy_id": "C1_CAPABILITY_PREFLIGHT", "canonical_id": "C1"},
+    {"legacy_id": "C2_SOURCE_FRONTIER", "canonical_id": "C2"},
+    {"legacy_id": "C3_RECURSIVE_INSPECTION", "canonical_id": "C3"},
+    {"legacy_id": null, "canonical_id": "C4", "note": "missing in prior chain; explicitly reconstructed"},
+    {"legacy_id": null, "canonical_id": "C5", "note": "missing in prior chain; explicitly reconstructed"},
+    {"legacy_id": null, "canonical_id": "C6", "note": "missing in prior chain; explicitly reconstructed"},
+    {"legacy_id": "C7_NO_LOSS_AND_PROVENANCE", "canonical_id": "C7"},
+    {"legacy_id": "C8_SYNTHESIS_QUALITY", "canonical_id": "C8"},
+    {"legacy_id": "C9_ARCHITECTURE_SCOPE", "canonical_id": "C9"},
+    {"legacy_id": "C10_EXECUTABLE_SURFACE", "canonical_id": "C10"},
+    {"legacy_id": "C11_GATE_CONFIGURATION", "canonical_id": "C11"},
+    {"legacy_id": "C12_REPRESENTATION_PARITY", "canonical_id": "C12"},
+    {"legacy_id": "C13_EXTERNAL_TOOL_TRUTH", "canonical_id": "C13"},
+    {"legacy_id": "C14_SECURITY_RECOVERY_REPRODUCIBILITY", "canonical_id": "C14"},
+    {"legacy_id": "C15_SIMULATION", "canonical_id": "C15"},
+    {"legacy_id": null, "canonical_id": "C16", "note": "prior C16 incorrectly represented second-deep verification"},
+    {"legacy_id": null, "canonical_id": "C17", "note": "prior C17 incorrectly represented handoff"},
+    {"legacy_id": null, "canonical_id": "C18", "note": "prior C18 represented external certification, not V3 transitive revalidation"},
+    {"legacy_id": "C16_SECOND_DEEP_PASS", "canonical_id": "C19"},
+    {"legacy_id": "C17_CERTIFICATION_HANDOFF", "canonical_id": "C20"},
+    {"legacy_id": "C18_INDEPENDENT_CERTIFICATION", "canonical_id": null, "note": "external certification boundary; not a canonical internal V3 gate"}
+  ],
+  "duplicate_active_gate_creation": false
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "session_id": "ABS.SESSION.EXAMPLE.0001",
+  "program_state_version": "1.0.0",
+  "active_work_packet": "ABS.WP.EXAMPLE.0001",
+  "candidate_hash_before": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "candidate_hash_after": null,
+  "completed_atomic_units": [],
+  "partial_units": [
+    "shadow directory not yet created"
+  ],
+  "files_changed": [],
+  "checks_run": [
+    "entry baseline verified"
+  ],
+  "failed_or_not_run": [
+    "profile validation NOT_RUN"
+  ],
+  "findings_opened": [],
+  "findings_closed": [],
+  "capability_state_changes": [],
+  "rollback_point": "checkpoint:example-before-install",
+  "context_status": "HEALTHY",
+  "exact_next_packet": "ABS.WP.EXAMPLE.0001",
+  "exact_first_next_action": "Create the isolated shadow directory from the selected profile allowlist."
+}

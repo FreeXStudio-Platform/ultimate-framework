@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.SOURCE.ADMIT",
+      "name": "safe source admission and reconciliation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "consumer_modules": [
+        "ABS.MODULE.KERNEL.AUTHORITY_TRUTH"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_source_admit.schema.json"
+    }
+  ]
+}

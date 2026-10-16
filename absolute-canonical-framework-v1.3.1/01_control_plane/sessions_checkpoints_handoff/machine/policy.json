@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.SESSIONS",
+  "policy_version": "1.0.0",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_CONTROL_SESSIONS.OPERATING_CONTRACT",
+  "truth_scope": [
+    "ABS.CONCEPT.SESSIONS_HANDOFF"
+  ],
+  "default_action": "DENY_UNLESS_SCOPE_AUTHORITY_PERMISSION_AND_EVIDENCE_ARE_VALID",
+  "rules": [
+    {
+      "rule_id": "ABS.MODULE.CONTROL.SESSIONS.RULE.001",
+      "requirement_id": "ABS.REQ.SESSIONS_HANDOFF.001",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    },
+    {
+      "rule_id": "ABS.MODULE.CONTROL.SESSIONS.RULE.002",
+      "requirement_id": "ABS.REQ.SESSIONS_HANDOFF.002",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    },
+    {
+      "rule_id": "ABS.MODULE.CONTROL.SESSIONS.RULE.003",
+      "requirement_id": "ABS.REQ.SESSIONS_HANDOFF.003",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    }
+  ],
+  "states": [
+    "HEALTHY",
+    "CHECKPOINT_REQUIRED",
+    "FRESH_CONTEXT_REQUIRED",
+    "PAUSED_SAFE",
+    "RESUMED"
+  ],
+  "transitions": [
+    {
+      "from": "HEALTHY",
+      "to": "CHECKPOINT_REQUIRED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "CHECKPOINT_REQUIRED",
+      "to": "FRESH_CONTEXT_REQUIRED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "FRESH_CONTEXT_REQUIRED",
+      "to": "PAUSED_SAFE",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "PAUSED_SAFE",
+      "to": "RESUMED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    }
+  ],
+  "fail_closed_on": [
+    "handoff omits identity, hash, or exact next action",
+    "missing authority",
+    "stale evidence",
+    "semantic contradiction"
+  ],
+  "recovery": [
+    "stop affected action",
+    "restore checkpoint or safe state",
+    "repair canonical source/policy",
+    "rerun transitive checks"
+  ],
+  "approval_boundary": [
+    "external_write",
+    "destructive_action",
+    "credential_access",
+    "publication",
+    "financial_commitment",
+    "permission_expansion"
+  ],
+  "invalidation_triggers": [
+    "requirement_change",
+    "schema_change",
+    "policy_change",
+    "interface_change",
+    "security_change",
+    "candidate_hash_change"
+  ]
+}

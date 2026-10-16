@@ -1,0 +1,12 @@
+{
+  "decision": "PASS",
+  "evidence_ids": [],
+  "counts": {
+    "pass": 1,
+    "fail": 0,
+    "blocked": 0,
+    "not_run": 0,
+    "inconclusive": 0,
+    "stale": 0
+  }
+}

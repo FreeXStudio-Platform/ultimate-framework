@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.RELEASE",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.RELEASE.ASSEMBLE",
+      "name": "allowlist release assembly and manifesting",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.RELEASE",
+      "consumer_modules": [
+        "ABS.MODULE.ENFORCEMENT.CORE",
+        "ABS.MODULE.ENFORCEMENT.SECURITY"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_release_assemble.schema.json"
+    }
+  ]
+}

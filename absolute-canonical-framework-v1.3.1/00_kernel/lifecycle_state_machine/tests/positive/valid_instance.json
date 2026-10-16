@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.LIFECYCLE",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_KERNEL_LIFECYCLE.EXAMPLE",
+  "state": "DISCOVERY",
+  "requirement_evidence": [
+    {
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.001",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_LIFECYCLE_TWO_PASS_001"
+      ],
+      "result": "NOT_RUN"
+    },
+    {
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.002",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_LIFECYCLE_TWO_PASS_002"
+      ],
+      "result": "NOT_RUN"
+    },
+    {
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.003",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_LIFECYCLE_TWO_PASS_003"
+      ],
+      "result": "NOT_RUN"
+    }
+  ],
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "limitations": [
+    "Synthetic example; zero hash cannot support release."
+  ],
+  "updated_at": "2026-08-13T18:00:00Z"
+}

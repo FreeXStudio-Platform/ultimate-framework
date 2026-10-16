@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.WORK",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.WORK_REGISTRY.001",
+      "concept_id": "ABS.CONCEPT.WORK_REGISTRY",
+      "statement": "Every work item shall have stable identity, bounded objective, parent goal, scope, dependencies, permissions, rollback, acceptance criteria, checks, evidence, owner, verifier, and truthful status.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.WORK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.WORK_REGISTRY.002",
+      "concept_id": "ABS.CONCEPT.WORK_REGISTRY",
+      "statement": "Progress shall be computed only from weighted work that has passed its required verification; planned or implemented-only work shall not count as verified completion.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.WORK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.WORK_REGISTRY.003",
+      "concept_id": "ABS.CONCEPT.WORK_REGISTRY",
+      "statement": "Duplicate, obsolete, rejected, blocked, deferred, superseded, and rolled-back work shall remain in history with explicit disposition.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.WORK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

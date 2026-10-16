@@ -1,0 +1,14 @@
+{
+  "_readme": "Pinned lint/type baseline, gated by tools.health SUITE-04. It exists because OG-02's error count drifted across three different values in three documents over two phases, with nothing measuring it \u2014 and because this session's own edits silently took ruff from 22 to 26 before a manual measurement caught it. A number nobody compares is decoration.",
+  "measured": "2026-08-21",
+  "invocations": {
+    "ruff": "uvx ruff check tools/",
+    "mypy": "uvx mypy --strict tools/"
+  },
+  "max_errors": {
+    "ruff": 0,
+    "mypy_strict": 22
+  },
+  "_mypy_note": "The 22 remaining mypy --strict errors are annotation debt with no behavioural consequence: missing generic parameters on `dict`, `Returning Any` from json.loads boundaries, and one absent third-party stub (weasyprint, an optional PDF-only dependency). The classes that COULD bite were fixed 2026-08-20: `Path / None` in engine_config (7 errors, a real TypeError at import time on a config with a null value) and three in tools/health/checks.py. This ceiling may only go DOWN; SUITE-04 fails if a run exceeds it. Lowered 23 -> 22 on 2026-08-21 when the counter-example suite landed and a stale `type: ignore` went with it.",
+  "_ruff_note": "Zero is the pin, not a baseline to live with. Reached 2026-08-20 by fixing two real bugs (an undefined `RoutedEdge` annotation, two ambiguous implicit string concatenations inside list literals) plus safe autofixes."
+}

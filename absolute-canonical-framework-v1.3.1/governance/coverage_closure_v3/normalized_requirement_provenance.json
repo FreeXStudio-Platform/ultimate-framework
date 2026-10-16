@@ -1,0 +1,2097 @@
+{
+  "baseline_provenance": {
+    "meaning": "RC1 labels in identifiers or prose are historical/provenance references, not successor identity.",
+    "release_id": "ABS.RELEASE.1.0.0-RC1",
+    "role": "IMMUTABLE_INPUT_BASELINE"
+  },
+  "requirement_count": 102,
+  "requirements": [
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[31]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.AUDITHUNT_INSTALLATION_PROFILE",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[2]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.AUTHORITY_TRUTH",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[15]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.CANONICAL_MODULE_PACKAGE",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[11]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.CAPABILITY_MANAGER",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[5]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.CHANGE_DEVIATION_RECOVERY",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[13]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.CONNECTORS_MCP",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[9]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[16]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.DOCUMENT_BLUEPRINT_PARITY",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[4]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.EVIDENCE_GATES_HEALTH",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[0]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.GOAL_LOCK",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[30]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.INDEPENDENT_VERIFICATION",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[3]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.LIFECYCLE_TWO_PASS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[10]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.RELEASE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.MANIFEST_RELEASE",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[14]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.ROUTING",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.MODEL_ROUTING",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[24]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.MODULAR_ARCHITECTURE",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[23]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.OBSERVABILITY_INCIDENT",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[28]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.ADDON.OPERATIONS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.OPTIONAL_OPERATIONS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[27]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.OPTIONAL_RAG_GRAPH",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[25]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.PLATFORM_ADAPTERS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[1]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.IDENTITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.PROJECT_IDENTITY",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[26]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.PROFILES.PROJECT",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.PROJECT_PROFILES",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[6]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.STATE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.PROJECT_STATE",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[17]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[19]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.REGISTRIES_GRAPH_CONTEXT",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[20]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.SCHEMAS_VALIDATORS_HOOKS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[21]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[8]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.SESSIONS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.SESSIONS_HANDOFF",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[12]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.SKILLS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.SKILLS_DELEGATION",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[29]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.SOURCE_ADMISSION_RECONCILIATION",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[22]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.TEST_EVALUATION",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[18]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.VISUAL_RENDERING",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[7]"
+      },
+      "canonical_record_sha256": "5eecf7f9845f4169c3db42071ead3656a9e88fc39bc6f4a23f51600d89f6ebf4",
+      "direct_evidence_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.WORK",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CONCEPT.WORK_REGISTRY",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/05_platform_adapters/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "cb710699112c474b5cbcd42e41a2b56274a941835f8b8914c1108f2b2378cc66",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.PLATFORM_ADAPTERS.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PLATFORM_ADAPTERS_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PLATFORM_ADAPTERS.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PLATFORM_ADAPTERS_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PLATFORM_ADAPTERS.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PLATFORM_ADAPTERS_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/07_optional_addons/knowledge_extensions/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "bb613ddd0a4eebb8c404566f51c822aae465389eb6e6161d082ab8013a9903ea",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_RAG_GRAPH.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_RAG_GRAPH_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_RAG_GRAPH.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_RAG_GRAPH_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_RAG_GRAPH.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_RAG_GRAPH_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/07_optional_addons/operations_extensions/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "1b659b20efeb59fd210d92deadc067ec701ea18bfe23f29743fe3277da925a43",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_OPERATIONS.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_OPERATIONS_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_OPERATIONS.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_OPERATIONS_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_OPERATIONS.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_OPERATIONS_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.ADDON.OPERATIONS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.ADDON.OPERATIONS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/core_invariants/modularity/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "ca5da75810b97507b8b31b7d5f7a32f3fa24b98e55a13d70eed2439fe67dcc37",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.MODULAR_ARCHITECTURE.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODULAR_ARCHITECTURE_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MODULAR_ARCHITECTURE.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODULAR_ARCHITECTURE_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MODULAR_ARCHITECTURE.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODULAR_ARCHITECTURE_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/connectors_mcp/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "c8209f92f1f56dc066d3b042b7b7418217b27f221c67af41c4ef1f6a955437b5",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.CONNECTORS_MCP.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CONNECTORS_MCP_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CONNECTORS_MCP.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CONNECTORS_MCP_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CONNECTORS_MCP.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CONNECTORS_MCP_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/capability_manager/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "b3d42697e5029fcf38655b5fa8bdc57de05fba273f469fc5c688d83fd7e1950a",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.CAPABILITY_MANAGER.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CAPABILITY_MANAGER_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CAPABILITY_MANAGER.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CAPABILITY_MANAGER_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CAPABILITY_MANAGER.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CAPABILITY_MANAGER_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.CAPABILITY.MANAGER",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/execution_profiles/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "22f29cb4171553dd960b9e4716ee569458383d67e897e0dbce67409b244a26e8",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.MODEL_ROUTING.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODEL_ROUTING_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MODEL_ROUTING.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODEL_ROUTING_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MODEL_ROUTING.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODEL_ROUTING_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.ROUTING",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.CAPABILITY.ROUTING",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/skills/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "cf3cc7ec8c993e96056e467ef3506c5014d58f2aa0673b0346952606fca80310",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.SKILLS_DELEGATION.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SKILLS_DELEGATION_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SKILLS_DELEGATION.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SKILLS_DELEGATION_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SKILLS_DELEGATION.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SKILLS_DELEGATION_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.SKILLS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.CAPABILITY.SKILLS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/decisions_risks_unknowns/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "8166d3ae6b298e7548209b7d344e07fcf688068cd556e5a1f9d2008030705f1d",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.DECISIONS_RISKS_UNKNOWNS.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DECISIONS_RISKS_UNKNOWNS_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.DECISIONS_RISKS_UNKNOWNS.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DECISIONS_RISKS_UNKNOWNS_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.DECISIONS_RISKS_UNKNOWNS.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DECISIONS_RISKS_UNKNOWNS_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.CONTROL.DECISIONS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/manifests_releases/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "d4c6d87c83c72b7238323108b4357c106465ee9d9f66614318c7b5d97fead3a1",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.MANIFEST_RELEASE.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MANIFEST_RELEASE_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MANIFEST_RELEASE.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MANIFEST_RELEASE_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MANIFEST_RELEASE.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MANIFEST_RELEASE_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.RELEASE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.CONTROL.RELEASE",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/sessions_checkpoints_handoff/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "95a918dfc9348797c3dddcb2be63270315f143779ad6e76ba46bb2f72114347b",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.SESSIONS_HANDOFF.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SESSIONS_HANDOFF_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SESSIONS_HANDOFF.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SESSIONS_HANDOFF_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SESSIONS_HANDOFF.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SESSIONS_HANDOFF_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.SESSIONS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.CONTROL.SESSIONS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/project_state/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "d290ae92a8e2065550e4c76f81687f791b2e6ee27ad44b197677ad9e04f24bfe",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.PROJECT_STATE.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_STATE_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_STATE.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_STATE_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_STATE.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_STATE_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.STATE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.CONTROL.STATE",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/work_registry/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "dc4299a35045920f98c0446e7d50da1b4bf3587595a4eab820aefee1cec55fc6",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.WORK_REGISTRY.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_WORK_REGISTRY_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.WORK_REGISTRY.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_WORK_REGISTRY_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.WORK_REGISTRY.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_WORK_REGISTRY_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.WORK",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.CONTROL.WORK",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/04_enforcement/schemas_validators_hooks/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "26a365aec85f6a26e26a1b0ec3b7fc1d7f62abe688427de265cbcd121b36381c",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SCHEMAS_VALIDATORS_HOOKS_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SCHEMAS_VALIDATORS_HOOKS_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SCHEMAS_VALIDATORS_HOOKS_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.ENFORCEMENT.CORE",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/04_enforcement/observability/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "9e318f6e52b25c61193a620d09d23c61668c95cc4232bf671e7d4a8ab122a8a7",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.OBSERVABILITY_INCIDENT.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OBSERVABILITY_INCIDENT_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OBSERVABILITY_INCIDENT.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OBSERVABILITY_INCIDENT_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OBSERVABILITY_INCIDENT.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OBSERVABILITY_INCIDENT_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/04_enforcement/security_controls/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "b2ce4d92bdc41c794e4bef978ee01c4bb8cd7952ccb5d31d3e3a6a4bb2a2846b",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.SECURITY_PRIVACY_INJECTION.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SECURITY_PRIVACY_INJECTION_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SECURITY_PRIVACY_INJECTION.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SECURITY_PRIVACY_INJECTION_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SECURITY_PRIVACY_INJECTION.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SECURITY_PRIVACY_INJECTION_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/09_tests_evals/evaluation_harness/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "062cdc3621d955d90e8ad9eefc0a1b5e96122df52f90ff2bf07f7926ea758b58",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.TEST_EVALUATION.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_TEST_EVALUATION_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.TEST_EVALUATION.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_TEST_EVALUATION_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.TEST_EVALUATION.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_TEST_EVALUATION_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/authority_truth_identity/authority_truth/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "05544a179647bcdee348cf2f7ed0169c837a18ab298aae4b86f2b424433dd1de",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.AUTHORITY_TRUTH.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUTHORITY_TRUTH_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.AUTHORITY_TRUTH.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUTHORITY_TRUTH_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.AUTHORITY_TRUTH.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUTHORITY_TRUTH_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/change_deviation_recovery/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "401b1599f3732b788401a58a1e352bd968971a6d7669f7cad738717fd6313fa8",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.CHANGE_DEVIATION_RECOVERY.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CHANGE_DEVIATION_RECOVERY_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CHANGE_DEVIATION_RECOVERY.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CHANGE_DEVIATION_RECOVERY_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CHANGE_DEVIATION_RECOVERY.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CHANGE_DEVIATION_RECOVERY_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/evidence_gate_health/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "6537615c5ab505c273fbedc16a198c0a54aa65b279d2030cfbc3ab665e6a089b",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.EVIDENCE_GATES_HEALTH.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_EVIDENCE_GATES_HEALTH_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.EVIDENCE_GATES_HEALTH.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_EVIDENCE_GATES_HEALTH_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.EVIDENCE_GATES_HEALTH.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_EVIDENCE_GATES_HEALTH_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/mission_and_goal_lock/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "d7ea3cb071fd651e151c7f9af9af6e5ebd045acf6df9c14463e15c5820feee94",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.GOAL_LOCK.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_GOAL_LOCK_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.GOAL_LOCK.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_GOAL_LOCK_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.GOAL_LOCK.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_GOAL_LOCK_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/authority_truth_identity/identity/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "8c6a5338b9cb23357b92e3e0a1ce7ddf53266d44b40772425e17a1ea3413427f",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.PROJECT_IDENTITY.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_IDENTITY_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_IDENTITY.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_IDENTITY_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_IDENTITY.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_IDENTITY_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.IDENTITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.IDENTITY",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/two_pass_completion/independent_verification/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "3571f79805dfd6d1eefc90db552a9f5e2abb2166acb8cb0dc1682c84ee998dd8",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.INDEPENDENT_VERIFICATION.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_INDEPENDENT_VERIFICATION_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.INDEPENDENT_VERIFICATION.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_INDEPENDENT_VERIFICATION_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.INDEPENDENT_VERIFICATION.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_INDEPENDENT_VERIFICATION_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/lifecycle_state_machine/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "5210e0f2a7ff7ba3c6dc868cd7b8fe5189b0ae01da0919ce59bf47eb3894a812",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.LIFECYCLE_TWO_PASS.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_LIFECYCLE_TWO_PASS_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.LIFECYCLE_TWO_PASS.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_LIFECYCLE_TWO_PASS_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.LIFECYCLE_TWO_PASS.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_LIFECYCLE_TWO_PASS_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/canonical_module_package/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "ffdad190062a2db80dca69f2704f67cdf8416ed62ee62b416d1ab53889075424",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.CANONICAL_MODULE_PACKAGE.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CANONICAL_MODULE_PACKAGE_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CANONICAL_MODULE_PACKAGE.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CANONICAL_MODULE_PACKAGE_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CANONICAL_MODULE_PACKAGE.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CANONICAL_MODULE_PACKAGE_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/registries_graph_context/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "499356cafdcffdd0d47644dcfa318a48a4b4bbd8f7b3d65fccba77437b9e616f",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.REGISTRIES_GRAPH_CONTEXT.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_REGISTRIES_GRAPH_CONTEXT_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.REGISTRIES_GRAPH_CONTEXT.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_REGISTRIES_GRAPH_CONTEXT_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.REGISTRIES_GRAPH_CONTEXT.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_REGISTRIES_GRAPH_CONTEXT_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/documentation_blueprints/parity/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "ac12c6ac8a65150ef9323f2e2a5e583c287bf029a07385a07c248cc76ed301be",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DOCUMENT_BLUEPRINT_PARITY_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DOCUMENT_BLUEPRINT_PARITY_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DOCUMENT_BLUEPRINT_PARITY_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/publication_profiles/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "c1771e6564a59bc440de6ffdf9a27a095d747000a27f05d51dce07c2504b04ec",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.PUBLICATION_CONFIDENTIALITY.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PUBLICATION_CONFIDENTIALITY_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PUBLICATION_CONFIDENTIALITY.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PUBLICATION_CONFIDENTIALITY_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PUBLICATION_CONFIDENTIALITY.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PUBLICATION_CONFIDENTIALITY_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/source_reconciliation/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "aa36965431a42baf23c85d2108f751da40b7210a1b99b90ea932a415b2ad455c",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SOURCE_ADMISSION_RECONCILIATION_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SOURCE_ADMISSION_RECONCILIATION_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SOURCE_ADMISSION_RECONCILIATION_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/rendering_visual_contracts/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "cba16153458ccda18f327913a6d4f4569f7c947d31d8829e05eb73bb5698cb72",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.VISUAL_RENDERING.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_VISUAL_RENDERING_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.VISUAL_RENDERING.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_VISUAL_RENDERING_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.VISUAL_RENDERING.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_VISUAL_RENDERING_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/06_project_profiles/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "a11c14b71aaea8064d0b31656f4798d78d1db197d0b35c428c2b07b6675cff15",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.PROJECT_PROFILES.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_PROFILES_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_PROFILES.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_PROFILES_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_PROFILES.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_PROFILES_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.MODULE.PROFILES.PROJECT",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.MODULE.PROFILES.PROJECT",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/06_project_profiles/audithunt/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "canonical_record_sha256": "9ebba5b9d5510b7c9f6cb04f4500dbe4bcbb717f40760240a982da0f75ee98cf",
+      "direct_evidence_values": [
+        "{'requirement_id': 'ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUDITHUNT_INSTALLATION_PROFILE_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUDITHUNT_INSTALLATION_PROFILE_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUDITHUNT_INSTALLATION_PROFILE_003'], 'result': 'NOT_RUN'}"
+      ],
+      "owner_module": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CANONICAL_REQUIREMENTS.json",
+        "pointer": "$.requirements[93]"
+      },
+      "canonical_record_sha256": "f5b9a52c79f10508e5660499e5b5851a6b459c1652a6bb5cfe78d43168bd8647",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.001",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CANONICAL_REQUIREMENTS.json",
+        "pointer": "$.requirements[94]"
+      },
+      "canonical_record_sha256": "f5b9a52c79f10508e5660499e5b5851a6b459c1652a6bb5cfe78d43168bd8647",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.002",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CANONICAL_REQUIREMENTS.json",
+        "pointer": "$.requirements[95]"
+      },
+      "canonical_record_sha256": "f5b9a52c79f10508e5660499e5b5851a6b459c1652a6bb5cfe78d43168bd8647",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.003",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/authority_truth_identity/authority_truth/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": "f71f6781e186887412aca25916d676b9d952f8a5ac45c7fd5daebd69666d01b8",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.001",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/authority_truth_identity/authority_truth/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": "f71f6781e186887412aca25916d676b9d952f8a5ac45c7fd5daebd69666d01b8",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.002",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/authority_truth_identity/authority_truth/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "canonical_record_sha256": "f71f6781e186887412aca25916d676b9d952f8a5ac45c7fd5daebd69666d01b8",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.003",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/canonical_module_package/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": "f5bee66d5436e45db90cfd5f830ba6248e3f7c6dbb5494c5373c0ab78a078cfe",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.001",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/canonical_module_package/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": "f5bee66d5436e45db90cfd5f830ba6248e3f7c6dbb5494c5373c0ab78a078cfe",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.002",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/canonical_module_package/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "canonical_record_sha256": "f5bee66d5436e45db90cfd5f830ba6248e3f7c6dbb5494c5373c0ab78a078cfe",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.003",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/capability_manager/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": "bfd32b3a56bd06a8c604a345a34d640de3a7f23ebb279b48c550fa1b1680c21c",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.001",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/capability_manager/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": "bfd32b3a56bd06a8c604a345a34d640de3a7f23ebb279b48c550fa1b1680c21c",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.002",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/capability_manager/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "canonical_record_sha256": "bfd32b3a56bd06a8c604a345a34d640de3a7f23ebb279b48c550fa1b1680c21c",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.003",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/change_deviation_recovery/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": "35360ce83739bd76fc7e35765e052d1a1572dba7cb84f04ac939034cae662191",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.001",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/change_deviation_recovery/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": "35360ce83739bd76fc7e35765e052d1a1572dba7cb84f04ac939034cae662191",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.002",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/change_deviation_recovery/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "canonical_record_sha256": "35360ce83739bd76fc7e35765e052d1a1572dba7cb84f04ac939034cae662191",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.003",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/connectors_mcp/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": "6766c797227cf65d6c34d6ac9b5d5d22e17f6c19c599b461f4b5c170e1d2f1b7",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.001",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/connectors_mcp/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": "6766c797227cf65d6c34d6ac9b5d5d22e17f6c19c599b461f4b5c170e1d2f1b7",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.002",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/connectors_mcp/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "canonical_record_sha256": "6766c797227cf65d6c34d6ac9b5d5d22e17f6c19c599b461f4b5c170e1d2f1b7",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.003",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/decisions_risks_unknowns/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": "0178eff5783c620af5caffc5e741087f0fc09e30ebcd9cec8706adb9a32a9ad7",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.001",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/decisions_risks_unknowns/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": "0178eff5783c620af5caffc5e741087f0fc09e30ebcd9cec8706adb9a32a9ad7",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.002",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/decisions_risks_unknowns/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "canonical_record_sha256": "0178eff5783c620af5caffc5e741087f0fc09e30ebcd9cec8706adb9a32a9ad7",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.003",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/documentation_blueprints/parity/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": "cd2a86cd5d6e8645d39ae68845633f423ccab64c3f722353f750f42b26194ae8",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.001",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/documentation_blueprints/parity/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": "cd2a86cd5d6e8645d39ae68845633f423ccab64c3f722353f750f42b26194ae8",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.002",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/documentation_blueprints/parity/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "canonical_record_sha256": "cd2a86cd5d6e8645d39ae68845633f423ccab64c3f722353f750f42b26194ae8",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.003",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/evidence_gate_health/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": "a0636f99778f2bc71d07f1c076f86c2769cff9df6837b724bdcfa8f8b97fd6dc",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.001",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/evidence_gate_health/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": "a0636f99778f2bc71d07f1c076f86c2769cff9df6837b724bdcfa8f8b97fd6dc",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.002",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/evidence_gate_health/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "canonical_record_sha256": "a0636f99778f2bc71d07f1c076f86c2769cff9df6837b724bdcfa8f8b97fd6dc",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.003",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/mission_and_goal_lock/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": "ee7130b5761a7ff46be8390a26b34fa560bd4af9eedf100dadebd8baefe063f7",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.GOAL_LOCK.001",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/mission_and_goal_lock/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": "ee7130b5761a7ff46be8390a26b34fa560bd4af9eedf100dadebd8baefe063f7",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.GOAL_LOCK.002",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/mission_and_goal_lock/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "canonical_record_sha256": "ee7130b5761a7ff46be8390a26b34fa560bd4af9eedf100dadebd8baefe063f7",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.GOAL_LOCK.003",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/two_pass_completion/independent_verification/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": "129f1974a55e2dddb3281735d6a6416e8eb837ae1277a9bfc1dad4a8063f4b37",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.INDEPENDENT_VERIFICATION.001",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/two_pass_completion/independent_verification/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": "129f1974a55e2dddb3281735d6a6416e8eb837ae1277a9bfc1dad4a8063f4b37",
+      "direct_evidence_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "owner_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.REQ.INDEPENDENT_VERIFICATION.002",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": false,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": "806aa91655b9c8958f4a06d4f00bc2f92b31eeea476807f2ef5c3cb692044432",
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "requirement_level_reciprocal_provenance"
+      ],
+      "family": "requirement_level_reciprocal_provenance",
+      "owner_module": "Evidence/lineage owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0097",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": "806aa91655b9c8958f4a06d4f00bc2f92b31eeea476807f2ef5c3cb692044432",
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "concept_candidate_final_assignment_coherence"
+      ],
+      "family": "concept_candidate_final_assignment_coherence",
+      "owner_module": "Canonical synthesis owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0098",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[2]"
+      },
+      "canonical_record_sha256": "806aa91655b9c8958f4a06d4f00bc2f92b31eeea476807f2ef5c3cb692044432",
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "gate_bound_release_authority_and_rollback"
+      ],
+      "family": "gate_bound_release_authority_and_rollback",
+      "owner_module": "Release/governance owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0099",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[3]"
+      },
+      "canonical_record_sha256": "806aa91655b9c8958f4a06d4f00bc2f92b31eeea476807f2ef5c3cb692044432",
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "archive_identity_path_collision_and_ratio_safety"
+      ],
+      "family": "archive_identity_path_collision_and_ratio_safety",
+      "owner_module": "Security/intake owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0100",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[4]"
+      },
+      "canonical_record_sha256": "806aa91655b9c8958f4a06d4f00bc2f92b31eeea476807f2ef5c3cb692044432",
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "configuration_precedence_and_conflict_closure"
+      ],
+      "family": "configuration_precedence_and_conflict_closure",
+      "owner_module": "Configuration/governance owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0101",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[5]"
+      },
+      "canonical_record_sha256": "806aa91655b9c8958f4a06d4f00bc2f92b31eeea476807f2ef5c3cb692044432",
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "projection_ci_supply_chain_and_recovery_governance"
+      ],
+      "family": "projection_ci_supply_chain_and_recovery_governance",
+      "owner_module": "Projection/operations owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0102",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    }
+  ],
+  "schema": "absolute.coverage_closure.requirement_provenance.v1",
+  "scope": "RC2_SUCCESSOR_ONLY",
+  "successor_release_id": "ABS.RELEASE.1.0.0-RC2"
+}

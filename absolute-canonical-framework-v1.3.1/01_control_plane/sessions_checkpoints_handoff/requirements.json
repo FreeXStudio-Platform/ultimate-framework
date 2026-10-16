@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.SESSIONS",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.SESSIONS_HANDOFF.001",
+      "concept_id": "ABS.CONCEPT.SESSIONS_HANDOFF",
+      "statement": "Sessions shall load durable program/project state, active work packet, relevant context pack, baseline hashes, capability health, and rollback before changes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.SESSIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SESSIONS_HANDOFF.002",
+      "concept_id": "ABS.CONCEPT.SESSIONS_HANDOFF",
+      "statement": "Session close shall persist changed files, checks, failures, findings, state revisions, checkpoint, exact next packet, and a transcript-independent handoff.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.SESSIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SESSIONS_HANDOFF.003",
+      "concept_id": "ABS.CONCEPT.SESSIONS_HANDOFF",
+      "statement": "Context limits or provider interruption shall trigger checkpoint-and-resume rather than lower truth, safety, or completion standards.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.SESSIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

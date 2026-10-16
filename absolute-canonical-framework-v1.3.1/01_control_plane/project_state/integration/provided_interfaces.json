@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.STATE",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.STATE.ATOMIC_UPDATE",
+      "name": "atomic canonical state update",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.STATE",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.WORK",
+        "ABS.MODULE.CONTROL.DECISIONS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_state_atomic_update.schema.json"
+    }
+  ]
+}

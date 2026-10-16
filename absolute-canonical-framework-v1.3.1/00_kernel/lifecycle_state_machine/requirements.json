@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.LIFECYCLE",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.001",
+      "concept_id": "ABS.CONCEPT.LIFECYCLE_TWO_PASS",
+      "statement": "The framework kernel shall define a provider-independent lifecycle from intake through release and complete, including truthful blocked, failed, recovering, cancelled, stale, and inconclusive routes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.002",
+      "concept_id": "ABS.CONCEPT.LIFECYCLE_TWO_PASS",
+      "statement": "Pass 1 shall construct the complete bounded candidate; Pass 2 shall review the frozen whole, close gaps, optimize without reducing required behavior, and rerun affected checks.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.003",
+      "concept_id": "ABS.CONCEPT.LIFECYCLE_TWO_PASS",
+      "statement": "Downstream profiles may refine gate granularity but shall map losslessly to the kernel lifecycle and may not bypass release or evidence gates.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

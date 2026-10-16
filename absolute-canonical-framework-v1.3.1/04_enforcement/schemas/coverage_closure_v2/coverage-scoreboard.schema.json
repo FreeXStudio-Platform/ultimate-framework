@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/coverage-scoreboard.schema.json",
+  "title": "Absolute Coverage Closure Scoreboard V2",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "assurance_tier",
+    "denominators",
+    "metrics",
+    "hard_failures",
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "assurance_tier": {
+      "enum": [
+        "T0_UNSCOPED",
+        "T1_ARTIFACT_VERIFIED",
+        "T2_ACCESSIBLE_SOURCE_COMPLETE",
+        "T3_SESSION_EXTERNAL_SURFACE_AND_SIMULATION_COMPLETE",
+        "T4_CROSS_PROVIDER_EXACT_HASH_CERTIFIED"
+      ]
+    },
+    "denominators": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "integer",
+          "number",
+          "null"
+        ]
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    "hard_failures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked_surfaces": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "INCONCLUSIVE",
+        "STALE"
+      ]
+    },
+    "candidate_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,276 @@
+{
+  "artifacts": [
+    {
+      "id": "GUIDE-100",
+      "path": "docs/ultimate-engine/GUIDE-100-project-guide.html",
+      "type": "document",
+      "title": "Project guide",
+      "section": "Ultimate Engine documentation",
+      "summary": "Strict-built governed documentation for Absolute Canonical Framework 1.3.0",
+      "tags": [
+        "absolute-framework",
+        "ultimate-engine",
+        "documentation"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "docgen"
+    },
+    {
+      "id": "SYS-110",
+      "path": "docs/ultimate-engine/SYS-110-architecture.html",
+      "type": "document",
+      "title": "System architecture",
+      "section": "Ultimate Engine documentation",
+      "summary": "Strict-built governed documentation for Absolute Canonical Framework 1.3.0",
+      "tags": [
+        "absolute-framework",
+        "ultimate-engine",
+        "documentation"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "docgen"
+    },
+    {
+      "id": "SYS-120",
+      "path": "docs/ultimate-engine/SYS-120-runtime-enforcement.html",
+      "type": "document",
+      "title": "Runtime enforcement",
+      "section": "Ultimate Engine documentation",
+      "summary": "Strict-built governed documentation for Absolute Canonical Framework 1.3.0",
+      "tags": [
+        "absolute-framework",
+        "ultimate-engine",
+        "documentation"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "docgen"
+    },
+    {
+      "id": "REF-130",
+      "path": "docs/ultimate-engine/REF-130-extension-points.html",
+      "type": "document",
+      "title": "Extension points",
+      "section": "Ultimate Engine documentation",
+      "summary": "Strict-built governed documentation for Absolute Canonical Framework 1.3.0",
+      "tags": [
+        "absolute-framework",
+        "ultimate-engine",
+        "documentation"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "docgen"
+    },
+    {
+      "id": "GUIDE-140",
+      "path": "docs/ultimate-engine/GUIDE-140-operations-verification.html",
+      "type": "document",
+      "title": "Operations and verification",
+      "section": "Ultimate Engine documentation",
+      "summary": "Strict-built governed documentation for Absolute Canonical Framework 1.3.0",
+      "tags": [
+        "absolute-framework",
+        "ultimate-engine",
+        "documentation"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "docgen"
+    },
+    {
+      "id": "REF-150",
+      "path": "docs/ultimate-engine/REF-150-evidence-limitations.html",
+      "type": "document",
+      "title": "Evidence and limitations",
+      "section": "Ultimate Engine documentation",
+      "summary": "Strict-built governed documentation for Absolute Canonical Framework 1.3.0",
+      "tags": [
+        "absolute-framework",
+        "ultimate-engine",
+        "documentation"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "docgen"
+    },
+    {
+      "id": "REF-160",
+      "path": "docs/ultimate-engine/REF-160-agent-blueprint-guide.html",
+      "type": "document",
+      "title": "Agent blueprint guide",
+      "section": "Ultimate Engine documentation",
+      "summary": "Strict-built governed documentation for Absolute Canonical Framework 1.3.0",
+      "tags": [
+        "absolute-framework",
+        "ultimate-engine",
+        "documentation"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "docgen"
+    },
+    {
+      "id": "MERMAID-document-rail",
+      "path": "docs/ultimate-engine/graphs/rendered/document-rail.svg",
+      "type": "mermaid",
+      "title": "document-rail",
+      "section": "Architecture graphs",
+      "summary": "Deterministically rendered Mermaid architecture graph",
+      "tags": [
+        "absolute-framework",
+        "architecture",
+        "mermaid"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "mermaid-engine"
+    },
+    {
+      "id": "MERMAID-domain-dependencies",
+      "path": "docs/ultimate-engine/graphs/rendered/domain-dependencies.svg",
+      "type": "mermaid",
+      "title": "domain-dependencies",
+      "section": "Architecture graphs",
+      "summary": "Deterministically rendered Mermaid architecture graph",
+      "tags": [
+        "absolute-framework",
+        "architecture",
+        "mermaid"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "mermaid-engine"
+    },
+    {
+      "id": "MERMAID-project-rail",
+      "path": "docs/ultimate-engine/graphs/rendered/project-rail.svg",
+      "type": "mermaid",
+      "title": "project-rail",
+      "section": "Architecture graphs",
+      "summary": "Deterministically rendered Mermaid architecture graph",
+      "tags": [
+        "absolute-framework",
+        "architecture",
+        "mermaid"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "mermaid-engine"
+    },
+    {
+      "id": "GRAPH-STRUCTURE",
+      "path": "docs/ultimate-engine/graphs/structure/graph-view.html",
+      "type": "graph",
+      "title": "Interactive tracked-file structure graph",
+      "section": "Architecture graphs",
+      "summary": "Interactive graph backed by the complete graphify model",
+      "tags": [
+        "absolute-framework",
+        "structure",
+        "interactive"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "graphify"
+    },
+    {
+      "id": "BLUEPRINT-SYSTEM",
+      "path": "blueprint/SYSTEM.md",
+      "type": "map",
+      "title": "Executable system blueprint",
+      "section": "Architecture blueprints",
+      "summary": "Derived Python container, module, dependency, surface, and completeness map",
+      "tags": [
+        "absolute-framework",
+        "blueprint",
+        "python"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "blueprint"
+    },
+    {
+      "id": "BLUEPRINT-LAYOUT",
+      "path": "blueprint/system.layout.svg",
+      "type": "diagram",
+      "title": "Executable package dependency layout",
+      "section": "Architecture blueprints",
+      "summary": "ELK auto-layout accepted by docgen collision rules",
+      "tags": [
+        "absolute-framework",
+        "blueprint",
+        "dependencies"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "blueprint"
+    },
+    {
+      "id": "DOCS-INDEX",
+      "path": "docs/ultimate-engine/DOCS_INDEX.html",
+      "type": "document",
+      "title": "Documentation index",
+      "section": "Ultimate Engine documentation",
+      "summary": "Generated navigation index for the eight governed documents",
+      "tags": [
+        "absolute-framework",
+        "documentation",
+        "index"
+      ],
+      "status": "review",
+      "created": "2026-09-01",
+      "updated": "2026-09-07",
+      "engine": "docgen"
+    },
+    {
+      "id": "GUIDE-170",
+      "path": "docs/ultimate-engine/GUIDE-170-repository-release.html",
+      "type": "document",
+      "title": "Repository, versioning and release operations",
+      "section": "Ultimate Engine documentation",
+      "summary": "Strict-built governed documentation for Absolute Canonical Framework 1.3.0",
+      "tags": [
+        "absolute-framework",
+        "ultimate-engine",
+        "documentation"
+      ],
+      "status": "review",
+      "created": "2026-09-07",
+      "updated": "2026-09-07",
+      "engine": "docgen"
+    },
+    {
+      "id": "MERMAID-release-pipeline",
+      "path": "docs/ultimate-engine/graphs/rendered/release-pipeline.svg",
+      "type": "mermaid",
+      "title": "release-pipeline",
+      "section": "Architecture graphs",
+      "summary": "Deterministically rendered Mermaid architecture graph",
+      "tags": [
+        "absolute-framework",
+        "architecture",
+        "mermaid"
+      ],
+      "status": "review",
+      "created": "2026-09-07",
+      "updated": "2026-09-07",
+      "engine": "mermaid-engine"
+    }
+  ]
+}

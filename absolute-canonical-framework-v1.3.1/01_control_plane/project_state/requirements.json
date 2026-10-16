@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.STATE",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.PROJECT_STATE.001",
+      "concept_id": "ABS.CONCEPT.PROJECT_STATE",
+      "statement": "Canonical project state shall be schema-validated, versioned, atomically written, conflict-aware, and accompanied by an append-only change journal.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.STATE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_STATE.002",
+      "concept_id": "ABS.CONCEPT.PROJECT_STATE",
+      "statement": "State records shall identify project, framework/profile version, active objective, lifecycle, baseline hashes, permissions, health, and exact next action.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.STATE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_STATE.003",
+      "concept_id": "ABS.CONCEPT.PROJECT_STATE",
+      "statement": "Concurrent actors shall use revision or compare-and-swap controls and may not silently overwrite authoritative state.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.STATE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2056.4759999999997 726.9935714285714" width="2056.4759999999997" height="726.9935714285714" style="--bg:#FFFFFF;--fg:#27272A;background:var(--bg)">
+<style>
+  text { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="01" data-to="00" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="30" points="1784.2339999999997,339.5416071428571 1913.7639999999997,339.5416071428571" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="02" data-to="00" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="24" points="1529.024,211.5335714285714 1618.9899999999998,211.5335714285714 1618.9899999999998,117 1865.7639999999997,117 1865.7639999999997,335.8516071428571 1913.7639999999997,335.8516071428571" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="02" data-to="01" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="16" points="1529.024,223.83357142857142 1541.024,223.83357142857142 1541.024,332 1630.9899999999998,332 1630.9899999999998,333.39160714285714 1642.9899999999998,333.39160714285714" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="03" data-to="00" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="36" points="1334.5639999999999,495.81821428571425 1573.4599999999998,495.81821428571425 1573.4599999999998,601.8435714285714 1865.7639999999997,601.8435714285714 1865.7639999999997,343.2316071428571 1913.7639999999997,343.2316071428571" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="03" data-to="01" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="24" points="1334.5639999999999,486.5932142857142 1618.9899999999998,486.5932142857142 1618.9899999999998,349.7916071428571 1642.9899999999998,349.7916071428571" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="03" data-to="02" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="6" points="1334.5639999999999,477.3682142857142 1346.564,477.3682142857142 1346.564,276.7 1386.154,276.7 1386.154,230.86214285714283 1398.154,230.86214285714283" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="04" data-to="00" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="18" points="1005.767,255.6564285714286 1282.9740000000002,255.6564285714286 1282.9740000000002,95 1877.7639999999997,95 1877.7639999999997,332.1616071428571 1913.7639999999997,332.1616071428571" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="04" data-to="01" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="12" points="1005.767,270.4164285714286 1322.538,270.4164285714286 1322.538,310 1618.9899999999998,310 1618.9899999999998,329.2916071428571 1642.9899999999998,329.2916071428571" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="04" data-to="02" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="3" points="1005.767,263.0364285714286 1294.9740000000002,263.0364285714286 1294.9740000000002,210.7 1386.154,210.7 1386.154,215.04785714285708 1398.154,215.04785714285708" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="04" data-to="03" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="6" points="1005.767,277.7964285714286 1033.544,277.7964285714286 1033.544,445.4935714285714 1073.134,445.4935714285714 1073.134,473.4146428571428 1085.134,473.4146428571428" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="05" data-to="00" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="6" points="741.602,422.0760714285714 753.602,422.0760714285714 753.602,645.8435714285714 1889.7639999999997,645.8435714285714 1889.7639999999997,350.6116071428571 1913.7639999999997,350.6116071428571" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="05" data-to="01" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="4" points="741.602,409.7760714285714 841.192,409.7760714285714 841.192,397.7335714285714 1594.9899999999998,397.7335714285714 1594.9899999999998,341.59160714285713 1642.9899999999998,341.59160714285713" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="05" data-to="02" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="1" points="741.602,397.47607142857146 797.156,397.47607142857146 797.156,212.42142857142858 1270.9740000000002,212.42142857142858 1270.9740000000002,232.7 1362.154,232.7 1362.154,220.31928571428568 1398.154,220.31928571428568" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="05" data-to="03" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2" points="741.602,415.9260714285714 777.602,415.9260714285714 777.602,508.0935714285714 1049.134,508.0935714285714 1049.134,489.2289285714285 1085.134,489.2289285714285" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="05" data-to="04" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2" points="741.602,403.62607142857144 809.156,403.62607142857144 809.156,282.3389285714286 872.746,282.3389285714286 872.746,275.9514285714286 868.969,275.9514285714286" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="06" data-to="00" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="12" points="471.12800000000004,324.9210714285714 705.9759999999999,324.9210714285714 705.9759999999999,73 1889.7639999999997,73 1889.7639999999997,328.4716071428571 1913.7639999999997,328.4716071428571" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="06" data-to="01" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="8" points="471.12800000000004,340.73535714285714 785.156,340.73535714285714 785.156,358.6764285714286 1582.9899999999998,358.6764285714286 1582.9899999999998,337.4916071428571 1642.9899999999998,337.4916071428571" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="06" data-to="02" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2" points="471.12800000000004,330.1925 717.9759999999999,330.1925 717.9759999999999,180.2714285714286 1374.154,180.2714285714286 1374.154,209.77642857142854 1398.154,209.77642857142854" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="06" data-to="03" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="4" points="471.12800000000004,351.2782142857143 483.12800000000004,351.2782142857143 483.12800000000004,477.8360714285714 765.602,477.8360714285714 765.602,465.79357142857145 1061.134,465.79357142857145 1061.134,478.6860714285714 1085.134,478.6860714285714" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="06" data-to="04" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="4" points="471.12800000000004,335.4639285714286 757.5659999999999,335.4639285714286 757.5659999999999,260.3389285714286 872.746,260.3389285714286 872.746,266.7264285714286 868.969,266.7264285714286" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="06" data-to="05" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2" points="471.12800000000004,346.0067857142857 495.12800000000004,346.0067857142857 495.12800000000004,403.62607142857144 570.718,403.62607142857144" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="07" data-to="00" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="12" points="201.99200000000002,270.4725 657.9759999999999,270.4725 657.9759999999999,51 1901.7639999999997,51 1901.7639999999997,324.7816071428571 1913.7639999999997,324.7816071428571" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="07" data-to="01" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="8" points="201.99200000000002,275.08500000000004 669.9759999999999,275.08500000000004 669.9759999999999,130 1630.9899999999998,130 1630.9899999999998,325.19160714285715 1642.9899999999998,325.19160714285715" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="07" data-to="02" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2" points="201.99200000000002,279.6975 681.9759999999999,279.6975 681.9759999999999,152 1386.154,152 1386.154,204.505 1398.154,204.505" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="07" data-to="03" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="4" points="201.99200000000002,298.14750000000004 213.99200000000002,298.14750000000004 213.99200000000002,562.4360714285714 858.832,562.4360714285714 858.832,550.3935714285715 1073.134,550.3935714285715 1073.134,499.77178571428567 1085.134,499.77178571428567" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="07" data-to="04" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="4" points="201.99200000000002,284.31 693.9759999999999,284.31 693.9759999999999,233.08767857142857 729.9759999999999,233.08767857142857 729.9759999999999,238.3389285714286 872.746,238.3389285714286 872.746,257.5014285714286 868.969,257.5014285714286" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="07" data-to="05" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2" points="201.99200000000002,293.535 225.99200000000002,293.535 225.99200000000002,423.92607142857145 558.718,423.92607142857145 558.718,415.9260714285714 570.718,415.9260714285714" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="07" data-to="06" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2" points="201.99200000000002,288.9225 237.99200000000002,288.9225 237.99200000000002,338.09964285714284 313.582,338.09964285714284" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="09" data-to="00" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="6" points="1001.321,438.25357142857143 997.544,438.25357142857143 997.544,623.8435714285714 1877.7639999999997,623.8435714285714 1877.7639999999997,346.9216071428571 1913.7639999999997,346.9216071428571" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="09" data-to="01" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="4" points="1001.321,423.4935714285714 1606.9899999999998,423.4935714285714 1606.9899999999998,345.69160714285715 1642.9899999999998,345.69160714285715" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="09" data-to="02" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="1" points="1001.321,416.1135714285714 1306.9740000000002,416.1135714285714 1306.9740000000002,254.7 1374.154,254.7 1374.154,225.59071428571428 1398.154,225.59071428571428" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="09" data-to="03" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2" points="1001.321,430.87357142857144 1009.544,430.87357142857144 1009.544,487.7935714285714 1073.134,487.7935714285714 1073.134,483.9575 1085.134,483.9575" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="10" data-to="00" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="5" points="971.681,589.0685714285714 985.544,589.0685714285714 985.544,667.8435714285714 1901.7639999999997,667.8435714285714 1901.7639999999997,354.30160714285716 1913.7639999999997,354.30160714285716" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="10" data-to="01" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="4" points="971.681,579.8435714285714 1630.9899999999998,579.8435714285714 1630.9899999999998,353.89160714285714 1642.9899999999998,353.89160714285714" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="10" data-to="03" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="1" points="971.681,570.6185714285714 1025.1080000000002,570.6185714285714 1025.1080000000002,530.0935714285714 1061.134,530.0935714285714 1061.134,494.50035714285707 1085.134,494.50035714285707" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="01" data-to="00" data-label="30">
+  <rect x="1828.2339999999997" y="323.5416071428572" width="29.53" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1842.9989999999998" y="338.69160714285715" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">30</text>
+</g>
+<g class="edge-label" data-from="02" data-to="00" data-label="24">
+  <rect x="1828.2339999999997" y="101" width="29.53" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1842.9989999999998" y="116.15" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">24</text>
+</g>
+<g class="edge-label" data-from="02" data-to="01" data-label="16">
+  <rect x="1549.024" y="316" width="25.966" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1562.0069999999998" y="331.15" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">16</text>
+</g>
+<g class="edge-label" data-from="03" data-to="00" data-label="36">
+  <rect x="1828.2339999999997" y="585.8435714285714" width="29.53" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1842.9989999999998" y="600.9935714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">36</text>
+</g>
+<g class="edge-label" data-from="03" data-to="01" data-label="24">
+  <rect x="1581.4599999999998" y="470.5932142857142" width="29.53" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1596.225" y="485.7432142857142" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">24</text>
+</g>
+<g class="edge-label" data-from="03" data-to="02" data-label="6">
+  <rect x="1354.564" y="260.7" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1366.3590000000002" y="275.84999999999997" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">6</text>
+</g>
+<g class="edge-label" data-from="04" data-to="00" data-label="18">
+  <rect x="1798.2679999999998" y="79" width="25.966" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1811.2509999999997" y="94.15" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">18</text>
+</g>
+<g class="edge-label" data-from="04" data-to="01" data-label="12">
+  <rect x="1507.058" y="294" width="25.966" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1520.041" y="309.15" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">12</text>
+</g>
+<g class="edge-label" data-from="04" data-to="02" data-label="3">
+  <rect x="1330.564" y="194.7" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1342.3590000000002" y="209.85" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">3</text>
+</g>
+<g class="edge-label" data-from="04" data-to="03" data-label="6">
+  <rect x="1041.544" y="429.4935714285714" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1053.3390000000002" y="444.64357142857136" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">6</text>
+</g>
+<g class="edge-label" data-from="05" data-to="00" data-label="6">
+  <rect x="1773.0539999999999" y="629.8435714285714" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1784.849" y="644.9935714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">6</text>
+</g>
+<g class="edge-label" data-from="05" data-to="01" data-label="4">
+  <rect x="1314.9740000000002" y="381.7335714285714" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1326.7690000000002" y="396.8835714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">4</text>
+</g>
+<g class="edge-label" data-from="05" data-to="02" data-label="1">
+  <rect x="1306.512" y="216.7" width="20.026" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1316.5249999999999" y="231.85" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">1</text>
+</g>
+<g class="edge-label" data-from="05" data-to="03" data-label="2">
+  <rect x="965.954" y="492.0935714285714" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="977.7489999999999" y="507.2435714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2</text>
+</g>
+<g class="edge-label" data-from="05" data-to="04" data-label="2">
+  <rect x="817.156" y="266.3389285714286" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="828.9509999999999" y="281.4889285714286" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2</text>
+</g>
+<g class="edge-label" data-from="06" data-to="00" data-label="12">
+  <rect x="1768.302" y="57.00000000000001" width="25.966" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1781.2849999999999" y="72.15" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">12</text>
+</g>
+<g class="edge-label" data-from="06" data-to="01" data-label="8">
+  <rect x="1314.9740000000002" y="342.6764285714286" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1326.7690000000002" y="357.82642857142855" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">8</text>
+</g>
+<g class="edge-label" data-from="06" data-to="02" data-label="2">
+  <rect x="1251.3840000000002" y="164.2714285714286" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1263.1790000000003" y="179.4214285714286" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2</text>
+</g>
+<g class="edge-label" data-from="06" data-to="03" data-label="4">
+  <rect x="785.602" y="449.79357142857145" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="797.3969999999999" y="464.94357142857143" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">4</text>
+</g>
+<g class="edge-label" data-from="06" data-to="04" data-label="4">
+  <rect x="765.5659999999999" y="244.33892857142857" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="777.3609999999999" y="259.4889285714286" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">4</text>
+</g>
+<g class="edge-label" data-from="06" data-to="05" data-label="2">
+  <rect x="503.128" y="387.62607142857144" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="514.923" y="402.7760714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2</text>
+</g>
+<g class="edge-label" data-from="07" data-to="00" data-label="12">
+  <rect x="1738.336" y="35" width="25.966" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1751.319" y="50.15" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">12</text>
+</g>
+<g class="edge-label" data-from="07" data-to="01" data-label="8">
+  <rect x="1251.3840000000002" y="114" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1263.1790000000003" y="129.15" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">8</text>
+</g>
+<g class="edge-label" data-from="07" data-to="02" data-label="2">
+  <rect x="1223.7940000000003" y="136" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1235.5890000000004" y="151.15" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2</text>
+</g>
+<g class="edge-label" data-from="07" data-to="03" data-label="4">
+  <rect x="722.012" y="546.4360714285714" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="733.8069999999999" y="561.5860714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">4</text>
+</g>
+<g class="edge-label" data-from="07" data-to="04" data-label="4">
+  <rect x="737.9759999999999" y="222.3389285714286" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="749.7709999999998" y="237.4889285714286" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">4</text>
+</g>
+<g class="edge-label" data-from="07" data-to="05" data-label="2">
+  <rect x="451.538" y="407.92607142857145" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="463.333" y="423.0760714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2</text>
+</g>
+<g class="edge-label" data-from="07" data-to="06" data-label="2">
+  <rect x="245.99200000000005" y="322.09964285714284" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="257.78700000000003" y="337.2496428571428" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2</text>
+</g>
+<g class="edge-label" data-from="09" data-to="00" data-label="6">
+  <rect x="1800.6439999999998" y="607.8435714285714" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1812.4389999999999" y="622.9935714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">6</text>
+</g>
+<g class="edge-label" data-from="09" data-to="01" data-label="4">
+  <rect x="1575.3999999999999" y="407.4935714285714" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1587.195" y="422.64357142857136" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">4</text>
+</g>
+<g class="edge-label" data-from="09" data-to="02" data-label="1">
+  <rect x="1330.538" y="238.7" width="20.026" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1340.551" y="253.85" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">1</text>
+</g>
+<g class="edge-label" data-from="09" data-to="03" data-label="2">
+  <rect x="1017.544" y="471.7935714285714" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1029.339" y="486.9435714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2</text>
+</g>
+<g class="edge-label" data-from="10" data-to="00" data-label="5">
+  <rect x="1870.1739999999998" y="651.8435714285714" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1881.9689999999998" y="666.9935714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">5</text>
+</g>
+<g class="edge-label" data-from="10" data-to="01" data-label="4">
+  <rect x="1599.3999999999999" y="563.8435714285714" width="23.59" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1611.195" y="578.9935714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">4</text>
+</g>
+<g class="edge-label" data-from="10" data-to="03" data-label="1">
+  <rect x="1033.1080000000002" y="514.0935714285714" width="20.026" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1043.121" y="529.2435714285714" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">1</text>
+</g>
+<g class="node" data-id="00" data-label="00_kernel" data-shape="rectangle">
+  <rect x="1913.7639999999997" y="321.09160714285713" width="102.71199999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1965.1199999999997" y="339.5416071428571" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">00_kernel</text>
+</g>
+<g class="node" data-id="01" data-label="01_control_plane" data-shape="rectangle">
+  <rect x="1642.9899999999998" y="321.09160714285713" width="141.244" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1713.6119999999999" y="339.5416071428571" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">01_control_plane</text>
+</g>
+<g class="node" data-id="02" data-label="02_capabilities" data-shape="rectangle">
+  <rect x="1398.154" y="199.2335714285714" width="130.87" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1463.589" y="217.68357142857138" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">02_capabilities</text>
+</g>
+<g class="node" data-id="03" data-label="03_knowledge_and_documentation" data-shape="rectangle">
+  <rect x="1085.134" y="468.14321428571424" width="249.42999999999995" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1209.849" y="486.5932142857142" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">03_knowledge_and_documentation</text>
+</g>
+<g class="node" data-id="04" data-label="04_enforcement" data-shape="rectangle">
+  <rect x="868.969" y="248.2764285714286" width="136.798" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="937.368" y="266.7264285714286" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">04_enforcement</text>
+</g>
+<g class="node" data-id="05" data-label="05_platform_adapters" data-shape="rectangle">
+  <rect x="570.718" y="391.3260714285714" width="170.884" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="656.16" y="409.7760714285714" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">05_platform_adapters</text>
+</g>
+<g class="node" data-id="06" data-label="06_project_profiles" data-shape="rectangle">
+  <rect x="313.582" y="319.64964285714285" width="157.546" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="392.355" y="338.09964285714284" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">06_project_profiles</text>
+</g>
+<g class="node" data-id="07" data-label="07_optional_addons" data-shape="rectangle">
+  <rect x="40" y="265.86" width="161.99200000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="120.99600000000001" y="284.31" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">07_optional_addons</text>
+</g>
+<g class="node" data-id="08" data-label="08_examples" data-shape="rectangle">
+  <rect x="81.49600000000004" y="330.76000000000005" width="120.49599999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="141.74400000000003" y="349.21000000000004" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">08_examples</text>
+</g>
+<g class="node" data-id="09" data-label="09_tests_evals" data-shape="rectangle">
+  <rect x="868.969" y="408.7335714285714" width="132.352" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="935.1450000000001" y="427.1835714285714" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">09_tests_evals</text>
+</g>
+<g class="node" data-id="10" data-label="10_runtime" data-shape="rectangle">
+  <rect x="868.969" y="561.3935714285715" width="102.712" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="920.325" y="579.8435714285715" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">10_runtime</text>
+</g>
+</svg>

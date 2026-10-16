@@ -1,0 +1,90 @@
+module_id: ABS.MODULE.CONTROL.DECISIONS
+name: Decision, risk, assumption, unknown, and waiver control
+version: 1.0.0
+schema_version: 1.0.0
+framework_release: 1.3.1
+status: CANDIDATE
+purpose: Decision, risk, assumption, unknown, and waiver control
+scope:
+  includes:
+  - Material decisions, assumptions, risks, unknowns, exceptions, and waivers shall have stable IDs, owners, evidence,
+    impact, status, review triggers, and expiry where applicable.
+  - Owner input shall be requested only for material legal/commercial authority, credentials, recurring cost, broad
+    permissions, external publication, destructive action, or irreversible architecture that cannot be derived safely.
+  - Unknown or contradictory evidence shall remain visible and shall block only the affected scope unless propagation
+    is proven.
+  excludes: &id001
+  - provider-specific authority unless this is an adapter
+  - raw secrets or hidden credentials
+  - completion claims without exact evidence
+  - direct editing of generated derivatives
+responsibilities:
+- read the latest durable state and version
+- validate bounded input, authority, permission, dependency, and rollback
+- apply one atomic update
+- record checks, findings, evidence, and limitations
+- persist exact next action and reject stale writes
+non_responsibilities: *id001
+owned_concepts:
+- ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS
+requirements:
+- ABS.REQ.DECISIONS_RISKS_UNKNOWNS.001
+- ABS.REQ.DECISIONS_RISKS_UNKNOWNS.002
+- ABS.REQ.DECISIONS_RISKS_UNKNOWNS.003
+provided_interfaces:
+- ABS.IFACE.DECISION.RECORD
+consumed_interfaces:
+- ABS.IFACE.STATE.ATOMIC_UPDATE
+dependencies:
+- ABS.MODULE.KERNEL.AUTHORITY_TRUTH
+- ABS.MODULE.KERNEL.CHANGE_RECOVERY
+- ABS.MODULE.KERNEL.EVIDENCE_GATES
+- ABS.MODULE.KERNEL.GOAL_LOCK
+- ABS.MODULE.KERNEL.IDENTITY
+- ABS.MODULE.KERNEL.LIFECYCLE
+security_classification: INTERNAL
+representations:
+  narrative: REQUIRED
+  blueprint: REQUIRED
+  machine_spec: APPLICABLE
+  visual_spec: APPLICABLE
+  plain_english: REQUIRED
+  quick_reference: REQUIRED
+  tests: REQUIRED
+applicability_reasons:
+  machine_spec: States, requirements, evidence, and transitions require deterministic validation.
+  visual_spec: Who may decide this issue, and what reopens it?
+canonical_paths:
+  narrative: MODULE.md
+  manifest: MODULE_MANIFEST.yaml
+  requirements: requirements.json
+  blueprint: blueprint/BLUEPRINT.md
+  visual_source: blueprint/architecture.dot
+  visual_output: blueprint/architecture.svg
+  visual_manifest: blueprint/visual_manifest.json
+  machine_schema: machine/contract.schema.json
+  machine_policy: machine/policy.json
+  positive_fixture: tests/positive/valid_instance.json
+  negative_fixture: tests/negative/missing_evidence.json
+  adversarial_fixture: tests/adversarial/authority_override.json
+  plain_english: publication/plain_english.md
+  quick_reference: publication/quick_reference.md
+verification:
+  candidate_hash: null
+  gate_ids:
+  - ABS.GATE.G7
+  - ABS.GATE.G8
+  - ABS.GATE.G9
+  evidence_ids: []
+  independent_status: PENDING
+  invalidation_triggers:
+  - requirement
+  - schema
+  - policy
+  - interface
+  - security
+  - candidate_hash
+owner: framework_module_owner
+reviewers:
+- fresh_semantic_verifier
+- independent_adversarial_verifier

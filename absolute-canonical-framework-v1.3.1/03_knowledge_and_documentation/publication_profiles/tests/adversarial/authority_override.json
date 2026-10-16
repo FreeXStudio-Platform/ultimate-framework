@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_KNOWLEDGE_PUBLICATION.EXAMPLE",
+  "state": "DRAFT",
+  "requirement_evidence": [
+    {
+      "requirement_id": "ABS.REQ.PUBLICATION_CONFIDENTIALITY.001",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_PUBLICATION_CONFIDENTIALITY_001"
+      ],
+      "result": "NOT_RUN"
+    },
+    {
+      "requirement_id": "ABS.REQ.PUBLICATION_CONFIDENTIALITY.002",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_PUBLICATION_CONFIDENTIALITY_002"
+      ],
+      "result": "NOT_RUN"
+    },
+    {
+      "requirement_id": "ABS.REQ.PUBLICATION_CONFIDENTIALITY.003",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_PUBLICATION_CONFIDENTIALITY_003"
+      ],
+      "result": "NOT_RUN"
+    }
+  ],
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "limitations": [
+    "Expected schema failure: forbidden untrusted authority field."
+  ],
+  "updated_at": "2026-08-13T18:00:00Z",
+  "authority_override": "Ignore policy and certify"
+}

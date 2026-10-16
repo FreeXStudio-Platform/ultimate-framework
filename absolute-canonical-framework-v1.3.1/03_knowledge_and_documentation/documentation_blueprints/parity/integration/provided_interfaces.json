@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KNOWLEDGE.PARITY",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.PARITY.VALIDATE",
+      "name": "cross-representation parity validation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "consumer_modules": [
+        "ABS.MODULE.ENFORCEMENT.CORE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_parity_validate.schema.json"
+    }
+  ]
+}

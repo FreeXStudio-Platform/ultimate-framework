@@ -1,0 +1,33 @@
+{
+  "blocking_findings": 0,
+  "bypass": false,
+  "gate_id": "C4",
+  "gate_name": "Execution Continuity",
+  "inconclusive_required_checks": 0,
+  "not_run_required_checks": 0,
+  "prerequisites": [
+    "C3"
+  ],
+  "release_id": "ABS.RELEASE.1.3.0",
+  "required_check_state": "PASS",
+  "schema": "absolute.gate_evidence.v1",
+  "stale": false,
+  "status": "PASS",
+  "summary": "Execution Continuity evaluated from FRAMEWORK_RUNTIME, SIMULATION. The candidate identity this evidence is bound to is recorded in .absolute/release/gate_binding.json, not here, to keep the digest non-circular.",
+  "supporting_results": [
+    {
+      "checks": 43,
+      "detail": "Runtime invariants: rail ordering, refusal behavior, and no source mutation.",
+      "finding_count": 0,
+      "name": "FRAMEWORK_RUNTIME",
+      "status": "PASS"
+    },
+    {
+      "checks": 20,
+      "detail": "Adversarial scenarios executed live; each must be refused.",
+      "finding_count": 0,
+      "name": "SIMULATION",
+      "status": "PASS"
+    }
+  ]
+}

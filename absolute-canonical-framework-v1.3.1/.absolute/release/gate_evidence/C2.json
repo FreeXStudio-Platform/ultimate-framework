@@ -1,0 +1,33 @@
+{
+  "blocking_findings": 0,
+  "bypass": false,
+  "gate_id": "C2",
+  "gate_name": "Source Admission",
+  "inconclusive_required_checks": 0,
+  "not_run_required_checks": 0,
+  "prerequisites": [
+    "C1"
+  ],
+  "release_id": "ABS.RELEASE.1.3.0",
+  "required_check_state": "PASS",
+  "schema": "absolute.gate_evidence.v1",
+  "stale": false,
+  "status": "PASS",
+  "summary": "Source Admission evaluated from baseline_chain_recomputed, FRAMEWORK_IDENTITY. The candidate identity this evidence is bound to is recorded in .absolute/release/gate_binding.json, not here, to keep the digest non-circular.",
+  "supporting_results": [
+    {
+      "checks": 5,
+      "detail": "immutable predecessor chain matches the tooling constant",
+      "finding_count": 0,
+      "name": "baseline_chain_recomputed",
+      "status": "PASS"
+    },
+    {
+      "checks": 5,
+      "detail": "Release identity and payload digest recomputed from bytes (prebuild payload scope).",
+      "finding_count": 0,
+      "name": "FRAMEWORK_IDENTITY",
+      "status": "PASS"
+    }
+  ]
+}

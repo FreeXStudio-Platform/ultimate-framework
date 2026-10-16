@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CAPABILITY.SKILLS",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.SKILLS_DELEGATION.001",
+      "concept_id": "ABS.CONCEPT.SKILLS_DELEGATION",
+      "statement": "A skill shall solve one bounded task class and declare triggers, non-triggers, prerequisites, inputs, workflow, stop conditions, outputs, permissions, validation, failures, fallback, and compatibility.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.SKILLS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SKILLS_DELEGATION.002",
+      "concept_id": "ABS.CONCEPT.SKILLS_DELEGATION",
+      "statement": "Delegation shall specify exact scope, governing IDs, allowed data, prohibited actions, output schema/location, evidence, cost, confidentiality, and return path.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.SKILLS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SKILLS_DELEGATION.003",
+      "concept_id": "ABS.CONCEPT.SKILLS_DELEGATION",
+      "statement": "Delegated self-report shall not be accepted without independent validation of artifacts, behavior, side effects, and evidence identities.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.SKILLS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

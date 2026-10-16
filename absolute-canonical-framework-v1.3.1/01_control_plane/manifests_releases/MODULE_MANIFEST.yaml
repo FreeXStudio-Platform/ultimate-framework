@@ -1,0 +1,93 @@
+module_id: ABS.MODULE.CONTROL.RELEASE
+name: Manifests, clean releases, checksums, and migration
+version: 1.0.0
+schema_version: 1.0.0
+framework_release: 1.3.1
+status: CANDIDATE
+purpose: Manifests, clean releases, checksums, and migration
+scope:
+  includes:
+  - A clean release shall be assembled in a fresh staging directory from an explicit allowlist and shall exclude
+    raw sources, chats, history, evidence, caches, credentials, temporary files, and unrelated downstream content.
+  - Every release file shall appear in a manifest with path, bytes, hash, class, source identity, and derivative
+    status; the archive shall be CRC/path checked and re-extracted for hash comparison.
+  - Release, deployment, and production verification shall remain distinct states with migration, rollback, limitations,
+    and compatibility guidance.
+  excludes: &id001
+  - provider-specific authority unless this is an adapter
+  - raw secrets or hidden credentials
+  - completion claims without exact evidence
+  - direct editing of generated derivatives
+responsibilities:
+- read the latest durable state and version
+- validate bounded input, authority, permission, dependency, and rollback
+- apply one atomic update
+- record checks, findings, evidence, and limitations
+- persist exact next action and reject stale writes
+non_responsibilities: *id001
+owned_concepts:
+- ABS.CONCEPT.MANIFEST_RELEASE
+requirements:
+- ABS.REQ.MANIFEST_RELEASE.001
+- ABS.REQ.MANIFEST_RELEASE.002
+- ABS.REQ.MANIFEST_RELEASE.003
+provided_interfaces:
+- ABS.IFACE.RELEASE.ASSEMBLE
+consumed_interfaces:
+- ABS.IFACE.EVIDENCE.RECORD
+- ABS.IFACE.GATE.EVALUATE
+- ABS.IFACE.RECOVERY.CHECKPOINT
+- ABS.IFACE.VERIFICATION.INDEPENDENT
+dependencies:
+- ABS.MODULE.KERNEL.AUTHORITY_TRUTH
+- ABS.MODULE.KERNEL.CHANGE_RECOVERY
+- ABS.MODULE.KERNEL.EVIDENCE_GATES
+- ABS.MODULE.KERNEL.GOAL_LOCK
+- ABS.MODULE.KERNEL.IDENTITY
+- ABS.MODULE.KERNEL.LIFECYCLE
+security_classification: INTERNAL
+representations:
+  narrative: REQUIRED
+  blueprint: REQUIRED
+  machine_spec: APPLICABLE
+  visual_spec: APPLICABLE
+  plain_english: REQUIRED
+  quick_reference: REQUIRED
+  tests: REQUIRED
+applicability_reasons:
+  machine_spec: States, requirements, evidence, and transitions require deterministic validation.
+  visual_spec: Can this package be reproduced, extracted safely, and proven clean?
+canonical_paths:
+  narrative: MODULE.md
+  manifest: MODULE_MANIFEST.yaml
+  requirements: requirements.json
+  blueprint: blueprint/BLUEPRINT.md
+  visual_source: blueprint/architecture.dot
+  visual_output: blueprint/architecture.svg
+  visual_manifest: blueprint/visual_manifest.json
+  machine_schema: machine/contract.schema.json
+  machine_policy: machine/policy.json
+  positive_fixture: tests/positive/valid_instance.json
+  negative_fixture: tests/negative/missing_evidence.json
+  adversarial_fixture: tests/adversarial/authority_override.json
+  plain_english: publication/plain_english.md
+  quick_reference: publication/quick_reference.md
+verification:
+  candidate_hash: null
+  gate_ids:
+  - ABS.GATE.G7
+  - ABS.GATE.G8
+  - ABS.GATE.G9
+  evidence_ids: []
+  independent_status: PENDING
+  invalidation_triggers:
+  - requirement
+  - schema
+  - policy
+  - interface
+  - security
+  - candidate_hash
+owner: framework_module_owner
+reviewers:
+- fresh_semantic_verifier
+- independent_adversarial_verifier

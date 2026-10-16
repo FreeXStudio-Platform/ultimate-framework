@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.INDEPENDENT_VERIFICATION.001",
+      "concept_id": "ABS.CONCEPT.INDEPENDENT_VERIFICATION",
+      "statement": "Final verification shall use a fresh context/role and preferably another provider with direct access to the frozen candidate, original mission, requirements, raw evidence, tests, conflicts, and hashes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.INDEPENDENT_VERIFICATION.002",
+      "concept_id": "ABS.CONCEPT.INDEPENDENT_VERIFICATION",
+      "statement": "The verifier shall attempt to disprove readiness, and repairs shall invalidate affected assurance and require transitive revalidation.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.INDEPENDENT_VERIFICATION.003",
+      "concept_id": "ABS.CONCEPT.INDEPENDENT_VERIFICATION",
+      "statement": "A final certified status shall name the exact candidate hash; when independent verification is unavailable, status shall remain release-candidate verification-pending or unverifiable-blocked.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

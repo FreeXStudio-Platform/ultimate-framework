@@ -1,0 +1,78 @@
+[
+  {
+    "caption": "Primary extension paths and their required registry/profile follow-through, including the release-version route.",
+    "code": "flowchart LR\n  Rule[\"New rule\"] --> Owner[\"canonical owner package\"]\n  Owner --> Registry[\"requirements and graph registries\"]\n  Owner --> Enforcement[\"validator/runtime check if executable\"]\n  Capability[\"New capability\"] --> CapRoot[\"02_capabilities\"]\n  CapRoot --> CapMgr[\"capability_manager\"]\n  Adapter[\"New adapter\"] --> AdapterRoot[\"05_platform_adapters/<adapter>\"]\n  AdapterRoot --> PAIndex[\"PROFILE_ADAPTER_INDEX\"]\n  CapMgr --> Profiles[\"opt-in profiles\"]\n  PAIndex --> Profiles\n  Version[\"Change the release version\"] --> VersionFile[\"VERSION\"]\n  VersionFile --> VersionPins[\"release_integrity constants, FRAMEWORK.json, schemas,\nmodule manifests, module narratives, TEST_MANIFEST, governance\"]\n  VersionPins --> Allowlist[\"RELEASE_ALLOWLIST.json regenerated last\"]",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/ARCHITECTURE.md; docs/CAPABILITY_AND_SECURITY_GUIDE.md",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "extension-routing",
+    "insight": "Rules begin at one canonical semantic owner, capabilities remain under the capability layer, host translation remains isolated under platform adapters, and a version bump routes through every pin before the allowlist.",
+    "kind": "mermaid",
+    "reader_question": "Which part changes for a new rule, capability, adapter, or release version?",
+    "title": "Where changes belong"
+  },
+  {
+    "caption": "Transitive dependent counts from the authority DAG.",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/registries/AUTHORITY_DEPENDENCY_DAG.json",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "height": 600,
+    "id": "dependency-centrality",
+    "insight": "Risk follows dependency reach, not file size; use the machine model for the complete ordered list.",
+    "items": [
+      {
+        "label": "AUTHORITY_TRUTH",
+        "value": 28
+      },
+      {
+        "label": "EVIDENCE_GATES",
+        "value": 27
+      },
+      {
+        "label": "CHANGE_RECOVERY",
+        "value": 26
+      },
+      {
+        "label": "IDENTITY",
+        "value": 26
+      },
+      {
+        "label": "GOAL_LOCK",
+        "value": 25
+      },
+      {
+        "label": "LIFECYCLE",
+        "value": 25
+      },
+      {
+        "label": "RELEASE",
+        "value": 20
+      },
+      {
+        "label": "STATE",
+        "value": 20
+      },
+      {
+        "label": "WORK",
+        "value": 20
+      },
+      {
+        "label": "DECISIONS",
+        "value": 20
+      }
+    ],
+    "kind": "bar",
+    "reader_question": "Which module changes demand the widest revalidation?",
+    "title": "Change-risk centrality",
+    "unit": " dependents",
+    "width": 1800
+  }
+]

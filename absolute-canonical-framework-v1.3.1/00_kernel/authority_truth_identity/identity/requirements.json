@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.IDENTITY",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.PROJECT_IDENTITY.001",
+      "concept_id": "ABS.CONCEPT.PROJECT_IDENTITY",
+      "statement": "Builder program, framework, release, profile, adapter, module, and downstream project identities shall use distinct stable namespaces.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.IDENTITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_IDENTITY.002",
+      "concept_id": "ABS.CONCEPT.PROJECT_IDENTITY",
+      "statement": "Cross-project material shall enter only through an explicit import decision with provenance, scope, confidentiality, and compatibility checks.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.IDENTITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_IDENTITY.003",
+      "concept_id": "ABS.CONCEPT.PROJECT_IDENTITY",
+      "statement": "Identity conflicts or ambiguous active project scope shall block affected writes until reconciled.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.IDENTITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

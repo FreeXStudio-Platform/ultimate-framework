@@ -1,0 +1,9 @@
+{
+  "build_evidence_zip_sha256": "2c84aeeb3b7e29bdf39e0bee7924b033b395f8222e3cffd7623a425d400a4a1d",
+  "clean_zip_sha256": "3e403e5ea37c9f530cb69afbced5a841018a5e842d4610c3ab3dda21776fd7ba",
+  "historical": true,
+  "release_id": "ABS.RELEASE.1.0.0-RC2",
+  "role": "IMMUTABLE_INPUT_BASELINE",
+  "schema": "absolute.rc2_immutable_baseline.v1",
+  "supersession_rule": "RC2 bytes remain immutable; RC3 is a new successor and rollback target is the exact RC2 pair."
+}

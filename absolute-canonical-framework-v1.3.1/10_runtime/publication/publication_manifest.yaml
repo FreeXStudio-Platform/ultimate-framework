@@ -1,0 +1,12 @@
+schema_version: 1.0.0
+module_id: ABS.MODULE.RUNTIME.EXECUTOR
+classification: INTERNAL
+allowed_audiences:
+- INTERNAL
+derivatives:
+- path: publication/plain_english.md
+  derived_from: MODULE.md
+- path: publication/quick_reference.md
+  derived_from: MODULE_MANIFEST.yaml
+invalidation_rule: Any change to the canonical source invalidates every derivative
+  listed here.

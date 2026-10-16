@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ENFORCEMENT.CORE",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.001",
+      "concept_id": "ABS.CONCEPT.SCHEMAS_VALIDATORS_HOOKS",
+      "statement": "Machine records shall use versioned schemas with explicit identifiers, enums, nullability, references, and compatibility rules.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.002",
+      "concept_id": "ABS.CONCEPT.SCHEMAS_VALIDATORS_HOOKS",
+      "statement": "Semantic validators shall reject false PASS, missing evidence, superseded authority, broken reciprocal links, unapproved destructive actions, restricted publication leakage, and manifest drift.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.003",
+      "concept_id": "ABS.CONCEPT.SCHEMAS_VALIDATORS_HOOKS",
+      "statement": "Must-run lifecycle rules shall use hooks, CI, policy, permissions, or runtime gates when supported, with pinned examples and fail-closed behavior for malformed input.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

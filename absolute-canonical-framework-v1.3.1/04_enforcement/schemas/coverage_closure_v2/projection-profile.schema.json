@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/projection-profile.schema.json",
+  "title": "External Projection Profile",
+  "type": "object",
+  "required": [
+    "projection_id",
+    "tool",
+    "mode",
+    "canonical_authority",
+    "sync_direction",
+    "permission_mode",
+    "status"
+  ],
+  "properties": {
+    "projection_id": {
+      "type": "string",
+      "pattern": "^ABS\\.PROJECTION\\."
+    },
+    "tool": {
+      "enum": [
+        "NOTION",
+        "FIGMA",
+        "OTHER"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "COLLABORATION",
+        "STATUS_DASHBOARD",
+        "PUBLICATION",
+        "DESIGN_CANVAS",
+        "REVIEW_SURFACE",
+        "OTHER"
+      ]
+    },
+    "canonical_authority": {
+      "type": "string"
+    },
+    "sync_direction": {
+      "enum": [
+        "ONE_WAY_REPOSITORY_TO_TOOL",
+        "ONE_WAY_TOOL_TO_REPOSITORY",
+        "BIDIRECTIONAL_CERTIFIED",
+        "NONE"
+      ]
+    },
+    "permission_mode": {
+      "enum": [
+        "READ_ONLY",
+        "SCOPED_WRITE",
+        "PRIVILEGED_WRITE",
+        "NONE"
+      ]
+    },
+    "source_artifact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_hashes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rate_limit_or_budget": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stale_trigger": {
+      "type": "string"
+    },
+    "fallback": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "ACTIVE_CURRENT",
+        "STALE_REGEN_REQUIRED",
+        "DEGRADED_WITH_FALLBACK",
+        "BLOCKED",
+        "INACTIVE"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

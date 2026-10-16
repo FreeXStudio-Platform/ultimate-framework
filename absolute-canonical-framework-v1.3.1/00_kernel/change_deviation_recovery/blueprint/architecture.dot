@@ -1,0 +1,12 @@
+digraph module {
+graph [rankdir=LR,bgcolor="transparent",pad="0.2"];
+node [shape=box,style="rounded",fontname="Arial",fontsize=10];
+edge [fontname="Arial",fontsize=9];
+input [label="Governed inputs"]; gate [label="Authority + policy",shape=diamond]; op [label="Change, deviation, recovery, and rollback"]; evidence [label="Evidence + checks",shape=diamond]; output [label="Validated output"];
+input -> gate [label="scope + identity"]; gate -> op [label="authorized"]; op -> evidence [label="claims"]; evidence -> output [label="pass / truthful state"]; evidence -> op [label="finding",style=dashed];
+p0 [label="Provides\nCHANGE.INVALIDATE",shape=note];
+output -> p0 [style=dotted];
+p1 [label="Provides\nRECOVERY.CHECKPOINT",shape=note];
+output -> p1 [style=dotted];
+label="ABS.MODULE.KERNEL.CHANGE_RECOVERY: Can this change be reversed, and what becomes stale?";
+}

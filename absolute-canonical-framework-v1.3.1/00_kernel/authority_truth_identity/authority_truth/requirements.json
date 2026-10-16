@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.001",
+      "concept_id": "ABS.CONCEPT.AUTHORITY_TRUTH",
+      "statement": "Authority shall be scoped by subject, artifact class, representation, version, lifecycle, and evidence; no file is universally authoritative.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.002",
+      "concept_id": "ABS.CONCEPT.AUTHORITY_TRUTH",
+      "statement": "Material claims shall use explicit truth states that distinguish verified fact, approved requirement/design, inference, plan, unknown, conflict, supersession, and rejection.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.003",
+      "concept_id": "ABS.CONCEPT.AUTHORITY_TRUTH",
+      "statement": "Equal-rank material conflicts shall be recorded and resolved by evidence-backed decision; vague compromise shall not replace contradictory requirements.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

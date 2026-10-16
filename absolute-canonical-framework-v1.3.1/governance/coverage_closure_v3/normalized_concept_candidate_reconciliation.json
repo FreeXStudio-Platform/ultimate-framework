@@ -1,0 +1,462 @@
+{
+  "baseline_provenance": {
+    "meaning": "RC1 labels in identifiers or prose are historical/provenance references, not successor identity.",
+    "release_id": "ABS.RELEASE.1.0.0-RC1",
+    "role": "IMMUTABLE_INPUT_BASELINE"
+  },
+  "concept_count": 32,
+  "concepts": [
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.AUDITHUNT_INSTALLATION_PROFILE",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[31]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.AUTHORITY_TRUTH",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[2]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.CANONICAL_MODULE_PACKAGE",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[15]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.CAPABILITY_MANAGER",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[11]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.CHANGE_DEVIATION_RECOVERY",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[5]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.CONNECTORS_MCP",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[13]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[9]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.DOCUMENT_BLUEPRINT_PARITY",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[16]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.EVIDENCE_GATES_HEALTH",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[4]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.GOAL_LOCK",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[0]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.INDEPENDENT_VERIFICATION",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[30]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.LIFECYCLE_TWO_PASS",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[3]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.MANIFEST_RELEASE",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[10]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.MODEL_ROUTING",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[14]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.MODULAR_ARCHITECTURE",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[24]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.OBSERVABILITY_INCIDENT",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[23]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.OPTIONAL_OPERATIONS",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[28]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.OPTIONAL_RAG_GRAPH",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[27]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.PLATFORM_ADAPTERS",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[25]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.PROJECT_IDENTITY",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[1]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.PROJECT_PROFILES",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[26]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.PROJECT_STATE",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[6]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[17]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.REGISTRIES_GRAPH_CONTEXT",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[19]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.SCHEMAS_VALIDATORS_HOOKS",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[20]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[21]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.SESSIONS_HANDOFF",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[8]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.SKILLS_DELEGATION",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[12]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.SOURCE_ADMISSION_RECONCILIATION",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[29]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.TEST_EVALUATION",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[22]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.VISUAL_RENDERING",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[18]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    },
+    {
+      "approved_candidate_set": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "coherent": true,
+      "concept_id": "ABS.CONCEPT.WORK_REGISTRY",
+      "final_assignment_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[7]"
+      },
+      "final_assignment_support": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ]
+    }
+  ],
+  "method": "candidate_set_rebuilt_from_final_assignment_support; original RC1 evidence preserved unchanged",
+  "schema": "absolute.coverage_closure.concept_reconciliation.v1",
+  "scope": "RC2_SUCCESSOR_ONLY",
+  "successor_release_id": "ABS.RELEASE.1.0.0-RC2"
+}

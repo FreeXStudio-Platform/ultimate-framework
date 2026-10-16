@@ -1,0 +1,250 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:absolute:schema:module-manifest:1.0.0",
+  "title": "Absolute Module Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "module_id",
+    "name",
+    "version",
+    "schema_version",
+    "framework_release",
+    "status",
+    "purpose",
+    "scope",
+    "responsibilities",
+    "non_responsibilities",
+    "owned_concepts",
+    "requirements",
+    "provided_interfaces",
+    "consumed_interfaces",
+    "dependencies",
+    "security_classification",
+    "representations",
+    "applicability_reasons",
+    "canonical_paths",
+    "verification",
+    "owner",
+    "reviewers"
+  ],
+  "properties": {
+    "module_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "const": "1.0.0"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "framework_release": {
+      "const": "1.3.1"
+    },
+    "status": {
+      "enum": [
+        "DRAFT",
+        "CANDIDATE",
+        "CANDIDATE_OPTIONAL",
+        "VERIFIED",
+        "CERTIFIED",
+        "SUPERSEDED"
+      ]
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "includes",
+        "excludes"
+      ],
+      "properties": {
+        "includes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "excludes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "responsibilities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "non_responsibilities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "owned_concepts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+      },
+      "uniqueItems": true
+    },
+    "requirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+      },
+      "uniqueItems": true
+    },
+    "provided_interfaces": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+      },
+      "uniqueItems": true
+    },
+    "consumed_interfaces": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+      },
+      "uniqueItems": true
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+      },
+      "uniqueItems": true
+    },
+    "security_classification": {
+      "enum": [
+        "PUBLIC",
+        "INTERNAL",
+        "CONFIDENTIAL",
+        "RESTRICTED"
+      ]
+    },
+    "representations": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "enum": [
+          "REQUIRED",
+          "APPLICABLE",
+          "NOT_APPLICABLE"
+        ]
+      }
+    },
+    "applicability_reasons": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "canonical_paths": {
+      "type": "object",
+      "minProperties": 8,
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate_hash",
+        "gate_ids",
+        "evidence_ids",
+        "independent_status",
+        "invalidation_triggers"
+      ],
+      "properties": {
+        "candidate_hash": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            }
+          ]
+        },
+        "gate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+          }
+        },
+        "independent_status": {
+          "enum": [
+            "PENDING",
+            "IN_REVIEW",
+            "CERTIFIED",
+            "CERTIFIED_WITH_ACCEPTED_RISK",
+            "REJECTED",
+            "UNVERIFIABLE_BLOCKED"
+          ]
+        },
+        "invalidation_triggers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  }
+}

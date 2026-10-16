@@ -1,0 +1,30 @@
+name: Bug report
+description: Something in the runtime, verifiers or tooling does not behave as documented
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Release
+      description: Contents of the payload's VERSION file
+      placeholder: "1.3.1"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Include the exact command and its output. Remove any local paths or personal data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: OS, Python version, Graphviz version if relevant

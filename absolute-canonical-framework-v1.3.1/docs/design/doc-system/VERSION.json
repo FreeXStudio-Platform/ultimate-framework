@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "gate": "sibling-engine/tools/docgen/validate_doc_system.py",
+  "rulebook_files": [
+    "docs/design/doc-system/RULEBOOK.md",
+    "docs/design/doc-system/CLASSIFICATION.md",
+    "docs/design/doc-system/TAXONOMY.md",
+    "docs/design/doc-system/CONTRADICTION.md",
+    "docs/design/doc-system/update_impact_map.json",
+    "docs/design/doc-system/DOC_MANIFEST.md"
+  ],
+  "rulebook_sha256": "a23de67ee750f68cedc665be12af211f2338fa695d808e7c22670800ca0774ce",
+  "notes": "Host-local rule layer installed for the Ultimate Engine documentation exercise. The hash is over the listed subject files in order. It deliberately does not claim the subject contains the engine repository's own process documents, hooks, renderers, or test suite. Set the digest to PENDING only for an explicitly reviewed rule change, then run the sibling engine's validate_doc_system --write-hash command."
+}

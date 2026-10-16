@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.PROFILES.PROJECT",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.PROJECT_PROFILES.001",
+      "concept_id": "ABS.CONCEPT.PROJECT_PROFILES",
+      "statement": "Minimal, standard, and enterprise profiles shall select bounded module, assurance, documentation, capability, and operational requirements without changing kernel invariants.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.PROFILES.PROJECT",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_PROFILES.002",
+      "concept_id": "ABS.CONCEPT.PROJECT_PROFILES",
+      "statement": "A project profile shall declare purpose, applicability, required/optional modules, capabilities, permissions, data classification, gates, installation, validation, migration, and uninstall/rollback.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.PROFILES.PROJECT",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_PROFILES.003",
+      "concept_id": "ABS.CONCEPT.PROJECT_PROFILES",
+      "statement": "Profiles shall be composable only through explicit precedence and compatibility checks and shall not import Builder Program history.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.PROFILES.PROJECT",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

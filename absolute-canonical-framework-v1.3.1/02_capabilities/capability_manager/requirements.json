@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CAPABILITY.MANAGER",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.001",
+      "concept_id": "ABS.CONCEPT.CAPABILITY_MANAGER",
+      "statement": "Every executable or context-providing capability shall have a registry record covering identity, version, provenance, triggers, permissions, data scope, cost, health, fallback, security/license review, and lifecycle.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.002",
+      "concept_id": "ABS.CONCEPT.CAPABILITY_MANAGER",
+      "statement": "The active packet shall use the smallest sufficient set of healthy, authorized, attributable capabilities and shall prefer deterministic/local methods for mechanical work.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.003",
+      "concept_id": "ABS.CONCEPT.CAPABILITY_MANAGER",
+      "statement": "Unavailable, degraded, unauthenticated, or over-privileged capabilities shall not be represented as usable; write/external/destructive actions remain approval-bounded.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

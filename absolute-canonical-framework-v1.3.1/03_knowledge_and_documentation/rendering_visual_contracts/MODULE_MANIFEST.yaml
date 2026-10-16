@@ -1,0 +1,94 @@
+module_id: ABS.MODULE.KNOWLEDGE.VISUALS
+name: Visual semantics, routing, rendering, and accessibility
+version: 1.0.0
+schema_version: 1.0.0
+framework_release: 1.3.1
+status: CANDIDATE
+purpose: Visual semantics, routing, rendering, and accessibility
+scope:
+  includes:
+  - Every visual shall answer a defined reader question using a structured semantic source, declared data/evidence,
+    visual grammar, semantic encodings, accessibility, renderer identity, and output manifest.
+  - Visual routing shall select the simplest sufficient approved renderer; 3D, animation, and motion are allowed
+    only when they materially improve understanding.
+  - Generated visuals shall have editable semantic source and static accessible fallback, and rendering shall be
+    validated for meaning, parity, labels, contrast, navigation, and export.
+  excludes: &id001
+  - provider-specific authority unless this is an adapter
+  - raw secrets or hidden credentials
+  - completion claims without exact evidence
+  - direct editing of generated derivatives
+responsibilities:
+- identify the canonical scope and source evidence
+- define or update the narrative meaning
+- update applicable machine, blueprint, visual, integration, and test forms
+- run parity, link, security, and evidence checks
+- publish only governed derivatives and invalidate them on source change
+non_responsibilities: *id001
+owned_concepts:
+- ABS.CONCEPT.VISUAL_RENDERING
+requirements:
+- ABS.REQ.VISUAL_RENDERING.001
+- ABS.REQ.VISUAL_RENDERING.002
+- ABS.REQ.VISUAL_RENDERING.003
+provided_interfaces:
+- ABS.IFACE.VISUAL.RENDER
+consumed_interfaces: []
+dependencies:
+- ABS.MODULE.CAPABILITY.MANAGER
+- ABS.MODULE.CONTROL.DECISIONS
+- ABS.MODULE.CONTROL.RELEASE
+- ABS.MODULE.CONTROL.STATE
+- ABS.MODULE.CONTROL.WORK
+- ABS.MODULE.KERNEL.AUTHORITY_TRUTH
+- ABS.MODULE.KERNEL.CHANGE_RECOVERY
+- ABS.MODULE.KERNEL.EVIDENCE_GATES
+- ABS.MODULE.KERNEL.GOAL_LOCK
+- ABS.MODULE.KERNEL.IDENTITY
+- ABS.MODULE.KERNEL.LIFECYCLE
+security_classification: INTERNAL
+representations:
+  narrative: REQUIRED
+  blueprint: REQUIRED
+  machine_spec: APPLICABLE
+  visual_spec: APPLICABLE
+  plain_english: REQUIRED
+  quick_reference: REQUIRED
+  tests: REQUIRED
+applicability_reasons:
+  machine_spec: States, requirements, evidence, and transitions require deterministic validation.
+  visual_spec: What reader question does this visual answer from governed data?
+canonical_paths:
+  narrative: MODULE.md
+  manifest: MODULE_MANIFEST.yaml
+  requirements: requirements.json
+  blueprint: blueprint/BLUEPRINT.md
+  visual_source: blueprint/architecture.dot
+  visual_output: blueprint/architecture.svg
+  visual_manifest: blueprint/visual_manifest.json
+  machine_schema: machine/contract.schema.json
+  machine_policy: machine/policy.json
+  positive_fixture: tests/positive/valid_instance.json
+  negative_fixture: tests/negative/missing_evidence.json
+  adversarial_fixture: tests/adversarial/authority_override.json
+  plain_english: publication/plain_english.md
+  quick_reference: publication/quick_reference.md
+verification:
+  candidate_hash: null
+  gate_ids:
+  - ABS.GATE.G7
+  - ABS.GATE.G8
+  - ABS.GATE.G9
+  evidence_ids: []
+  independent_status: PENDING
+  invalidation_triggers:
+  - requirement
+  - schema
+  - policy
+  - interface
+  - security
+  - candidate_hash
+owner: framework_module_owner
+reviewers:
+- fresh_semantic_verifier
+- independent_adversarial_verifier

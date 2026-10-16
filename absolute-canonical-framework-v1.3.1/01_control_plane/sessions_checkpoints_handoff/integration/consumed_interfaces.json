@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.SESSIONS",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.LIFECYCLE.TRANSITION",
+      "name": "validated lifecycle transition",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.WORK",
+        "ABS.MODULE.CONTROL.SESSIONS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_lifecycle_transition.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.RECOVERY.CHECKPOINT",
+      "name": "checkpoint, rollback, and resume",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.SESSIONS",
+        "ABS.MODULE.CONTROL.RELEASE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_recovery_checkpoint.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.WORK.PACKET",
+      "name": "work-packet registration and dependency control",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.WORK",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.MANAGER",
+        "ABS.MODULE.CONTROL.SESSIONS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_work_packet.schema.json"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/gate-report.schema.json",
+  "title": "Absolute Coverage Closure Gate Report V2",
+  "type": "object",
+  "required": [
+    "gate_id",
+    "state",
+    "scope",
+    "candidate_hash",
+    "required_checks",
+    "actual_checks",
+    "decision"
+  ],
+  "properties": {
+    "gate_id": {
+      "type": "string",
+      "pattern": "^ABS\\.CC\\.GATE\\.C([0-9]|1[0-9]|20)$"
+    },
+    "state": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "NOT_RUN",
+        "INCONCLUSIVE",
+        "STALE",
+        "INVALID_REPORT",
+        "WAIVED_WITH_APPROVED_EXPIRY"
+      ]
+    },
+    "scope": {
+      "type": "string"
+    },
+    "candidate_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "required_checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "actual_checks": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "counts": {
+      "type": "object"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "open_findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verifier": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decision": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

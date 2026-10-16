@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+  "dependencies": [
+    {
+      "module_id": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    }
+  ],
+  "optional_dependencies": [],
+  "cycle_policy": "FORBIDDEN"
+}

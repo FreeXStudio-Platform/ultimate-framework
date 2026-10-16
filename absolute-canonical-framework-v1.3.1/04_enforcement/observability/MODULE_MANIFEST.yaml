@@ -1,0 +1,96 @@
+module_id: ABS.MODULE.ENFORCEMENT.OBSERVABILITY
+name: Observability, error taxonomy, incidents, and fault-seeking health
+version: 1.0.0
+schema_version: 1.0.0
+framework_release: 1.3.1
+status: CANDIDATE
+purpose: Observability, error taxonomy, incidents, and fault-seeking health
+scope:
+  includes:
+  - Observability shall expose state, health, errors, dependencies, freshness, and evidence without treating absence
+    of alerts as health.
+  - Errors and incidents shall use stable taxonomy, severity, scope, root-cause state, containment, recovery, evidence,
+    and follow-up records.
+  - Watchdogs and health reporters shall be tested with fault injection and shall fail truthfully when dependencies
+    or their own reporting path are unavailable.
+  excludes: &id001
+  - provider-specific authority unless this is an adapter
+  - raw secrets or hidden credentials
+  - completion claims without exact evidence
+  - direct editing of generated derivatives
+responsibilities:
+- load the versioned schema or policy
+- validate structure, references, and authority
+- run semantic, negative, adversarial, and failure checks
+- preserve raw outcome and candidate hash
+- block the governed event until violations are repaired
+non_responsibilities: *id001
+owned_concepts:
+- ABS.CONCEPT.OBSERVABILITY_INCIDENT
+requirements:
+- ABS.REQ.OBSERVABILITY_INCIDENT.001
+- ABS.REQ.OBSERVABILITY_INCIDENT.002
+- ABS.REQ.OBSERVABILITY_INCIDENT.003
+provided_interfaces:
+- ABS.IFACE.HEALTH.REPORT
+consumed_interfaces: []
+dependencies:
+- ABS.MODULE.CAPABILITY.MANAGER
+- ABS.MODULE.CONTROL.DECISIONS
+- ABS.MODULE.CONTROL.RELEASE
+- ABS.MODULE.CONTROL.STATE
+- ABS.MODULE.CONTROL.WORK
+- ABS.MODULE.KERNEL.AUTHORITY_TRUTH
+- ABS.MODULE.KERNEL.CHANGE_RECOVERY
+- ABS.MODULE.KERNEL.EVIDENCE_GATES
+- ABS.MODULE.KERNEL.GOAL_LOCK
+- ABS.MODULE.KERNEL.IDENTITY
+- ABS.MODULE.KERNEL.LIFECYCLE
+- ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE
+- ABS.MODULE.KNOWLEDGE.PARITY
+security_classification: INTERNAL
+representations:
+  narrative: REQUIRED
+  blueprint: REQUIRED
+  machine_spec: APPLICABLE
+  visual_spec: APPLICABLE
+  plain_english: REQUIRED
+  quick_reference: REQUIRED
+  tests: REQUIRED
+applicability_reasons:
+  machine_spec: States, requirements, evidence, and transitions require deterministic validation.
+  visual_spec: What was actually tested, when, and what remains unknown?
+canonical_paths:
+  narrative: MODULE.md
+  manifest: MODULE_MANIFEST.yaml
+  requirements: requirements.json
+  blueprint: blueprint/BLUEPRINT.md
+  visual_source: blueprint/architecture.dot
+  visual_output: blueprint/architecture.svg
+  visual_manifest: blueprint/visual_manifest.json
+  machine_schema: machine/contract.schema.json
+  machine_policy: machine/policy.json
+  positive_fixture: tests/positive/valid_instance.json
+  negative_fixture: tests/negative/missing_evidence.json
+  adversarial_fixture: tests/adversarial/authority_override.json
+  plain_english: publication/plain_english.md
+  quick_reference: publication/quick_reference.md
+verification:
+  candidate_hash: null
+  gate_ids:
+  - ABS.GATE.G7
+  - ABS.GATE.G8
+  - ABS.GATE.G9
+  evidence_ids: []
+  independent_status: PENDING
+  invalidation_triggers:
+  - requirement
+  - schema
+  - policy
+  - interface
+  - security
+  - candidate_hash
+owner: framework_module_owner
+reviewers:
+- fresh_semantic_verifier
+- independent_adversarial_verifier

@@ -1,0 +1,42 @@
+{
+  "candidate_status": "RELEASE_INTERNALLY_VERIFIED_INDEPENDENT_CERTIFICATION_PENDING",
+  "coverage": [
+    "33 module contract schemas (machine/contract.schema.json per canonical module package)",
+    "33 positive fixtures",
+    "33 negative fixtures",
+    "33 adversarial fixtures",
+    "7 shared record schemas exercised against 08_examples",
+    "5 adapters",
+    "4 profiles",
+    "false PASS",
+    "unknown health",
+    "restricted publication",
+    "stale hash",
+    "untrusted source instruction",
+    "unsafe archive paths",
+    "links",
+    "package hygiene",
+    "release identity ABS.RELEASE.1.3.1 and the immutable baseline chain RC1 -> RC2 -> 1.0.0 -> 1.1.0 -> 1.2.0 -> 1.3.0",
+    "manifest/checksum exactness",
+    "canonical C0-C20 mapping",
+    "authority-bound deterministic builder",
+    "legacy release-surface replacement",
+    "V2 machine-contract layer (tools/validate_v2_contracts.py, 168 checks)",
+    "cross-representation release pin (MODULE.md front matter = MODULE_MANIFEST.yaml = VERSION = FRAMEWORK.json)",
+    "verifier liveness (tools/verifier_mutation_check.py, every planted defect must be caught)"
+  ],
+  "entry_point": "run_all.py",
+  "limitations": [
+    "No provider host, Notion, Figma, GitHub remote, production project, AuditHunt runtime, or external independent certifier is exercised by this package-local suite."
+  ],
+  "required_negative_controls": [
+    "false_pass_no_evidence",
+    "enabled_unknown_health",
+    "restricted_public_claim",
+    "stale_hash_review",
+    "untrusted_instruction",
+    "unsafe_archive_paths"
+  ],
+  "schema_version": "1.0.0",
+  "suite_id": "ABS.TEST.SUITE.FRAMEWORK.1.3.1"
+}

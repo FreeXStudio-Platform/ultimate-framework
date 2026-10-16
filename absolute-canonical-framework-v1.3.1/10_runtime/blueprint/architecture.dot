@@ -1,0 +1,8 @@
+digraph module {
+graph [rankdir=LR,bgcolor="transparent",pad="0.2"];
+node [shape=box,style="rounded",fontname="Arial",fontsize=10];
+edge [fontname="Arial",fontsize=9];
+input [label="Command + project files"]; gate [label="Rail authorizer",shape=diamond]; op [label="Runtime execution, rail enforcement, and source-of-truth stamping"]; evidence [label="Ledger append",shape=diamond]; output [label="State updated"];
+input -> gate [label="reconstructed context"]; gate -> op [label="permitted step"]; op -> evidence [label="artifact written"]; evidence -> output [label="chained record"]; evidence -> op [label="refusal / finding",style=dashed];
+label="ABS.MODULE.RUNTIME.EXECUTOR"; labelloc=b; fontname="Arial"; fontsize=11;
+}

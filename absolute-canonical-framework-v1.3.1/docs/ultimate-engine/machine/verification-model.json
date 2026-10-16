@@ -1,0 +1,245 @@
+{
+  "aggregate_controls": [
+    "04_enforcement/validators/absolute_validate.py",
+    "tests/run_successor_controls.py",
+    "tools/deep_verify.py",
+    "tools/verifier_mutation_check.py",
+    "tools/validate_v2_contracts.py"
+  ],
+  "aggregate_entry_point": "09_tests_evals/run_all.py",
+  "framework_sections_in_execution_order": [
+    {
+      "check_codes": [
+        "CANDIDATE_HASH_DRIFT",
+        "IDENTITY_TOOLING_UNAVAILABLE",
+        "PAYLOAD_INTEGRITY_FAIL",
+        "REGISTRY_IDENTITY_DRIFT",
+        "ROOT_NAME_MISMATCH",
+        "SELF_CERTIFICATION_ENABLED",
+        "TREE_INTEGRITY_FAIL",
+        "VERSION_FILE_DRIFT"
+      ],
+      "function": "section_identity",
+      "protects": "Release identity checks.",
+      "source": "runtime/verify.py"
+    },
+    {
+      "check_codes": [
+        "FRAMEWORK_COUNT_DRIFT",
+        "FRAMEWORK_REGISTRY_RELEASE_DRIFT",
+        "INTERFACE_PROVIDER_UNKNOWN",
+        "INTERFACE_SCHEMA_MISSING",
+        "MODULE_CANONICAL_PATH_MISSING",
+        "MODULE_FALSE_CERTIFIED",
+        "MODULE_INDEX_DRIFT",
+        "MODULE_NARRATIVE_MISSING",
+        "MODULE_NARRATIVE_RELEASE_DRIFT",
+        "MODULE_NO_REQUIREMENTS",
+        "MODULE_RELEASE_PIN_DRIFT",
+        "MODULE_REQUIREMENT_MISMATCH",
+        "MODULE_UNKNOWN_DEPENDENCY",
+        "MODULE_UNKNOWN_INTERFACE",
+        "PROFILE_UNKNOWN_MODULE",
+        "REQUIREMENT_REGISTRY_DRIFT"
+      ],
+      "function": "section_structure",
+      "protects": "Modules, requirements, interfaces, profiles, and registries are mutually resolvable.",
+      "source": "runtime/verify.py"
+    },
+    {
+      "check_codes": [
+        "REPRESENTATION_MISSING",
+        "VISUAL_DERIVATIVE_MISSING",
+        "VISUAL_DERIVATIVE_STALE",
+        "VISUAL_PARITY_NOT_RUN",
+        "VISUAL_SOURCE_UNRENDERABLE"
+      ],
+      "function": "section_representation",
+      "protects": "Narrative, blueprint, visual, and publication forms are well formed and in parity.",
+      "source": "runtime/verify.py"
+    },
+    {
+      "check_codes": [
+        "EXAMPLE_INVALID",
+        "EXAMPLE_OR_SCHEMA_MISSING",
+        "INTERFACE_FIXTURE_MISSING",
+        "INTERFACE_FIXTURE_SHOULD_FAIL",
+        "INTERFACE_FIXTURE_SHOULD_PASS",
+        "MODULE_CONTRACT_INVALID",
+        "MODULE_FIXTURE_MISSING",
+        "MODULE_FIXTURE_SHOULD_FAIL",
+        "MODULE_FIXTURE_SHOULD_PASS",
+        "NO_SCHEMAS_FOUND",
+        "SCHEMA_INVALID"
+      ],
+      "function": "section_contracts",
+      "protects": "Every schema is valid and every fixture behaves as its contract requires.",
+      "source": "runtime/verify.py"
+    },
+    {
+      "check_codes": [
+        "CAPABILITY_ENABLED_WITHOUT_HEALTH",
+        "GATE_PASS_WITHOUT_EVIDENCE",
+        "GATE_PASS_WITH_BLOCKING_COUNTS",
+        "NEGATIVE_FIXTURE_DEGRADED",
+        "NEGATIVE_FIXTURE_MISSING",
+        "RESTRICTED_PUBLIC_CLAIM"
+      ],
+      "function": "section_semantics",
+      "protects": "States that would let the system assert a false completion are rejected.",
+      "source": "runtime/verify.py"
+    },
+    {
+      "check_codes": [
+        "CASE_COLLISION",
+        "CI_ACTION_UNPINNED",
+        "DENYLISTED_PATH",
+        "NESTED_ARCHIVE_OR_BYTECODE",
+        "POSSIBLE_SECRET",
+        "SYMLINK_FORBIDDEN",
+        "UNSAFE_PATH"
+      ],
+      "function": "section_security",
+      "protects": "Hygiene, secret exposure, unsafe paths, and supply-chain pinning.",
+      "source": "runtime/verify.py"
+    },
+    {
+      "check_codes": [
+        "ALLOWLIST_COUNT_DRIFT",
+        "ALLOWLIST_MISSING",
+        "ALLOWLIST_POLICY_WEAKENED",
+        "ALLOWLIST_RECORD_SET_DRIFT",
+        "ALLOWLIST_RELEASE_DRIFT",
+        "ALLOWLIST_SCHEMA_UNCHECKED",
+        "ALLOWLIST_SCHEMA_VIOLATION",
+        "DELIVERY_GATE_INTERNALIZED",
+        "DUPLICATE_ACTIVE_GATES",
+        "GATE_BINDING_SEQUENCE",
+        "GATE_BYPASSED_OR_STALE",
+        "GATE_DISABLE_PATH",
+        "GATE_MAP_INCOMPLETE",
+        "GOVERNANCE_MISSING",
+        "NONWAIVABLE_CONTROL_WEAKENED",
+        "OPEN_RELEASE_SURFACE"
+      ],
+      "function": "section_governance",
+      "protects": "Governance checks.",
+      "source": "runtime/verify.py"
+    },
+    {
+      "check_codes": [
+        "ACTOR_IDENTITY_NOT_NORMALIZED",
+        "DOCUMENT_GENERATOR_GAP",
+        "MUTATION_NOT_SERIALIZED",
+        "RAIL_DEAD_END_UNREPAIRABLE",
+        "RAIL_FALSE_SATISFACTION",
+        "RAIL_ORDINALS_INVALID",
+        "RAIL_PHASE_FALSE_START",
+        "RAIL_PHASE_UNMAPPED",
+        "RAIL_SKIP_PERMITTED",
+        "RAIL_STEP_COMMAND_MISSING",
+        "TOOL_ENTRYPOINT_MISSING",
+        "TOOL_MAY_MUTATE_SOURCE_TREE"
+      ],
+      "function": "section_runtime",
+      "protects": "Runtime invariants: rail ordering, refusal behavior, and no source mutation.",
+      "source": "runtime/verify.py"
+    },
+    {
+      "check_codes": [
+        "VALIDATOR_ERROR",
+        "VALIDATOR_MISSING",
+        "VALIDATOR_NONZERO_EXIT",
+        "VALIDATOR_UNPARSEABLE"
+      ],
+      "function": "section_deterministic_validator",
+      "protects": "The shipped deterministic validator run in a fresh process; its errors are adopted as findings.",
+      "source": "runtime/verify.py"
+    },
+    {
+      "check_codes": [
+        "SIMULATION_HAPPY_PATH_BROKEN",
+        "SIMULATION_NOT_REFUSED",
+        "SIMULATION_STUCK_RAIL_UNRECOVERABLE",
+        "SIMULATION_WRONG_REFUSAL"
+      ],
+      "function": "section_simulation",
+      "protects": "Adversarial scenarios executed live; each must be refused.",
+      "source": "runtime/verify.py"
+    }
+  ],
+  "mutation_controls": {
+    "controls": [
+      {
+        "expected_code": "ACTOR_IDENTITY_NOT_NORMALIZED",
+        "name": "actor_identity_compared_raw_so_a_self_review_passes",
+        "section": "runtime"
+      },
+      {
+        "expected_code": "ALLOWLIST_RECORD_SET_DRIFT",
+        "name": "allowlist_record_removed_while_file_remains",
+        "section": "governance"
+      },
+      {
+        "expected_code": "TREE_INTEGRITY_FAIL",
+        "name": "extra_untracked_file_in_payload",
+        "section": "identity"
+      },
+      {
+        "expected_code": "DOC_MARKDOWN_INDENTED_HEADING",
+        "name": "indented_heading_hides_narrative_in_a_code_block",
+        "section": "representation"
+      },
+      {
+        "expected_code": "SIMULATION_NOT_REFUSED",
+        "name": "install_no_longer_refuses_the_framework_tree",
+        "section": "simulation"
+      },
+      {
+        "expected_code": "MODULE_RELEASE_PIN_DRIFT",
+        "name": "manifest_release_pin_drifts_from_VERSION",
+        "section": "structure"
+      },
+      {
+        "expected_code": "MUTATION_NOT_SERIALIZED",
+        "name": "mutation_no_longer_serialized_against_concurrent_runs",
+        "section": "runtime"
+      },
+      {
+        "expected_code": "MODULE_NARRATIVE_RELEASE_DRIFT",
+        "name": "narrative_release_pin_drifts_from_manifest_and_VERSION",
+        "section": "structure"
+      },
+      {
+        "expected_code": "RAIL_DEAD_END_UNREPAIRABLE",
+        "name": "rail_dead_end_left_unrepairable",
+        "section": "runtime"
+      },
+      {
+        "expected_code": "SIMULATION_NOT_REFUSED",
+        "name": "seal_accepts_a_package_still_full_of_template_text",
+        "section": "simulation"
+      },
+      {
+        "expected_code": "TOOL_MAY_MUTATE_SOURCE_TREE",
+        "name": "tool_entry_point_may_write_bytecode_into_the_tree",
+        "section": "runtime"
+      }
+    ],
+    "count": 11,
+    "source": "tools/verifier_mutation_check.py",
+    "wired_sections": [
+      "governance",
+      "identity",
+      "representation",
+      "runtime",
+      "simulation",
+      "structure"
+    ]
+  },
+  "source": [
+    "runtime/verify.py",
+    "09_tests_evals/run_all.py",
+    "tools/verifier_mutation_check.py"
+  ]
+}

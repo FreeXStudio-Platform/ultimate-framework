@@ -1,0 +1,81 @@
+{
+  "architecture_snapshot_algorithm": "sha256-canonical-framework-graph-without-last_verified_hash-v1",
+  "architecture_snapshot_sha256": "sha256:a80d2e026d567e3d513cb10a61a3d8ca676e3faf958845cd8909030410c5f2c3",
+  "authority": "clean reusable framework candidate; raw sources and build evidence remain outside this tree",
+  "baseline_chain": [
+    {
+      "build_evidence_zip_sha256": "bb563878423dedec4cae8580ff8f289a0fb35aa74936c35e77c019741af2ec11",
+      "clean_zip_sha256": "0cbe85257f2ad8f2496b4f25de1b1dfbe7576c5031d9be2ec3f9635752672827",
+      "release_id": "ABS.RELEASE.1.0.0-RC1",
+      "role": "IMMUTABLE_INPUT_BASELINE"
+    },
+    {
+      "build_evidence_zip_sha256": "2c84aeeb3b7e29bdf39e0bee7924b033b395f8222e3cffd7623a425d400a4a1d",
+      "candidate_tree_sha256": "2a766db38f08b68b9235ecbc1b76dc400363a6776b29995a4a82bff650226d50",
+      "clean_zip_sha256": "3e403e5ea37c9f530cb69afbced5a841018a5e842d4610c3ab3dda21776fd7ba",
+      "release_id": "ABS.RELEASE.1.0.0-RC2",
+      "role": "IMMUTABLE_PREDECESSOR_RELEASE"
+    },
+    {
+      "build_evidence_zip_sha256": "cb82186f404c7d088cc4c4b6d3db5cc578adab829ec5014a519965d9431ca55b",
+      "candidate_tree_sha256": "d3f1f60622dca6014503debe0fd7cd8237bfe23ea14591c0eba12038c9666964",
+      "clean_zip_sha256": "cb82186f404c7d088cc4c4b6d3db5cc578adab829ec5014a519965d9431ca55b",
+      "release_id": "ABS.RELEASE.1.0.0",
+      "role": "IMMUTABLE_PREDECESSOR_RELEASE"
+    },
+    {
+      "build_evidence_zip_sha256": "7568cf7db00f30bd23b35d2e82510f519e7908451764d07738f9b0438d595cdf",
+      "candidate_tree_sha256": "a1ff34736b3cac95fb5b35edb30ef482715e8ee2d376c8709e29387883759aba",
+      "clean_zip_sha256": "7568cf7db00f30bd23b35d2e82510f519e7908451764d07738f9b0438d595cdf",
+      "release_id": "ABS.RELEASE.1.1.0",
+      "role": "IMMUTABLE_PREDECESSOR_RELEASE"
+    },
+    {
+      "build_evidence_zip_sha256": "cc2a4438fed352a911ee72842ca47e1cc44c054ee06536abb56a30f6ffe51338",
+      "candidate_tree_sha256": "add66854e3b89daa077e6a5dabd9c913385fe39f7a8b0f888e87c0a5e04ca866",
+      "clean_zip_sha256": "cc2a4438fed352a911ee72842ca47e1cc44c054ee06536abb56a30f6ffe51338",
+      "release_id": "ABS.RELEASE.1.2.0",
+      "role": "IMMUTABLE_PREDECESSOR_RELEASE"
+    },
+    {
+      "build_evidence_zip_sha256": "37c71be4e6ab5b8c56c8e500894b24481f6289e4566a1b64bce4d125f7fc652f",
+      "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+      "clean_zip_sha256": "37c71be4e6ab5b8c56c8e500894b24481f6289e4566a1b64bce4d125f7fc652f",
+      "release_id": "ABS.RELEASE.1.3.0",
+      "role": "IMMUTABLE_PREDECESSOR_RELEASE"
+    }
+  ],
+  "baseline_provenance": {
+    "clean_zip_sha256": "0cbe85257f2ad8f2496b4f25de1b1dfbe7576c5031d9be2ec3f9635752672827",
+    "release_id": "ABS.RELEASE.1.0.0-RC1",
+    "role": "IMMUTABLE_INPUT_BASELINE"
+  },
+  "canonical_requirement_registry_sha256": "sha256:741857b89ec80d3ed9e505c0685867271742f59ad017924edb248e2a152396f5",
+  "counts": {
+    "adapters": 5,
+    "core_requirements": 99,
+    "interfaces": 31,
+    "modules": 33,
+    "profiles": 4,
+    "requirements": 105,
+    "successor_governance_requirements": 6
+  },
+  "coverage_closure_v3_directive_sha256": "sha256:4480101cbe58a6be1ebd6530dcbc8a7da273a75cb22c56d948defc406b389c63",
+  "framework_id": "ABS.FRAMEWORK.CANONICAL",
+  "historical_builder_provenance": {
+    "activation_sha256": "sha256:7a1ce2776e26169e63b723d9202afc457db6487e9449125cc2dc1dc6614123d1",
+    "builder_directive_sha256": "sha256:f0e8b3d0fcad78e6ff934a932e2b53804e11e1c3f87b566a53c7e8b0dc95f3ad",
+    "role": "HISTORICAL_BUILD_PROVENANCE_NOT_SUCCESSOR_IDENTITY"
+  },
+  "predecessor_release": {
+    "build_evidence_zip_sha256": "37c71be4e6ab5b8c56c8e500894b24481f6289e4566a1b64bce4d125f7fc652f",
+    "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+    "clean_zip_sha256": "37c71be4e6ab5b8c56c8e500894b24481f6289e4566a1b64bce4d125f7fc652f",
+    "release_id": "ABS.RELEASE.1.3.0",
+    "role": "IMMUTABLE_PREDECESSOR_RELEASE"
+  },
+  "release_id": "ABS.RELEASE.1.3.1",
+  "schema_version": "1.0.0",
+  "status": "RELEASE_INTERNALLY_VERIFIED_INDEPENDENT_CERTIFICATION_PENDING",
+  "version": "1.3.1"
+}

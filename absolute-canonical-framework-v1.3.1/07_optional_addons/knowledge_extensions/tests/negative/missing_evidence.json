@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ADDON.KNOWLEDGE",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_ADDON_KNOWLEDGE.EXAMPLE",
+  "state": "DISABLED",
+  "requirement_evidence": [],
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "limitations": [
+    "Expected schema failure: empty evidence."
+  ],
+  "updated_at": "2026-08-13T18:00:00Z"
+}

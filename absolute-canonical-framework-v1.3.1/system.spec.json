@@ -1,0 +1,67 @@
+{
+  "$schema": "self-describing; enforced by the sibling Ultimate Engine with python3 -m tools.blueprint verify",
+  "_readme": "This authored file contains only the executable containers a reader should use, their purpose, and their owning document. Python modules and import edges are derived from the tracked tree by the vendored Ultimate Engine instrument. The framework's full semantic module topology is not Python-shaped and is derived separately into docs/ultimate-engine/machine/domain-model.json from the subject's canonical registries.",
+  "system": {
+    "name": "Absolute Canonical Framework 1.3.1",
+    "purpose": "A reusable governance framework and Python runtime that binds project work, evidence, verification, and release to scoped authority and exact identity.",
+    "document": "docs/ultimate-engine/SYS-110-architecture.md"
+  },
+  "containers": [
+    {
+      "id": "runtime",
+      "name": "Executable runtime",
+      "purpose": "Parse commands, enforce the project and document rails, persist governed artifacts, maintain the truth chain, derive identity, and verify framework and installed-project state.",
+      "packages": ["runtime"],
+      "depthFloor": 2,
+      "document": "docs/ultimate-engine/SYS-120-runtime-enforcement.md"
+    },
+    {
+      "id": "release-control",
+      "name": "Release control tooling",
+      "purpose": "Build, verify, and compare release artifacts under the control plane's allowlist and identity rules.",
+      "packages": ["01_control_plane.manifests_releases.tools"],
+      "depthFloor": 2,
+      "document": "docs/ultimate-engine/GUIDE-140-operations-verification.md"
+    },
+    {
+      "id": "enforcement-entrypoints",
+      "name": "Enforcement entry points",
+      "purpose": "Run deterministic validation and pre-write authority checks at the framework boundary.",
+      "packages": ["04_enforcement"],
+      "depthFloor": 1,
+      "document": "docs/ultimate-engine/SYS-120-runtime-enforcement.md"
+    },
+    {
+      "id": "aggregate-suite",
+      "name": "Aggregate verification suite",
+      "purpose": "Execute the documented validator, successor, deep-verification, and verifier-mutation controls as one verdict.",
+      "packages": ["09_tests_evals"],
+      "depthFloor": 0,
+      "document": "docs/ultimate-engine/GUIDE-140-operations-verification.md"
+    },
+    {
+      "id": "retained-controls",
+      "name": "Retained successor controls",
+      "purpose": "Retain package-level regression and release-surface controls outside the main runtime verifier.",
+      "packages": ["tests"],
+      "depthFloor": 0,
+      "document": "docs/ultimate-engine/GUIDE-140-operations-verification.md"
+    },
+    {
+      "id": "verification-tools",
+      "name": "Verification and release tools",
+      "purpose": "Expose deep verification, mutation checks, no-loss checks, release metadata, mode restoration, CI pin validation, and successor release verification.",
+      "packages": ["tools"],
+      "depthFloor": 0,
+      "document": "docs/ultimate-engine/GUIDE-140-operations-verification.md"
+    },
+    {
+      "id": "documentation-derivation",
+      "name": "Documentation derivation",
+      "purpose": "Derive the committed machine models and figure sidecars for this engine-produced documentation set without changing the framework runtime.",
+      "packages": ["docs.ultimate-engine.scripts"],
+      "depthFloor": 2,
+      "document": "docs/ultimate-engine/GUIDE-170-repository-release.md"
+    }
+  ]
+}

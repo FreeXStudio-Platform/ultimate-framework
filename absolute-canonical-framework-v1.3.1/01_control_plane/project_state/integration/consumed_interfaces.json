@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.STATE",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.GOAL_LINK.VALIDATE",
+      "name": "goal-link validation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.WORK",
+        "ABS.MODULE.CONTROL.STATE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_goal_link_validate.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.IDENTITY.ALLOCATE",
+      "name": "stable identity and namespace allocation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.IDENTITY",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.STATE",
+        "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_identity_allocate.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.SESSION.HANDOFF",
+      "name": "restart-safe session handoff",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.SESSIONS",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.STATE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_session_handoff.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.HEALTH.REPORT",
+      "name": "fault-seeking health and incident reporting",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.STATE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_health_report.schema.json"
+    }
+  ]
+}

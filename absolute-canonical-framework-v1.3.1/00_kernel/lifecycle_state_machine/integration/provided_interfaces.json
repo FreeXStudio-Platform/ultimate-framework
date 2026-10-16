@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.LIFECYCLE",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.LIFECYCLE.TRANSITION",
+      "name": "validated lifecycle transition",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.WORK",
+        "ABS.MODULE.CONTROL.SESSIONS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_lifecycle_transition.schema.json"
+    }
+  ]
+}

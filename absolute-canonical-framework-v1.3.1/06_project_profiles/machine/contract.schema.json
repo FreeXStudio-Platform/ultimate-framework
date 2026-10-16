@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:absolute:abs_module_profiles_project:contract:1.0.0",
+  "title": "Minimal, standard, enterprise, and downstream profiles Contract Instance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "module_id",
+    "scope_id",
+    "state",
+    "requirement_evidence",
+    "candidate_hash",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "module_id": {
+      "const": "ABS.MODULE.PROFILES.PROJECT"
+    },
+    "scope_id": {
+      "type": "string",
+      "pattern": "^ABS\\.SCOPE\\."
+    },
+    "state": {
+      "enum": [
+        "SELECTED",
+        "CONFIGURED",
+        "INSTALLED",
+        "VALIDATED",
+        "DEGRADED",
+        "MIGRATION_REQUIRED"
+      ]
+    },
+    "requirement_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "requirement_id",
+          "evidence_ids",
+          "result"
+        ],
+        "properties": {
+          "requirement_id": {
+            "enum": [
+              "ABS.REQ.PROJECT_PROFILES.001",
+              "ABS.REQ.PROJECT_PROFILES.002",
+              "ABS.REQ.PROJECT_PROFILES.003"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^ABS\\.EVIDENCE\\."
+            }
+          },
+          "result": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "BLOCKED",
+              "NOT_RUN",
+              "INCONCLUSIVE",
+              "STALE"
+            ]
+          }
+        }
+      }
+    },
+    "candidate_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

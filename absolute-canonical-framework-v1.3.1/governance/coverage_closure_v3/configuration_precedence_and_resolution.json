@@ -1,0 +1,33 @@
+{
+  "closed_conflicts": [
+    {
+      "id": "CFG.HIGH.001",
+      "resolution": "Candidate source tree is immutable during build; outputs are out-of-tree; production publication remains external-certifier-only.",
+      "topic": "staging_only_vs_release_mutation"
+    },
+    {
+      "id": "CFG.HIGH.002",
+      "resolution": "Overwrite is denied by default. Authorized replacement requires a matching authority record and a verified rollback snapshot.",
+      "topic": "overwrite_behavior"
+    },
+    {
+      "id": "CFG.HIGH.003",
+      "resolution": "Release builder consumes the frozen gate chain and recomputes candidate identity; declarations cannot override observed evidence.",
+      "topic": "gate_bypass_and_declared_identity"
+    }
+  ],
+  "external_projection_mutation": false,
+  "gate_bypass": false,
+  "overwrite_default": false,
+  "precedence_high_to_low": [
+    "explicit_independent_certifier_authority",
+    "frozen_gate_chain",
+    "successor_release_policy",
+    "module_local_configuration",
+    "documentation_examples"
+  ],
+  "release_environment": "CERTIFICATION_HANDOFF_ONLY",
+  "schema": "absolute.coverage_closure.configuration_precedence.v1",
+  "scope": "RC2_SUCCESSOR_ONLY",
+  "source_tree_mutation": false
+}

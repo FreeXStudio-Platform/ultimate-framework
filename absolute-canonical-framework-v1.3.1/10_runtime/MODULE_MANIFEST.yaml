@@ -1,0 +1,103 @@
+module_id: ABS.MODULE.RUNTIME.EXECUTOR
+name: Runtime execution, rail enforcement, and source-of-truth stamping
+version: 1.0.0
+schema_version: 1.0.0
+framework_release: 1.3.1
+status: CANDIDATE
+purpose: Runtime execution, rail enforcement, and source-of-truth stamping
+scope:
+  includes:
+  - The runtime shall permit exactly one next action at any project state, and shall refuse any command whose rail
+    step is not that action, naming both the refusing rule and the permitted action.
+  - Every governed mutation shall be written to the append-only hash-chained source of truth before project state
+    is updated, so that no state can exist without a prior record of the action that produced it.
+  - The runtime shall bind every evidence record, gate decision, document seal, and verification result to the exact
+    tree identity it was computed against, and shall treat any record bound to a superseded identity as stale.
+  excludes: &id001
+  - provider-specific authority unless this is an adapter
+  - raw secrets or hidden credentials
+  - completion claims without exact evidence
+  - direct editing of generated derivatives
+  - any certification claim about an artifact this runtime produced
+responsibilities:
+- reconstruct project state from files only
+- authorize each command against the rail or refuse it with the permitted action
+- write artifact, then ledger entry, then state
+- bind every observation to the exact tree identity
+- invalidate dependent claims when the identity changes
+non_responsibilities: *id001
+owned_concepts:
+- ABS.CONCEPT.RUNTIME_EXECUTION
+requirements:
+- ABS.REQ.RUNTIME_EXECUTION.001
+- ABS.REQ.RUNTIME_EXECUTION.002
+- ABS.REQ.RUNTIME_EXECUTION.003
+provided_interfaces:
+- ABS.IFACE.RUNTIME.EXECUTE
+- ABS.IFACE.TRUTH.STAMP
+consumed_interfaces:
+- ABS.IFACE.LIFECYCLE.TRANSITION
+- ABS.IFACE.EVIDENCE.RECORD
+- ABS.IFACE.GATE.EVALUATE
+- ABS.IFACE.STATE.ATOMIC_UPDATE
+- ABS.IFACE.MODULE.PACKAGE
+- ABS.IFACE.WORK.PACKET
+- ABS.IFACE.RECOVERY.CHECKPOINT
+- ABS.IFACE.IDENTITY.ALLOCATE
+dependencies:
+- ABS.MODULE.KERNEL.LIFECYCLE
+- ABS.MODULE.KERNEL.EVIDENCE_GATES
+- ABS.MODULE.KERNEL.IDENTITY
+- ABS.MODULE.KERNEL.GOAL_LOCK
+- ABS.MODULE.KERNEL.CHANGE_RECOVERY
+- ABS.MODULE.CONTROL.STATE
+- ABS.MODULE.CONTROL.WORK
+- ABS.MODULE.CONTROL.SESSIONS
+- ABS.MODULE.CONTROL.RELEASE
+- ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE
+security_classification: INTERNAL
+representations:
+  narrative: REQUIRED
+  blueprint: REQUIRED
+  machine_spec: APPLICABLE
+  visual_spec: APPLICABLE
+  plain_english: REQUIRED
+  quick_reference: REQUIRED
+  tests: REQUIRED
+applicability_reasons:
+  machine_spec: Rail state, ledger entries, and identity bindings require deterministic validation.
+  visual_spec: Which single action is permitted right now, and what record proves the last one happened?
+canonical_paths:
+  narrative: MODULE.md
+  manifest: MODULE_MANIFEST.yaml
+  requirements: requirements.json
+  blueprint: blueprint/BLUEPRINT.md
+  visual_source: blueprint/architecture.dot
+  visual_output: blueprint/architecture.svg
+  visual_manifest: blueprint/visual_manifest.json
+  machine_schema: machine/contract.schema.json
+  machine_policy: machine/policy.json
+  positive_fixture: tests/positive/valid_instance.json
+  negative_fixture: tests/negative/missing_evidence.json
+  adversarial_fixture: tests/adversarial/authority_override.json
+  plain_english: publication/plain_english.md
+  quick_reference: publication/quick_reference.md
+verification:
+  candidate_hash: null
+  gate_ids:
+  - ABS.GATE.G7
+  - ABS.GATE.G8
+  - ABS.GATE.G9
+  evidence_ids: []
+  independent_status: PENDING
+  invalidation_triggers:
+  - requirement
+  - schema
+  - policy
+  - interface
+  - security
+  - candidate_hash
+owner: framework_module_owner
+reviewers:
+- fresh_semantic_verifier
+- independent_adversarial_verifier

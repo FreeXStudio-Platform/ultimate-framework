@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.VERIFICATION.INDEPENDENT",
+      "name": "fresh exact-hash independent verification",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.RELEASE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_verification_independent.schema.json"
+    }
+  ]
+}

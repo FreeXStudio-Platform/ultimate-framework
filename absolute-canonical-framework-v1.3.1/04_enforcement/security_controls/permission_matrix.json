@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "default": "DENY",
+  "roles": [
+    {
+      "role": "discovery_reader",
+      "read": true,
+      "write": false,
+      "external": false,
+      "destructive": false
+    },
+    {
+      "role": "scoped_repository_operator",
+      "read": true,
+      "write": "TASK_SCOPED",
+      "external": false,
+      "destructive": false
+    },
+    {
+      "role": "external_connector",
+      "read": "APPROVED_SCOPE",
+      "write": "PROMPT_ON_WRITE",
+      "external": true,
+      "destructive": false
+    },
+    {
+      "role": "release_operator",
+      "read": true,
+      "write": "STAGING_ONLY",
+      "external": false,
+      "destructive": false
+    },
+    {
+      "role": "independent_verifier",
+      "read": true,
+      "write": false,
+      "external": false,
+      "destructive": false
+    }
+  ],
+  "owner_approval_required": [
+    "credentials",
+    "publication",
+    "financial_commitment",
+    "destructive_action",
+    "permission_expansion",
+    "irreversible_architecture"
+  ]
+}

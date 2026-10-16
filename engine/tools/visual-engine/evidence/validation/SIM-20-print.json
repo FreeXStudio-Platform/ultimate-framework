@@ -1,0 +1,16 @@
+{
+  "_readme": "Gate G9 render-evidence record, written by writeEvidence() (adapters/echarts/render.mjs). Documentation/audit trail only — no code in this engine reads this file back; shape is schemas/render-result.schema.json (also unvalidated, see its own _status).",
+  "visual_id": "SIM-20-print",
+  "selected_visual": "bar",
+  "preset": null,
+  "theme": "print-theme",
+  "classification": "internal",
+  "engine": "echarts@6.1.0",
+  "adapter": "visual-engine@1.0.0",
+  "width": 800,
+  "height": 480,
+  "svg_sha256": "475b6eea2fb984f44f1538209a1347b4e424b1d569ac75e9e651d1e460a5fc21",
+  "option_sha256": "63693a51de5474e5100c407a5e17d3d32690ce0c7b4a965ceb9548ae79990400",
+  "job_sha256": "79635092b1cf888fa7d1d85f301b8c780ebcffef3c030e4b91a2fef842046a90",
+  "warnings": []
+}

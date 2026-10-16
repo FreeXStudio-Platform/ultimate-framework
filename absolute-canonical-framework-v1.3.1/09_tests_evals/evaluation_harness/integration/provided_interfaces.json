@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ENFORCEMENT.TESTING",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.TEST.EVALUATE",
+      "name": "positive, negative, adversarial, recovery evaluation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "consumer_modules": [
+        "ABS.MODULE.KERNEL.EVIDENCE_GATES"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_test_evaluate.schema.json"
+    }
+  ]
+}

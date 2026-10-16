@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:absolute:schema:session-checkpoint:1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "session_id",
+    "program_state_version",
+    "active_work_packet",
+    "candidate_hash_before",
+    "candidate_hash_after",
+    "completed_atomic_units",
+    "partial_units",
+    "files_changed",
+    "checks_run",
+    "failed_or_not_run",
+    "findings_opened",
+    "findings_closed",
+    "capability_state_changes",
+    "rollback_point",
+    "context_status",
+    "exact_next_packet",
+    "exact_first_next_action"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "session_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "program_state_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "active_work_packet": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "candidate_hash_before": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "candidate_hash_after": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        }
+      ]
+    },
+    "completed_atomic_units": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "partial_units": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "files_changed": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "checks_run": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "failed_or_not_run": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "findings_opened": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+      }
+    },
+    "findings_closed": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+      }
+    },
+    "capability_state_changes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rollback_point": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context_status": {
+      "enum": [
+        "HEALTHY",
+        "CHECKPOINT_REQUIRED",
+        "FRESH_CONTEXT_REQUIRED"
+      ]
+    },
+    "exact_next_packet": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "exact_first_next_action": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

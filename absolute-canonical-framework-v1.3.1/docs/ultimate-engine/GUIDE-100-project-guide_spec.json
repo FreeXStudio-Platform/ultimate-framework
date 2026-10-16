@@ -1,0 +1,98 @@
+[
+  {
+    "caption": "The reusable framework governs a downstream project through kernel invariants, a durable control plane, the executable rail, evidence, verification, and release.",
+    "code": "flowchart TB\n  Builder[\"Builder Program\"] --> Framework[\"Absolute Framework\"]\n  Framework --> Project[\"Downstream Project\"]\n  Kernel[\"00 kernel invariants\"] --> Control[\"01 control plane\"]\n  Control --> Runtime[\"10 runtime rail\"]\n  Runtime --> Evidence[\"evidence and gate\"]\n  Evidence --> Verify[\"fresh verification\"]\n  Verify --> Release[\"exact-identity release\"]\n  Framework --> Kernel\n  Project -. feedback for future release .-> Builder",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/EXECUTIVE_OVERVIEW.md; docs/ARCHITECTURE.md",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "domain-operating-model",
+    "insight": "Authority flows one way into a downstream project; project feedback can inform a future framework version but cannot mutate the current release.",
+    "kind": "mermaid",
+    "reader_question": "How does authority flow from the builder to a governed downstream release?",
+    "title": "Authority and operating model"
+  },
+  {
+    "caption": "Counts are derived from git ls-files; two-digit labels identify the framework's numbered domain boundaries and the machine domain model provides their full names.",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "git ls-files",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "height": 660,
+    "id": "tracked-artifacts-by-domain",
+    "insight": "The distribution is documentation/data heavy, which is why a Python-only blueprint cannot stand in for the whole framework.",
+    "items": [
+      {
+        "label": "00",
+        "value": 168
+      },
+      {
+        "label": "01",
+        "value": 113
+      },
+      {
+        "label": "02",
+        "value": 85
+      },
+      {
+        "label": "03",
+        "value": 128
+      },
+      {
+        "label": "04",
+        "value": 133
+      },
+      {
+        "label": "05",
+        "value": 41
+      },
+      {
+        "label": "06",
+        "value": 60
+      },
+      {
+        "label": "07",
+        "value": 46
+      },
+      {
+        "label": "08",
+        "value": 8
+      },
+      {
+        "label": "09",
+        "value": 94
+      },
+      {
+        "label": "10",
+        "value": 21
+      }
+    ],
+    "kind": "bar",
+    "reader_question": "Where is the release's tracked material concentrated?",
+    "title": "Tracked artifacts by numbered domain",
+    "unit": " files",
+    "width": 1800
+  },
+  {
+    "caption": "For five kinds of fact this release makes, one artifact is authoritative and the rest are derived from it and checked against it.",
+    "code": "flowchart TB\n  Version[\"VERSION \u2014 release identity\"] --> Manifests[\"MANIFEST.json, SHA256SUMS.txt,\n.absolute/release/* (derived, prepare_release_metadata.py only)\"]\n  Version --> RegistryCheck[\"FRAMEWORK.json, RELEASE_ALLOWLIST.json\n(derived, checked against VERSION)\"]\n  Modules[\"Canonical module packages \u2014 module semantics\"] --> ModuleIndex[\"MODULE_INDEX.json, AUTHORITY_DEPENDENCY_DAG.json\n(derived index)\"]\n  Requirements[\"requirements.json per package \u2014 requirements and interfaces\"] --> ReqRegistry[\"CANONICAL_REQUIREMENTS.json, INTERFACE_INDEX.json\n(derived, reconciled)\"]\n  VerifyRun[\"A run of tools/deep_verify.py, bound to a tree identity \u2014 verification results\"] --> TestManifest[\"TEST_MANIFEST.json (a description, not the surface)\"]\n  RootDocs[\"README.md, CHANGELOG.md, LIMITATIONS.md, docs/*.md \u2014 the framework's own documentation\"] --> DerivedDocs[\"docs/ultimate-engine/ (this set \u2014 derived documentation)\"]",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/registries/FRAMEWORK.json; runtime/verify.py",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "authority-of-facts",
+    "insight": "Release identity, module semantics, requirements, verification results and documentation each have exactly one authority; every other artifact is derived from it and checked against it.",
+    "kind": "mermaid",
+    "reader_question": "For each kind of fact, which artifact is authoritative and which are derived?",
+    "title": "Authority of facts"
+  }
+]

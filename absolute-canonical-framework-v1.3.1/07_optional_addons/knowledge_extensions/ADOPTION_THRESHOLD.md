@@ -1,0 +1,2 @@
+# Knowledge Extension Adoption Threshold
+Keep deterministic indexes and source-controlled registries first. Pilot RAG, embeddings, vector stores, or graph databases only when measured corpus scale, retrieval quality, latency, collaboration, or query complexity fails a defined target. Record source classification, chunking, model/version, index identity, access filters, retrieval gold set, rebuild triggers, cost, rollback, and exit criteria. Projections never outrank canonical sources.

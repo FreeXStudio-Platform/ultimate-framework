@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "claim_id": "ABS.CLAIM.EXAMPLE.FRAMEWORK_STATUS",
+  "statement": "This package is a release candidate awaiting independent exact-hash verification.",
+  "truth_state": "VERIFIED_FACT",
+  "source_claim_ids": [
+    "ABS.CLAIM.RELEASE.STATUS"
+  ],
+  "source_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "classification": "PUBLIC",
+  "allowed_audiences": [
+    "PUBLIC",
+    "INTERNAL_EXHAUSTIVE"
+  ],
+  "sanitization_policy": "No source-estate details or restricted build evidence.",
+  "approval_state": "APPROVED",
+  "last_verified_at": "2026-08-13T18:00:00Z",
+  "invalidation_triggers": [
+    "candidate hash change",
+    "independent verification result",
+    "release status change"
+  ]
+}

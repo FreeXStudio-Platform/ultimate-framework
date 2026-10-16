@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CAPABILITY.ROUTING",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.MODEL_ROUTING.001",
+      "concept_id": "ABS.CONCEPT.MODEL_ROUTING",
+      "statement": "Kernel routing shall be based on capability, assurance, data sensitivity, irreversibility, context shape, deterministic opportunity, cost, capacity, and health rather than volatile model aliases.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.ROUTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MODEL_ROUTING.002",
+      "concept_id": "ABS.CONCEPT.MODEL_ROUTING",
+      "statement": "Provider/model names, plans, prices, limits, and host behavior shall live in dated replaceable execution profiles and adapters.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.ROUTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MODEL_ROUTING.003",
+      "concept_id": "ABS.CONCEPT.MODEL_ROUTING",
+      "statement": "High-risk synthesis and final verification shall use separated roles/contexts, and routing decisions shall record model/tool/version and evidence boundaries.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.ROUTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

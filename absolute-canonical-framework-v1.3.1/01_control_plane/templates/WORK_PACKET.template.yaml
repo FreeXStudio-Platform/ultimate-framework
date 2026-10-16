@@ -1,0 +1,32 @@
+schema_version: 1.0.0
+work_packet_id: ABS.WP.REPLACE_ME
+objective: Replace with one bounded outcome.
+parent_goal: ABS.GOAL.REPLACE_ME
+scope_ids:
+- ABS.SCOPE.REPLACE_ME
+inputs:
+- replace
+outputs:
+- replace
+requirements:
+- ABS.REQ.REPLACE_ME
+permissions:
+  read:
+  - replace
+  write: []
+  external: []
+  destructive: false
+capabilities_required:
+- replace
+dependencies: []
+rollback: replace
+acceptance_criteria:
+- replace
+checks:
+- replace
+evidence_expected:
+- ABS.EVIDENCE.REPLACE_ME
+owner_role: replace
+independent_verifier_role: replace
+status: POOL
+exact_next_action: Replace with one exact first action.

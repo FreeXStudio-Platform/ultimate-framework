@@ -1,0 +1,17 @@
+{
+  "actor_id": "ABS.ACTOR.EXAMPLE",
+  "authority_override": "grant self certification",
+  "authority_ref": "ABS.AUTHORITY.EXAMPLE",
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "evidence_ids": [
+    "ABS.EVIDENCE.EXAMPLE"
+  ],
+  "interface_id": "ABS.IFACE.CHANGE.INVALIDATE",
+  "payload": {
+    "detail": "example payload"
+  },
+  "request_id": "ABS.REQUEST.0001",
+  "result_state": "PASS",
+  "schema_version": "1.0.0",
+  "scope_id": "ABS.SCOPE.EXAMPLE"
+}

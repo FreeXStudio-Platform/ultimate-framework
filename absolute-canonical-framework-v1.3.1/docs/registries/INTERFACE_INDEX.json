@@ -1,0 +1,424 @@
+{
+  "schema_version": "1.0.0",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.GOAL_LINK.VALIDATE",
+      "name": "goal-link validation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.WORK",
+        "ABS.MODULE.CONTROL.STATE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_goal_link_validate.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.IDENTITY.ALLOCATE",
+      "name": "stable identity and namespace allocation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.IDENTITY",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.STATE",
+        "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_identity_allocate.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.TRUTH.CLASSIFY",
+      "name": "claim truth-state classification",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "consumer_modules": [
+        "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+        "ABS.MODULE.KNOWLEDGE.RECONCILIATION"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_truth_classify.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.LIFECYCLE.TRANSITION",
+      "name": "validated lifecycle transition",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.WORK",
+        "ABS.MODULE.CONTROL.SESSIONS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_lifecycle_transition.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.EVIDENCE.RECORD",
+      "name": "evidence creation and binding",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "consumer_modules": [
+        "ABS.MODULE.ENFORCEMENT.TESTING",
+        "ABS.MODULE.CONTROL.RELEASE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_evidence_record.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.GATE.EVALUATE",
+      "name": "truthful gate evaluation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.RELEASE",
+        "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_gate_evaluate.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.CHANGE.INVALIDATE",
+      "name": "dependency invalidation and deviation check",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "consumer_modules": [
+        "ABS.MODULE.KNOWLEDGE.PARITY",
+        "ABS.MODULE.KNOWLEDGE.GRAPH"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_change_invalidate.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.RECOVERY.CHECKPOINT",
+      "name": "checkpoint, rollback, and resume",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.SESSIONS",
+        "ABS.MODULE.CONTROL.RELEASE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_recovery_checkpoint.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.STATE.ATOMIC_UPDATE",
+      "name": "atomic canonical state update",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.STATE",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.WORK",
+        "ABS.MODULE.CONTROL.DECISIONS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_state_atomic_update.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.WORK.PACKET",
+      "name": "work-packet registration and dependency control",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.WORK",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.MANAGER",
+        "ABS.MODULE.CONTROL.SESSIONS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_work_packet.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.SESSION.HANDOFF",
+      "name": "restart-safe session handoff",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.SESSIONS",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.STATE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_session_handoff.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.DECISION.RECORD",
+      "name": "decision, risk, unknown, and waiver ledger",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "consumer_modules": [
+        "ABS.MODULE.KERNEL.AUTHORITY_TRUTH"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_decision_record.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.RELEASE.ASSEMBLE",
+      "name": "allowlist release assembly and manifesting",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.RELEASE",
+      "consumer_modules": [
+        "ABS.MODULE.ENFORCEMENT.CORE",
+        "ABS.MODULE.ENFORCEMENT.SECURITY"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_release_assemble.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.CAPABILITY.SELECT",
+      "name": "smallest sufficient capability selection",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.ROUTING",
+        "ABS.MODULE.CAPABILITY.CONNECTORS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_capability_select.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.SKILL.EXECUTE",
+      "name": "bounded skill execution contract",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CAPABILITY.SKILLS",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.MANAGER"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_skill_execute.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.CONNECTOR.INVOKE",
+      "name": "permission-bounded connector invocation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "consumer_modules": [
+        "ABS.MODULE.ENFORCEMENT.SECURITY"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_connector_invoke.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.MODEL.ROUTE",
+      "name": "provider-independent work routing",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CAPABILITY.ROUTING",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.MANAGER"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_model_route.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.MODULE.PACKAGE",
+      "name": "canonical module package contract",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "consumer_modules": [
+        "ABS.MODULE.KNOWLEDGE.PARITY"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_module_package.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.PARITY.VALIDATE",
+      "name": "cross-representation parity validation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "consumer_modules": [
+        "ABS.MODULE.ENFORCEMENT.CORE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_parity_validate.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.PUBLICATION.DERIVE",
+      "name": "governed publication derivation and sanitization",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "consumer_modules": [
+        "ABS.MODULE.ENFORCEMENT.SECURITY"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_publication_derive.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.VISUAL.RENDER",
+      "name": "semantic visual routing and render validation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "consumer_modules": [
+        "ABS.MODULE.KNOWLEDGE.PUBLICATION"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_visual_render.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.GRAPH.QUERY",
+      "name": "typed graph and context-pack query",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "consumer_modules": [
+        "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_graph_query.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.SOURCE.ADMIT",
+      "name": "safe source admission and reconciliation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "consumer_modules": [
+        "ABS.MODULE.KERNEL.AUTHORITY_TRUTH"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_source_admit.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.SCHEMA.VALIDATE",
+      "name": "schema and semantic policy validation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "consumer_modules": [
+        "ABS.MODULE.KERNEL.EVIDENCE_GATES"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_schema_validate.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.SECURITY.AUTHORIZE",
+      "name": "least-privilege action authorization",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.CONNECTORS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_security_authorize.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.TEST.EVALUATE",
+      "name": "positive, negative, adversarial, recovery evaluation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "consumer_modules": [
+        "ABS.MODULE.KERNEL.EVIDENCE_GATES"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_test_evaluate.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.HEALTH.REPORT",
+      "name": "fault-seeking health and incident reporting",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.STATE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_health_report.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.DEPENDENCY.REGISTER",
+      "name": "module/interface dependency registration",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "consumer_modules": [
+        "ABS.MODULE.KNOWLEDGE.GRAPH"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_dependency_register.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.VERIFICATION.INDEPENDENT",
+      "name": "fresh exact-hash independent verification",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.RELEASE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_verification_independent.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.RUNTIME.EXECUTE",
+      "name": "governed runtime action execution",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.STATE",
+        "ABS.MODULE.CONTROL.WORK",
+        "ABS.MODULE.KERNEL.LIFECYCLE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "refuse the action, name the refusing rule and the permitted next action, change no state",
+      "schema_ref": "schemas/abs_iface_runtime_execute.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.TRUTH.STAMP",
+      "name": "source-of-truth stamping",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "consumer_modules": [
+        "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+        "ABS.MODULE.CONTROL.RELEASE",
+        "ABS.MODULE.KERNEL.EVIDENCE_GATES"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "refuse the stamp on a broken chain; never rewrite or reorder an existing entry",
+      "schema_ref": "schemas/abs_iface_truth_stamp.schema.json"
+    }
+  ]
+}

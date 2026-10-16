@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/simulation-scenario.schema.json",
+  "title": "Program Simulation Scenario",
+  "type": "object",
+  "required": [
+    "scenario_id",
+    "title",
+    "category",
+    "preconditions",
+    "steps",
+    "expected_outcomes",
+    "prohibited_outcomes",
+    "status"
+  ],
+  "properties": {
+    "scenario_id": {
+      "type": "string",
+      "pattern": "^ABS\\.SIM\\."
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prohibited_outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fixtures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "EXPECTED_SUCCESS_OBSERVED",
+        "EXPECTED_REJECTION_OBSERVED",
+        "EXPECTED_BLOCK_OBSERVED",
+        "EXPECTED_DEGRADATION_WITH_FALLBACK_OBSERVED",
+        "UNEXPECTED_SUCCESS",
+        "UNEXPECTED_FAILURE",
+        "NOT_RUN",
+        "INCONCLUSIVE"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

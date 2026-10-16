@@ -1,0 +1,501 @@
+{
+  "schema_version": "1.0.0",
+  "framework_id": "ABS.FRAMEWORK.CANONICAL",
+  "modules": [
+    {
+      "module_id": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "name": "Goal lock and mission alignment",
+      "path": "00_kernel/mission_and_goal_lock",
+      "layer": "00_kernel",
+      "owned_concepts": [
+        "ABS.CONCEPT.GOAL_LOCK"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.GOAL_LOCK.001",
+        "ABS.REQ.GOAL_LOCK.002",
+        "ABS.REQ.GOAL_LOCK.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.IDENTITY",
+      "name": "Project identity and isolation",
+      "path": "00_kernel/authority_truth_identity/identity",
+      "layer": "00_kernel",
+      "owned_concepts": [
+        "ABS.CONCEPT.PROJECT_IDENTITY"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.PROJECT_IDENTITY.001",
+        "ABS.REQ.PROJECT_IDENTITY.002",
+        "ABS.REQ.PROJECT_IDENTITY.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "name": "Scoped authority, truth states, and conflict handling",
+      "path": "00_kernel/authority_truth_identity/authority_truth",
+      "layer": "00_kernel",
+      "owned_concepts": [
+        "ABS.CONCEPT.AUTHORITY_TRUTH"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.AUTHORITY_TRUTH.001",
+        "ABS.REQ.AUTHORITY_TRUTH.002",
+        "ABS.REQ.AUTHORITY_TRUTH.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "name": "Lifecycle and two-pass completion",
+      "path": "00_kernel/lifecycle_state_machine",
+      "layer": "00_kernel",
+      "owned_concepts": [
+        "ABS.CONCEPT.LIFECYCLE_TWO_PASS"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.LIFECYCLE_TWO_PASS.001",
+        "ABS.REQ.LIFECYCLE_TWO_PASS.002",
+        "ABS.REQ.LIFECYCLE_TWO_PASS.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "name": "Evidence, gates, health, and completion claims",
+      "path": "00_kernel/evidence_gate_health",
+      "layer": "00_kernel",
+      "owned_concepts": [
+        "ABS.CONCEPT.EVIDENCE_GATES_HEALTH"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.EVIDENCE_GATES_HEALTH.001",
+        "ABS.REQ.EVIDENCE_GATES_HEALTH.002",
+        "ABS.REQ.EVIDENCE_GATES_HEALTH.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "name": "Change, deviation, recovery, and rollback",
+      "path": "00_kernel/change_deviation_recovery",
+      "layer": "00_kernel",
+      "owned_concepts": [
+        "ABS.CONCEPT.CHANGE_DEVIATION_RECOVERY"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.CHANGE_DEVIATION_RECOVERY.001",
+        "ABS.REQ.CHANGE_DEVIATION_RECOVERY.002",
+        "ABS.REQ.CHANGE_DEVIATION_RECOVERY.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.CONTROL.STATE",
+      "name": "Canonical project state and atomic updates",
+      "path": "01_control_plane/project_state",
+      "layer": "01_control_plane",
+      "owned_concepts": [
+        "ABS.CONCEPT.PROJECT_STATE"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.PROJECT_STATE.001",
+        "ABS.REQ.PROJECT_STATE.002",
+        "ABS.REQ.PROJECT_STATE.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.CONTROL.WORK",
+      "name": "Work packets, tasks, dependencies, and progress",
+      "path": "01_control_plane/work_registry",
+      "layer": "01_control_plane",
+      "owned_concepts": [
+        "ABS.CONCEPT.WORK_REGISTRY"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.WORK_REGISTRY.001",
+        "ABS.REQ.WORK_REGISTRY.002",
+        "ABS.REQ.WORK_REGISTRY.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.CONTROL.SESSIONS",
+      "name": "Sessions, checkpoints, context, and handoff",
+      "path": "01_control_plane/sessions_checkpoints_handoff",
+      "layer": "01_control_plane",
+      "owned_concepts": [
+        "ABS.CONCEPT.SESSIONS_HANDOFF"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.SESSIONS_HANDOFF.001",
+        "ABS.REQ.SESSIONS_HANDOFF.002",
+        "ABS.REQ.SESSIONS_HANDOFF.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.CONTROL.DECISIONS",
+      "name": "Decision, risk, assumption, unknown, and waiver control",
+      "path": "01_control_plane/decisions_risks_unknowns",
+      "layer": "01_control_plane",
+      "owned_concepts": [
+        "ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.001",
+        "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.002",
+        "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.CONTROL.RELEASE",
+      "name": "Manifests, clean releases, checksums, and migration",
+      "path": "01_control_plane/manifests_releases",
+      "layer": "01_control_plane",
+      "owned_concepts": [
+        "ABS.CONCEPT.MANIFEST_RELEASE"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.MANIFEST_RELEASE.001",
+        "ABS.REQ.MANIFEST_RELEASE.002",
+        "ABS.REQ.MANIFEST_RELEASE.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.CAPABILITY.MANAGER",
+      "name": "Capability selection, health, permission, and fallback",
+      "path": "02_capabilities/capability_manager",
+      "layer": "02_capabilities",
+      "owned_concepts": [
+        "ABS.CONCEPT.CAPABILITY_MANAGER"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.CAPABILITY_MANAGER.001",
+        "ABS.REQ.CAPABILITY_MANAGER.002",
+        "ABS.REQ.CAPABILITY_MANAGER.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.CAPABILITY.SKILLS",
+      "name": "Skills, subagents, and delegation contracts",
+      "path": "02_capabilities/skills",
+      "layer": "02_capabilities",
+      "owned_concepts": [
+        "ABS.CONCEPT.SKILLS_DELEGATION"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.SKILLS_DELEGATION.001",
+        "ABS.REQ.SKILLS_DELEGATION.002",
+        "ABS.REQ.SKILLS_DELEGATION.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "name": "Connectors, MCP, plugins, and external systems",
+      "path": "02_capabilities/connectors_mcp",
+      "layer": "02_capabilities",
+      "owned_concepts": [
+        "ABS.CONCEPT.CONNECTORS_MCP"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.CONNECTORS_MCP.001",
+        "ABS.REQ.CONNECTORS_MCP.002",
+        "ABS.REQ.CONNECTORS_MCP.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.CAPABILITY.ROUTING",
+      "name": "Provider-independent model and execution routing",
+      "path": "02_capabilities/execution_profiles",
+      "layer": "02_capabilities",
+      "owned_concepts": [
+        "ABS.CONCEPT.MODEL_ROUTING"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.MODEL_ROUTING.001",
+        "ABS.REQ.MODEL_ROUTING.002",
+        "ABS.REQ.MODEL_ROUTING.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "name": "Canonical module package and scoped representations",
+      "path": "03_knowledge_and_documentation/canonical_module_package",
+      "layer": "03_knowledge_and_documentation",
+      "owned_concepts": [
+        "ABS.CONCEPT.CANONICAL_MODULE_PACKAGE"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.CANONICAL_MODULE_PACKAGE.001",
+        "ABS.REQ.CANONICAL_MODULE_PACKAGE.002",
+        "ABS.REQ.CANONICAL_MODULE_PACKAGE.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "name": "Narrative, blueprint, machine, visual, and test parity",
+      "path": "03_knowledge_and_documentation/documentation_blueprints/parity",
+      "layer": "03_knowledge_and_documentation",
+      "owned_concepts": [
+        "ABS.CONCEPT.DOCUMENT_BLUEPRINT_PARITY"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.001",
+        "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.002",
+        "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "name": "Publication profiles, confidentiality, and claim sanitization",
+      "path": "03_knowledge_and_documentation/publication_profiles",
+      "layer": "03_knowledge_and_documentation",
+      "owned_concepts": [
+        "ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.PUBLICATION_CONFIDENTIALITY.001",
+        "ABS.REQ.PUBLICATION_CONFIDENTIALITY.002",
+        "ABS.REQ.PUBLICATION_CONFIDENTIALITY.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "name": "Visual semantics, routing, rendering, and accessibility",
+      "path": "03_knowledge_and_documentation/rendering_visual_contracts",
+      "layer": "03_knowledge_and_documentation",
+      "owned_concepts": [
+        "ABS.CONCEPT.VISUAL_RENDERING"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.VISUAL_RENDERING.001",
+        "ABS.REQ.VISUAL_RENDERING.002",
+        "ABS.REQ.VISUAL_RENDERING.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "name": "Registries, graph, indexes, context packs, and retrieval",
+      "path": "03_knowledge_and_documentation/registries_graph_context",
+      "layer": "03_knowledge_and_documentation",
+      "owned_concepts": [
+        "ABS.CONCEPT.REGISTRIES_GRAPH_CONTEXT"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.001",
+        "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.002",
+        "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.ENFORCEMENT.CORE",
+      "name": "Schemas, validators, hooks, policy, and deterministic enforcement",
+      "path": "04_enforcement/schemas_validators_hooks",
+      "layer": "04_enforcement",
+      "owned_concepts": [
+        "ABS.CONCEPT.SCHEMAS_VALIDATORS_HOOKS"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.001",
+        "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.002",
+        "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "name": "Security, privacy, secrets, prompt injection, and least privilege",
+      "path": "04_enforcement/security_controls",
+      "layer": "04_enforcement",
+      "owned_concepts": [
+        "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.SECURITY_PRIVACY_INJECTION.001",
+        "ABS.REQ.SECURITY_PRIVACY_INJECTION.002",
+        "ABS.REQ.SECURITY_PRIVACY_INJECTION.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "name": "Positive, negative, adversarial, recovery, and clean-state tests",
+      "path": "09_tests_evals/evaluation_harness",
+      "layer": "09_tests_evals",
+      "owned_concepts": [
+        "ABS.CONCEPT.TEST_EVALUATION"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.TEST_EVALUATION.001",
+        "ABS.REQ.TEST_EVALUATION.002",
+        "ABS.REQ.TEST_EVALUATION.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "name": "Observability, error taxonomy, incidents, and fault-seeking health",
+      "path": "04_enforcement/observability",
+      "layer": "04_enforcement",
+      "owned_concepts": [
+        "ABS.CONCEPT.OBSERVABILITY_INCIDENT"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.OBSERVABILITY_INCIDENT.001",
+        "ABS.REQ.OBSERVABILITY_INCIDENT.002",
+        "ABS.REQ.OBSERVABILITY_INCIDENT.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "name": "Modular architecture, dependencies, interfaces, and repository governance",
+      "path": "00_kernel/core_invariants/modularity",
+      "layer": "00_kernel",
+      "owned_concepts": [
+        "ABS.CONCEPT.MODULAR_ARCHITECTURE"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.MODULAR_ARCHITECTURE.001",
+        "ABS.REQ.MODULAR_ARCHITECTURE.002",
+        "ABS.REQ.MODULAR_ARCHITECTURE.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "name": "ChatGPT/Codex, Claude Code, Cursor, local, and generic adapters",
+      "path": "05_platform_adapters",
+      "layer": "05_platform_adapters",
+      "owned_concepts": [
+        "ABS.CONCEPT.PLATFORM_ADAPTERS"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.PLATFORM_ADAPTERS.001",
+        "ABS.REQ.PLATFORM_ADAPTERS.002",
+        "ABS.REQ.PLATFORM_ADAPTERS.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.PROFILES.PROJECT",
+      "name": "Minimal, standard, enterprise, and downstream profiles",
+      "path": "06_project_profiles",
+      "layer": "06_project_profiles",
+      "owned_concepts": [
+        "ABS.CONCEPT.PROJECT_PROFILES"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.PROJECT_PROFILES.001",
+        "ABS.REQ.PROJECT_PROFILES.002",
+        "ABS.REQ.PROJECT_PROFILES.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "name": "Optional RAG, vector search, and graph database",
+      "path": "07_optional_addons/knowledge_extensions",
+      "layer": "07_optional_addons",
+      "owned_concepts": [
+        "ABS.CONCEPT.OPTIONAL_RAG_GRAPH"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.OPTIONAL_RAG_GRAPH.001",
+        "ABS.REQ.OPTIONAL_RAG_GRAPH.002",
+        "ABS.REQ.OPTIONAL_RAG_GRAPH.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.ADDON.OPERATIONS",
+      "name": "Optional portfolio, curriculum, notification, designops, and advanced release operations",
+      "path": "07_optional_addons/operations_extensions",
+      "layer": "07_optional_addons",
+      "owned_concepts": [
+        "ABS.CONCEPT.OPTIONAL_OPERATIONS"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.OPTIONAL_OPERATIONS.001",
+        "ABS.REQ.OPTIONAL_OPERATIONS.002",
+        "ABS.REQ.OPTIONAL_OPERATIONS.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "name": "Source admission, lineage, no-loss reconciliation, and supersession",
+      "path": "03_knowledge_and_documentation/source_reconciliation",
+      "layer": "03_knowledge_and_documentation",
+      "owned_concepts": [
+        "ABS.CONCEPT.SOURCE_ADMISSION_RECONCILIATION"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.001",
+        "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.002",
+        "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "name": "Fresh and adversarial independent verification",
+      "path": "00_kernel/two_pass_completion/independent_verification",
+      "layer": "00_kernel",
+      "owned_concepts": [
+        "ABS.CONCEPT.INDEPENDENT_VERIFICATION"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.INDEPENDENT_VERIFICATION.001",
+        "ABS.REQ.INDEPENDENT_VERIFICATION.002",
+        "ABS.REQ.INDEPENDENT_VERIFICATION.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "name": "AuditHunt downstream installation profile only",
+      "path": "06_project_profiles/audithunt",
+      "layer": "06_project_profiles",
+      "owned_concepts": [
+        "ABS.CONCEPT.AUDITHUNT_INSTALLATION_PROFILE"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.001",
+        "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.002",
+        "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.003"
+      ],
+      "status": "CANDIDATE"
+    },
+    {
+      "module_id": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "name": "Runtime execution, rail enforcement, and source-of-truth stamping",
+      "path": "10_runtime",
+      "layer": "10_runtime",
+      "owned_concepts": [
+        "ABS.CONCEPT.RUNTIME_EXECUTION"
+      ],
+      "requirement_ids": [
+        "ABS.REQ.RUNTIME_EXECUTION.001",
+        "ABS.REQ.RUNTIME_EXECUTION.002",
+        "ABS.REQ.RUNTIME_EXECUTION.003"
+      ],
+      "status": "CANDIDATE"
+    }
+  ]
+}

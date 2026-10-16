@@ -1,0 +1,2 @@
+# Canonical Registries and Graph
+`MODULE_INDEX.json`, `CANONICAL_REQUIREMENTS.json`, `CONCEPT_REGISTRY.json`, `INTERFACE_INDEX.json`, and `PROFILE_ADAPTER_INDEX.json` are source-controlled machine views of the release candidate. `FRAMEWORK_GRAPH.jsonl` connects modules, concepts, requirements, interfaces, profiles, adapters, and layers. Every active graph edge is bound to the frozen architecture candidate hash. The release manifest separately binds the exact frozen source-tree hash, and independent verification—when available—binds the final release artifact hash.

@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KNOWLEDGE.PARITY",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.001",
+      "concept_id": "ABS.CONCEPT.DOCUMENT_BLUEPRINT_PARITY",
+      "statement": "Narrative, blueprint, machine, visual, test, and publication representations shall share stable scope IDs while retaining form-specific authority.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.002",
+      "concept_id": "ABS.CONCEPT.DOCUMENT_BLUEPRINT_PARITY",
+      "statement": "Modules shall be authored section-by-section in lockstep when representations apply, and substantive change shall invalidate and regenerate affected forms.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.003",
+      "concept_id": "ABS.CONCEPT.DOCUMENT_BLUEPRINT_PARITY",
+      "statement": "Parity validation shall cover identity, requirements, terminology, states, interfaces, permissions, failure/recovery, dependencies, visuals, publication, versions, hashes, and tests.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

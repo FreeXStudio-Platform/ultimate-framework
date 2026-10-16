@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.MODULE.PACKAGE",
+      "name": "canonical module package contract",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "consumer_modules": [
+        "ABS.MODULE.KNOWLEDGE.PARITY"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_module_package.schema.json"
+    }
+  ]
+}

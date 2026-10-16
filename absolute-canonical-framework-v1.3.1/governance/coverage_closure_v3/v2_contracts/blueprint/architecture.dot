@@ -1,0 +1,1 @@
+digraph RC3Contracts { rankdir=LR; canonical [label="Canonical V3 registries"]; adapter [label="V2 compatibility projections"]; schemas [label="13 V2 contracts"]; tests [label="Clean + evidence validation"]; handoff [label="Exact-hash external handoff"]; canonical -> adapter -> schemas -> tests -> handoff; }

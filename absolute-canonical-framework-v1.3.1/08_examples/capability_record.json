@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "capability_id": "ABS.CAP.LOCAL.PYTHON",
+  "name": "Local Python runtime",
+  "class": "runtime",
+  "provider": "local",
+  "version": "3.13",
+  "purpose": [
+    "deterministic validation"
+  ],
+  "non_purpose": [
+    "external publication",
+    "secret storage"
+  ],
+  "permissions": {
+    "read": true,
+    "write": true,
+    "external": false,
+    "destructive": false
+  },
+  "approval_mode": "TASK_SCOPED",
+  "data_scope": [
+    "framework workspace"
+  ],
+  "trust_state": "APPROVED_LOCAL",
+  "activation_state": "ENABLED",
+  "health": {
+    "state": "HEALTHY",
+    "checked_at": "2026-08-13T18:00:00Z"
+  },
+  "fallbacks": [
+    "compatible isolated Python runtime"
+  ],
+  "rollback": "Disable the runtime profile and restore the prior environment lock."
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_KNOWLEDGE_RECONCILIATION.EXAMPLE",
+  "state": "RAW",
+  "requirement_evidence": [
+    {
+      "requirement_id": "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.001",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_SOURCE_ADMISSION_RECONCILIATION_001"
+      ],
+      "result": "NOT_RUN"
+    },
+    {
+      "requirement_id": "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.002",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_SOURCE_ADMISSION_RECONCILIATION_002"
+      ],
+      "result": "NOT_RUN"
+    },
+    {
+      "requirement_id": "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.003",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_SOURCE_ADMISSION_RECONCILIATION_003"
+      ],
+      "result": "NOT_RUN"
+    }
+  ],
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "limitations": [
+    "Synthetic example; zero hash cannot support release."
+  ],
+  "updated_at": "2026-08-13T18:00:00Z"
+}

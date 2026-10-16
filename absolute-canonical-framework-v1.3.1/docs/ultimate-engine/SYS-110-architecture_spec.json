@@ -1,0 +1,146 @@
+[
+  {
+    "caption": "An edge points from a consuming domain to an earlier-authority domain it depends on; labels are aggregated module-edge counts.",
+    "code": "flowchart LR\n  00[\"00_kernel\"]\n  01[\"01_control_plane\"]\n  02[\"02_capabilities\"]\n  03[\"03_knowledge_and_documentation\"]\n  04[\"04_enforcement\"]\n  05[\"05_platform_adapters\"]\n  06[\"06_project_profiles\"]\n  07[\"07_optional_addons\"]\n  08[\"08_examples\"]\n  09[\"09_tests_evals\"]\n  10[\"10_runtime\"]\n  01 -->|\"30\"| 00\n  02 -->|\"24\"| 00\n  02 -->|\"16\"| 01\n  03 -->|\"36\"| 00\n  03 -->|\"24\"| 01\n  03 -->|\"6\"| 02\n  04 -->|\"18\"| 00\n  04 -->|\"12\"| 01\n  04 -->|\"3\"| 02\n  04 -->|\"6\"| 03\n  05 -->|\"6\"| 00\n  05 -->|\"4\"| 01\n  05 -->|\"1\"| 02\n  05 -->|\"2\"| 03\n  05 -->|\"2\"| 04\n  06 -->|\"12\"| 00\n  06 -->|\"8\"| 01\n  06 -->|\"2\"| 02\n  06 -->|\"4\"| 03\n  06 -->|\"4\"| 04\n  06 -->|\"2\"| 05\n  07 -->|\"12\"| 00\n  07 -->|\"8\"| 01\n  07 -->|\"2\"| 02\n  07 -->|\"4\"| 03\n  07 -->|\"4\"| 04\n  07 -->|\"2\"| 05\n  07 -->|\"2\"| 06\n  09 -->|\"6\"| 00\n  09 -->|\"4\"| 01\n  09 -->|\"1\"| 02\n  09 -->|\"2\"| 03\n  10 -->|\"5\"| 00\n  10 -->|\"4\"| 01\n  10 -->|\"1\"| 03",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/registries/AUTHORITY_DEPENDENCY_DAG.json",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "domain-dependencies",
+    "insight": "Kernel dependencies sit upstream of the control, capability, knowledge, enforcement, profile, test, and runtime layers; the runtime is an executor, not a new authority source.",
+    "kind": "mermaid",
+    "reader_question": "Which numbered domains depend on which others?",
+    "title": "Cross-domain authority dependencies"
+  },
+  {
+    "caption": "Risk proxy derived from the canonical authority DAG: more transitive dependents means a change can invalidate more downstream owners.",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/registries/AUTHORITY_DEPENDENCY_DAG.json",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "height": 600,
+    "id": "dependency-centrality",
+    "insight": "The highest-ranked modules should receive the broadest impact analysis because their authority is consumed transitively across the graph.",
+    "items": [
+      {
+        "label": "AUTHORITY_TRUTH",
+        "value": 28
+      },
+      {
+        "label": "EVIDENCE_GATES",
+        "value": 27
+      },
+      {
+        "label": "CHANGE_RECOVERY",
+        "value": 26
+      },
+      {
+        "label": "IDENTITY",
+        "value": 26
+      },
+      {
+        "label": "GOAL_LOCK",
+        "value": 25
+      },
+      {
+        "label": "LIFECYCLE",
+        "value": 25
+      },
+      {
+        "label": "RELEASE",
+        "value": 20
+      },
+      {
+        "label": "STATE",
+        "value": 20
+      },
+      {
+        "label": "WORK",
+        "value": 20
+      },
+      {
+        "label": "DECISIONS",
+        "value": 20
+      }
+    ],
+    "kind": "bar",
+    "reader_question": "Which canonical modules are riskiest to change?",
+    "title": "Modules with the broadest transitive dependent set",
+    "unit": " dependents",
+    "width": 1800
+  },
+  {
+    "caption": "Largest extension groups derived from git ls-files.",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "git ls-files",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "height": 480,
+    "id": "representation-mix",
+    "insight": "Machine-readable JSON and Markdown dominate; executable Python is a small slice, so architecture cannot be inferred from imports alone.",
+    "items": [
+      {
+        "label": ".json",
+        "value": 596
+      },
+      {
+        "label": ".md",
+        "value": 297
+      },
+      {
+        "label": ".yaml",
+        "value": 71
+      },
+      {
+        "label": ".svg",
+        "value": 39
+      },
+      {
+        "label": ".dot",
+        "value": 35
+      },
+      {
+        "label": ".py",
+        "value": 30
+      },
+      {
+        "label": ".html",
+        "value": 10
+      },
+      {
+        "label": ".jsonl",
+        "value": 4
+      }
+    ],
+    "kind": "bar",
+    "reader_question": "Is this framework mostly executable code or governed representations?",
+    "title": "Tracked representation mix",
+    "unit": " files",
+    "width": 1800
+  },
+  {
+    "caption": "How the repository is arranged around the release payload, the vendored instrument, and the sealed artifacts.",
+    "code": "flowchart TB\n  Repo[\"Repository (git) \u2014 repository root\"] --> Payload[\"absolute-canonical-framework-v1.3.1/\nthe release payload \u2014 no .git inside\"]\n  Repo --> EngineDir[\"engine/\nvendored instrument \u2014 outside release identity\"]\n  Repo --> ReleaseDir[\"_release/\nsealed zip + detached sha256; _release/predecessors/\"]\n  Repo --> RepoRecords[\"README.md, RELEASE_STAMP.json,\nMANIFEST.sha256, docs/doc-pipeline/\"]\n  Payload --> RootName[\"basename must equal ROOT_NAME \u2014\nrelease_tree_integrity checks it\"]\n  Payload --> NoGit[\"FORBIDDEN_PARTS denylists .git \u2014\na working tree can now pass release_tree_integrity\"]",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "01_control_plane/manifests_releases/tools/release_integrity.py; CHANGELOG.md",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "repository-layout",
+    "insight": "The payload is a subdirectory with no version-control metadata inside it, so the tree-integrity control can pass on a working tree; the instrument and the sealed artifacts sit beside it, outside release identity.",
+    "kind": "mermaid",
+    "reader_question": "How is the repository arranged around the release payload?",
+    "title": "Repository layout"
+  }
+]

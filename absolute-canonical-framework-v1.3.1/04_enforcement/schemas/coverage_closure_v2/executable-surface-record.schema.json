@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/executable-surface-record.schema.json",
+  "title": "Executable Surface Record",
+  "type": "object",
+  "required": [
+    "surface_id",
+    "surface_type",
+    "provider",
+    "location",
+    "exposure",
+    "status"
+  ],
+  "properties": {
+    "surface_id": {
+      "type": "string",
+      "pattern": "^ABS\\.SURFACE\\."
+    },
+    "surface_type": {
+      "enum": [
+        "HTTP_ROUTE",
+        "GRAPHQL_OPERATION",
+        "RPC_METHOD",
+        "WEBSOCKET",
+        "WEBHOOK",
+        "EVENT",
+        "QUEUE",
+        "CRON",
+        "JOB",
+        "WORKER",
+        "CLI",
+        "DB_FUNCTION",
+        "DB_TRIGGER",
+        "EDGE_FUNCTION",
+        "UI_ACTION",
+        "MCP_TOOL",
+        "CONNECTOR_ACTION",
+        "PLUGIN_ACTION",
+        "HOOK",
+        "CI_ACTION",
+        "POLICY_GATE",
+        "FILE_WATCHER",
+        "INSTALLER",
+        "UNINSTALLER",
+        "RECOVERY_ACTION",
+        "OTHER"
+      ]
+    },
+    "provider": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "exposure": {
+      "enum": [
+        "PUBLIC_INTENTIONAL",
+        "AUTHENTICATED",
+        "INTERNAL",
+        "ADMIN",
+        "LOCAL_ONLY",
+        "TEST_ONLY",
+        "DISABLED",
+        "UNINTENDED_OPEN",
+        "UNKNOWN"
+      ]
+    },
+    "authentication": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "authorization": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rate_limit_or_budget": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "validation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "idempotency": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "timeout_retry_cancel": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "logging_and_redaction": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "health_and_freshness": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "documentation_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blueprint_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "test_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "VERIFIED_ACTIVE",
+        "VERIFIED_INACTIVE",
+        "UNVERIFIED",
+        "ORPHAN",
+        "DUPLICATE",
+        "DEPRECATED",
+        "BLOCKED"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

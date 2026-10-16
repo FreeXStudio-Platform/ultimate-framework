@@ -1,0 +1,59 @@
+{
+  "baseline_provenance": [
+    {
+      "build_evidence_zip_sha256": "bb563878423dedec4cae8580ff8f289a0fb35aa74936c35e77c019741af2ec11",
+      "clean_zip_sha256": "0cbe85257f2ad8f2496b4f25de1b1dfbe7576c5031d9be2ec3f9635752672827",
+      "release_id": "ABS.RELEASE.1.0.0-RC1",
+      "role": "IMMUTABLE_INPUT_BASELINE"
+    },
+    {
+      "build_evidence_zip_sha256": "2c84aeeb3b7e29bdf39e0bee7924b033b395f8222e3cffd7623a425d400a4a1d",
+      "candidate_tree_sha256": "2a766db38f08b68b9235ecbc1b76dc400363a6776b29995a4a82bff650226d50",
+      "clean_zip_sha256": "3e403e5ea37c9f530cb69afbced5a841018a5e842d4610c3ab3dda21776fd7ba",
+      "release_id": "ABS.RELEASE.1.0.0-RC2",
+      "role": "IMMUTABLE_PREDECESSOR_RELEASE"
+    },
+    {
+      "build_evidence_zip_sha256": "cb82186f404c7d088cc4c4b6d3db5cc578adab829ec5014a519965d9431ca55b",
+      "candidate_tree_sha256": "d3f1f60622dca6014503debe0fd7cd8237bfe23ea14591c0eba12038c9666964",
+      "clean_zip_sha256": "cb82186f404c7d088cc4c4b6d3db5cc578adab829ec5014a519965d9431ca55b",
+      "release_id": "ABS.RELEASE.1.0.0",
+      "role": "IMMUTABLE_PREDECESSOR_RELEASE"
+    },
+    {
+      "build_evidence_zip_sha256": "7568cf7db00f30bd23b35d2e82510f519e7908451764d07738f9b0438d595cdf",
+      "candidate_tree_sha256": "a1ff34736b3cac95fb5b35edb30ef482715e8ee2d376c8709e29387883759aba",
+      "clean_zip_sha256": "7568cf7db00f30bd23b35d2e82510f519e7908451764d07738f9b0438d595cdf",
+      "release_id": "ABS.RELEASE.1.1.0",
+      "role": "IMMUTABLE_PREDECESSOR_RELEASE"
+    },
+    {
+      "build_evidence_zip_sha256": "cc2a4438fed352a911ee72842ca47e1cc44c054ee06536abb56a30f6ffe51338",
+      "candidate_tree_sha256": "add66854e3b89daa077e6a5dabd9c913385fe39f7a8b0f888e87c0a5e04ca866",
+      "clean_zip_sha256": "cc2a4438fed352a911ee72842ca47e1cc44c054ee06536abb56a30f6ffe51338",
+      "release_id": "ABS.RELEASE.1.2.0",
+      "role": "IMMUTABLE_PREDECESSOR_RELEASE"
+    }
+  ],
+  "candidate_id": "ABS.CANDIDATE.1.3.0",
+  "candidate_tree_exclusions": [
+    "MANIFEST.json",
+    "CANDIDATE_SOURCE_MANIFEST.json",
+    "SHA256SUMS.txt",
+    ".absolute/release/release_identity.json",
+    ".absolute/release/authority_record.json",
+    ".absolute/release/gate_binding.json",
+    ".absolute/release/gate_evidence/*.json"
+  ],
+  "candidate_tree_hash_algorithm": "sha256-canonical-path-size-content-v1",
+  "candidate_tree_sha256": "1069d93309a3a2d8e15f4b001bb2f312d3b83098f5498b3519f3ab395468d998",
+  "framework_id": "ABS.FRAMEWORK.CANONICAL",
+  "independent_certification": "PENDING_EXTERNAL_EXACT_HASH_REVIEW",
+  "integrity_model": "non-circular-candidate-tree-plus-complete-detached-archive-binding-v1",
+  "package_root": "absolute-canonical-framework-v1.3.0",
+  "release_id": "ABS.RELEASE.1.3.0",
+  "schema": "absolute.release_identity.v1",
+  "self_certification": false,
+  "status": "RELEASE_INTERNALLY_VERIFIED_INDEPENDENT_CERTIFICATION_PENDING",
+  "version": "1.3.0"
+}

@@ -1,0 +1,16 @@
+schema_version: 1.0.0
+context_pack_id: ABS.CONTEXT.REPLACE_ME
+active_objective: replace
+scope_ids:
+- ABS.SCOPE.REPLACE_ME
+canonical_files: []
+hashes: {}
+requirements: []
+decisions: []
+interfaces: []
+dependencies: []
+tests: []
+evidence: []
+open_findings: []
+read_order: []
+authority: navigation aid only

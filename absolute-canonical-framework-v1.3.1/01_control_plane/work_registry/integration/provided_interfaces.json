@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.WORK",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.WORK.PACKET",
+      "name": "work-packet registration and dependency control",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.WORK",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.MANAGER",
+        "ABS.MODULE.CONTROL.SESSIONS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_work_packet.schema.json"
+    }
+  ]
+}

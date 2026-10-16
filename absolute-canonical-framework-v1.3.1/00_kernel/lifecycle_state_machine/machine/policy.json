@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.LIFECYCLE",
+  "policy_version": "1.0.0",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_KERNEL_LIFECYCLE.OPERATING_CONTRACT",
+  "truth_scope": [
+    "ABS.CONCEPT.LIFECYCLE_TWO_PASS"
+  ],
+  "default_action": "DENY_UNLESS_SCOPE_AUTHORITY_PERMISSION_AND_EVIDENCE_ARE_VALID",
+  "rules": [
+    {
+      "rule_id": "ABS.MODULE.KERNEL.LIFECYCLE.RULE.001",
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.001",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    },
+    {
+      "rule_id": "ABS.MODULE.KERNEL.LIFECYCLE.RULE.002",
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.002",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    },
+    {
+      "rule_id": "ABS.MODULE.KERNEL.LIFECYCLE.RULE.003",
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.003",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    }
+  ],
+  "states": [
+    "DISCOVERY",
+    "ARCHITECTURE_FROZEN",
+    "CANDIDATE",
+    "SECOND_PASS",
+    "INDEPENDENT_REVIEW",
+    "RELEASED",
+    "STALE"
+  ],
+  "transitions": [
+    {
+      "from": "DISCOVERY",
+      "to": "ARCHITECTURE_FROZEN",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "ARCHITECTURE_FROZEN",
+      "to": "CANDIDATE",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "CANDIDATE",
+      "to": "SECOND_PASS",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "SECOND_PASS",
+      "to": "INDEPENDENT_REVIEW",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "INDEPENDENT_REVIEW",
+      "to": "RELEASED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "RELEASED",
+      "to": "STALE",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    }
+  ],
+  "fail_closed_on": [
+    "a moving candidate is treated as verified",
+    "missing authority",
+    "stale evidence",
+    "semantic contradiction"
+  ],
+  "recovery": [
+    "stop affected action",
+    "restore checkpoint or safe state",
+    "repair canonical source/policy",
+    "rerun transitive checks"
+  ],
+  "approval_boundary": [
+    "external_write",
+    "destructive_action",
+    "credential_access",
+    "publication",
+    "financial_commitment",
+    "permission_expansion"
+  ],
+  "invalidation_triggers": [
+    "requirement_change",
+    "schema_change",
+    "policy_change",
+    "interface_change",
+    "security_change",
+    "candidate_hash_change"
+  ]
+}

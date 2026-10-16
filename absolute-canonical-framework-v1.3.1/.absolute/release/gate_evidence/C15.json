@@ -1,0 +1,26 @@
+{
+  "blocking_findings": 0,
+  "bypass": false,
+  "gate_id": "C15",
+  "gate_name": "Simulation Conformance",
+  "inconclusive_required_checks": 0,
+  "not_run_required_checks": 0,
+  "prerequisites": [
+    "C14"
+  ],
+  "release_id": "ABS.RELEASE.1.3.0",
+  "required_check_state": "PASS",
+  "schema": "absolute.gate_evidence.v1",
+  "stale": false,
+  "status": "PASS",
+  "summary": "Simulation Conformance evaluated from SIMULATION. The candidate identity this evidence is bound to is recorded in .absolute/release/gate_binding.json, not here, to keep the digest non-circular.",
+  "supporting_results": [
+    {
+      "checks": 20,
+      "detail": "Adversarial scenarios executed live; each must be refused.",
+      "finding_count": 0,
+      "name": "SIMULATION",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ENFORCEMENT.TESTING",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.TEST_EVALUATION.001",
+      "concept_id": "ABS.CONCEPT.TEST_EVALUATION",
+      "statement": "Validation shall include positive, negative, boundary, malformed, unavailable, permission-denied, adversarial, mutation, recovery, idempotence, clean-state rebuild, and rollback fixtures as applicable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.TEST_EVALUATION.002",
+      "concept_id": "ABS.CONCEPT.TEST_EVALUATION",
+      "statement": "Required positive fixtures shall pass and required negative fixtures shall fail in the expected controlled manner; execution without expected behavior is not PASS.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.TEST_EVALUATION.003",
+      "concept_id": "ABS.CONCEPT.TEST_EVALUATION",
+      "statement": "Tests and evaluations shall bind inputs, environment, configuration, dependency versions, outputs, evidence, denominators, and invalidation triggers.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

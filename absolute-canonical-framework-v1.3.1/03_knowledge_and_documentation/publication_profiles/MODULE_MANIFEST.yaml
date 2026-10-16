@@ -1,0 +1,96 @@
+module_id: ABS.MODULE.KNOWLEDGE.PUBLICATION
+name: Publication profiles, confidentiality, and claim sanitization
+version: 1.0.0
+schema_version: 1.0.0
+framework_release: 1.3.1
+status: CANDIDATE
+purpose: Publication profiles, confidentiality, and claim sanitization
+scope:
+  includes:
+  - Publication views shall derive from verified internal claims through audience/classification policy, sanitization,
+    unsupported-claim checks, rights checks, secret scanning, freshness review, and required approval.
+  - Required publication classes shall include internal exhaustive, restricted engineering, controlled enterprise,
+    public commercial, engineering quick reference, plain English, and machine-consumable.
+  - Every derivative claim shall retain source claim ID, version/hash, truth state, allowed audience, sanitization
+    policy, approval, freshness, and invalidation trigger.
+  excludes: &id001
+  - provider-specific authority unless this is an adapter
+  - raw secrets or hidden credentials
+  - completion claims without exact evidence
+  - direct editing of generated derivatives
+responsibilities:
+- identify the canonical scope and source evidence
+- define or update the narrative meaning
+- update applicable machine, blueprint, visual, integration, and test forms
+- run parity, link, security, and evidence checks
+- publish only governed derivatives and invalidate them on source change
+non_responsibilities: *id001
+owned_concepts:
+- ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY
+requirements:
+- ABS.REQ.PUBLICATION_CONFIDENTIALITY.001
+- ABS.REQ.PUBLICATION_CONFIDENTIALITY.002
+- ABS.REQ.PUBLICATION_CONFIDENTIALITY.003
+provided_interfaces:
+- ABS.IFACE.PUBLICATION.DERIVE
+consumed_interfaces:
+- ABS.IFACE.TRUTH.CLASSIFY
+- ABS.IFACE.VISUAL.RENDER
+dependencies:
+- ABS.MODULE.CAPABILITY.MANAGER
+- ABS.MODULE.CONTROL.DECISIONS
+- ABS.MODULE.CONTROL.RELEASE
+- ABS.MODULE.CONTROL.STATE
+- ABS.MODULE.CONTROL.WORK
+- ABS.MODULE.KERNEL.AUTHORITY_TRUTH
+- ABS.MODULE.KERNEL.CHANGE_RECOVERY
+- ABS.MODULE.KERNEL.EVIDENCE_GATES
+- ABS.MODULE.KERNEL.GOAL_LOCK
+- ABS.MODULE.KERNEL.IDENTITY
+- ABS.MODULE.KERNEL.LIFECYCLE
+security_classification: INTERNAL
+representations:
+  narrative: REQUIRED
+  blueprint: REQUIRED
+  machine_spec: APPLICABLE
+  visual_spec: APPLICABLE
+  plain_english: REQUIRED
+  quick_reference: REQUIRED
+  tests: REQUIRED
+applicability_reasons:
+  machine_spec: States, requirements, evidence, and transitions require deterministic validation.
+  visual_spec: Which governed claims may this audience receive?
+canonical_paths:
+  narrative: MODULE.md
+  manifest: MODULE_MANIFEST.yaml
+  requirements: requirements.json
+  blueprint: blueprint/BLUEPRINT.md
+  visual_source: blueprint/architecture.dot
+  visual_output: blueprint/architecture.svg
+  visual_manifest: blueprint/visual_manifest.json
+  machine_schema: machine/contract.schema.json
+  machine_policy: machine/policy.json
+  positive_fixture: tests/positive/valid_instance.json
+  negative_fixture: tests/negative/missing_evidence.json
+  adversarial_fixture: tests/adversarial/authority_override.json
+  plain_english: publication/plain_english.md
+  quick_reference: publication/quick_reference.md
+verification:
+  candidate_hash: null
+  gate_ids:
+  - ABS.GATE.G7
+  - ABS.GATE.G8
+  - ABS.GATE.G9
+  evidence_ids: []
+  independent_status: PENDING
+  invalidation_triggers:
+  - requirement
+  - schema
+  - policy
+  - interface
+  - security
+  - candidate_hash
+owner: framework_module_owner
+reviewers:
+- fresh_semantic_verifier
+- independent_adversarial_verifier

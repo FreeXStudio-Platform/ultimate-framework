@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CAPABILITY.MANAGER",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.WORK.PACKET",
+      "name": "work-packet registration and dependency control",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.WORK",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.MANAGER",
+        "ABS.MODULE.CONTROL.SESSIONS"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_work_packet.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.SKILL.EXECUTE",
+      "name": "bounded skill execution contract",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CAPABILITY.SKILLS",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.MANAGER"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_skill_execute.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.MODEL.ROUTE",
+      "name": "provider-independent work routing",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CAPABILITY.ROUTING",
+      "consumer_modules": [
+        "ABS.MODULE.CAPABILITY.MANAGER"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_model_route.schema.json"
+    }
+  ]
+}

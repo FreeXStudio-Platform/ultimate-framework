@@ -1,0 +1,19 @@
+name: absolute-framework-validation
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with: {python-version: '3.13'}
+      # run_all.py runs the deep verifier, which records VISUAL_PARITY_NOT_RUN
+      # as a finding rather than skipping it when Graphviz is absent. Without
+      # this step the job can never reach zero findings.
+      - run: sudo apt-get update && sudo apt-get install -y graphviz
+      - run: pip install -r 04_enforcement/requirements-validation.txt
+      - run: python 04_enforcement/validators/absolute_validate.py . --report validation-report.json
+      # run_all.py is the single documented entry point: deterministic
+      # validator, successor controls, deep verification, and the verifier
+      # mutation check. Any one of them failing fails the job.
+      - run: python 09_tests_evals/run_all.py

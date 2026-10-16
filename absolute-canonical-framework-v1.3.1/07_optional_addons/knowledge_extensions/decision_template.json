@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "addon_id": "ABS.ADDON.KNOWLEDGE.EXAMPLE",
+  "state": "DISABLED",
+  "measured_problem": null,
+  "baseline_metrics": {},
+  "activation_thresholds": {},
+  "data_classification": "UNKNOWN_REVIEW_REQUIRED",
+  "cost_cap": null,
+  "success_metrics": {},
+  "exit_criteria": {},
+  "rollback": "Delete derived index after preserving decision and source registry; canonical sources remain unchanged."
+}

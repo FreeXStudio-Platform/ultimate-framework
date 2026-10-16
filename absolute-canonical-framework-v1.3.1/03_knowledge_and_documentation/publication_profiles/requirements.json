@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.PUBLICATION_CONFIDENTIALITY.001",
+      "concept_id": "ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY",
+      "statement": "Publication views shall derive from verified internal claims through audience/classification policy, sanitization, unsupported-claim checks, rights checks, secret scanning, freshness review, and required approval.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PUBLICATION_CONFIDENTIALITY.002",
+      "concept_id": "ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY",
+      "statement": "Required publication classes shall include internal exhaustive, restricted engineering, controlled enterprise, public commercial, engineering quick reference, plain English, and machine-consumable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PUBLICATION_CONFIDENTIALITY.003",
+      "concept_id": "ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY",
+      "statement": "Every derivative claim shall retain source claim ID, version/hash, truth state, allowed audience, sanitization policy, approval, freshness, and invalidation trigger.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

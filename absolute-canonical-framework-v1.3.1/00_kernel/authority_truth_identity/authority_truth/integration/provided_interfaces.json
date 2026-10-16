@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.TRUTH.CLASSIFY",
+      "name": "claim truth-state classification",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "consumer_modules": [
+        "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+        "ABS.MODULE.KNOWLEDGE.RECONCILIATION"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_truth_classify.schema.json"
+    }
+  ]
+}

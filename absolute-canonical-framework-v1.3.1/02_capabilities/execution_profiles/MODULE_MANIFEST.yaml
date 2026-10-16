@@ -1,0 +1,94 @@
+module_id: ABS.MODULE.CAPABILITY.ROUTING
+name: Provider-independent model and execution routing
+version: 1.0.0
+schema_version: 1.0.0
+framework_release: 1.3.1
+status: CANDIDATE
+purpose: Provider-independent model and execution routing
+scope:
+  includes:
+  - Kernel routing shall be based on capability, assurance, data sensitivity, irreversibility, context shape, deterministic
+    opportunity, cost, capacity, and health rather than volatile model aliases.
+  - Provider/model names, plans, prices, limits, and host behavior shall live in dated replaceable execution profiles
+    and adapters.
+  - High-risk synthesis and final verification shall use separated roles/contexts, and routing decisions shall record
+    model/tool/version and evidence boundaries.
+  excludes: &id001
+  - provider-specific authority unless this is an adapter
+  - raw secrets or hidden credentials
+  - completion claims without exact evidence
+  - direct editing of generated derivatives
+responsibilities:
+- derive the active packet's exact capability needs
+- filter by trust, permission, data boundary, health, cost, and fallback
+- activate the minimum sufficient set
+- execute only the bounded operation
+- record actual identity, revoke temporary grants, and review outcome
+non_responsibilities: *id001
+owned_concepts:
+- ABS.CONCEPT.MODEL_ROUTING
+requirements:
+- ABS.REQ.MODEL_ROUTING.001
+- ABS.REQ.MODEL_ROUTING.002
+- ABS.REQ.MODEL_ROUTING.003
+provided_interfaces:
+- ABS.IFACE.MODEL.ROUTE
+consumed_interfaces:
+- ABS.IFACE.CAPABILITY.SELECT
+dependencies:
+- ABS.MODULE.CONTROL.DECISIONS
+- ABS.MODULE.CONTROL.RELEASE
+- ABS.MODULE.CONTROL.STATE
+- ABS.MODULE.CONTROL.WORK
+- ABS.MODULE.KERNEL.AUTHORITY_TRUTH
+- ABS.MODULE.KERNEL.CHANGE_RECOVERY
+- ABS.MODULE.KERNEL.EVIDENCE_GATES
+- ABS.MODULE.KERNEL.GOAL_LOCK
+- ABS.MODULE.KERNEL.IDENTITY
+- ABS.MODULE.KERNEL.LIFECYCLE
+security_classification: INTERNAL
+representations:
+  narrative: REQUIRED
+  blueprint: REQUIRED
+  machine_spec: APPLICABLE
+  visual_spec: APPLICABLE
+  plain_english: REQUIRED
+  quick_reference: REQUIRED
+  tests: REQUIRED
+applicability_reasons:
+  machine_spec: States, requirements, evidence, and transitions require deterministic validation.
+  visual_spec: Which execution profile satisfies assurance and data boundaries?
+canonical_paths:
+  narrative: MODULE.md
+  manifest: MODULE_MANIFEST.yaml
+  requirements: requirements.json
+  blueprint: blueprint/BLUEPRINT.md
+  visual_source: blueprint/architecture.dot
+  visual_output: blueprint/architecture.svg
+  visual_manifest: blueprint/visual_manifest.json
+  machine_schema: machine/contract.schema.json
+  machine_policy: machine/policy.json
+  positive_fixture: tests/positive/valid_instance.json
+  negative_fixture: tests/negative/missing_evidence.json
+  adversarial_fixture: tests/adversarial/authority_override.json
+  plain_english: publication/plain_english.md
+  quick_reference: publication/quick_reference.md
+verification:
+  candidate_hash: null
+  gate_ids:
+  - ABS.GATE.G7
+  - ABS.GATE.G8
+  - ABS.GATE.G9
+  evidence_ids: []
+  independent_status: PENDING
+  invalidation_triggers:
+  - requirement
+  - schema
+  - policy
+  - interface
+  - security
+  - candidate_hash
+owner: framework_module_owner
+reviewers:
+- fresh_semantic_verifier
+- independent_adversarial_verifier

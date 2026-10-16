@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:absolute:interface:abs_iface_truth_stamp:1.0.0",
+  "title": "source-of-truth stamping",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "actor_id",
+    "authority_ref",
+    "candidate_hash",
+    "entry_sha256",
+    "evidence_ids",
+    "interface_id",
+    "limitations",
+    "payload",
+    "prev_entry_sha256",
+    "request_id",
+    "result_state",
+    "schema_version",
+    "scope_id"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "interface_id": {
+      "const": "ABS.IFACE.TRUTH.STAMP"
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "scope_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "actor_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "authority_ref": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "candidate_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "result_state": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "NOT_RUN",
+        "INCONCLUSIVE",
+        "STALE"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "entry_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "prev_entry_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

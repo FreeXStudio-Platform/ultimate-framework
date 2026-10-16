@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "token_set_id": "ABS.TOKENS.DEFAULT.1",
+  "typography": {
+    "body": "system sans-serif",
+    "code": "system monospace"
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 40
+  },
+  "semantic_states": {
+    "pass": "success",
+    "fail": "danger",
+    "blocked": "warning",
+    "unknown": "neutral",
+    "stale": "muted"
+  },
+  "motion": {
+    "default": "none for essential meaning",
+    "reduced_motion_required": true
+  },
+  "accessibility": {
+    "contrast": "WCAG AA minimum",
+    "keyboard": true,
+    "static_fallback": true
+  },
+  "note": "Renderers map semantic tokens to approved presentation themes; canonical documents do not hard-code a brand."
+}

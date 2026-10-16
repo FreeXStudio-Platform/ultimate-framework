@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ADDON.KNOWLEDGE",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_RAG_GRAPH.001",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_RAG_GRAPH",
+      "statement": "RAG, embeddings, vector indexes, and graph databases shall be optional and adopted only when measured scale, retrieval quality, latency, collaboration, or query complexity justifies them.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_RAG_GRAPH.002",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_RAG_GRAPH",
+      "statement": "Retrieval infrastructure shall record source/version, chunking, embedding/model identity, access classification, tests, rebuild triggers, and provenance.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_RAG_GRAPH.003",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_RAG_GRAPH",
+      "statement": "No derived index or embedding may outrank canonical source, bypass confidentiality, or survive invalidation after incompatible source/model changes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

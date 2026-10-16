@@ -1,0 +1,19 @@
+{
+  "gate": {
+    "findings": [],
+    "gate": "build+run_gates",
+    "ok": true
+  },
+  "header": {
+    "audience": "operations",
+    "classification": "public",
+    "export_allowed": true,
+    "id": "SYS-120",
+    "last_reviewed": "2026-09-07",
+    "owner": "framework-documentation",
+    "status": "approved",
+    "surface": "repo",
+    "title": "Absolute Runtime and Enforcement",
+    "variants": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "blocking_findings": 0,
+  "bypass": false,
+  "gate_id": "C11",
+  "gate_name": "Control and Configuration Integrity",
+  "inconclusive_required_checks": 0,
+  "not_run_required_checks": 0,
+  "prerequisites": [
+    "C10"
+  ],
+  "release_id": "ABS.RELEASE.1.3.0",
+  "required_check_state": "PASS",
+  "schema": "absolute.gate_evidence.v1",
+  "stale": false,
+  "status": "PASS",
+  "summary": "Control and Configuration Integrity evaluated from FRAMEWORK_GOVERNANCE. The candidate identity this evidence is bound to is recorded in .absolute/release/gate_binding.json, not here, to keep the digest non-circular.",
+  "supporting_results": [
+    {
+      "checks": 14,
+      "detail": "Governance registries assert only what the tree can substantiate (prebuild registry scope).",
+      "finding_count": 0,
+      "name": "FRAMEWORK_GOVERNANCE",
+      "status": "PASS"
+    }
+  ]
+}

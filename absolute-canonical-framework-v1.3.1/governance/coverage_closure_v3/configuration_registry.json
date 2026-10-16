@@ -1,0 +1,175 @@
+{
+  "schema": "absolute.configuration_registry.v1",
+  "release_id": "ABS.RELEASE.1.0.0",
+  "precedence_high_to_low": [
+    "external_independent_certifier_authority",
+    "canonical_V3_gate_registry",
+    "release_authority_record",
+    "successor_release_policy",
+    "project_profile",
+    "host_adapter",
+    "environment",
+    "runtime_session",
+    "work_packet",
+    "documentation_example"
+  ],
+  "entries": [
+    {
+      "config_id": "ABS.CFG.RELEASE.EXPECTED_CANDIDATE_HASH",
+      "default": null,
+      "required": true,
+      "source": "CLI plus release identity",
+      "precedence": [
+        "external_independent_certifier_authority",
+        "canonical_V3_gate_registry",
+        "release_authority_record",
+        "successor_release_policy",
+        "project_profile",
+        "host_adapter",
+        "environment",
+        "runtime_session",
+        "work_packet",
+        "documentation_example"
+      ],
+      "validation": "tools/validate_v2_contracts.py plus release_integrity.py",
+      "secret": false,
+      "unsafe_values": [
+        "missing",
+        "caller-declared-without-recompute"
+      ],
+      "rollback": "no mutation"
+    },
+    {
+      "config_id": "ABS.CFG.RELEASE.AUTHORITY_RECORD",
+      "default": null,
+      "required": true,
+      "source": "hash-bound release metadata",
+      "precedence": [
+        "external_independent_certifier_authority",
+        "canonical_V3_gate_registry",
+        "release_authority_record",
+        "successor_release_policy",
+        "project_profile",
+        "host_adapter",
+        "environment",
+        "runtime_session",
+        "work_packet",
+        "documentation_example"
+      ],
+      "validation": "tools/validate_v2_contracts.py plus release_integrity.py",
+      "secret": false,
+      "unsafe_values": [
+        "missing",
+        "scope mismatch",
+        "self_certification true"
+      ],
+      "rollback": "no mutation"
+    },
+    {
+      "config_id": "ABS.CFG.RELEASE.GATE_BINDING",
+      "default": null,
+      "required": true,
+      "source": "canonical C0-C19 candidate binding",
+      "precedence": [
+        "external_independent_certifier_authority",
+        "canonical_V3_gate_registry",
+        "release_authority_record",
+        "successor_release_policy",
+        "project_profile",
+        "host_adapter",
+        "environment",
+        "runtime_session",
+        "work_packet",
+        "documentation_example"
+      ],
+      "validation": "tools/validate_v2_contracts.py plus release_integrity.py",
+      "secret": false,
+      "unsafe_values": [
+        "missing gate",
+        "FAIL",
+        "NOT_RUN",
+        "INCONCLUSIVE",
+        "bypass",
+        "stale",
+        "hash mismatch"
+      ],
+      "rollback": "no mutation"
+    },
+    {
+      "config_id": "ABS.CFG.RELEASE.REPLACE",
+      "default": false,
+      "required": false,
+      "source": "CLI plus authority",
+      "precedence": [
+        "external_independent_certifier_authority",
+        "canonical_V3_gate_registry",
+        "release_authority_record",
+        "successor_release_policy",
+        "project_profile",
+        "host_adapter",
+        "environment",
+        "runtime_session",
+        "work_packet",
+        "documentation_example"
+      ],
+      "validation": "tools/validate_v2_contracts.py plus release_integrity.py",
+      "secret": false,
+      "unsafe_values": [
+        "true without allow_replace",
+        "true without rollback_dir"
+      ],
+      "rollback": "verified exact pre-replacement copy"
+    },
+    {
+      "config_id": "ABS.CFG.RELEASE.SOURCE_TREE_MUTATION",
+      "default": false,
+      "required": true,
+      "source": "non-waivable policy",
+      "precedence": [
+        "external_independent_certifier_authority",
+        "canonical_V3_gate_registry",
+        "release_authority_record",
+        "successor_release_policy",
+        "project_profile",
+        "host_adapter",
+        "environment",
+        "runtime_session",
+        "work_packet",
+        "documentation_example"
+      ],
+      "validation": "tools/validate_v2_contracts.py plus release_integrity.py",
+      "secret": false,
+      "allowed_values": [
+        false
+      ],
+      "rollback": "not applicable"
+    },
+    {
+      "config_id": "ABS.CFG.RELEASE.SELF_CERTIFICATION",
+      "default": false,
+      "required": true,
+      "source": "non-waivable policy",
+      "precedence": [
+        "external_independent_certifier_authority",
+        "canonical_V3_gate_registry",
+        "release_authority_record",
+        "successor_release_policy",
+        "project_profile",
+        "host_adapter",
+        "environment",
+        "runtime_session",
+        "work_packet",
+        "documentation_example"
+      ],
+      "validation": "tools/validate_v2_contracts.py plus release_integrity.py",
+      "secret": false,
+      "allowed_values": [
+        false
+      ],
+      "rollback": "not applicable"
+    }
+  ],
+  "mandatory_gate_disable_path_exists": false,
+  "status": "PASS",
+  "version": "1.0.0"
+}

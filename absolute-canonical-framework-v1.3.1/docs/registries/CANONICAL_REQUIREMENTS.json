@@ -1,0 +1,1980 @@
+{
+  "schema_version": "1.0.0",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.GOAL_LOCK.001",
+      "concept_id": "ABS.CONCEPT.GOAL_LOCK",
+      "statement": "Every material action shall link to the active mission or to required support, risk reduction, verification, recovery, or maintenance; unrelated work is rejected or deferred.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.GOAL_LOCK.002",
+      "concept_id": "ABS.CONCEPT.GOAL_LOCK",
+      "statement": "The control plane shall record the parent goal for each work packet and reject material actions without a valid upward goal link.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.GOAL_LOCK.003",
+      "concept_id": "ABS.CONCEPT.GOAL_LOCK",
+      "statement": "Goal-lock checks shall be rerun when scope, project identity, mission, or authority changes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_IDENTITY.001",
+      "concept_id": "ABS.CONCEPT.PROJECT_IDENTITY",
+      "statement": "Builder program, framework, release, profile, adapter, module, and downstream project identities shall use distinct stable namespaces.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.IDENTITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_IDENTITY.002",
+      "concept_id": "ABS.CONCEPT.PROJECT_IDENTITY",
+      "statement": "Cross-project material shall enter only through an explicit import decision with provenance, scope, confidentiality, and compatibility checks.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.IDENTITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_IDENTITY.003",
+      "concept_id": "ABS.CONCEPT.PROJECT_IDENTITY",
+      "statement": "Identity conflicts or ambiguous active project scope shall block affected writes until reconciled.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.IDENTITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.001",
+      "concept_id": "ABS.CONCEPT.AUTHORITY_TRUTH",
+      "statement": "Authority shall be scoped by subject, artifact class, representation, version, lifecycle, and evidence; no file is universally authoritative.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.002",
+      "concept_id": "ABS.CONCEPT.AUTHORITY_TRUTH",
+      "statement": "Material claims shall use explicit truth states that distinguish verified fact, approved requirement/design, inference, plan, unknown, conflict, supersession, and rejection.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.003",
+      "concept_id": "ABS.CONCEPT.AUTHORITY_TRUTH",
+      "statement": "Equal-rank material conflicts shall be recorded and resolved by evidence-backed decision; vague compromise shall not replace contradictory requirements.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.001",
+      "concept_id": "ABS.CONCEPT.LIFECYCLE_TWO_PASS",
+      "statement": "The framework kernel shall define a provider-independent lifecycle from intake through release and complete, including truthful blocked, failed, recovering, cancelled, stale, and inconclusive routes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.002",
+      "concept_id": "ABS.CONCEPT.LIFECYCLE_TWO_PASS",
+      "statement": "Pass 1 shall construct the complete bounded candidate; Pass 2 shall review the frozen whole, close gaps, optimize without reducing required behavior, and rerun affected checks.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.LIFECYCLE_TWO_PASS.003",
+      "concept_id": "ABS.CONCEPT.LIFECYCLE_TWO_PASS",
+      "statement": "Downstream profiles may refine gate granularity but shall map losslessly to the kernel lifecycle and may not bypass release or evidence gates.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.001",
+      "concept_id": "ABS.CONCEPT.EVIDENCE_GATES_HEALTH",
+      "statement": "PASS, COMPLETE, VERIFIED, HEALTHY, INSTALLED, DEPLOYED, and RELEASED claims shall cite current evidence bound to exact scope and candidate identity.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.002",
+      "concept_id": "ABS.CONCEPT.EVIDENCE_GATES_HEALTH",
+      "statement": "Canonical gate states shall be PASS, FAIL, BLOCKED, NOT_RUN, INCONCLUSIVE, STALE, INVALID_REPORT, or WAIVED_WITH_APPROVED_EXPIRY; legacy accepted-risk states migrate to PASS plus an explicit risk/waiver record.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.003",
+      "concept_id": "ABS.CONCEPT.EVIDENCE_GATES_HEALTH",
+      "statement": "Health shall distinguish healthy, degraded, partial, dependency-failed, unknown, untested, stale, misconfigured, and root-cause-unknown, and shall test the reporter itself.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.001",
+      "concept_id": "ABS.CONCEPT.CHANGE_DEVIATION_RECOVERY",
+      "statement": "Material changes shall have an impact set, checkpoint, rollback route, and revalidation plan before execution.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.002",
+      "concept_id": "ABS.CONCEPT.CHANGE_DEVIATION_RECOVERY",
+      "statement": "A change shall invalidate affected and transitive evidence, parity stamps, derivatives, indexes, and compatibility claims.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.003",
+      "concept_id": "ABS.CONCEPT.CHANGE_DEVIATION_RECOVERY",
+      "statement": "Detected deviation shall stop the affected route, preserve evidence, restore or re-plan from the last valid point, and revalidate the repaired scope.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_STATE.001",
+      "concept_id": "ABS.CONCEPT.PROJECT_STATE",
+      "statement": "Canonical project state shall be schema-validated, versioned, atomically written, conflict-aware, and accompanied by an append-only change journal.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.STATE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_STATE.002",
+      "concept_id": "ABS.CONCEPT.PROJECT_STATE",
+      "statement": "State records shall identify project, framework/profile version, active objective, lifecycle, baseline hashes, permissions, health, and exact next action.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.STATE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_STATE.003",
+      "concept_id": "ABS.CONCEPT.PROJECT_STATE",
+      "statement": "Concurrent actors shall use revision or compare-and-swap controls and may not silently overwrite authoritative state.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.STATE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.WORK_REGISTRY.001",
+      "concept_id": "ABS.CONCEPT.WORK_REGISTRY",
+      "statement": "Every work item shall have stable identity, bounded objective, parent goal, scope, dependencies, permissions, rollback, acceptance criteria, checks, evidence, owner, verifier, and truthful status.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.WORK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.WORK_REGISTRY.002",
+      "concept_id": "ABS.CONCEPT.WORK_REGISTRY",
+      "statement": "Progress shall be computed only from weighted work that has passed its required verification; planned or implemented-only work shall not count as verified completion.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.WORK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.WORK_REGISTRY.003",
+      "concept_id": "ABS.CONCEPT.WORK_REGISTRY",
+      "statement": "Duplicate, obsolete, rejected, blocked, deferred, superseded, and rolled-back work shall remain in history with explicit disposition.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.WORK",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SESSIONS_HANDOFF.001",
+      "concept_id": "ABS.CONCEPT.SESSIONS_HANDOFF",
+      "statement": "Sessions shall load durable program/project state, active work packet, relevant context pack, baseline hashes, capability health, and rollback before changes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.SESSIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SESSIONS_HANDOFF.002",
+      "concept_id": "ABS.CONCEPT.SESSIONS_HANDOFF",
+      "statement": "Session close shall persist changed files, checks, failures, findings, state revisions, checkpoint, exact next packet, and a transcript-independent handoff.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.SESSIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SESSIONS_HANDOFF.003",
+      "concept_id": "ABS.CONCEPT.SESSIONS_HANDOFF",
+      "statement": "Context limits or provider interruption shall trigger checkpoint-and-resume rather than lower truth, safety, or completion standards.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.SESSIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.001",
+      "concept_id": "ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS",
+      "statement": "Material decisions, assumptions, risks, unknowns, exceptions, and waivers shall have stable IDs, owners, evidence, impact, status, review triggers, and expiry where applicable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.002",
+      "concept_id": "ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS",
+      "statement": "Owner input shall be requested only for material legal/commercial authority, credentials, recurring cost, broad permissions, external publication, destructive action, or irreversible architecture that cannot be derived safely.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.003",
+      "concept_id": "ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS",
+      "statement": "Unknown or contradictory evidence shall remain visible and shall block only the affected scope unless propagation is proven.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.DECISIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MANIFEST_RELEASE.001",
+      "concept_id": "ABS.CONCEPT.MANIFEST_RELEASE",
+      "statement": "A clean release shall be assembled in a fresh staging directory from an explicit allowlist and shall exclude raw sources, chats, history, evidence, caches, credentials, temporary files, and unrelated downstream content.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.RELEASE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MANIFEST_RELEASE.002",
+      "concept_id": "ABS.CONCEPT.MANIFEST_RELEASE",
+      "statement": "Every release file shall appear in a manifest with path, bytes, hash, class, source identity, and derivative status; the archive shall be CRC/path checked and re-extracted for hash comparison.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.RELEASE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MANIFEST_RELEASE.003",
+      "concept_id": "ABS.CONCEPT.MANIFEST_RELEASE",
+      "statement": "Release, deployment, and production verification shall remain distinct states with migration, rollback, limitations, and compatibility guidance.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.RELEASE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.001",
+      "concept_id": "ABS.CONCEPT.CAPABILITY_MANAGER",
+      "statement": "Every executable or context-providing capability shall have a registry record covering identity, version, provenance, triggers, permissions, data scope, cost, health, fallback, security/license review, and lifecycle.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.002",
+      "concept_id": "ABS.CONCEPT.CAPABILITY_MANAGER",
+      "statement": "The active packet shall use the smallest sufficient set of healthy, authorized, attributable capabilities and shall prefer deterministic/local methods for mechanical work.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.003",
+      "concept_id": "ABS.CONCEPT.CAPABILITY_MANAGER",
+      "statement": "Unavailable, degraded, unauthenticated, or over-privileged capabilities shall not be represented as usable; write/external/destructive actions remain approval-bounded.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.MANAGER",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SKILLS_DELEGATION.001",
+      "concept_id": "ABS.CONCEPT.SKILLS_DELEGATION",
+      "statement": "A skill shall solve one bounded task class and declare triggers, non-triggers, prerequisites, inputs, workflow, stop conditions, outputs, permissions, validation, failures, fallback, and compatibility.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.SKILLS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SKILLS_DELEGATION.002",
+      "concept_id": "ABS.CONCEPT.SKILLS_DELEGATION",
+      "statement": "Delegation shall specify exact scope, governing IDs, allowed data, prohibited actions, output schema/location, evidence, cost, confidentiality, and return path.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.SKILLS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SKILLS_DELEGATION.003",
+      "concept_id": "ABS.CONCEPT.SKILLS_DELEGATION",
+      "statement": "Delegated self-report shall not be accepted without independent validation of artifacts, behavior, side effects, and evidence identities.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.SKILLS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.001",
+      "concept_id": "ABS.CONCEPT.CONNECTORS_MCP",
+      "statement": "Connectors, MCP servers, plugins, repositories, document stores, and issue systems shall be optional capabilities with verified availability, data boundaries, health, and least-privilege permission.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.002",
+      "concept_id": "ABS.CONCEPT.CONNECTORS_MCP",
+      "statement": "Retrieved external content shall be treated as untrusted data and may not redefine authority, instructions, permissions, or publication rights.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.003",
+      "concept_id": "ABS.CONCEPT.CONNECTORS_MCP",
+      "statement": "Every consequential connector shall have a fallback, disable/revoke path, version pin/update policy, and recorded rollback.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MODEL_ROUTING.001",
+      "concept_id": "ABS.CONCEPT.MODEL_ROUTING",
+      "statement": "Kernel routing shall be based on capability, assurance, data sensitivity, irreversibility, context shape, deterministic opportunity, cost, capacity, and health rather than volatile model aliases.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.ROUTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MODEL_ROUTING.002",
+      "concept_id": "ABS.CONCEPT.MODEL_ROUTING",
+      "statement": "Provider/model names, plans, prices, limits, and host behavior shall live in dated replaceable execution profiles and adapters.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.ROUTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MODEL_ROUTING.003",
+      "concept_id": "ABS.CONCEPT.MODEL_ROUTING",
+      "statement": "High-risk synthesis and final verification shall use separated roles/contexts, and routing decisions shall record model/tool/version and evidence boundaries.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CAPABILITY.ROUTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.001",
+      "concept_id": "ABS.CONCEPT.CANONICAL_MODULE_PACKAGE",
+      "statement": "Every material module shall have one bounded semantic scope and coordinated narrative, manifest, requirements, blueprint/visual, machine contracts, tests/evidence, integration, publication, and changelog artifacts where applicable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.002",
+      "concept_id": "ABS.CONCEPT.CANONICAL_MODULE_PACKAGE",
+      "statement": "Non-applicable representations shall be recorded as N/A with a reason; empty symmetry artifacts are prohibited.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.003",
+      "concept_id": "ABS.CONCEPT.CANONICAL_MODULE_PACKAGE",
+      "statement": "A module may be certified only when scope, responsibilities, interfaces, failure/recovery, security, dependencies, parity, tests, links, and independent review meet its contract.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.001",
+      "concept_id": "ABS.CONCEPT.DOCUMENT_BLUEPRINT_PARITY",
+      "statement": "Narrative, blueprint, machine, visual, test, and publication representations shall share stable scope IDs while retaining form-specific authority.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.002",
+      "concept_id": "ABS.CONCEPT.DOCUMENT_BLUEPRINT_PARITY",
+      "statement": "Modules shall be authored section-by-section in lockstep when representations apply, and substantive change shall invalidate and regenerate affected forms.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.003",
+      "concept_id": "ABS.CONCEPT.DOCUMENT_BLUEPRINT_PARITY",
+      "statement": "Parity validation shall cover identity, requirements, terminology, states, interfaces, permissions, failure/recovery, dependencies, visuals, publication, versions, hashes, and tests.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PUBLICATION_CONFIDENTIALITY.001",
+      "concept_id": "ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY",
+      "statement": "Publication views shall derive from verified internal claims through audience/classification policy, sanitization, unsupported-claim checks, rights checks, secret scanning, freshness review, and required approval.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PUBLICATION_CONFIDENTIALITY.002",
+      "concept_id": "ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY",
+      "statement": "Required publication classes shall include internal exhaustive, restricted engineering, controlled enterprise, public commercial, engineering quick reference, plain English, and machine-consumable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PUBLICATION_CONFIDENTIALITY.003",
+      "concept_id": "ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY",
+      "statement": "Every derivative claim shall retain source claim ID, version/hash, truth state, allowed audience, sanitization policy, approval, freshness, and invalidation trigger.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.VISUAL_RENDERING.001",
+      "concept_id": "ABS.CONCEPT.VISUAL_RENDERING",
+      "statement": "Every visual shall answer a defined reader question using a structured semantic source, declared data/evidence, visual grammar, semantic encodings, accessibility, renderer identity, and output manifest.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.VISUAL_RENDERING.002",
+      "concept_id": "ABS.CONCEPT.VISUAL_RENDERING",
+      "statement": "Visual routing shall select the simplest sufficient approved renderer; 3D, animation, and motion are allowed only when they materially improve understanding.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.VISUAL_RENDERING.003",
+      "concept_id": "ABS.CONCEPT.VISUAL_RENDERING",
+      "statement": "Generated visuals shall have editable semantic source and static accessible fallback, and rendering shall be validated for meaning, parity, labels, contrast, navigation, and export.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.001",
+      "concept_id": "ABS.CONCEPT.REGISTRIES_GRAPH_CONTEXT",
+      "statement": "The framework shall define versioned registries and a source-controlled typed graph connecting sources, concepts, modules, requirements, claims, decisions, capabilities, artifacts, tests, evidence, profiles, and releases.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.002",
+      "concept_id": "ABS.CONCEPT.REGISTRIES_GRAPH_CONTEXT",
+      "statement": "Graph edges shall record source, target, type, direction, evidence, confidence, lifecycle, and last verified identity, and required provenance/impact queries shall be testable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.003",
+      "concept_id": "ABS.CONCEPT.REGISTRIES_GRAPH_CONTEXT",
+      "statement": "Context packs shall be compact evidence-linked navigation aids and shall never outrank canonical sources; vector or graph-database infrastructure remains threshold-triggered.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.001",
+      "concept_id": "ABS.CONCEPT.SCHEMAS_VALIDATORS_HOOKS",
+      "statement": "Machine records shall use versioned schemas with explicit identifiers, enums, nullability, references, and compatibility rules.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.002",
+      "concept_id": "ABS.CONCEPT.SCHEMAS_VALIDATORS_HOOKS",
+      "statement": "Semantic validators shall reject false PASS, missing evidence, superseded authority, broken reciprocal links, unapproved destructive actions, restricted publication leakage, and manifest drift.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.003",
+      "concept_id": "ABS.CONCEPT.SCHEMAS_VALIDATORS_HOOKS",
+      "statement": "Must-run lifecycle rules shall use hooks, CI, policy, permissions, or runtime gates when supported, with pinned examples and fail-closed behavior for malformed input.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.CORE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SECURITY_PRIVACY_INJECTION.001",
+      "concept_id": "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION",
+      "statement": "Secrets shall be referenced through approved stores or environment names and shall never appear in framework source, examples, logs, evidence, screenshots, manifests, or releases.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SECURITY_PRIVACY_INJECTION.002",
+      "concept_id": "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION",
+      "statement": "Source and retrieved content shall be treated as untrusted; path, command, URL, filename, archive, prompt-injection, and supply-chain controls shall apply before privileged use.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SECURITY_PRIVACY_INJECTION.003",
+      "concept_id": "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION",
+      "statement": "Data classification and least privilege shall propagate through raw/derived stores, indexes, embeddings, caches, provenance, external models, renderers, and publication.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.TEST_EVALUATION.001",
+      "concept_id": "ABS.CONCEPT.TEST_EVALUATION",
+      "statement": "Validation shall include positive, negative, boundary, malformed, unavailable, permission-denied, adversarial, mutation, recovery, idempotence, clean-state rebuild, and rollback fixtures as applicable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.TEST_EVALUATION.002",
+      "concept_id": "ABS.CONCEPT.TEST_EVALUATION",
+      "statement": "Required positive fixtures shall pass and required negative fixtures shall fail in the expected controlled manner; execution without expected behavior is not PASS.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.TEST_EVALUATION.003",
+      "concept_id": "ABS.CONCEPT.TEST_EVALUATION",
+      "statement": "Tests and evaluations shall bind inputs, environment, configuration, dependency versions, outputs, evidence, denominators, and invalidation triggers.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OBSERVABILITY_INCIDENT.001",
+      "concept_id": "ABS.CONCEPT.OBSERVABILITY_INCIDENT",
+      "statement": "Observability shall expose state, health, errors, dependencies, freshness, and evidence without treating absence of alerts as health.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OBSERVABILITY_INCIDENT.002",
+      "concept_id": "ABS.CONCEPT.OBSERVABILITY_INCIDENT",
+      "statement": "Errors and incidents shall use stable taxonomy, severity, scope, root-cause state, containment, recovery, evidence, and follow-up records.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OBSERVABILITY_INCIDENT.003",
+      "concept_id": "ABS.CONCEPT.OBSERVABILITY_INCIDENT",
+      "statement": "Watchdogs and health reporters shall be tested with fault injection and shall fail truthfully when dependencies or their own reporting path are unavailable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MODULAR_ARCHITECTURE.001",
+      "concept_id": "ABS.CONCEPT.MODULAR_ARCHITECTURE",
+      "statement": "Rules shall be placed by compact-kernel, reusable-module, provider-adapter, project-profile, or optional-add-on tests, with one-way authority and explicit interfaces.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MODULAR_ARCHITECTURE.002",
+      "concept_id": "ABS.CONCEPT.MODULAR_ARCHITECTURE",
+      "statement": "Modules shall declare responsibilities, non-responsibilities, provided/consumed interfaces, dependencies, versions, compatibility, failure, recovery, and ownership.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MODULAR_ARCHITECTURE.003",
+      "concept_id": "ABS.CONCEPT.MODULAR_ARCHITECTURE",
+      "statement": "Repository placement, naming, imports, generated outputs, aliases, deprecation, and migration shall be governed and validated to prevent duplicate control planes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PLATFORM_ADAPTERS.001",
+      "concept_id": "ABS.CONCEPT.PLATFORM_ADAPTERS",
+      "statement": "ChatGPT/Codex, Claude Code, Cursor, local-agent, and generic-host adapters shall translate kernel contracts into host-specific files, hooks, permissions, context loading, and commands.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PLATFORM_ADAPTERS.002",
+      "concept_id": "ABS.CONCEPT.PLATFORM_ADAPTERS",
+      "statement": "Adapters shall declare required capabilities, limitations, fallbacks, generated artifacts, approval boundaries, and non-authoritative surfaces.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PLATFORM_ADAPTERS.003",
+      "concept_id": "ABS.CONCEPT.PLATFORM_ADAPTERS",
+      "statement": "Host-specific behavior shall not contaminate kernel invariants, and adapter compatibility shall be versioned and tested.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_PROFILES.001",
+      "concept_id": "ABS.CONCEPT.PROJECT_PROFILES",
+      "statement": "Minimal, standard, and enterprise profiles shall select bounded module, assurance, documentation, capability, and operational requirements without changing kernel invariants.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.PROFILES.PROJECT",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_PROFILES.002",
+      "concept_id": "ABS.CONCEPT.PROJECT_PROFILES",
+      "statement": "A project profile shall declare purpose, applicability, required/optional modules, capabilities, permissions, data classification, gates, installation, validation, migration, and uninstall/rollback.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.PROFILES.PROJECT",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_PROFILES.003",
+      "concept_id": "ABS.CONCEPT.PROJECT_PROFILES",
+      "statement": "Profiles shall be composable only through explicit precedence and compatibility checks and shall not import Builder Program history.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.PROFILES.PROJECT",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_RAG_GRAPH.001",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_RAG_GRAPH",
+      "statement": "RAG, embeddings, vector indexes, and graph databases shall be optional and adopted only when measured scale, retrieval quality, latency, collaboration, or query complexity justifies them.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_RAG_GRAPH.002",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_RAG_GRAPH",
+      "statement": "Retrieval infrastructure shall record source/version, chunking, embedding/model identity, access classification, tests, rebuild triggers, and provenance.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_RAG_GRAPH.003",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_RAG_GRAPH",
+      "statement": "No derived index or embedding may outrank canonical source, bypass confidentiality, or survive invalidation after incompatible source/model changes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_OPERATIONS.001",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_OPERATIONS",
+      "statement": "Portfolio operations, curriculum/learning, notifications, dashboards, DesignOps, FinOps, compliance operations, and advanced release operations shall remain optional modules or enterprise-profile additions.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.OPERATIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_OPERATIONS.002",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_OPERATIONS",
+      "statement": "Each add-on shall declare activation threshold, cost, data/permission boundary, dependencies, canonical state relationship, validation, fallback, and removal path.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.OPERATIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.OPTIONAL_OPERATIONS.003",
+      "concept_id": "ABS.CONCEPT.OPTIONAL_OPERATIONS",
+      "statement": "Optional add-ons shall not expand the kernel, block minimal-profile operation, or become an independent source of truth.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ADDON.OPERATIONS",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.001",
+      "concept_id": "ABS.CONCEPT.SOURCE_ADMISSION_RECONCILIATION",
+      "statement": "Source admission shall preserve raw bytes, hashes, collection boundaries, provenance, rights, confidentiality, extraction diagnostics, lineage, and explicit artifact disposition.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.002",
+      "concept_id": "ABS.CONCEPT.SOURCE_ADMISSION_RECONCILIATION",
+      "statement": "Reconciliation shall compare concepts and structured critical differences, preserve unique information, separate candidate discovery from replacement decisions, and build a shadow candidate before promotion.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.003",
+      "concept_id": "ABS.CONCEPT.SOURCE_ADMISSION_RECONCILIATION",
+      "statement": "Automatic high-impact replacement shall require complete provenance, rights, no unique knowledge loss, no unmapped links, no critical contradiction, calibrated precision, and rollback.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.INDEPENDENT_VERIFICATION.001",
+      "concept_id": "ABS.CONCEPT.INDEPENDENT_VERIFICATION",
+      "statement": "Final verification shall use a fresh context/role and preferably another provider with direct access to the frozen candidate, original mission, requirements, raw evidence, tests, conflicts, and hashes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.INDEPENDENT_VERIFICATION.002",
+      "concept_id": "ABS.CONCEPT.INDEPENDENT_VERIFICATION",
+      "statement": "The verifier shall attempt to disprove readiness, and repairs shall invalidate affected assurance and require transitive revalidation.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.INDEPENDENT_VERIFICATION.003",
+      "concept_id": "ABS.CONCEPT.INDEPENDENT_VERIFICATION",
+      "statement": "A final certified status shall name the exact candidate hash; when independent verification is unavailable, status shall remain release-candidate verification-pending or unverifiable-blocked.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.001",
+      "concept_id": "ABS.CONCEPT.AUDITHUNT_INSTALLATION_PROFILE",
+      "statement": "The framework release shall include an AuditHunt installation profile that maps reusable framework modules and adapters without importing AuditHunt implementation or history.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "applicable_profiles": [
+        "audithunt"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.002",
+      "concept_id": "ABS.CONCEPT.AUDITHUNT_INSTALLATION_PROFILE",
+      "statement": "The profile shall not claim AuditHunt facts, modify AuditHunt, certify AuditHunt, or expose restricted AuditHunt evidence; all project-specific state remains externally supplied and verified.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "applicable_profiles": [
+        "audithunt"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.003",
+      "concept_id": "ABS.CONCEPT.AUDITHUNT_INSTALLATION_PROFILE",
+      "statement": "Installation shall be reversible, profile-scoped, versioned, and validated against an explicitly provided AuditHunt baseline in a separate authorized program.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "applicable_profiles": [
+        "audithunt"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 7,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.001",
+      "concept_id": "ABS.CONCEPT.RUNTIME_EXECUTION",
+      "statement": "The runtime shall permit exactly one next action at any project state, and shall refuse any command whose rail step is not that action, naming both the refusing rule and the permitted action.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise",
+        "audithunt"
+      ],
+      "verification_method": "schema + semantic validation + live adversarial simulation",
+      "version": "1.0.0",
+      "provenance": {
+        "origin": "ABS.RELEASE.1.0.0",
+        "reason": "runtime execution layer introduced in 1.0.0"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.002",
+      "concept_id": "ABS.CONCEPT.RUNTIME_EXECUTION",
+      "statement": "Every governed mutation shall be written to the append-only hash-chained source of truth before project state is updated, so that no state can exist without a prior record of the action that produced it.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise",
+        "audithunt"
+      ],
+      "verification_method": "schema + semantic validation + live adversarial simulation",
+      "version": "1.0.0",
+      "provenance": {
+        "origin": "ABS.RELEASE.1.0.0",
+        "reason": "runtime execution layer introduced in 1.0.0"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.003",
+      "concept_id": "ABS.CONCEPT.RUNTIME_EXECUTION",
+      "statement": "The runtime shall bind every evidence record, gate decision, document seal, and verification result to the exact tree identity it was computed against, and shall treat any record bound to a superseded identity as stale.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.RUNTIME.EXECUTOR",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise",
+        "audithunt"
+      ],
+      "verification_method": "schema + semantic validation + live adversarial simulation",
+      "version": "1.0.0",
+      "provenance": {
+        "origin": "ABS.RELEASE.1.0.0",
+        "reason": "runtime execution layer introduced in 1.0.0"
+      }
+    }
+  ],
+  "source_support": "Bound in separate build-evidence archive."
+}

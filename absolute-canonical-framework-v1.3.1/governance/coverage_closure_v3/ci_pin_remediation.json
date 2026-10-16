@@ -1,0 +1,19 @@
+{
+  "changes": [
+    {
+      "action": "actions/checkout",
+      "new_ref": "11bd71901bbe5b1630ceea73d27597364c9af683",
+      "old_ref": "PIN_FULL_COMMIT_SHA",
+      "path": "absolute-canonical-framework-v1.0.0-rc.2/04_enforcement/ci_policy_examples/generic_ci.yaml"
+    },
+    {
+      "action": "actions/setup-python",
+      "new_ref": "a26af69be951a213d495a4c3e4e4022e16d87065",
+      "old_ref": "PIN_FULL_COMMIT_SHA",
+      "path": "absolute-canonical-framework-v1.0.0-rc.2/04_enforcement/ci_policy_examples/generic_ci.yaml"
+    }
+  ],
+  "disabled": [],
+  "remaining": [],
+  "status": "PASS"
+}

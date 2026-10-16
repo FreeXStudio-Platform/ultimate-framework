@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.IDENTITY",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_KERNEL_IDENTITY.EXAMPLE",
+  "state": "PROPOSED",
+  "requirement_evidence": [
+    {
+      "requirement_id": "ABS.REQ.PROJECT_IDENTITY.001",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_IDENTITY_001"
+      ],
+      "result": "NOT_RUN"
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_IDENTITY.002",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_IDENTITY_002"
+      ],
+      "result": "NOT_RUN"
+    },
+    {
+      "requirement_id": "ABS.REQ.PROJECT_IDENTITY.003",
+      "evidence_ids": [
+        "ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_IDENTITY_003"
+      ],
+      "result": "NOT_RUN"
+    }
+  ],
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "limitations": [
+    "Synthetic example; zero hash cannot support release."
+  ],
+  "updated_at": "2026-08-13T18:00:00Z"
+}

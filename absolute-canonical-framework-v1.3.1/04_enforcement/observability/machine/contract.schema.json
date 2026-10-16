@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:absolute:abs_module_enforcement_observability:contract:1.0.0",
+  "title": "Observability, error taxonomy, incidents, and fault-seeking health Contract Instance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "module_id",
+    "scope_id",
+    "state",
+    "requirement_evidence",
+    "candidate_hash",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "module_id": {
+      "const": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY"
+    },
+    "scope_id": {
+      "type": "string",
+      "pattern": "^ABS\\.SCOPE\\."
+    },
+    "state": {
+      "enum": [
+        "HEALTHY",
+        "DEGRADED",
+        "PARTIAL",
+        "DEPENDENCY_FAILED",
+        "UNKNOWN",
+        "UNTESTED",
+        "STALE",
+        "MISCONFIGURED"
+      ]
+    },
+    "requirement_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "requirement_id",
+          "evidence_ids",
+          "result"
+        ],
+        "properties": {
+          "requirement_id": {
+            "enum": [
+              "ABS.REQ.OBSERVABILITY_INCIDENT.001",
+              "ABS.REQ.OBSERVABILITY_INCIDENT.002",
+              "ABS.REQ.OBSERVABILITY_INCIDENT.003"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^ABS\\.EVIDENCE\\."
+            }
+          },
+          "result": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "BLOCKED",
+              "NOT_RUN",
+              "INCONCLUSIVE",
+              "STALE"
+            ]
+          }
+        }
+      }
+    },
+    "candidate_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

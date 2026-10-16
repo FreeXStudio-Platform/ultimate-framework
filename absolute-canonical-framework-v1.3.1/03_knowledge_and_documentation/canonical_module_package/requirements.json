@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.001",
+      "concept_id": "ABS.CONCEPT.CANONICAL_MODULE_PACKAGE",
+      "statement": "Every material module shall have one bounded semantic scope and coordinated narrative, manifest, requirements, blueprint/visual, machine contracts, tests/evidence, integration, publication, and changelog artifacts where applicable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.002",
+      "concept_id": "ABS.CONCEPT.CANONICAL_MODULE_PACKAGE",
+      "statement": "Non-applicable representations shall be recorded as N/A with a reason; empty symmetry artifacts are prohibited.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.003",
+      "concept_id": "ABS.CONCEPT.CANONICAL_MODULE_PACKAGE",
+      "statement": "A module may be certified only when scope, responsibilities, interfaces, failure/recovery, security, dependencies, parity, tests, links, and independent review meet its contract.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 3,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

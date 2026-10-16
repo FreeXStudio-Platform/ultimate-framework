@@ -1,0 +1,146 @@
+{
+  "authority": "ABSOLUTE_CANONICAL_FRAMEWORK_COVERAGE_CLOSURE_MASTER_DIRECTIVE_V3.0_SECOND_DEEP_VERIFIED",
+  "baseline_provenance": {
+    "meaning": "RC1 labels in identifiers or prose are historical/provenance references, not successor identity.",
+    "release_id": "ABS.RELEASE.1.0.0-RC1",
+    "role": "IMMUTABLE_INPUT_BASELINE"
+  },
+  "rc1_immutable": true,
+  "requirements": [
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[0]"
+      },
+      "canonical_record_sha256": null,
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "requirement_level_reciprocal_provenance"
+      ],
+      "family": "requirement_level_reciprocal_provenance",
+      "owner_module": "Evidence/lineage owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0097",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[1]"
+      },
+      "canonical_record_sha256": null,
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "concept_candidate_final_assignment_coherence"
+      ],
+      "family": "concept_candidate_final_assignment_coherence",
+      "owner_module": "Canonical synthesis owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0098",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[2]"
+      },
+      "canonical_record_sha256": null,
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "gate_bound_release_authority_and_rollback"
+      ],
+      "family": "gate_bound_release_authority_and_rollback",
+      "owner_module": "Release/governance owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0099",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[3]"
+      },
+      "canonical_record_sha256": null,
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "archive_identity_path_collision_and_ratio_safety"
+      ],
+      "family": "archive_identity_path_collision_and_ratio_safety",
+      "owner_module": "Security/intake owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0100",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[4]"
+      },
+      "canonical_record_sha256": null,
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "configuration_precedence_and_conflict_closure"
+      ],
+      "family": "configuration_precedence_and_conflict_closure",
+      "owner_module": "Configuration/governance owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0101",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    },
+    {
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[5]"
+      },
+      "canonical_record_sha256": null,
+      "direct_evidence_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "projection_ci_supply_chain_and_recovery_governance"
+      ],
+      "family": "projection_ci_supply_chain_and_recovery_governance",
+      "owner_module": "Projection/operations owner",
+      "reciprocal_evidence_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "requirement_id": "ABS.CF.REQ.0102",
+      "semantic_support_status": "INHERITED_FROM_FROZEN_C7_NO_LOSS_PROOF",
+      "successor_only": true,
+      "trace_record_status": "REPAIRED_IN_RC2",
+      "traceability_status": "PASS"
+    }
+  ],
+  "schema": "absolute.coverage_closure.successor_requirements.v1",
+  "scope": "RC2_SUCCESSOR_ONLY",
+  "successor_release_id": "ABS.RELEASE.1.0.0-RC2"
+}

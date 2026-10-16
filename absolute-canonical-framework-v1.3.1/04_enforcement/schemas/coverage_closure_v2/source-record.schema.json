@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/source-record.schema.json",
+  "title": "Absolute Coverage Closure V2 Source Record",
+  "type": "object",
+  "required": [
+    "source_id",
+    "location",
+    "access_state",
+    "artifact_type",
+    "disposition"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^ABS\\.SOURCE\\."
+    },
+    "location": {
+      "type": "string",
+      "minLength": 1
+    },
+    "surface": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "access_state": {
+      "enum": [
+        "KNOWN_ACCESSIBLE",
+        "KNOWN_INACCESSIBLE",
+        "DISCOVERED_ACCESSIBLE",
+        "DISCOVERED_INACCESSIBLE",
+        "CLAIMED_BUT_NOT_LOCATED",
+        "UNKNOWN_SURFACE",
+        "EXCLUDED_WITH_APPROVED_REASON"
+      ]
+    },
+    "artifact_type": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^(sha256:)?[0-9a-f]{64}$"
+    },
+    "bytes": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "parent_source_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "archive_depth": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "lineage_confidence": {
+      "enum": [
+        "VERIFIED",
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "confidentiality": {
+      "enum": [
+        "PUBLIC",
+        "INTERNAL",
+        "CONFIDENTIAL",
+        "RESTRICTED",
+        "SECRET",
+        "UNKNOWN"
+      ]
+    },
+    "disposition": {
+      "type": "string"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

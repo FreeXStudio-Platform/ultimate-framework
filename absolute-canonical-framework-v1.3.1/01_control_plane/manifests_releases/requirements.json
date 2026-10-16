@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.RELEASE",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.MANIFEST_RELEASE.001",
+      "concept_id": "ABS.CONCEPT.MANIFEST_RELEASE",
+      "statement": "A clean release shall be assembled in a fresh staging directory from an explicit allowlist and shall exclude raw sources, chats, history, evidence, caches, credentials, temporary files, and unrelated downstream content.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.RELEASE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MANIFEST_RELEASE.002",
+      "concept_id": "ABS.CONCEPT.MANIFEST_RELEASE",
+      "statement": "Every release file shall appear in a manifest with path, bytes, hash, class, source identity, and derivative status; the archive shall be CRC/path checked and re-extracted for hash comparison.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.RELEASE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MANIFEST_RELEASE.003",
+      "concept_id": "ABS.CONCEPT.MANIFEST_RELEASE",
+      "statement": "Release, deployment, and production verification shall remain distinct states with migration, rollback, limitations, and compatibility guidance.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.CONTROL.RELEASE",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

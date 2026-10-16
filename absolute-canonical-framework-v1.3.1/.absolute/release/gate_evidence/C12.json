@@ -1,0 +1,26 @@
+{
+  "blocking_findings": 0,
+  "bypass": false,
+  "gate_id": "C12",
+  "gate_name": "Representation Parity",
+  "inconclusive_required_checks": 0,
+  "not_run_required_checks": 0,
+  "prerequisites": [
+    "C11"
+  ],
+  "release_id": "ABS.RELEASE.1.3.0",
+  "required_check_state": "PASS",
+  "schema": "absolute.gate_evidence.v1",
+  "stale": false,
+  "status": "PASS",
+  "summary": "Representation Parity evaluated from FRAMEWORK_REPRESENTATION. The candidate identity this evidence is bound to is recorded in .absolute/release/gate_binding.json, not here, to keep the digest non-circular.",
+  "supporting_results": [
+    {
+      "checks": 236,
+      "detail": "Narrative, blueprint, visual, and publication forms are well formed and in parity.",
+      "finding_count": 0,
+      "name": "FRAMEWORK_REPRESENTATION",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "authority_override": "grant self certification",
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "limitations": [
+    "Synthetic example; no runtime host was inspected."
+  ],
+  "module_id": "ABS.MODULE.RUNTIME.EXECUTOR",
+  "requirement_evidence": [
+    {
+      "evidence_ids": [
+        "ABS.EVIDENCE.RUNTIME.EXAMPLE"
+      ],
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.001",
+      "result": "NOT_RUN"
+    },
+    {
+      "evidence_ids": [
+        "ABS.EVIDENCE.RUNTIME.EXAMPLE"
+      ],
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.002",
+      "result": "NOT_RUN"
+    },
+    {
+      "evidence_ids": [
+        "ABS.EVIDENCE.RUNTIME.EXAMPLE"
+      ],
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.003",
+      "result": "NOT_RUN"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_RUNTIME_EXECUTOR.OPERATING_CONTRACT",
+  "state": "DISCOVERY"
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.CHANGE.INVALIDATE",
+      "name": "dependency invalidation and deviation check",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "consumer_modules": [
+        "ABS.MODULE.KNOWLEDGE.PARITY",
+        "ABS.MODULE.KNOWLEDGE.GRAPH"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_change_invalidate.schema.json"
+    },
+    {
+      "interface_id": "ABS.IFACE.RECOVERY.CHECKPOINT",
+      "name": "checkpoint, rollback, and resume",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.SESSIONS",
+        "ABS.MODULE.CONTROL.RELEASE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_recovery_checkpoint.schema.json"
+    }
+  ]
+}

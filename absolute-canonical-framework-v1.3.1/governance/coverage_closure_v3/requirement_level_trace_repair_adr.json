@@ -1,0 +1,1785 @@
+{
+  "baseline_provenance": {
+    "meaning": "RC1 labels in identifiers or prose are historical/provenance references, not successor identity.",
+    "release_id": "ABS.RELEASE.1.0.0-RC1",
+    "role": "IMMUTABLE_INPUT_BASELINE"
+  },
+  "entries": [
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[31]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.AUDITHUNT_INSTALLATION_PROFILE",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[2]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.AUTHORITY_TRUTH",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[15]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.CANONICAL_MODULE_PACKAGE",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[11]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.CAPABILITY_MANAGER",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[5]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.CHANGE_DEVIATION_RECOVERY",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[13]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.CONNECTORS_MCP",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[9]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.DECISIONS_RISKS_UNKNOWNS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[16]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.DOCUMENT_BLUEPRINT_PARITY",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[4]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.EVIDENCE_GATES_HEALTH",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.GOAL_LOCK",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[30]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.INDEPENDENT_VERIFICATION",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[3]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.LIFECYCLE_TWO_PASS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[10]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.MANIFEST_RELEASE",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[14]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.MODEL_ROUTING",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[24]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.MODULAR_ARCHITECTURE",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[23]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.OBSERVABILITY_INCIDENT",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[28]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.OPTIONAL_OPERATIONS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[27]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.OPTIONAL_RAG_GRAPH",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[25]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.PLATFORM_ADAPTERS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.PROJECT_IDENTITY",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[26]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.PROJECT_PROFILES",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[6]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.PROJECT_STATE",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[17]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.PUBLICATION_CONFIDENTIALITY",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[19]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.REGISTRIES_GRAPH_CONTEXT",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[20]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.SCHEMAS_VALIDATORS_HOOKS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[21]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[8]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.SESSIONS_HANDOFF",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[12]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.SKILLS_DELEGATION",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[29]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.SOURCE_ADMISSION_RECONCILIATION",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[22]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.TEST_EVALUATION",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[18]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.VISUAL_RENDERING",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CONCEPT_REGISTRY.json",
+        "pointer": "$.concepts[7]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "provenance, specialization, implementation evidence, or migration input; never competing active authority"
+      ],
+      "requirement_id": "ABS.CONCEPT.WORK_REGISTRY",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/05_platform_adapters/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.PLATFORM_ADAPTERS.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PLATFORM_ADAPTERS_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PLATFORM_ADAPTERS.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PLATFORM_ADAPTERS_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PLATFORM_ADAPTERS.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PLATFORM_ADAPTERS_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/07_optional_addons/knowledge_extensions/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_RAG_GRAPH.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_RAG_GRAPH_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_RAG_GRAPH.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_RAG_GRAPH_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_RAG_GRAPH.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_RAG_GRAPH_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.ADDON.KNOWLEDGE",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/07_optional_addons/operations_extensions/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_OPERATIONS.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_OPERATIONS_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_OPERATIONS.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_OPERATIONS_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OPTIONAL_OPERATIONS.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OPTIONAL_OPERATIONS_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.ADDON.OPERATIONS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/core_invariants/modularity/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.MODULAR_ARCHITECTURE.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODULAR_ARCHITECTURE_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MODULAR_ARCHITECTURE.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODULAR_ARCHITECTURE_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MODULAR_ARCHITECTURE.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODULAR_ARCHITECTURE_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/connectors_mcp/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.CONNECTORS_MCP.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CONNECTORS_MCP_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CONNECTORS_MCP.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CONNECTORS_MCP_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CONNECTORS_MCP.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CONNECTORS_MCP_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.CAPABILITY.CONNECTORS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/capability_manager/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.CAPABILITY_MANAGER.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CAPABILITY_MANAGER_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CAPABILITY_MANAGER.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CAPABILITY_MANAGER_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CAPABILITY_MANAGER.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CAPABILITY_MANAGER_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.CAPABILITY.MANAGER",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/execution_profiles/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.MODEL_ROUTING.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODEL_ROUTING_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MODEL_ROUTING.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODEL_ROUTING_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MODEL_ROUTING.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MODEL_ROUTING_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.CAPABILITY.ROUTING",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/skills/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.SKILLS_DELEGATION.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SKILLS_DELEGATION_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SKILLS_DELEGATION.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SKILLS_DELEGATION_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SKILLS_DELEGATION.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SKILLS_DELEGATION_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.CAPABILITY.SKILLS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/decisions_risks_unknowns/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.DECISIONS_RISKS_UNKNOWNS.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DECISIONS_RISKS_UNKNOWNS_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.DECISIONS_RISKS_UNKNOWNS.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DECISIONS_RISKS_UNKNOWNS_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.DECISIONS_RISKS_UNKNOWNS.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DECISIONS_RISKS_UNKNOWNS_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.CONTROL.DECISIONS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/manifests_releases/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.MANIFEST_RELEASE.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MANIFEST_RELEASE_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MANIFEST_RELEASE.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MANIFEST_RELEASE_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.MANIFEST_RELEASE.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_MANIFEST_RELEASE_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.CONTROL.RELEASE",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/sessions_checkpoints_handoff/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.SESSIONS_HANDOFF.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SESSIONS_HANDOFF_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SESSIONS_HANDOFF.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SESSIONS_HANDOFF_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SESSIONS_HANDOFF.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SESSIONS_HANDOFF_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.CONTROL.SESSIONS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/project_state/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.PROJECT_STATE.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_STATE_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_STATE.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_STATE_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_STATE.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_STATE_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.CONTROL.STATE",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/work_registry/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.WORK_REGISTRY.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_WORK_REGISTRY_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.WORK_REGISTRY.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_WORK_REGISTRY_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.WORK_REGISTRY.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_WORK_REGISTRY_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.CONTROL.WORK",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/04_enforcement/schemas_validators_hooks/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SCHEMAS_VALIDATORS_HOOKS_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SCHEMAS_VALIDATORS_HOOKS_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SCHEMAS_VALIDATORS_HOOKS.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SCHEMAS_VALIDATORS_HOOKS_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.ENFORCEMENT.CORE",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/04_enforcement/observability/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.OBSERVABILITY_INCIDENT.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OBSERVABILITY_INCIDENT_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OBSERVABILITY_INCIDENT.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OBSERVABILITY_INCIDENT_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.OBSERVABILITY_INCIDENT.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_OBSERVABILITY_INCIDENT_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/04_enforcement/security_controls/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.SECURITY_PRIVACY_INJECTION.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SECURITY_PRIVACY_INJECTION_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SECURITY_PRIVACY_INJECTION.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SECURITY_PRIVACY_INJECTION_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SECURITY_PRIVACY_INJECTION.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SECURITY_PRIVACY_INJECTION_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/09_tests_evals/evaluation_harness/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.TEST_EVALUATION.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_TEST_EVALUATION_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.TEST_EVALUATION.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_TEST_EVALUATION_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.TEST_EVALUATION.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_TEST_EVALUATION_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.ENFORCEMENT.TESTING",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/authority_truth_identity/authority_truth/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.AUTHORITY_TRUTH.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUTHORITY_TRUTH_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.AUTHORITY_TRUTH.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUTHORITY_TRUTH_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.AUTHORITY_TRUTH.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUTHORITY_TRUTH_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/change_deviation_recovery/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.CHANGE_DEVIATION_RECOVERY.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CHANGE_DEVIATION_RECOVERY_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CHANGE_DEVIATION_RECOVERY.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CHANGE_DEVIATION_RECOVERY_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CHANGE_DEVIATION_RECOVERY.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CHANGE_DEVIATION_RECOVERY_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/evidence_gate_health/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.EVIDENCE_GATES_HEALTH.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_EVIDENCE_GATES_HEALTH_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.EVIDENCE_GATES_HEALTH.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_EVIDENCE_GATES_HEALTH_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.EVIDENCE_GATES_HEALTH.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_EVIDENCE_GATES_HEALTH_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/mission_and_goal_lock/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.GOAL_LOCK.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_GOAL_LOCK_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.GOAL_LOCK.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_GOAL_LOCK_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.GOAL_LOCK.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_GOAL_LOCK_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/authority_truth_identity/identity/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.PROJECT_IDENTITY.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_IDENTITY_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_IDENTITY.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_IDENTITY_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_IDENTITY.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_IDENTITY_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.IDENTITY",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/two_pass_completion/independent_verification/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.INDEPENDENT_VERIFICATION.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_INDEPENDENT_VERIFICATION_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.INDEPENDENT_VERIFICATION.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_INDEPENDENT_VERIFICATION_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.INDEPENDENT_VERIFICATION.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_INDEPENDENT_VERIFICATION_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/lifecycle_state_machine/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.LIFECYCLE_TWO_PASS.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_LIFECYCLE_TWO_PASS_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.LIFECYCLE_TWO_PASS.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_LIFECYCLE_TWO_PASS_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.LIFECYCLE_TWO_PASS.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_LIFECYCLE_TWO_PASS_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/canonical_module_package/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.CANONICAL_MODULE_PACKAGE.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CANONICAL_MODULE_PACKAGE_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CANONICAL_MODULE_PACKAGE.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CANONICAL_MODULE_PACKAGE_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.CANONICAL_MODULE_PACKAGE.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_CANONICAL_MODULE_PACKAGE_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/registries_graph_context/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.REGISTRIES_GRAPH_CONTEXT.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_REGISTRIES_GRAPH_CONTEXT_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.REGISTRIES_GRAPH_CONTEXT.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_REGISTRIES_GRAPH_CONTEXT_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.REGISTRIES_GRAPH_CONTEXT.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_REGISTRIES_GRAPH_CONTEXT_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/documentation_blueprints/parity/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DOCUMENT_BLUEPRINT_PARITY_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DOCUMENT_BLUEPRINT_PARITY_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_DOCUMENT_BLUEPRINT_PARITY_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/publication_profiles/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.PUBLICATION_CONFIDENTIALITY.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PUBLICATION_CONFIDENTIALITY_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PUBLICATION_CONFIDENTIALITY.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PUBLICATION_CONFIDENTIALITY_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PUBLICATION_CONFIDENTIALITY.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PUBLICATION_CONFIDENTIALITY_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.PUBLICATION",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/source_reconciliation/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SOURCE_ADMISSION_RECONCILIATION_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SOURCE_ADMISSION_RECONCILIATION_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.SOURCE_ADMISSION_RECONCILIATION.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_SOURCE_ADMISSION_RECONCILIATION_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.RECONCILIATION",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/rendering_visual_contracts/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.VISUAL_RENDERING.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_VISUAL_RENDERING_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.VISUAL_RENDERING.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_VISUAL_RENDERING_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.VISUAL_RENDERING.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_VISUAL_RENDERING_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.KNOWLEDGE.VISUALS",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/06_project_profiles/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.PROJECT_PROFILES.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_PROFILES_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_PROFILES.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_PROFILES_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.PROJECT_PROFILES.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_PROJECT_PROFILES_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.MODULE.PROFILES.PROJECT",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/06_project_profiles/audithunt/tests/adversarial/authority_override.json",
+        "pointer": "$"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "{'requirement_id': 'ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.001', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUDITHUNT_INSTALLATION_PROFILE_001'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.002', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUDITHUNT_INSTALLATION_PROFILE_002'], 'result': 'NOT_RUN'}",
+        "{'requirement_id': 'ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.003', 'evidence_ids': ['ABS.EVIDENCE.EXAMPLE.ABS_REQ_AUDITHUNT_INSTALLATION_PROFILE_003'], 'result': 'NOT_RUN'}"
+      ],
+      "requirement_id": "ABS.PROFILE.PROJECT.AUDITHUNT",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CANONICAL_REQUIREMENTS.json",
+        "pointer": "$.requirements[93]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.001",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CANONICAL_REQUIREMENTS.json",
+        "pointer": "$.requirements[94]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.002",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/docs/registries/CANONICAL_REQUIREMENTS.json",
+        "pointer": "$.requirements[95]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.AUDITHUNT_INSTALLATION_PROFILE.003",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/authority_truth_identity/authority_truth/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.001",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/authority_truth_identity/authority_truth/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.002",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/authority_truth_identity/authority_truth/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.AUTHORITY_TRUTH.003",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/canonical_module_package/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.001",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/canonical_module_package/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.002",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/canonical_module_package/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CANONICAL_MODULE_PACKAGE.003",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/capability_manager/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.001",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/capability_manager/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.002",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/capability_manager/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CAPABILITY_MANAGER.003",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/change_deviation_recovery/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.001",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/change_deviation_recovery/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.002",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/change_deviation_recovery/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CHANGE_DEVIATION_RECOVERY.003",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/connectors_mcp/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.001",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/connectors_mcp/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.002",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/02_capabilities/connectors_mcp/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.CONNECTORS_MCP.003",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/decisions_risks_unknowns/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.001",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/decisions_risks_unknowns/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.002",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/01_control_plane/decisions_risks_unknowns/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.DECISIONS_RISKS_UNKNOWNS.003",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/documentation_blueprints/parity/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.001",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/documentation_blueprints/parity/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.002",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/03_knowledge_and_documentation/documentation_blueprints/parity/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.DOCUMENT_BLUEPRINT_PARITY.003",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/evidence_gate_health/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.001",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/evidence_gate_health/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.002",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/evidence_gate_health/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.003",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/mission_and_goal_lock/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.GOAL_LOCK.001",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/mission_and_goal_lock/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.GOAL_LOCK.002",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/mission_and_goal_lock/requirements.json",
+        "pointer": "$.requirements[2]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.GOAL_LOCK.003",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/two_pass_completion/independent_verification/requirements.json",
+        "pointer": "$.requirements[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.INDEPENDENT_VERIFICATION.001",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "absolute-canonical-framework-v1.0.0-rc.2/00_kernel/two_pass_completion/independent_verification/requirements.json",
+        "pointer": "$.requirements[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "state",
+        "source_support_count",
+        "detail_location"
+      ],
+      "requirement_id": "ABS.REQ.INDEPENDENT_VERIFICATION.002",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[0]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "requirement_level_reciprocal_provenance"
+      ],
+      "requirement_id": "ABS.CF.REQ.0097",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[1]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "concept_candidate_final_assignment_coherence"
+      ],
+      "requirement_id": "ABS.CF.REQ.0098",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[2]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "gate_bound_release_authority_and_rollback"
+      ],
+      "requirement_id": "ABS.CF.REQ.0099",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[3]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "archive_identity_path_collision_and_ratio_safety"
+      ],
+      "requirement_id": "ABS.CF.REQ.0100",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[4]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "configuration_precedence_and_conflict_closure"
+      ],
+      "requirement_id": "ABS.CF.REQ.0101",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    },
+    {
+      "authority": "ABS.CC.V3.FROZEN.F-001",
+      "canonical_record": {
+        "path": "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "pointer": "$.requirements[5]"
+      },
+      "disposition": "RETAIN_CANONICAL_BEHAVIOR; REPAIR_RECIPROCAL_TRACE_RECORD_IN_RC2_ONLY",
+      "preexisting_reciprocal_paths": [
+        "governance/coverage_closure_v3/successor_requirement_extensions.json",
+        "governance/coverage_closure_v3/requirement_level_trace_repair_adr.json"
+      ],
+      "preexisting_support_values": [
+        "ABS.CC.V3.FROZEN.MUST_FINDING_SET",
+        "projection_ci_supply_chain_and_recovery_governance"
+      ],
+      "requirement_id": "ABS.CF.REQ.0102",
+      "semantic_claim": "No new semantic-support claim is introduced by this ADR; it records the frozen C7 semantic-coverage conclusion and restores requirement-level reciprocity."
+    }
+  ],
+  "rc1_modified": false,
+  "schema": "absolute.coverage_closure.requirement_trace_repair_adr.v1",
+  "scope": "RC2_SUCCESSOR_ONLY",
+  "successor_release_id": "ABS.RELEASE.1.0.0-RC2"
+}

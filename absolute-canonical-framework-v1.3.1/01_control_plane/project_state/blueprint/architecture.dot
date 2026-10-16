@@ -1,0 +1,18 @@
+digraph module {
+graph [rankdir=LR,bgcolor="transparent",pad="0.2"];
+node [shape=box,style="rounded",fontname="Arial",fontsize=10];
+edge [fontname="Arial",fontsize=9];
+input [label="Governed inputs"]; gate [label="Authority + policy",shape=diamond]; op [label="Canonical project state and atomic updates"]; evidence [label="Evidence + checks",shape=diamond]; output [label="Validated output"];
+input -> gate [label="scope + identity"]; gate -> op [label="authorized"]; op -> evidence [label="claims"]; evidence -> output [label="pass / truthful state"]; evidence -> op [label="finding",style=dashed];
+c0 [label="Consumes\nGOAL_LINK.VALIDATE",shape=note];
+c0 -> input [style=dotted];
+c1 [label="Consumes\nIDENTITY.ALLOCATE",shape=note];
+c1 -> input [style=dotted];
+c2 [label="Consumes\nSESSION.HANDOFF",shape=note];
+c2 -> input [style=dotted];
+c3 [label="Consumes\nHEALTH.REPORT",shape=note];
+c3 -> input [style=dotted];
+p0 [label="Provides\nSTATE.ATOMIC_UPDATE",shape=note];
+output -> p0 [style=dotted];
+label="ABS.MODULE.CONTROL.STATE: What durable project state should a fresh agent trust?";
+}

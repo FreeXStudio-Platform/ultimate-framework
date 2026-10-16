@@ -1,0 +1,17 @@
+{
+  "candidate_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "limitations": [
+    "Synthetic example; no runtime host was inspected."
+  ],
+  "module_id": "ABS.MODULE.RUNTIME.EXECUTOR",
+  "requirement_evidence": [
+    {
+      "evidence_ids": [],
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.001",
+      "result": "PASS"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_RUNTIME_EXECUTOR.OPERATING_CONTRACT",
+  "state": "DISCOVERY"
+}

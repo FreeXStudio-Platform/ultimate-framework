@@ -1,0 +1,251 @@
+{
+  "cross_domain_dependencies": [
+    {
+      "module_edges": 30,
+      "source": "01_control_plane",
+      "target": "00_kernel"
+    },
+    {
+      "module_edges": 24,
+      "source": "02_capabilities",
+      "target": "00_kernel"
+    },
+    {
+      "module_edges": 16,
+      "source": "02_capabilities",
+      "target": "01_control_plane"
+    },
+    {
+      "module_edges": 36,
+      "source": "03_knowledge_and_documentation",
+      "target": "00_kernel"
+    },
+    {
+      "module_edges": 24,
+      "source": "03_knowledge_and_documentation",
+      "target": "01_control_plane"
+    },
+    {
+      "module_edges": 6,
+      "source": "03_knowledge_and_documentation",
+      "target": "02_capabilities"
+    },
+    {
+      "module_edges": 18,
+      "source": "04_enforcement",
+      "target": "00_kernel"
+    },
+    {
+      "module_edges": 12,
+      "source": "04_enforcement",
+      "target": "01_control_plane"
+    },
+    {
+      "module_edges": 3,
+      "source": "04_enforcement",
+      "target": "02_capabilities"
+    },
+    {
+      "module_edges": 6,
+      "source": "04_enforcement",
+      "target": "03_knowledge_and_documentation"
+    },
+    {
+      "module_edges": 6,
+      "source": "05_platform_adapters",
+      "target": "00_kernel"
+    },
+    {
+      "module_edges": 4,
+      "source": "05_platform_adapters",
+      "target": "01_control_plane"
+    },
+    {
+      "module_edges": 1,
+      "source": "05_platform_adapters",
+      "target": "02_capabilities"
+    },
+    {
+      "module_edges": 2,
+      "source": "05_platform_adapters",
+      "target": "03_knowledge_and_documentation"
+    },
+    {
+      "module_edges": 2,
+      "source": "05_platform_adapters",
+      "target": "04_enforcement"
+    },
+    {
+      "module_edges": 12,
+      "source": "06_project_profiles",
+      "target": "00_kernel"
+    },
+    {
+      "module_edges": 8,
+      "source": "06_project_profiles",
+      "target": "01_control_plane"
+    },
+    {
+      "module_edges": 2,
+      "source": "06_project_profiles",
+      "target": "02_capabilities"
+    },
+    {
+      "module_edges": 4,
+      "source": "06_project_profiles",
+      "target": "03_knowledge_and_documentation"
+    },
+    {
+      "module_edges": 4,
+      "source": "06_project_profiles",
+      "target": "04_enforcement"
+    },
+    {
+      "module_edges": 2,
+      "source": "06_project_profiles",
+      "target": "05_platform_adapters"
+    },
+    {
+      "module_edges": 12,
+      "source": "07_optional_addons",
+      "target": "00_kernel"
+    },
+    {
+      "module_edges": 8,
+      "source": "07_optional_addons",
+      "target": "01_control_plane"
+    },
+    {
+      "module_edges": 2,
+      "source": "07_optional_addons",
+      "target": "02_capabilities"
+    },
+    {
+      "module_edges": 4,
+      "source": "07_optional_addons",
+      "target": "03_knowledge_and_documentation"
+    },
+    {
+      "module_edges": 4,
+      "source": "07_optional_addons",
+      "target": "04_enforcement"
+    },
+    {
+      "module_edges": 2,
+      "source": "07_optional_addons",
+      "target": "05_platform_adapters"
+    },
+    {
+      "module_edges": 2,
+      "source": "07_optional_addons",
+      "target": "06_project_profiles"
+    },
+    {
+      "module_edges": 6,
+      "source": "09_tests_evals",
+      "target": "00_kernel"
+    },
+    {
+      "module_edges": 4,
+      "source": "09_tests_evals",
+      "target": "01_control_plane"
+    },
+    {
+      "module_edges": 1,
+      "source": "09_tests_evals",
+      "target": "02_capabilities"
+    },
+    {
+      "module_edges": 2,
+      "source": "09_tests_evals",
+      "target": "03_knowledge_and_documentation"
+    },
+    {
+      "module_edges": 5,
+      "source": "10_runtime",
+      "target": "00_kernel"
+    },
+    {
+      "module_edges": 4,
+      "source": "10_runtime",
+      "target": "01_control_plane"
+    },
+    {
+      "module_edges": 1,
+      "source": "10_runtime",
+      "target": "03_knowledge_and_documentation"
+    }
+  ],
+  "domains": [
+    {
+      "canonical_modules": 8,
+      "id": "00_kernel",
+      "purpose": "Mission, identity, authority, lifecycle, evidence, recovery, modularity, and independent verification invariants.",
+      "tracked_files": 168
+    },
+    {
+      "canonical_modules": 5,
+      "id": "01_control_plane",
+      "purpose": "Durable project state, bounded work, sessions, decisions, and release assembly.",
+      "tracked_files": 113
+    },
+    {
+      "canonical_modules": 4,
+      "id": "02_capabilities",
+      "purpose": "Minimum-sufficient capability selection, delegation, connectors, and execution routing.",
+      "tracked_files": 85
+    },
+    {
+      "canonical_modules": 6,
+      "id": "03_knowledge_and_documentation",
+      "purpose": "Canonical packages, representation parity, publication, visuals, graph context, and source reconciliation.",
+      "tracked_files": 128
+    },
+    {
+      "canonical_modules": 3,
+      "id": "04_enforcement",
+      "purpose": "Schemas, validators, hooks, security controls, observability, and deterministic refusal.",
+      "tracked_files": 133
+    },
+    {
+      "canonical_modules": 1,
+      "id": "05_platform_adapters",
+      "purpose": "Host translations for Codex, Claude Code, Cursor, local agents, and generic APIs.",
+      "tracked_files": 41
+    },
+    {
+      "canonical_modules": 2,
+      "id": "06_project_profiles",
+      "purpose": "Minimal, standard, enterprise, and AuditHunt composition overlays.",
+      "tracked_files": 60
+    },
+    {
+      "canonical_modules": 2,
+      "id": "07_optional_addons",
+      "purpose": "Measured-need knowledge and operations extensions that must not outrank canonical truth.",
+      "tracked_files": 46
+    },
+    {
+      "canonical_modules": 0,
+      "id": "08_examples",
+      "purpose": "Non-authoritative example records for the framework's shared data contracts.",
+      "tracked_files": 8
+    },
+    {
+      "canonical_modules": 1,
+      "id": "09_tests_evals",
+      "purpose": "Positive, negative, adversarial, mutation, recovery, and release verification harnesses.",
+      "tracked_files": 94
+    },
+    {
+      "canonical_modules": 1,
+      "id": "10_runtime",
+      "purpose": "Executable rail, governed document lifecycle, ledger, identity binding, verification, and release commands.",
+      "tracked_files": 21
+    }
+  ],
+  "source": [
+    "docs/registries/MODULE_INDEX.json",
+    "docs/registries/AUTHORITY_DEPENDENCY_DAG.json"
+  ]
+}

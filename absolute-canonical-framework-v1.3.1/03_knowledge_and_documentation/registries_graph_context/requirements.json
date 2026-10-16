@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KNOWLEDGE.GRAPH",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.001",
+      "concept_id": "ABS.CONCEPT.REGISTRIES_GRAPH_CONTEXT",
+      "statement": "The framework shall define versioned registries and a source-controlled typed graph connecting sources, concepts, modules, requirements, claims, decisions, capabilities, artifacts, tests, evidence, profiles, and releases.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.002",
+      "concept_id": "ABS.CONCEPT.REGISTRIES_GRAPH_CONTEXT",
+      "statement": "Graph edges shall record source, target, type, direction, evidence, confidence, lifecycle, and last verified identity, and required provenance/impact queries shall be testable.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.REGISTRIES_GRAPH_CONTEXT.003",
+      "concept_id": "ABS.CONCEPT.REGISTRIES_GRAPH_CONTEXT",
+      "statement": "Context packs shall be compact evidence-linked navigation aids and shall never outrank canonical sources; vector or graph-database infrastructure remains threshold-triggered.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.KNOWLEDGE.GRAPH",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

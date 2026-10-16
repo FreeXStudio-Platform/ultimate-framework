@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0.0",
+  "profiles": [
+    {
+      "profile_id": "ABS.PROFILE.MINIMAL",
+      "path": "06_project_profiles/minimal",
+      "purpose": "single-project minimum safe control plane",
+      "required_layers": [
+        "00_kernel",
+        "01_control_plane",
+        "04_enforcement"
+      ],
+      "optional_layers": [
+        "02_capabilities",
+        "03_knowledge_and_documentation",
+        "05_platform_adapters"
+      ]
+    },
+    {
+      "profile_id": "ABS.PROFILE.STANDARD",
+      "path": "06_project_profiles/standard",
+      "purpose": "default full project operating framework",
+      "required_layers": [
+        "00_kernel",
+        "01_control_plane",
+        "02_capabilities",
+        "03_knowledge_and_documentation",
+        "04_enforcement",
+        "05_platform_adapters",
+        "09_tests_evals"
+      ],
+      "optional_layers": [
+        "07_optional_addons"
+      ]
+    },
+    {
+      "profile_id": "ABS.PROFILE.ENTERPRISE",
+      "path": "06_project_profiles/enterprise",
+      "purpose": "standard profile plus stronger governance, privacy, approval, and release assurance",
+      "required_layers": [
+        "00_kernel",
+        "01_control_plane",
+        "02_capabilities",
+        "03_knowledge_and_documentation",
+        "04_enforcement",
+        "05_platform_adapters",
+        "09_tests_evals"
+      ],
+      "optional_layers": [
+        "07_optional_addons/operations_extensions"
+      ]
+    },
+    {
+      "profile_id": "ABS.PROFILE.AUDITHUNT",
+      "path": "06_project_profiles/audithunt",
+      "purpose": "downstream installation mapping only; no AuditHunt implementation or certification",
+      "required_layers": [
+        "00_kernel",
+        "01_control_plane",
+        "02_capabilities",
+        "03_knowledge_and_documentation",
+        "04_enforcement",
+        "05_platform_adapters",
+        "09_tests_evals"
+      ],
+      "optional_layers": [
+        "07_optional_addons"
+      ]
+    }
+  ],
+  "adapters": [
+    {
+      "adapter_id": "ABS.ADAPTER.CHATGPT_CODEX",
+      "path": "05_platform_adapters/chatgpt_codex",
+      "host": "ChatGPT/Codex",
+      "implements": [
+        "capability discovery",
+        "file/repository work",
+        "bounded tool calls",
+        "checkpoint handoff"
+      ],
+      "authority": "host translation only"
+    },
+    {
+      "adapter_id": "ABS.ADAPTER.CLAUDE_CODE",
+      "path": "05_platform_adapters/claude_code",
+      "host": "Claude Code",
+      "implements": [
+        "local/SSH repository operation",
+        "permission prompts",
+        "hooks/commands",
+        "checkpoint handoff"
+      ],
+      "authority": "host translation only"
+    },
+    {
+      "adapter_id": "ABS.ADAPTER.CURSOR",
+      "path": "05_platform_adapters/cursor",
+      "host": "Cursor",
+      "implements": [
+        "repository context",
+        "rules/commands",
+        "agent execution",
+        "checkpoint handoff"
+      ],
+      "authority": "host translation only"
+    },
+    {
+      "adapter_id": "ABS.ADAPTER.LOCAL_AGENT",
+      "path": "05_platform_adapters/local_agent",
+      "host": "Local agent runtime",
+      "implements": [
+        "local deterministic execution",
+        "offline-capable state",
+        "tool registry",
+        "checkpoint handoff"
+      ],
+      "authority": "host translation only"
+    },
+    {
+      "adapter_id": "ABS.ADAPTER.GENERIC_API",
+      "path": "05_platform_adapters/generic_api",
+      "host": "Generic API/agent host",
+      "implements": [
+        "capability contract",
+        "message/tool schema mapping",
+        "state persistence",
+        "checkpoint handoff"
+      ],
+      "authority": "host translation only"
+    }
+  ]
+}

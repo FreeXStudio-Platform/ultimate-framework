@@ -1,0 +1,100 @@
+{
+  "schema": "absolute.coverage_closure.release_surface_registry.v2",
+  "release_id": "ABS.RELEASE.1.3.1",
+  "canonical_builder": "01_control_plane/manifests_releases/tools/build_release.py",
+  "builder_alias": "tools/secure_release_builder.py",
+  "canonical_verifier": "01_control_plane/manifests_releases/tools/verify_release.py",
+  "verifier_alias": "tools/verify_successor_release.py",
+  "shared_integrity_library": "01_control_plane/manifests_releases/tools/release_integrity.py",
+  "legacy_surface_disposition": {
+    "path": "01_control_plane/manifests_releases/tools/build_release.py",
+    "prior_behavior": "caller-declared identity, source-tree mutation, no authority or complete gate binding",
+    "current_behavior": "replaced in place by the canonical gate-bound non-mutating RC2 builder",
+    "active_unsafe_legacy_copy_remaining": false
+  },
+  "active_surfaces": [
+    {
+      "surface_id": "ABS.SURFACE.RELEASE.INTEGRITY",
+      "path": "01_control_plane/manifests_releases/tools/release_integrity.py",
+      "state_changing": false,
+      "commands": [
+        "candidate-hash",
+        "verify-tree",
+        "verify-zip"
+      ]
+    },
+    {
+      "surface_id": "ABS.SURFACE.RELEASE.BUILD",
+      "path": "01_control_plane/manifests_releases/tools/build_release.py",
+      "authority_required": true,
+      "gate_binding_required": true,
+      "overwrite_default": false,
+      "rollback_required_on_replace": true
+    },
+    {
+      "surface_id": "ABS.SURFACE.RELEASE.BUILD.ALIAS",
+      "path": "tools/secure_release_builder.py",
+      "delegates_to": "ABS.SURFACE.RELEASE.BUILD"
+    },
+    {
+      "surface_id": "ABS.SURFACE.RELEASE.VERIFY",
+      "path": "01_control_plane/manifests_releases/tools/verify_release.py",
+      "state_changing": false
+    },
+    {
+      "surface_id": "ABS.SURFACE.RELEASE.VERIFY.ALIAS",
+      "path": "tools/verify_successor_release.py",
+      "delegates_to": "ABS.SURFACE.RELEASE.VERIFY"
+    },
+    {
+      "surface_id": "ABS.SURFACE.CI.PIN_VALIDATE",
+      "path": "tools/validate_ci_pins.py",
+      "state_changing": false
+    },
+    {
+      "surface_id": "ABS.SURFACE.FRAMEWORK.VALIDATE",
+      "path": "04_enforcement/validators/absolute_validate.py",
+      "state_changing": false
+    },
+    {
+      "surface_id": "ABS.SURFACE.TEST.RUN_ALL",
+      "path": "09_tests_evals/run_all.py",
+      "state_changing": false
+    },
+    {
+      "surface_id": "ABS.SURFACE.TEST.SUCCESSOR_CONTROLS",
+      "path": "tests/run_successor_controls.py",
+      "state_changing": false
+    },
+    {
+      "surface_id": "ABS.SURFACE.HOOK.PRE_WRITE",
+      "path": "04_enforcement/hooks/pre_write_authority_check.py",
+      "state_changing": false
+    },
+    {
+      "surface_id": "ABS.SURFACE.HOOK.POST_EDIT",
+      "path": "04_enforcement/hooks/post_edit_validation.sh",
+      "state_changing": false
+    },
+    {
+      "surface_id": "ABS.SURFACE.CI.EXAMPLE",
+      "path": "04_enforcement/ci_policy_examples/generic_ci.yaml",
+      "state_changing": true,
+      "external_actions_fully_pinned": true
+    },
+    {
+      "surface_id": "ABS.SURFACE.CONTRACT.V2.VALIDATE",
+      "path": "tools/validate_v2_contracts.py",
+      "state_changing": false
+    },
+    {
+      "surface_id": "ABS.SURFACE.RELEASE.ALLOWLIST.GENERATE",
+      "path": "01_control_plane/manifests_releases/tools/generate_release_allowlist.py",
+      "state_changing": true
+    }
+  ],
+  "open_unsafe_release_surfaces": 0,
+  "unknown_privileged_surfaces": 0,
+  "status": "PASS",
+  "version": "1.3.1"
+}

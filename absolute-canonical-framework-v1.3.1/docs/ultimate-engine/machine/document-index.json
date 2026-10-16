@@ -1,0 +1,133 @@
+{
+  "documents": [
+    {
+      "depends_on": [
+        "SYS-110",
+        "SYS-120",
+        "GUIDE-140",
+        "REF-150"
+      ],
+      "figures": [
+        "domain-operating-model",
+        "tracked-artifacts-by-domain",
+        "authority-of-facts"
+      ],
+      "id": "GUIDE-100",
+      "path": "GUIDE-100-project-guide.md",
+      "title": "Project Guide"
+    },
+    {
+      "depends_on": [
+        "GUIDE-100",
+        "REF-130",
+        "GUIDE-170"
+      ],
+      "figures": [
+        "domain-dependencies",
+        "dependency-centrality",
+        "representation-mix",
+        "repository-layout"
+      ],
+      "id": "SYS-110",
+      "path": "SYS-110-architecture.md",
+      "title": "Architecture and Domain Map"
+    },
+    {
+      "depends_on": [
+        "SYS-110",
+        "GUIDE-140",
+        "REF-130",
+        "GUIDE-170"
+      ],
+      "figures": [
+        "project-rail",
+        "document-rail",
+        "governed-mutation",
+        "cross-representation-pin"
+      ],
+      "id": "SYS-120",
+      "path": "SYS-120-runtime-enforcement.md",
+      "title": "Runtime and Enforcement"
+    },
+    {
+      "depends_on": [
+        "SYS-110",
+        "SYS-120",
+        "GUIDE-170"
+      ],
+      "figures": [
+        "extension-routing",
+        "dependency-centrality"
+      ],
+      "id": "REF-130",
+      "path": "REF-130-extension-points.md",
+      "title": "Extension Points and Change Risk"
+    },
+    {
+      "depends_on": [
+        "GUIDE-100",
+        "SYS-120",
+        "REF-150",
+        "GUIDE-170"
+      ],
+      "figures": [
+        "operator-path",
+        "verification-stack",
+        "profile-composition",
+        "mutation-coverage"
+      ],
+      "id": "GUIDE-140",
+      "path": "GUIDE-140-operations-verification.md",
+      "title": "Operations and Verification"
+    },
+    {
+      "depends_on": [
+        "GUIDE-100",
+        "SYS-110",
+        "SYS-120",
+        "GUIDE-140",
+        "GUIDE-170"
+      ],
+      "figures": [
+        "baseline-engine-health",
+        "field-trial-disposition",
+        "assurance-boundary"
+      ],
+      "id": "REF-150",
+      "path": "REF-150-evidence-limitations.md",
+      "title": "Evidence, Limitations, and Audit Notes"
+    },
+    {
+      "depends_on": [
+        "SYS-110",
+        "SYS-120",
+        "REF-130",
+        "REF-150",
+        "GUIDE-170"
+      ],
+      "figures": [
+        "agent-navigation",
+        "question-coverage"
+      ],
+      "id": "REF-160",
+      "path": "REF-160-agent-blueprint-guide.md",
+      "title": "Agent Blueprint Guide"
+    },
+    {
+      "depends_on": [
+        "GUIDE-100",
+        "SYS-110",
+        "SYS-120",
+        "GUIDE-140",
+        "REF-150"
+      ],
+      "figures": [
+        "release-pipeline",
+        "release-pin-surface"
+      ],
+      "id": "GUIDE-170",
+      "path": "GUIDE-170-repository-release.md",
+      "title": "Repository, Versioning and Release Operations"
+    }
+  ]
+}

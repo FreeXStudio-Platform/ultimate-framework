@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+  "policy_version": "1.0.0",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_KERNEL_EVIDENCE_GATES.OPERATING_CONTRACT",
+  "truth_scope": [
+    "ABS.CONCEPT.EVIDENCE_GATES_HEALTH"
+  ],
+  "default_action": "DENY_UNLESS_SCOPE_AUTHORITY_PERMISSION_AND_EVIDENCE_ARE_VALID",
+  "rules": [
+    {
+      "rule_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES.RULE.001",
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.001",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    },
+    {
+      "rule_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES.RULE.002",
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.002",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    },
+    {
+      "rule_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES.RULE.003",
+      "requirement_id": "ABS.REQ.EVIDENCE_GATES_HEALTH.003",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    }
+  ],
+  "states": [
+    "NOT_RUN",
+    "PASS",
+    "FAIL",
+    "BLOCKED",
+    "INCONCLUSIVE",
+    "STALE",
+    "INVALID_REPORT"
+  ],
+  "transitions": [
+    {
+      "from": "NOT_RUN",
+      "to": "PASS",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "PASS",
+      "to": "FAIL",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "FAIL",
+      "to": "BLOCKED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "BLOCKED",
+      "to": "INCONCLUSIVE",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "INCONCLUSIVE",
+      "to": "STALE",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "STALE",
+      "to": "INVALID_REPORT",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    }
+  ],
+  "fail_closed_on": [
+    "PASS is issued without evidence",
+    "missing authority",
+    "stale evidence",
+    "semantic contradiction"
+  ],
+  "recovery": [
+    "stop affected action",
+    "restore checkpoint or safe state",
+    "repair canonical source/policy",
+    "rerun transitive checks"
+  ],
+  "approval_boundary": [
+    "external_write",
+    "destructive_action",
+    "credential_access",
+    "publication",
+    "financial_commitment",
+    "permission_expansion"
+  ],
+  "invalidation_triggers": [
+    "requirement_change",
+    "schema_change",
+    "policy_change",
+    "interface_change",
+    "security_change",
+    "candidate_hash_change"
+  ]
+}

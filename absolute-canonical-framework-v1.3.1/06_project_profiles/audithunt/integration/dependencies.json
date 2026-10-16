@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.PROFILE.PROJECT.AUDITHUNT",
+  "dependencies": [
+    {
+      "module_id": "ABS.MODULE.ADAPTERS.PLATFORMS",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.CAPABILITY.MANAGER",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.CONTROL.DECISIONS",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.CONTROL.RELEASE",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.CONTROL.STATE",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.CONTROL.WORK",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.ENFORCEMENT.CORE",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.IDENTITY",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.LIFECYCLE",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.KNOWLEDGE.PARITY",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    }
+  ],
+  "optional_dependencies": [],
+  "cycle_policy": "FORBIDDEN"
+}

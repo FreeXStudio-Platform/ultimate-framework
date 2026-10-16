@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ENFORCEMENT.SECURITY",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.SECURITY_PRIVACY_INJECTION.001",
+      "concept_id": "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION",
+      "statement": "Secrets shall be referenced through approved stores or environment names and shall never appear in framework source, examples, logs, evidence, screenshots, manifests, or releases.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SECURITY_PRIVACY_INJECTION.002",
+      "concept_id": "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION",
+      "statement": "Source and retrieved content shall be treated as untrusted; path, command, URL, filename, archive, prompt-injection, and supply-chain controls shall apply before privileged use.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.SECURITY_PRIVACY_INJECTION.003",
+      "concept_id": "ABS.CONCEPT.SECURITY_PRIVACY_INJECTION",
+      "statement": "Data classification and least privilege shall propagate through raw/derived stores, indexes, embeddings, caches, provenance, external models, renderers, and publication.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ENFORCEMENT.SECURITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

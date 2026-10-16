@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KNOWLEDGE.VISUALS",
+  "policy_version": "1.0.0",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_KNOWLEDGE_VISUALS.OPERATING_CONTRACT",
+  "truth_scope": [
+    "ABS.CONCEPT.VISUAL_RENDERING"
+  ],
+  "default_action": "DENY_UNLESS_SCOPE_AUTHORITY_PERMISSION_AND_EVIDENCE_ARE_VALID",
+  "rules": [
+    {
+      "rule_id": "ABS.MODULE.KNOWLEDGE.VISUALS.RULE.001",
+      "requirement_id": "ABS.REQ.VISUAL_RENDERING.001",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    },
+    {
+      "rule_id": "ABS.MODULE.KNOWLEDGE.VISUALS.RULE.002",
+      "requirement_id": "ABS.REQ.VISUAL_RENDERING.002",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    },
+    {
+      "rule_id": "ABS.MODULE.KNOWLEDGE.VISUALS.RULE.003",
+      "requirement_id": "ABS.REQ.VISUAL_RENDERING.003",
+      "condition": "governed action or claim is in module scope",
+      "effect": "REQUIRE_CONFORMANCE_AND_EVIDENCE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    }
+  ],
+  "states": [
+    "SPECIFIED",
+    "ROUTED",
+    "RENDERED",
+    "VALIDATED",
+    "STALE",
+    "FAILED"
+  ],
+  "transitions": [
+    {
+      "from": "SPECIFIED",
+      "to": "ROUTED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "ROUTED",
+      "to": "RENDERED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "RENDERED",
+      "to": "VALIDATED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "VALIDATED",
+      "to": "STALE",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    },
+    {
+      "from": "STALE",
+      "to": "FAILED",
+      "requires": [
+        "valid_scope",
+        "authority",
+        "permission",
+        "evidence_or_explicit_not_run"
+      ]
+    }
+  ],
+  "fail_closed_on": [
+    "decorative or misleading visual substitutes for evidence",
+    "missing authority",
+    "stale evidence",
+    "semantic contradiction"
+  ],
+  "recovery": [
+    "stop affected action",
+    "restore checkpoint or safe state",
+    "repair canonical source/policy",
+    "rerun transitive checks"
+  ],
+  "approval_boundary": [
+    "external_write",
+    "destructive_action",
+    "credential_access",
+    "publication",
+    "financial_commitment",
+    "permission_expansion"
+  ],
+  "invalidation_triggers": [
+    "requirement_change",
+    "schema_change",
+    "policy_change",
+    "interface_change",
+    "security_change",
+    "candidate_hash_change"
+  ]
+}

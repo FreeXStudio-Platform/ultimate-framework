@@ -1,0 +1,170 @@
+[
+  {
+    "caption": "The documented path from package verification through governed release.",
+    "code": "flowchart TB\n  VerifyPackage[\"verify framework package\"] --> Select[\"select profile and adapter\"]\n  Select --> Init[\"absolute init\"]\n  Init --> Next[\"absolute next\"]\n  Next --> Bounded[\"perform only the named action\"]\n  Bounded --> Next\n  Next --> Pass2[\"fresh pass 2\"]\n  Pass2 --> Verify[\"absolute verify --record\"]\n  Verify --> Release[\"absolute release outside project tree\"]",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/INSTALLATION_GUIDE.md; docs/RUNTIME_GUIDE.md",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "operator-path",
+    "insight": "After profile and adapter selection, the operator follows absolute next rather than choosing arbitrary mutations; verification and release remain distinct terminal acts.",
+    "kind": "mermaid",
+    "reader_question": "How does an operator adopt and run the framework?",
+    "title": "Operator path"
+  },
+  {
+    "caption": "The aggregate test entry point calls five independent control families.",
+    "code": "flowchart TB\n  RunAll[\"09_tests_evals/run_all.py\"] --> Validator[\"deterministic validator\"]\n  RunAll --> Successor[\"successor controls\"]\n  RunAll --> Deep[\"deep verifier\"]\n  RunAll --> Mutation[\"verifier mutation check\"]\n  RunAll --> V2[\"V2 contract validator (tools/validate_v2_contracts.py)\"]\n  Deep --> Sections[\"identity \u2192 structure \u2192 representation \u2192 contracts \u2192 semantics \u2192 security \u2192 governance \u2192 runtime \u2192 validator \u2192 simulation\"]\n  Mutation --> Alive[\"requires planted defects to be caught\"]",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "09_tests_evals/run_all.py; runtime/verify.py",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "verification-stack",
+    "insight": "The deep verifier checks the package while the mutation checker separately proves named defect classes still fire and the V2 contract validator checks the machine-contract layer; a clean deep pass alone is insufficient.",
+    "kind": "mermaid",
+    "reader_question": "What does the subject verify, in what order, and what protects the verifier itself?",
+    "title": "Verification stack"
+  },
+  {
+    "caption": "Required-layer matrix derived from PROFILE_ADAPTER_INDEX.json.",
+    "col_labels": [
+      "00",
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ],
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/registries/PROFILE_ADAPTER_INDEX.json",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "height": 420,
+    "id": "profile-composition",
+    "insight": "The minimal profile keeps kernel, control, and enforcement mandatory; broader profiles add capability, knowledge, adapters, tests, and runtime through the resolved module set.",
+    "kind": "heatmap",
+    "matrix": [
+      [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "max_value": 1,
+    "min_value": 0,
+    "reader_question": "Which numbered layers does each profile require?",
+    "row_labels": [
+      "MINIMAL",
+      "STANDARD",
+      "ENTERPRISE",
+      "AUDITHUNT"
+    ],
+    "title": "Profile layer composition",
+    "width": 1000
+  },
+  {
+    "caption": "One bar per section the mutation harness wires; height is the number of planted defects that section must catch.",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "tools/verifier_mutation_check.py",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "height": 440,
+    "id": "mutation-coverage",
+    "insight": "Liveness is proven per section, not per verifier; 1.3.0 newly wired structure and governance, which had none.",
+    "items": [
+      {
+        "label": "governance",
+        "value": 1
+      },
+      {
+        "label": "identity",
+        "value": 1
+      },
+      {
+        "label": "representation",
+        "value": 1
+      },
+      {
+        "label": "runtime",
+        "value": 4
+      },
+      {
+        "label": "simulation",
+        "value": 2
+      },
+      {
+        "label": "structure",
+        "value": 2
+      }
+    ],
+    "kind": "bar",
+    "reader_question": "Which verifier sections have a live mutation control, and how many?",
+    "title": "Mutation controls by verifier section",
+    "unit": " controls",
+    "width": 1800
+  }
+]

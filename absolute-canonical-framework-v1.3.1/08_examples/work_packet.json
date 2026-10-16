@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "work_packet_id": "ABS.WP.EXAMPLE.0001",
+  "objective": "Install the Standard profile in an isolated shadow directory and validate it without changing the active project.",
+  "parent_goal": "ABS.GOAL.EXAMPLE.RELEASE",
+  "scope_ids": [
+    "ABS.SCOPE.EXAMPLE.SHADOW_INSTALL"
+  ],
+  "inputs": [
+    "current project manifest",
+    "selected profile"
+  ],
+  "outputs": [
+    "shadow configuration",
+    "validation report"
+  ],
+  "requirements": [
+    "ABS.REQ.PROFILE_SELECTION.001"
+  ],
+  "permissions": {
+    "read": [
+      "project repository"
+    ],
+    "write": [
+      "shadow directory"
+    ],
+    "external": [],
+    "destructive": false
+  },
+  "capabilities_required": [
+    "filesystem",
+    "python"
+  ],
+  "dependencies": [],
+  "rollback": "delete isolated shadow directory and restore checkpoint",
+  "acceptance_criteria": [
+    "active project unchanged",
+    "validator passes",
+    "limitations recorded"
+  ],
+  "checks": [
+    "hash baseline",
+    "profile conformance",
+    "rollback rehearsal"
+  ],
+  "evidence_expected": [
+    "ABS.EVIDENCE.EXAMPLE.SHADOW_INSTALL"
+  ],
+  "owner_role": "repository_operator",
+  "independent_verifier_role": "fresh_semantic_verifier",
+  "status": "READY",
+  "exact_next_action": "Hash the active project baseline before creating the shadow directory."
+}

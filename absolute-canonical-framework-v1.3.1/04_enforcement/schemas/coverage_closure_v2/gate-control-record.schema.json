@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/gate-control-record.schema.json",
+  "title": "Gate and Control Record",
+  "type": "object",
+  "required": [
+    "control_id",
+    "control_type",
+    "purpose",
+    "provider",
+    "state",
+    "entry_conditions",
+    "pass_conditions"
+  ],
+  "properties": {
+    "control_id": {
+      "type": "string",
+      "pattern": "^ABS\\.CONTROL\\."
+    },
+    "control_type": {
+      "enum": [
+        "GATE",
+        "GUARD",
+        "POLICY",
+        "APPROVAL",
+        "STATE_TRANSITION",
+        "HOOK",
+        "CI_CHECK",
+        "SCHEMA_CHECK",
+        "PERMISSION_RULE",
+        "MANUAL_CHECKPOINT",
+        "OTHER"
+      ]
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "state": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "NOT_RUN",
+        "INCONCLUSIVE",
+        "STALE",
+        "WAIVED_WITH_APPROVED_EXPIRY"
+      ]
+    },
+    "entry_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pass_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "failure_behavior": {
+      "type": "string"
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "downstream_controls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "bypass_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "waiver_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "test_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidate_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

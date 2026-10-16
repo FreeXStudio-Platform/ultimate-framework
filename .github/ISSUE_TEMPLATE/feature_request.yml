@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose a change or addition
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What can't you do today, or what is unsafe/unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+  - type: dropdown
+    id: area
+    attributes:
+      label: Touches the release payload?
+      options:
+        - "No (docs, scripts, CI, engine)"
+        - "Yes (absolute-canonical-framework-v*/)"
+        - "Not sure"
+    validations:
+      required: true

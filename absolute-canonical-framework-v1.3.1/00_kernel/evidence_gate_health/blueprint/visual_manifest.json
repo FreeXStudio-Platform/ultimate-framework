@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "visual_id": "ABS.VIS.ABS_MODULE_KERNEL_EVIDENCE_GATES.ARCHITECTURE",
+  "module_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_KERNEL_EVIDENCE_GATES.OPERATING_CONTRACT",
+  "reader_question": "What exact evidence supports this status and candidate hash?",
+  "communication_intent": "show governed input, authority gate, bounded operation, evidence decision, validated output, and repair loop",
+  "audience": [
+    "INTERNAL_EXHAUSTIVE",
+    "RESTRICTED_ENGINEERING",
+    "PLAIN_ENGLISH"
+  ],
+  "truth_context": "TARGET_FRAMEWORK_ARCHITECTURE",
+  "data_source": [
+    "MODULE_MANIFEST.yaml",
+    "requirements.json",
+    "integration/provided_interfaces.json",
+    "integration/consumed_interfaces.json"
+  ],
+  "visual_grammar": "directed process and interface graph",
+  "semantic_encodings": {
+    "diamond": "decision",
+    "solid_arrow": "governed flow",
+    "dashed_arrow": "finding/repair",
+    "note": "registered interface"
+  },
+  "renderer": {
+    "route": "GRAPHVIZ_DOT",
+    "source": "architecture.dot",
+    "output": "architecture.svg",
+    "runtime_version": "VERIFY_AT_BUILD"
+  },
+  "accessibility": {
+    "alt_text": "Evidence, gates, health, and completion claims accepts governed inputs through an authority gate, evaluates evidence, then emits validated output or a finding loop.",
+    "static_fallback": "BLUEPRINT.md"
+  },
+  "validation": [
+    "source_parses",
+    "output_exists",
+    "ids_present",
+    "interfaces_resolve",
+    "alt_text_present"
+  ]
+}

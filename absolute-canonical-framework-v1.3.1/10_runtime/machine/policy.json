@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.RUNTIME.EXECUTOR",
+  "policy_version": "1.0.0",
+  "scope_id": "ABS.SCOPE.ABS_MODULE_RUNTIME_EXECUTOR.OPERATING_CONTRACT",
+  "truth_scope": [
+    "ABS.CONCEPT.RUNTIME_EXECUTION"
+  ],
+  "default_action": "DENY_UNLESS_RAIL_PERMITS_AND_LEDGER_APPEND_SUCCEEDS",
+  "rules": [
+    {
+      "rule_id": "ABS.MODULE.RUNTIME.EXECUTOR.RULE.001",
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.001",
+      "condition": "a mutating command is requested",
+      "effect": "REQUIRE_RAIL_AUTHORIZATION_FOR_THE_CURRENT_STEP",
+      "on_failure": "REFUSE_AND_NAME_THE_PERMITTED_ACTION"
+    },
+    {
+      "rule_id": "ABS.MODULE.RUNTIME.EXECUTOR.RULE.002",
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.002",
+      "condition": "a governed mutation is about to change project state",
+      "effect": "REQUIRE_CHAINED_LEDGER_APPEND_BEFORE_STATE_WRITE",
+      "on_failure": "BLOCK_AND_RECORD_FINDING"
+    },
+    {
+      "rule_id": "ABS.MODULE.RUNTIME.EXECUTOR.RULE.003",
+      "requirement_id": "ABS.REQ.RUNTIME_EXECUTION.003",
+      "condition": "an observation cites a candidate identity",
+      "effect": "REQUIRE_BINDING_TO_THE_CURRENT_TREE_IDENTITY",
+      "on_failure": "MARK_STALE_AND_BLOCK_DEPENDENT_CLAIMS"
+    }
+  ],
+  "states": [
+    "UNINSTALLED",
+    "DISCOVERY",
+    "ARCHITECTURE_FROZEN",
+    "CANDIDATE",
+    "SECOND_PASS",
+    "INDEPENDENT_REVIEW",
+    "RELEASED",
+    "BLOCKED"
+  ],
+  "transitions": [
+    {
+      "from": "UNINSTALLED",
+      "to": "DISCOVERY",
+      "requires": [
+        "rail_step_satisfied",
+        "ledger_append_succeeded",
+        "identity_bound"
+      ]
+    },
+    {
+      "from": "DISCOVERY",
+      "to": "ARCHITECTURE_FROZEN",
+      "requires": [
+        "rail_step_satisfied",
+        "ledger_append_succeeded",
+        "identity_bound"
+      ]
+    },
+    {
+      "from": "ARCHITECTURE_FROZEN",
+      "to": "CANDIDATE",
+      "requires": [
+        "rail_step_satisfied",
+        "ledger_append_succeeded",
+        "identity_bound"
+      ]
+    },
+    {
+      "from": "CANDIDATE",
+      "to": "SECOND_PASS",
+      "requires": [
+        "rail_step_satisfied",
+        "ledger_append_succeeded",
+        "identity_bound"
+      ]
+    },
+    {
+      "from": "SECOND_PASS",
+      "to": "INDEPENDENT_REVIEW",
+      "requires": [
+        "rail_step_satisfied",
+        "ledger_append_succeeded",
+        "identity_bound"
+      ]
+    },
+    {
+      "from": "INDEPENDENT_REVIEW",
+      "to": "RELEASED",
+      "requires": [
+        "rail_step_satisfied",
+        "ledger_append_succeeded",
+        "identity_bound"
+      ]
+    },
+    {
+      "from": "DISCOVERY",
+      "to": "BLOCKED",
+      "requires": [
+        "refusal_recorded",
+        "rollback_reference_present"
+      ]
+    },
+    {
+      "from": "ARCHITECTURE_FROZEN",
+      "to": "BLOCKED",
+      "requires": [
+        "refusal_recorded",
+        "rollback_reference_present"
+      ]
+    },
+    {
+      "from": "CANDIDATE",
+      "to": "BLOCKED",
+      "requires": [
+        "refusal_recorded",
+        "rollback_reference_present"
+      ]
+    },
+    {
+      "from": "SECOND_PASS",
+      "to": "BLOCKED",
+      "requires": [
+        "refusal_recorded",
+        "rollback_reference_present"
+      ]
+    },
+    {
+      "from": "INDEPENDENT_REVIEW",
+      "to": "BLOCKED",
+      "requires": [
+        "refusal_recorded",
+        "rollback_reference_present"
+      ]
+    },
+    {
+      "from": "RELEASED",
+      "to": "BLOCKED",
+      "requires": [
+        "refusal_recorded",
+        "rollback_reference_present"
+      ]
+    }
+  ],
+  "fail_closed_on": [
+    "a step is skipped and later asserted as done",
+    "rail violation",
+    "broken ledger chain",
+    "stale identity binding",
+    "missing rollback reference",
+    "self-certification attempt"
+  ],
+  "recovery": [
+    "stop affected action",
+    "restore checkpoint or safe state",
+    "repair canonical source/policy",
+    "rerun transitive checks"
+  ],
+  "approval_boundary": [
+    "external_write",
+    "destructive_action",
+    "credential_access",
+    "publication",
+    "financial_commitment",
+    "permission_expansion"
+  ],
+  "invalidation_triggers": [
+    "requirement_change",
+    "schema_change",
+    "policy_change",
+    "interface_change",
+    "security_change",
+    "candidate_hash_change"
+  ]
+}

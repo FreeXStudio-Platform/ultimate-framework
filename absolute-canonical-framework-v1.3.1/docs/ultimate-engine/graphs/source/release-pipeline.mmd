@@ -1,0 +1,20 @@
+flowchart TB
+  step0["0. Environment"]
+  step1["1. Freeze the payload"]
+  step0 --> step1
+  step2["2. Regenerate the release allowlist"]
+  step1 --> step2
+  step3["3. Bind the release metadata"]
+  step2 --> step3
+  step4["4. Verify — all of it, in a fresh process"]
+  step3 --> step4
+  step5["5. Build"]
+  step4 --> step5
+  step6["6. Verify the artifact, not the working tree"]
+  step5 --> step6
+  step7["7. Reproduce"]
+  step6 --> step7
+  step8["8. Record"]
+  step7 --> step8
+  step9["9. Do not rename it"]
+  step8 --> step9

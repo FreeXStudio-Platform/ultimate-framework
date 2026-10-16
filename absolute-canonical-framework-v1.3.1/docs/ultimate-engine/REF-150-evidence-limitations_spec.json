@@ -1,0 +1,82 @@
+[
+  {
+    "caption": "Untouched foreign-project health result captured 2026-09-01 against the framework at release 1.1.0, before any governed documents in this set existed.",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/ultimate-engine/machine/evaluation-baseline.json",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "height": 440,
+    "id": "baseline-engine-health",
+    "insight": "Most failures asked for the engine repository's own scaffolding inside the subject; the baseline therefore measures portability assumptions as much as missing documentation.",
+    "items": [
+      {
+        "label": "PASS",
+        "value": 3
+      },
+      {
+        "label": "FAIL",
+        "value": 28
+      },
+      {
+        "label": "SKIP",
+        "value": 7
+      }
+    ],
+    "kind": "bar",
+    "reader_question": "What did the engine report before any governed subject documents existed?",
+    "title": "Engine-on-subject baseline",
+    "unit": " checks",
+    "width": 1800
+  },
+  {
+    "caption": "Every finding this documentation set has ever recorded, sourced from the limitations register rather than counted by hand.",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "docs/ultimate-engine/machine/limitations-register.json",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "height": 440,
+    "id": "field-trial-disposition",
+    "insight": "The majority of the 2026-09-01 findings are closed with a new control behind each; what remains is a small set of standing properties, not a backlog.",
+    "items": [
+      {
+        "label": "INSTRUMENT_STATE",
+        "value": 9
+      },
+      {
+        "label": "REMAINS_A_LIMITATION",
+        "value": 10
+      },
+      {
+        "label": "RESOLVED_IN_1_3_0",
+        "value": 5
+      }
+    ],
+    "kind": "bar",
+    "reader_question": "Of the findings this set has recorded, how many did 1.3.0 close and how many stand?",
+    "title": "2026-09-01 findings, by disposition",
+    "unit": " findings",
+    "width": 1800
+  },
+  {
+    "caption": "Controls the subject explicitly claims, plus the limitations that keep them from becoming certification claims.",
+    "code": "flowchart LR\n  Internal[\"Internal deterministic verification\"] --> Hash[\"exact candidate identity\"]\n  Hash --> External[\"External independent certification pending\"]\n  Ledger[\"Local hash chain\"] --> Tamper[\"detects local edit/remove/reorder\"]\n  Anchor[\"Detached external anchor\"] --> Rewrite[\"detects full-chain rewrite\"]\n  Rollback[\"Recorded rollback statement\"] -. not executed .-> Gap[\"rollback remains unproved\"]\n  Dot[\"Installed Graphviz\"] --> Parity[\"visual parity check\"]",
+    "data_sources": [
+      {
+        "kind": "source",
+        "ref": "LIMITATIONS.md; SECURITY.md",
+        "retrieved": "2026-09-07"
+      }
+    ],
+    "id": "assurance-boundary",
+    "insight": "Internal verification binds claims to an identity, but independent certification, externally stored anchors, rollback rehearsal, content truth, and cross-host locking remain outside the guarantee.",
+    "kind": "mermaid",
+    "reader_question": "What does internal verification prove, and what remains outside it?",
+    "title": "Assurance boundary"
+  }
+]

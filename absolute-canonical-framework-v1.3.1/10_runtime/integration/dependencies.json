@@ -1,0 +1,17 @@
+{
+  "dependencies": [
+    "ABS.MODULE.KERNEL.LIFECYCLE",
+    "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+    "ABS.MODULE.KERNEL.IDENTITY",
+    "ABS.MODULE.KERNEL.GOAL_LOCK",
+    "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+    "ABS.MODULE.CONTROL.STATE",
+    "ABS.MODULE.CONTROL.WORK",
+    "ABS.MODULE.CONTROL.SESSIONS",
+    "ABS.MODULE.CONTROL.RELEASE",
+    "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE"
+  ],
+  "dependency_rule": "Authority flows one way; a dependency may not rewrite this package's contract.",
+  "module_id": "ABS.MODULE.RUNTIME.EXECUTOR",
+  "schema_version": "1.0.0"
+}

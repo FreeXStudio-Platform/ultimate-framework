@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:absolute:interface:abs_iface_runtime_execute:1.0.0",
+  "title": "governed runtime action execution",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "actor_id",
+    "authority_ref",
+    "candidate_hash",
+    "evidence_ids",
+    "interface_id",
+    "limitations",
+    "payload",
+    "permitted",
+    "rail_step_id",
+    "request_id",
+    "result_state",
+    "schema_version",
+    "scope_id"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "interface_id": {
+      "const": "ABS.IFACE.RUNTIME.EXECUTE"
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "scope_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "actor_id": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "authority_ref": {
+      "type": "string",
+      "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+    },
+    "candidate_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "result_state": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "NOT_RUN",
+        "INCONCLUSIVE",
+        "STALE"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ABS\\.[A-Z0-9_.-]+$"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rail_step_id": {
+      "type": "string",
+      "pattern": "^S[0-9]+\\.[A-Z_]+$"
+    },
+    "permitted": {
+      "type": "boolean"
+    }
+  }
+}

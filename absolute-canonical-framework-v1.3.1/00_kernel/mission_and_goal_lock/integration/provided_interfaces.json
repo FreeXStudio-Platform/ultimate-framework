@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.GOAL_LOCK",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.GOAL_LINK.VALIDATE",
+      "name": "goal-link validation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.GOAL_LOCK",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.WORK",
+        "ABS.MODULE.CONTROL.STATE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_goal_link_validate.schema.json"
+    }
+  ]
+}

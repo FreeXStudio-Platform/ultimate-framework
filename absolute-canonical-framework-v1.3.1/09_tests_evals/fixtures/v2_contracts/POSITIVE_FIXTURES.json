@@ -1,0 +1,207 @@
+{
+  "certification-handoff.schema.json": {
+    "framework_id": "ABS.FRAMEWORK.CANONICAL",
+    "release_id": "ABS.RELEASE.FIXTURE",
+    "candidate_source_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+    "clean_zip": {
+      "filename": "clean.zip",
+      "sha256": "sha256:1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    "evidence_zip": {
+      "filename": "evidence.zip",
+      "sha256": "sha256:2222222222222222222222222222222222222222222222222222222222222222"
+    },
+    "manifest": {
+      "filename": "MANIFEST.json",
+      "sha256": "sha256:3333333333333333333333333333333333333333333333333333333333333333"
+    },
+    "checksum_ledger": {
+      "filename": "SHA256SUMS.txt",
+      "sha256": "sha256:4444444444444444444444444444444444444444444444444444444444444444"
+    },
+    "required_review_files": [
+      "MANIFEST.json"
+    ],
+    "permitted_outcomes": [
+      "CERTIFIED",
+      "CERTIFIED_WITH_FORMALLY_ACCEPTED_NONBLOCKING_RISK",
+      "REJECTED_REMEDIATION_REQUIRED",
+      "UNVERIFIABLE_BLOCKED"
+    ]
+  },
+  "configuration-record.schema.json": {
+    "config_id": "ABS.CONFIG.FIXTURE",
+    "source": "fixture",
+    "value_type": "boolean",
+    "required": true,
+    "default": false,
+    "secret_reference": false,
+    "precedence": [
+      "canonical"
+    ],
+    "validation": "must be false",
+    "unsafe_values": [
+      true
+    ]
+  },
+  "conversation-decision.schema.json": {
+    "decision_id": "ABS.DEC.CONV.999",
+    "statement": "The fixture decision is traceable.",
+    "priority": "MUST",
+    "source": "V2_CONTRACT_FIXTURE",
+    "directive_refs": "fixture directive",
+    "verification_target": "fixture validator",
+    "status": "VERIFIED_IMPLEMENTED",
+    "implementation_refs": [
+      "tools/validate_v2_contracts.py"
+    ],
+    "test_refs": [
+      "09_tests_evals/fixtures/v2_contracts/POSITIVE_FIXTURES.json"
+    ]
+  },
+  "coverage-scoreboard.schema.json": {
+    "schema_version": "2.0.0",
+    "assurance_tier": "T1_ARTIFACT_VERIFIED",
+    "denominators": {
+      "fixture_records": 1
+    },
+    "metrics": {
+      "fixture_records": 1
+    },
+    "hard_failures": [],
+    "status": "PASS"
+  },
+  "executable-surface-record.schema.json": {
+    "surface_id": "ABS.SURFACE.FIXTURE",
+    "surface_type": "CLI",
+    "provider": "ABSOLUTE_LOCAL_PACKAGE",
+    "location": "tools/validate_v2_contracts.py",
+    "exposure": "LOCAL_ONLY",
+    "authorization": "read-only verification",
+    "status": "VERIFIED_ACTIVE"
+  },
+  "finding.schema.json": {
+    "finding_id": "ABS-CC-F-FIXTURE",
+    "title": "Resolved fixture finding",
+    "severity": "INFO",
+    "state": "RESOLVED",
+    "expected_behavior": "The fixture is rejected before remediation.",
+    "actual_behavior": "The fixture was rejected and the control was verified.",
+    "evidence_ids": [
+      "ABS.EVIDENCE.FIXTURE"
+    ],
+    "closure_evidence_ids": [
+      "ABS.EVIDENCE.FIXTURE.CLOSURE"
+    ]
+  },
+  "gate-control-record.schema.json": {
+    "control_id": "ABS.CONTROL.FIXTURE",
+    "control_type": "GATE",
+    "purpose": "Prove the V2 gate-control contract.",
+    "provider": "ABSOLUTE_LOCAL_PACKAGE",
+    "state": "PASS",
+    "entry_conditions": [
+      "fixture loaded"
+    ],
+    "pass_conditions": [
+      "fixture validates"
+    ],
+    "evidence_ids": [
+      "ABS.EVIDENCE.FIXTURE"
+    ]
+  },
+  "gate-report.schema.json": {
+    "gate_id": "ABS.CC.GATE.C0",
+    "state": "PASS",
+    "scope": "V2_CONTRACT_FIXTURE",
+    "candidate_hash": "sha256:5555555555555555555555555555555555555555555555555555555555555555",
+    "required_checks": [
+      "fixture validates"
+    ],
+    "actual_checks": [
+      {
+        "check": "fixture validates",
+        "state": "PASS"
+      }
+    ],
+    "counts": {
+      "pass": 1,
+      "fail": 0,
+      "blocked": 0,
+      "not_run": 0,
+      "inconclusive": 0,
+      "stale": 0
+    },
+    "evidence_ids": [
+      "ABS.EVIDENCE.FIXTURE"
+    ],
+    "open_findings": [],
+    "decision": "PASS"
+  },
+  "improvement-opportunity.schema.json": {
+    "opportunity_id": "ABS.OPPORTUNITY.FIXTURE",
+    "title": "Fixture opportunity",
+    "priority": "NICE_TO_HAVE",
+    "problem_or_benefit": "Proves the record contract without creating project scope.",
+    "acceptance_criteria": [
+      "positive fixture validates"
+    ],
+    "default_disposition": "TEST_FIXTURE_ONLY"
+  },
+  "knowledge-unit.schema.json": {
+    "knowledge_unit_id": "ABS.KU.FIXTURE",
+    "unit_type": "TEST_OBLIGATION",
+    "normalized_meaning": "Every V2 schema has a valid positive fixture.",
+    "source_refs": [
+      {
+        "source_id": "ABS.SOURCE.FIXTURE",
+        "location": "09_tests_evals/fixtures/v2_contracts/POSITIVE_FIXTURES.json"
+      }
+    ],
+    "rc_mapping_state": "PRESERVED_NORMALIZED",
+    "rc_target_refs": [
+      "tools/validate_v2_contracts.py"
+    ]
+  },
+  "projection-profile.schema.json": {
+    "projection_id": "ABS.PROJECTION.FIXTURE",
+    "tool": "OTHER",
+    "mode": "OTHER",
+    "canonical_authority": "repository",
+    "sync_direction": "NONE",
+    "permission_mode": "NONE",
+    "fallback": [
+      "repository remains authoritative"
+    ],
+    "status": "INACTIVE"
+  },
+  "simulation-scenario.schema.json": {
+    "scenario_id": "ABS.SIM.FIXTURE",
+    "title": "V2 contract fixture simulation",
+    "category": "CONTRACT",
+    "preconditions": [
+      "schemas loaded"
+    ],
+    "steps": [
+      "validate fixture"
+    ],
+    "expected_outcomes": [
+      "fixture passes"
+    ],
+    "prohibited_outcomes": [
+      "invalid fixture accepted"
+    ],
+    "status": "EXPECTED_SUCCESS_OBSERVED",
+    "evidence_ids": [
+      "ABS.EVIDENCE.FIXTURE"
+    ]
+  },
+  "source-record.schema.json": {
+    "source_id": "ABS.SOURCE.FIXTURE",
+    "location": "09_tests_evals/fixtures/v2_contracts/POSITIVE_FIXTURES.json",
+    "access_state": "KNOWN_ACCESSIBLE",
+    "artifact_type": "JSON_FIXTURE",
+    "sha256": "6666666666666666666666666666666666666666666666666666666666666666",
+    "disposition": "TEST_FIXTURE_ONLY"
+  }
+}

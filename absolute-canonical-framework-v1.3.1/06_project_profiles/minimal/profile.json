@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "ABS.PROFILE.MINIMAL",
+  "name": "Minimal",
+  "version": "1.0.0",
+  "purpose": "Small single-project control plane",
+  "status": "CANDIDATE",
+  "required_modules": [
+    "ABS.MODULE.ARCHITECTURE.MODULARITY",
+    "ABS.MODULE.CONTROL.DECISIONS",
+    "ABS.MODULE.CONTROL.RELEASE",
+    "ABS.MODULE.CONTROL.SESSIONS",
+    "ABS.MODULE.CONTROL.STATE",
+    "ABS.MODULE.CONTROL.WORK",
+    "ABS.MODULE.ENFORCEMENT.CORE",
+    "ABS.MODULE.ENFORCEMENT.OBSERVABILITY",
+    "ABS.MODULE.ENFORCEMENT.SECURITY",
+    "ABS.MODULE.KERNEL.AUTHORITY_TRUTH",
+    "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+    "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+    "ABS.MODULE.KERNEL.GOAL_LOCK",
+    "ABS.MODULE.KERNEL.IDENTITY",
+    "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+    "ABS.MODULE.KERNEL.LIFECYCLE",
+    "ABS.MODULE.RUNTIME.EXECUTOR"
+  ],
+  "optional_modules": [],
+  "required_adapters": [],
+  "policy_overlays": {
+    "approval": "risk_based",
+    "canonical_source": "repository_backed",
+    "independent_final_verification": true,
+    "writes": "shadow_first",
+    "documentation_depth": "minimum safe",
+    "optional_addons": "disabled"
+  },
+  "installation_mode": "SHADOW_FIRST",
+  "authority": "Module composition and stricter policy only; never downstream project truth.",
+  "rollback": "Restore the pre-installation project checkpoint and remove generated projection/configuration paths."
+}

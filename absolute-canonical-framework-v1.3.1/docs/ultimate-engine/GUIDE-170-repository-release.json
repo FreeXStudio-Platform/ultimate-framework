@@ -1,0 +1,19 @@
+{
+  "gate": {
+    "findings": [],
+    "gate": "build+run_gates",
+    "ok": true
+  },
+  "header": {
+    "audience": "operations",
+    "classification": "public",
+    "export_allowed": true,
+    "id": "GUIDE-170",
+    "last_reviewed": "2026-09-07",
+    "owner": "framework-documentation",
+    "status": "approved",
+    "surface": "web",
+    "title": "Absolute Repository, Versioning and Release Operations",
+    "variants": []
+  }
+}

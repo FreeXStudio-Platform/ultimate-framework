@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/configuration-record.schema.json",
+  "title": "Configuration Record",
+  "type": "object",
+  "required": [
+    "config_id",
+    "source",
+    "value_type",
+    "required",
+    "secret_reference",
+    "precedence",
+    "validation"
+  ],
+  "properties": {
+    "config_id": {
+      "type": "string",
+      "pattern": "^ABS\\.CONFIG\\."
+    },
+    "source": {
+      "type": "string"
+    },
+    "value_type": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean"
+    },
+    "default": {},
+    "secret_reference": {
+      "type": "boolean"
+    },
+    "precedence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "adapters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "validation": {
+      "type": "string"
+    },
+    "unsafe_values": {
+      "type": "array"
+    },
+    "change_effect": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rollback": {
+      "type": "string"
+    },
+    "owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

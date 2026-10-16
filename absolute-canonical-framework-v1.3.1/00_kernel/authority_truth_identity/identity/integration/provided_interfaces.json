@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.IDENTITY",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.IDENTITY.ALLOCATE",
+      "name": "stable identity and namespace allocation",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.KERNEL.IDENTITY",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.STATE",
+        "ABS.MODULE.KNOWLEDGE.CANONICAL_MODULE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_identity_allocate.schema.json"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolute.local/v2/certification-handoff.schema.json",
+  "title": "Absolute Exact-Hash Certification Handoff V2",
+  "type": "object",
+  "required": [
+    "framework_id",
+    "release_id",
+    "candidate_source_hash",
+    "clean_zip",
+    "evidence_zip",
+    "manifest",
+    "checksum_ledger",
+    "required_review_files",
+    "permitted_outcomes"
+  ],
+  "properties": {
+    "framework_id": {
+      "const": "ABS.FRAMEWORK.CANONICAL"
+    },
+    "release_id": {
+      "type": "string"
+    },
+    "candidate_source_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "clean_zip": {
+      "$ref": "#/$defs/hashFile"
+    },
+    "evidence_zip": {
+      "$ref": "#/$defs/hashFile"
+    },
+    "manifest": {
+      "$ref": "#/$defs/hashFile"
+    },
+    "checksum_ledger": {
+      "$ref": "#/$defs/hashFile"
+    },
+    "requirements_registry_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coverage_registry_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "conversation_decision_matrix_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "executable_surface_registry_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gate_control_registry_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "configuration_registry_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tool_projection_registry_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "simulation_report_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "findings_freeze_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "change_manifest_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "second_deep_report_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_review_files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_commands": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "permitted_outcomes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "CERTIFIED",
+          "CERTIFIED_WITH_FORMALLY_ACCEPTED_NONBLOCKING_RISK",
+          "REJECTED_REMEDIATION_REQUIRED",
+          "UNVERIFIABLE_BLOCKED"
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "hashFile": {
+      "type": "object",
+      "required": [
+        "filename",
+        "sha256"
+      ],
+      "properties": {
+        "filename": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

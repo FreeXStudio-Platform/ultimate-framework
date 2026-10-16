@@ -1,0 +1,26 @@
+{
+  "blocking_findings": 0,
+  "bypass": false,
+  "gate_id": "C19",
+  "gate_name": "Coverage Closure",
+  "inconclusive_required_checks": 0,
+  "not_run_required_checks": 0,
+  "prerequisites": [
+    "C18"
+  ],
+  "release_id": "ABS.RELEASE.1.3.0",
+  "required_check_state": "PASS",
+  "schema": "absolute.gate_evidence.v1",
+  "stale": false,
+  "status": "PASS",
+  "summary": "Coverage Closure evaluated from deep_verification_zero_findings. The candidate identity this evidence is bound to is recorded in .absolute/release/gate_binding.json, not here, to keep the digest non-circular.",
+  "supporting_results": [
+    {
+      "checks": 2879,
+      "detail": "whole-system deep verification over 10 sections",
+      "finding_count": 0,
+      "name": "deep_verification_zero_findings",
+      "status": "PASS"
+    }
+  ]
+}

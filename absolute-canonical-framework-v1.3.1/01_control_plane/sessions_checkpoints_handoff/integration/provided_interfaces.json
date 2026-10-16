@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.CONTROL.SESSIONS",
+  "interfaces": [
+    {
+      "interface_id": "ABS.IFACE.SESSION.HANDOFF",
+      "name": "restart-safe session handoff",
+      "version": "1.0.0",
+      "provider_module": "ABS.MODULE.CONTROL.SESSIONS",
+      "consumer_modules": [
+        "ABS.MODULE.CONTROL.STATE"
+      ],
+      "stability": "STABLE_1_X",
+      "contract_type": "provider-independent semantic interface",
+      "failure_rule": "fail closed for affected governed action; preserve evidence and rollback",
+      "schema_ref": "schemas/abs_iface_session_handoff.schema.json"
+    }
+  ]
+}

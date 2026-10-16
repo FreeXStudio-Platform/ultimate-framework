@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+  "requirements": [
+    {
+      "requirement_id": "ABS.REQ.MODULAR_ARCHITECTURE.001",
+      "concept_id": "ABS.CONCEPT.MODULAR_ARCHITECTURE",
+      "statement": "Rules shall be placed by compact-kernel, reusable-module, provider-adapter, project-profile, or optional-add-on tests, with one-way authority and explicit interfaces.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MODULAR_ARCHITECTURE.002",
+      "concept_id": "ABS.CONCEPT.MODULAR_ARCHITECTURE",
+      "statement": "Modules shall declare responsibilities, non-responsibilities, provided/consumed interfaces, dependencies, versions, compatibility, failure, recovery, and ownership.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    },
+    {
+      "requirement_id": "ABS.REQ.MODULAR_ARCHITECTURE.003",
+      "concept_id": "ABS.CONCEPT.MODULAR_ARCHITECTURE",
+      "statement": "Repository placement, naming, imports, generated outputs, aliases, deprecation, and migration shall be governed and validated to prevent duplicate control planes.",
+      "strength": "MUST",
+      "status": "APPROVED_CANONICAL",
+      "owner_module": "ABS.MODULE.ARCHITECTURE.MODULARITY",
+      "applicable_profiles": [
+        "minimal",
+        "standard",
+        "enterprise"
+      ],
+      "verification_method": "module contract tests and release traceability",
+      "version": "1.0.0",
+      "provenance": {
+        "state": "BUILD_EVIDENCE_BOUND",
+        "source_support_count": 8,
+        "detail_location": "separate build-evidence archive"
+      }
+    }
+  ],
+  "source_provenance_location": "separate build-evidence archive"
+}

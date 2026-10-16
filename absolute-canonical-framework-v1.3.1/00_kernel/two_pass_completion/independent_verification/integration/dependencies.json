@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "module_id": "ABS.MODULE.KERNEL.INDEPENDENT_VERIFICATION",
+  "dependencies": [
+    {
+      "module_id": "ABS.MODULE.KERNEL.CHANGE_RECOVERY",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    },
+    {
+      "module_id": "ABS.MODULE.KERNEL.EVIDENCE_GATES",
+      "type": "AUTHORITY_OR_BUILD_DEPENDENCY",
+      "required": true
+    }
+  ],
+  "optional_dependencies": [],
+  "cycle_policy": "FORBIDDEN"
+}
