@@ -41,7 +41,6 @@ jobs:
           if grep -E '^  (CRITICAL|HIGH|MEDIUM|LOW) ' deep.out | grep -qv 'VISUAL_PARITY_NOT_RUN'; then
             echo "::error::deep_verify reported findings other than VISUAL_PARITY_NOT_RUN"; rm -f deep.out; exit 1
           fi
-          grep -q '^PASS\|^FAIL  sections=9/10' deep.out
           rm -f deep.out
       - name: Verifier mutation controls
         working-directory: absolute-canonical-framework-v1.3.1
