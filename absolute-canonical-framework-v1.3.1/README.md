@@ -87,3 +87,7 @@ RC1 is the immutable input baseline; RC2 and 1.0.0 are the immutable predecessor
 References containing `RC1`, `RC2`, or `1.0.0` are historical provenance and do not identify
 this release.
 `tools/check_no_loss.py` proves nothing semantic was dropped in the transition.
+
+## License
+
+Apache License 2.0 — see `LICENSE.md`. Copyright 2026 FreeXStudio (https://freexstudio.com).

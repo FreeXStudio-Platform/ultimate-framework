@@ -1,0 +1,45 @@
+{
+  "candidate_id": "ABS.CANDIDATE.1.3.1",
+  "candidate_tree_sha256": "eba1cbb9da8e09fc0a7d8717f9187a64879ea0306c814e1aa75f7a52fd063ca0",
+  "documentation": {
+    "lifecycle": "6/6 for all eight (blueprint/COMPLETENESS.md)",
+    "set": "8 governed documents under docs/ultimate-engine",
+    "stamp": "artifact-hardened: Approved With Known Risks @ 2e0367a07de3 on 2026-10-16 via three-pass-v1 (engine identity and stamps guards PASS)"
+  },
+  "environment": {
+    "PyYAML": "6.0.3",
+    "filesystem": "POSIX (local APFS)",
+    "graphviz": "16.1.0 (20260904.0139)",
+    "jsonschema": "4.26.0",
+    "node": "v26.11.1",
+    "python": "3.15.0"
+  },
+  "independent_certification": "PENDING_EXTERNAL_EXACT_HASH_REVIEW — the party that builds an artifact may not declare it certified",
+  "known_environment_notes": [
+    "Sealed with Graphviz 16.1.0; 1.3.0 was sealed with 15.1.0. No .dot source changed in 1.3.1, so no visual derivative was regenerated; visual parity under a different Graphviz build is a stated limitation (LIMITATIONS.md).",
+    "Predecessor archives are not distributed; their hashes are recorded in BASELINE_CHAIN. Sealing used the maintainer-held RC2 tree and the 1.3.0 tree."
+  ],
+  "predecessor": "ABS.RELEASE.1.3.0",
+  "release_id": "ABS.RELEASE.1.3.1",
+  "release_name": "1.3.1 — public distribution (Apache-2.0)",
+  "sealed_release_zip": {
+    "bytes": 3463630,
+    "distribution": "GitHub Release asset (not committed)",
+    "name": "absolute-canonical-framework-v1.3.1.zip",
+    "reproduced_from_fresh_staging_copy": true,
+    "sha256": "63003824641ad6e746469986d3a176b0fdaf542ad39b7a40024912956cf4e1fb"
+  },
+  "stamped_utc": "2026-10-16T18:31:25Z",
+  "status": "RELEASE_INTERNALLY_VERIFIED_INDEPENDENT_CERTIFICATION_PENDING",
+  "verification": {
+    "artifact": "verify_release PASS; verify_successor_release PASS; clean-room extract (modes preserved) re-verified PASS",
+    "check_no_loss_vs_1_3_0": "PASS (0 undeclared removals)",
+    "deep_verify": "PASS 10/10 sections, 2903 checks, 0 findings (working tree and clean-room extract)",
+    "evaluation_harness_run_all": "PASS",
+    "reproducibility": "second build from a fresh staging copy produced a byte-identical zip",
+    "successor_controls": "PASS",
+    "v2_contracts_validator": "PASS",
+    "verifier_mutation_check": "PASS"
+  },
+  "version": "1.3.1"
+}

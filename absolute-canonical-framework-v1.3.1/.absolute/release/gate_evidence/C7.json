@@ -8,7 +8,7 @@
   "prerequisites": [
     "C6"
   ],
-  "release_id": "ABS.RELEASE.1.3.0",
+  "release_id": "ABS.RELEASE.1.3.1",
   "required_check_state": "PASS",
   "schema": "absolute.gate_evidence.v1",
   "stale": false,
@@ -17,7 +17,7 @@
   "supporting_results": [
     {
       "checks": 8,
-      "detail": "semantic inventory compared against absolute-canonical-framework-v1.2.0",
+      "detail": "semantic inventory compared against absolute-canonical-framework-v1.3.0",
       "finding_count": 0,
       "name": "no_loss_check",
       "status": "PASS"

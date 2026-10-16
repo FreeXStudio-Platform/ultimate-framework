@@ -7,7 +7,7 @@
 #                                                    # clean-room extraction, reproduction and record
 #   scripts/release/seal.sh <report-dir> --build-only
 # Requires: python3 with the pinned jsonschema/PyYAML, Graphviz at the recorded version, and the
-# predecessor trees extracted (modes preserved) under <repo>/predecessor/ — see _release/predecessors/README.md.
+# predecessor trees extracted (modes preserved) under <repo>/predecessor/ — maintainer-held archives; see GUIDE-170.
 set -uo pipefail
 export PYTHONDONTWRITEBYTECODE=1
 ROOT="$(git rev-parse --show-toplevel)"; R="$1"; MODE="${2:-dry}"
@@ -19,7 +19,7 @@ hash_of(){ python3 01_control_plane/manifests_releases/tools/release_integrity.p
 
 if [ "$MODE" = "--build-only" ]; then H2=$(hash_of); echo "build-only: candidate hash $H2"; MODE="--commit"; SKIP_PREP=1; else SKIP_PREP=0; fi
 if [ "$SKIP_PREP" = "0" ]; then
-step "0 hygiene"; find . -name __pycache__ -prune -exec rm -rf {} + ; rm -rf .docgen .health graphify-out .docgen_cache.json; find . -name .DS_Store -delete; echo "untracked in payload: $(cd "$ROOT" && git status --short --ignored absolute-canonical-framework-v1.3.0 | grep -c '^\(??\|!!\)')"
+step "0 hygiene"; find . -name __pycache__ -prune -exec rm -rf {} + ; rm -rf .docgen .health graphify-out .docgen_cache.json; find . -name .DS_Store -delete; echo "untracked in payload: $(cd "$ROOT" && git status --short --ignored "$(basename "$P")" | grep -c '^\(??\|!!\)')"
 step "1 allowlist"; python3 01_control_plane/manifests_releases/tools/generate_release_allowlist.py . ../predecessor/absolute-canonical-framework-v1.0.0-rc.2 | tail -1; python3 01_control_plane/manifests_releases/tools/generate_release_allowlist.py . ../predecessor/absolute-canonical-framework-v1.0.0-rc.2 --check | tail -1
 step "2 metadata (x3; hash must be stable across the last two)"
 python3 tools/prepare_release_metadata.py --report "$R/prep1.json" >/dev/null 2>&1; echo "prep1 rc=$?"
@@ -55,7 +55,7 @@ for i in z.infolist():
     if m: os.chmod(t,m)
 print("extracted", len(z.infolist()))
 PY
-mkdir -p "$CR/predecessor" && cp -R "$ROOT/predecessor/absolute-canonical-framework-v1.2.0" "$CR/predecessor/"
+mkdir -p "$CR/predecessor" && cp -R "$ROOT/predecessor/absolute-canonical-framework-v$PRED" "$CR/predecessor/"
 ( cd "$CR/absolute-canonical-framework-v$V" && python3 tools/deep_verify.py --quiet > "$R/cleanroom-deep.out" 2>&1; echo "cleanroom deep_verify rc=$? :: $(cat "$R/cleanroom-deep.out")"; python3 09_tests_evals/run_all.py > "$R/cleanroom-run_all.json" 2>&1; echo "cleanroom run_all rc=$?"; python3 tools/check_no_loss.py --predecessor ../predecessor/absolute-canonical-framework-v$PRED > "$R/cleanroom-noloss.out" 2>&1; echo "cleanroom no_loss rc=$?" )
 step "7 reproduce from a fresh staging copy"
 ST="$ROOT/_staging"; rm -rf "$ST"; mkdir -p "$ST"; cp -R "$P" "$ST/"; cp -R "$ROOT/predecessor" "$ST/" 2>/dev/null
