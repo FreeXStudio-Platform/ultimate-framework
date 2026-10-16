@@ -36,12 +36,11 @@ jobs:
         env:
           PYTHONDONTWRITEBYTECODE: "1"
         run: |
-          python tools/deep_verify.py > deep.out 2>&1 || true
-          cat deep.out
-          if grep -E '^  (CRITICAL|HIGH|MEDIUM|LOW) ' deep.out | grep -qv 'VISUAL_PARITY_NOT_RUN'; then
-            echo "::error::deep_verify reported findings other than VISUAL_PARITY_NOT_RUN"; rm -f deep.out; exit 1
+          python tools/deep_verify.py > "$RUNNER_TEMP/deep.out" 2>&1 || true
+          cat "$RUNNER_TEMP/deep.out"
+          if grep -E '^  (CRITICAL|HIGH|MEDIUM|LOW) ' "$RUNNER_TEMP/deep.out" | grep -qv 'VISUAL_PARITY_NOT_RUN'; then
+            echo "::error::deep_verify reported findings other than VISUAL_PARITY_NOT_RUN"; exit 1
           fi
-          rm -f deep.out
       - name: Verifier mutation controls
         working-directory: absolute-canonical-framework-v1.3.1
         env:
