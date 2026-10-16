@@ -13,7 +13,7 @@ revision: 0
 produced_by: Ultimate Engine 1.0.5
 verified_state: verified
 ---
-<!-- artifact-hardened: Approved With Known Risks @ 6f99e3860d42 on 2026-09-07 via three-pass-v1 -->
+<!-- artifact-hardened: Approved With Known Risks @ 2e0367a07de3 on 2026-10-16 via three-pass-v1 -->
 
 # Absolute Repository, Versioning and Release Operations
 
@@ -37,9 +37,9 @@ this framework exists to prevent.
 
 | root entry | role |
 |---|---|
-| `absolute-canonical-framework-v1.3.0/` | The release payload — the subject of every integrity control. Its basename must equal `ROOT_NAME`. |
+| `absolute-canonical-framework-v1.3.1/` | The release payload — the subject of every integrity control. Its basename must equal `ROOT_NAME`. |
 | `engine/` | The vendored documentation and blueprint instrument. Not part of release identity. |
-| `_release/` | The sealed zip and its detached SHA-256; `_release/predecessors/` holds sealed predecessor releases. |
+| `_release/` (not committed) | Where the procedure writes the sealed zip and its detached SHA-256. The sealed artifacts are published as GitHub Release assets, never committed. |
 | `README.md`, `RELEASE_STAMP.json`, `MANIFEST.sha256`, `.gitignore`, `docs/doc-pipeline/` | The repository's own records. |
 
 The payload is a subdirectory rather than the repository root because `.git` is denylisted inside
@@ -88,10 +88,10 @@ the payload is still a *file*, and a CRITICAL finding the moment it exists. Set
 delete, any host-local run log; check `git status --short --ignored=matching <payload>` before
 finishing any session that touched it.
 
-`_release/` and `predecessor/` are related but distinct: the sealed zips under `_release/` and
-`_release/predecessors/` are committed, hash-verified artifacts. The trees extracted from them under
-`predecessor/` are not committed — extraction is a local, reproducible act from a hash-verified
-input, not a second copy of history to track.
+`_release/` and `predecessor/` are both uncommitted working directories. The sealed zip a release
+produces under `_release/` is published as a GitHub Release asset with its detached SHA-256; a tree
+extracted under `predecessor/` is a local, reproducible act from a hash-verified input, not a second
+copy of history to track.
 
 ## The version-bump checklist
 
@@ -230,8 +230,8 @@ that builds an artifact may not declare it certified.
 
 ## The predecessor chain, and where sealed predecessors live
 
-The chain is RC1 (the immutable input baseline) → RC2 → 1.0.0 → 1.1.0 → 1.2.0 (immutable
-predecessor releases), with 1.2.0 the immediate predecessor of this release. Each entry carries a
+The chain is RC1 (the immutable input baseline) → RC2 → 1.0.0 → 1.1.0 → 1.2.0 → 1.3.0 (immutable
+predecessor releases), with 1.3.0 the immediate predecessor of this release. Each entry carries a
 `clean_zip_sha256`, a `build_evidence_zip_sha256`, and from RC2 onward a `candidate_tree_sha256`.
 
 Two roles in this chain are not the same, and confusing them is exactly what broke the allowlist
@@ -240,21 +240,22 @@ derives source identity from**. The generator looks the RC2 baseline up by relea
 position in the chain, so a later merge changing what sits at `BASELINE_CHAIN[0]` cannot silently
 repoint it again.
 
-Sealed predecessors live in `_release/predecessors/` as a zip plus a detached `.sha256`; the current
-release's own sealed artifact lands in `_release/`. This repository's `_release/predecessors/` now
-holds the sealed zip for every entry in the chain, **including RC2** — which is what step 2 above
-consumes after a local extraction. A clone regenerates the release allowlist by extracting the
-committed, checksum-verified `absolute-canonical-framework-v1.0.0-rc.2.zip` into the gitignored
-`predecessor/` directory and running the generator against it. The dependency is on an extraction
-step this repository fully supports, not on material the repository does not contain.
+The public repository does **not** carry the predecessor archives. Their `clean_zip_sha256`,
+`build_evidence_zip_sha256` and `candidate_tree_sha256` values are recorded in `BASELINE_CHAIN`, and
+verification of a release needs only those recorded values — a clone verifies without any archive.
+*Cutting* a release is a maintainer operation: step 2 above needs the extracted, checksum-verified
+RC2 tree, which a maintainer supplies from the archive they hold, extracted into the gitignored
+`predecessor/` directory. A contribution that adds, removes or edits a payload file therefore
+reaches maintainers with the allowlist stale by construction; a maintainer regenerates it, re-binds
+the metadata and re-seals. Pull requests do not need to attempt that themselves.
 
 References to `RC1`, `RC2`, or `1.0.0` elsewhere in this tree are historical provenance and do not
 identify this release.
 
 ## The engine pin
 
-`engine/` is Ultimate Engine **1.0.5**, vendored with `git subtree --squash` from
-`Cryptosours/ultimate-engine@185725a`. It is the documentation and blueprint **instrument**, and is
+`engine/` is Ultimate Engine **1.0.7**, vendored with `git subtree --squash` (the exact upstream
+commit is recorded in `engine/PROVENANCE.md`). It is the documentation and blueprint **instrument**, and is
 deliberately **not part of the framework's release identity** — it sits outside the payload and
 outside `MANIFEST.json`.
 
@@ -274,25 +275,25 @@ recorded where it happens, not folded silently into a documentation pass.
 
 ```sh
 export PYTHONDONTWRITEBYTECODE=1
-export ENGINE_HOST_ROOT="$PWD/absolute-canonical-framework-v1.3.0"
+export ENGINE_HOST_ROOT="$PWD/absolute-canonical-framework-v1.3.1"
 export ENGINE_AUTHORED_DOCS_ROOT="docs/ultimate-engine"
 export PYTHONPATH="$PWD/engine"
 
-python3 absolute-canonical-framework-v1.3.0/docs/ultimate-engine/scripts/derive_documentation_model.py
+python3 absolute-canonical-framework-v1.3.1/docs/ultimate-engine/scripts/derive_documentation_model.py
 
 python3 -m tools.docgen.cli --strict build \
-  absolute-canonical-framework-v1.3.0/docs/ultimate-engine/GUIDE-100-project-guide.md \
-  absolute-canonical-framework-v1.3.0/docs/ultimate-engine/SYS-110-architecture.md \
-  absolute-canonical-framework-v1.3.0/docs/ultimate-engine/SYS-120-runtime-enforcement.md \
-  absolute-canonical-framework-v1.3.0/docs/ultimate-engine/REF-130-extension-points.md \
-  absolute-canonical-framework-v1.3.0/docs/ultimate-engine/GUIDE-140-operations-verification.md \
-  absolute-canonical-framework-v1.3.0/docs/ultimate-engine/REF-150-evidence-limitations.md \
-  absolute-canonical-framework-v1.3.0/docs/ultimate-engine/REF-160-agent-blueprint-guide.md \
-  absolute-canonical-framework-v1.3.0/docs/ultimate-engine/GUIDE-170-repository-release.md \
+  absolute-canonical-framework-v1.3.1/docs/ultimate-engine/GUIDE-100-project-guide.md \
+  absolute-canonical-framework-v1.3.1/docs/ultimate-engine/SYS-110-architecture.md \
+  absolute-canonical-framework-v1.3.1/docs/ultimate-engine/SYS-120-runtime-enforcement.md \
+  absolute-canonical-framework-v1.3.1/docs/ultimate-engine/REF-130-extension-points.md \
+  absolute-canonical-framework-v1.3.1/docs/ultimate-engine/GUIDE-140-operations-verification.md \
+  absolute-canonical-framework-v1.3.1/docs/ultimate-engine/REF-150-evidence-limitations.md \
+  absolute-canonical-framework-v1.3.1/docs/ultimate-engine/REF-160-agent-blueprint-guide.md \
+  absolute-canonical-framework-v1.3.1/docs/ultimate-engine/GUIDE-170-repository-release.md \
   --formats html,json
 
 (
-  cd absolute-canonical-framework-v1.3.0
+  cd absolute-canonical-framework-v1.3.1
   python3 -m tools.docgen.cli index docs/ultimate-engine -o docs/ultimate-engine/DOCS_INDEX.html
   python3 -m tools.docgen.cli content-index --docs-root docs/ultimate-engine \
     -o docs/design/doc-system/CONTENT_INDEX.json
@@ -304,13 +305,13 @@ python3 -m tools.blueprint verify
 
 ENGINE_HOST_ROOT="$ENGINE_HOST_ROOT" node engine/tools/graphify/build.mjs
 # then copy graph.json / graph-data.js / graph-view.html / vendor/*.js into
-# absolute-canonical-framework-v1.3.0/docs/ultimate-engine/graphs/structure/, as this file's own
+# absolute-canonical-framework-v1.3.1/docs/ultimate-engine/graphs/structure/, as this file's own
 # regeneration run does — never build.log, which embeds wall-clock time and is not deterministic
 
-for source in absolute-canonical-framework-v1.3.0/docs/ultimate-engine/graphs/source/*.mmd; do
+for source in absolute-canonical-framework-v1.3.1/docs/ultimate-engine/graphs/source/*.mmd; do
   name="$(basename "$source" .mmd)"
   node engine/tools/mermaid-engine/render.mjs "$source" \
-    -o "absolute-canonical-framework-v1.3.0/docs/ultimate-engine/graphs/rendered/$name.svg"
+    -o "absolute-canonical-framework-v1.3.1/docs/ultimate-engine/graphs/rendered/$name.svg"
 done
 
 python3 -m tools.project_index.cli dashboard
@@ -337,7 +338,7 @@ non-endpoint node. That is a named renderer limit, not permission to hand-draw t
 
 ## GitHub conventions
 
-This repository is published as a **private** repository, default branch `main`, with one annotated
+This repository is published as a **public** repository, default branch `main`, with one annotated
 tag per release in the form `vX.Y.Z`. Release assets are **the sealed zip and its detached
 `.sha256`**, never a tarball of the working tree.
 

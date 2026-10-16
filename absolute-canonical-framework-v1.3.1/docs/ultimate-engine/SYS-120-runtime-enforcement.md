@@ -13,6 +13,7 @@ revision: 0
 produced_by: Ultimate Engine 1.0.5
 verified_state: verified
 ---
+<!-- artifact-hardened: Approved With Known Risks @ 2e0367a07de3 on 2026-10-16 via three-pass-v1 -->
 
 # Absolute Runtime and Enforcement
 

@@ -515,7 +515,7 @@ figcaption.figcap { margin-top: var(--g3); font-size: var(--fs-sm); color: var(-
 <main>
 <section class="doc-section">
   <h2 class="t-eyebrow">overview</h2>
-  <div class="t-body"><p class="t-body">&lt;!-- artifact-hardened: Approved With Known Risks @ 6f99e3860d42 on 2026-09-07 via three-pass-v1 --&gt;</p></div>
+  <div class="t-body"><p class="t-body">&lt;!-- artifact-hardened: Approved With Known Risks @ 2e0367a07de3 on 2026-10-16 via three-pass-v1 --&gt;</p></div>
 </section>
 <section class="doc-section">
   <h2 class="t-eyebrow">Architectural thesis</h2>
@@ -778,7 +778,7 @@ figcaption.figcap { margin-top: var(--g3); font-size: var(--fs-sm); color: var(-
   <h2 class="t-eyebrow">Repository layout</h2>
   <div class="t-body"><h3 class="t-h3">What each root entry is</h3>
 <p class="t-body">The repository holds four kinds of thing at its root, described here by role rather than by name, because the name of the release payload changes with every version:</p>
-<ul class="t-list"><li>the <strong>release payload</strong>, <code class="t-code">absolute-canonical-framework-v1.3.1/</code> — the subject of every integrity control this document and <a class="t-link" href="SYS-120-runtime-enforcement.md">SYS-120</a> describe; its basename must equal the tooling&#x27;s <code class="t-code">ROOT_NAME</code>;</li><li>the <strong>vendored instrument</strong>, <code class="t-code">engine/</code> — the documentation and blueprint engine that produced this document, not part of this release&#x27;s identity;</li><li>the <strong>sealed artifacts</strong>, <code class="t-code">_release/</code> — the current release&#x27;s zip and detached SHA-256, plus <code class="t-code">_release/predecessors/</code> holding sealed predecessor releases;</li><li>the <strong>repository&#x27;s own records</strong> — <code class="t-code">README.md</code>, <code class="t-code">RELEASE_STAMP.json</code>, <code class="t-code">MANIFEST.sha256</code>, <code class="t-code">.gitignore</code>, and <code class="t-code">docs/doc-pipeline/</code>.</li></ul>
+<ul class="t-list"><li>the <strong>release payload</strong>, <code class="t-code">absolute-canonical-framework-v1.3.1/</code> — the subject of every integrity control this document and <a class="t-link" href="SYS-120-runtime-enforcement.md">SYS-120</a> describe; its basename must equal the tooling&#x27;s <code class="t-code">ROOT_NAME</code>;</li><li>the <strong>vendored instrument</strong>, <code class="t-code">engine/</code> — the documentation and blueprint engine that produced this document, not part of this release&#x27;s identity;</li><li>the <strong>sealed artifacts</strong> — the current release&#x27;s zip and detached SHA-256, written under <code class="t-code">_release/</code> by the procedure and published as GitHub Release assets rather than committed;</li><li>the <strong>repository&#x27;s own records</strong> — <code class="t-code">README.md</code>, <code class="t-code">RELEASE_STAMP.json</code>, <code class="t-code">MANIFEST.sha256</code>, <code class="t-code">.gitignore</code>, and <code class="t-code">docs/doc-pipeline/</code>.</li></ul>
 <p class="t-body"><strong><code class="t-code">.git</code> is outside the payload, and that is the structural change 1.3.0 makes.</strong> <code class="t-code">release_tree_integrity</code>&#x27;s <code class="t-code">FORBIDDEN_PARTS</code> denylists <code class="t-code">.git</code> by design, so before 1.3.0 no working tree could pass that control — only a sealed zip, with no version-control metadata inside it, ever could. Moving <code class="t-code">.git</code> to the repository root, one level above the payload, is what lets a working tree pass <code class="t-code">release_tree_integrity</code> for the first time.</p>
 <p class="t-body">A second consequence follows from the same move, and it is worth stating plainly: because tree identity covers everything outside <code class="t-code">.absolute/</code>, a <code class="t-code">git commit</code> inside the payload used to change the work identity every time it ran. With <code class="t-code">.git</code> outside the payload, an ordinary commit no longer touches the tree the identity model measures.</p>
 <figure class="doc-figure">
@@ -942,4 +942,4 @@ figcaption.figcap { margin-top: var(--g3); font-size: var(--fs-sm); color: var(-
 </body>
 </html>
 
-<!-- generated-by docgen · content-sha256:79ace91604f8df405fab24b94628ac8e8037992036beaec1d5691c9f7116e770 -->
+<!-- generated-by docgen · content-sha256:b0d67e2d9a1fc6e41e2037fa4ca5cb114919ad12cf5dd0adc0392d7914d02e48 -->

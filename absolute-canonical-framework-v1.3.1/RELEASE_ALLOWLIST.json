@@ -11,13 +11,13 @@
     "release_id": "ABS.RELEASE.1.0.0-RC2",
     "verified_member_count": 849
   },
-  "candidate_id": "ABS.CANDIDATE.1.3.0",
+  "candidate_id": "ABS.CANDIDATE.1.3.1",
   "classification_policy_version": "1.0.0",
   "derivative_status_counts": {
     "GENERATED_BUILD_CONTROL": 7,
-    "MODIFIED_SINCE_BASELINE": 210,
+    "MODIFIED_SINCE_BASELINE": 211,
     "NEW_SINCE_BASELINE": 253,
-    "PRESERVED_EXACT_FROM_BASELINE": 633
+    "PRESERVED_EXACT_FROM_BASELINE": 632
   },
   "framework_id": "ABS.FRAMEWORK.CANONICAL",
   "generator": "01_control_plane/manifests_releases/tools/generate_release_allowlist.py",
@@ -28,145 +28,145 @@
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/.lock",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/.lock"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/.lock"
     },
     {
       "artifact_class": "RELEASE_INTEGRITY_METADATA",
       "derivative_status": "GENERATED_BUILD_CONTROL",
       "path": ".absolute/release/authority_record.json",
-      "source_identity": "ABS.RELEASE.1.3.0:GENERATED_BUILD_CONTROL:.absolute/release/authority_record.json"
+      "source_identity": "ABS.RELEASE.1.3.1:GENERATED_BUILD_CONTROL:.absolute/release/authority_record.json"
     },
     {
       "artifact_class": "RELEASE_INTEGRITY_METADATA",
       "derivative_status": "GENERATED_BUILD_CONTROL",
       "path": ".absolute/release/gate_binding.json",
-      "source_identity": "ABS.RELEASE.1.3.0:GENERATED_BUILD_CONTROL:.absolute/release/gate_binding.json"
+      "source_identity": "ABS.RELEASE.1.3.1:GENERATED_BUILD_CONTROL:.absolute/release/gate_binding.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C0.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C0.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C0.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C1.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C1.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C1.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C10.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C10.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C10.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C11.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C11.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C11.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C12.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C12.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C12.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C13.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C13.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C13.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C14.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C14.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C14.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C15.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C15.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C15.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C16.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C16.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C16.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C17.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C17.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C17.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C18.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C18.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C18.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C19.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C19.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C19.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C2.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C2.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C2.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C3.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C3.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C3.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C4.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C4.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C4.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C5.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C5.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C5.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C6.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C6.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C6.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C7.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C7.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C7.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C8.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C8.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C8.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": ".absolute/release/gate_evidence/C9.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:.absolute/release/gate_evidence/C9.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:.absolute/release/gate_evidence/C9.json"
     },
     {
       "artifact_class": "RELEASE_INTEGRITY_METADATA",
       "derivative_status": "GENERATED_BUILD_CONTROL",
       "path": ".absolute/release/release_identity.json",
-      "source_identity": "ABS.RELEASE.1.3.0:GENERATED_BUILD_CONTROL:.absolute/release/release_identity.json"
+      "source_identity": "ABS.RELEASE.1.3.1:GENERATED_BUILD_CONTROL:.absolute/release/release_identity.json"
     },
     {
       "artifact_class": "BLUEPRINT_SOURCE",
@@ -1444,7 +1444,7 @@
       "artifact_class": "EXECUTABLE_TOOL",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "01_control_plane/manifests_releases/tools/generate_release_allowlist.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:01_control_plane/manifests_releases/tools/generate_release_allowlist.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:01_control_plane/manifests_releases/tools/generate_release_allowlist.py"
     },
     {
       "artifact_class": "EXECUTABLE_TOOL",
@@ -3418,7 +3418,7 @@
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/abs_iface_runtime_execute.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/abs_iface_runtime_execute.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/abs_iface_runtime_execute.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
@@ -3472,7 +3472,7 @@
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/abs_iface_truth_stamp.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/abs_iface_truth_stamp.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/abs_iface_truth_stamp.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
@@ -3508,79 +3508,79 @@
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/certification-handoff.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/certification-handoff.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/certification-handoff.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/configuration-record.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/configuration-record.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/configuration-record.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/conversation-decision.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/conversation-decision.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/conversation-decision.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/coverage-scoreboard.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/coverage-scoreboard.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/coverage-scoreboard.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/executable-surface-record.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/executable-surface-record.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/executable-surface-record.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/finding.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/finding.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/finding.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/gate-control-record.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/gate-control-record.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/gate-control-record.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/gate-report.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/gate-report.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/gate-report.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/improvement-opportunity.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/improvement-opportunity.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/improvement-opportunity.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/knowledge-unit.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/knowledge-unit.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/knowledge-unit.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/projection-profile.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/projection-profile.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/projection-profile.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/simulation-scenario.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/simulation-scenario.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/simulation-scenario.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/coverage_closure_v2/source-record.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/source-record.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/coverage_closure_v2/source-record.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
@@ -3634,7 +3634,7 @@
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "04_enforcement/schemas/release_allowlist.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:04_enforcement/schemas/release_allowlist.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:04_enforcement/schemas/release_allowlist.schema.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
@@ -5026,385 +5026,385 @@
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/fixtures/v2_contracts/POSITIVE_FIXTURES.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/fixtures/v2_contracts/POSITIVE_FIXTURES.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/fixtures/v2_contracts/POSITIVE_FIXTURES.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_capability_select.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_capability_select.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_capability_select.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_capability_select.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_capability_select.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_capability_select.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_change_invalidate.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_change_invalidate.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_change_invalidate.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_change_invalidate.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_change_invalidate.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_change_invalidate.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_connector_invoke.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_connector_invoke.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_connector_invoke.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_connector_invoke.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_connector_invoke.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_connector_invoke.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_decision_record.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_decision_record.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_decision_record.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_decision_record.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_decision_record.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_decision_record.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_dependency_register.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_dependency_register.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_dependency_register.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_dependency_register.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_dependency_register.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_dependency_register.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_evidence_record.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_evidence_record.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_evidence_record.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_evidence_record.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_evidence_record.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_evidence_record.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_gate_evaluate.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_gate_evaluate.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_gate_evaluate.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_gate_evaluate.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_gate_evaluate.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_gate_evaluate.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_goal_link_validate.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_goal_link_validate.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_goal_link_validate.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_goal_link_validate.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_goal_link_validate.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_goal_link_validate.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_graph_query.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_graph_query.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_graph_query.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_graph_query.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_graph_query.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_graph_query.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_health_report.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_health_report.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_health_report.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_health_report.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_health_report.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_health_report.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_identity_allocate.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_identity_allocate.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_identity_allocate.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_identity_allocate.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_identity_allocate.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_identity_allocate.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_lifecycle_transition.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_lifecycle_transition.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_lifecycle_transition.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_lifecycle_transition.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_lifecycle_transition.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_lifecycle_transition.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_model_route.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_model_route.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_model_route.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_model_route.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_model_route.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_model_route.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_module_package.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_module_package.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_module_package.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_module_package.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_module_package.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_module_package.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_parity_validate.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_parity_validate.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_parity_validate.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_parity_validate.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_parity_validate.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_parity_validate.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_publication_derive.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_publication_derive.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_publication_derive.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_publication_derive.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_publication_derive.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_publication_derive.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_recovery_checkpoint.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_recovery_checkpoint.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_recovery_checkpoint.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_recovery_checkpoint.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_recovery_checkpoint.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_recovery_checkpoint.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_release_assemble.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_release_assemble.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_release_assemble.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_release_assemble.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_release_assemble.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_release_assemble.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_runtime_execute.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_runtime_execute.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_runtime_execute.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_runtime_execute.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_runtime_execute.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_runtime_execute.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_schema_validate.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_schema_validate.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_schema_validate.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_schema_validate.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_schema_validate.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_schema_validate.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_security_authorize.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_security_authorize.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_security_authorize.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_security_authorize.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_security_authorize.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_security_authorize.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_session_handoff.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_session_handoff.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_session_handoff.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_session_handoff.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_session_handoff.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_session_handoff.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_skill_execute.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_skill_execute.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_skill_execute.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_skill_execute.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_skill_execute.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_skill_execute.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_source_admit.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_source_admit.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_source_admit.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_source_admit.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_source_admit.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_source_admit.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_state_atomic_update.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_state_atomic_update.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_state_atomic_update.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_state_atomic_update.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_state_atomic_update.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_state_atomic_update.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_test_evaluate.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_test_evaluate.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_test_evaluate.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_test_evaluate.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_test_evaluate.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_test_evaluate.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_truth_classify.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_truth_classify.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_truth_classify.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_truth_classify.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_truth_classify.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_truth_classify.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_truth_stamp.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_truth_stamp.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_truth_stamp.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_truth_stamp.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_truth_stamp.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_truth_stamp.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_verification_independent.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_verification_independent.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_verification_independent.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_verification_independent.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_verification_independent.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_verification_independent.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_visual_render.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_visual_render.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_visual_render.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_visual_render.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_visual_render.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_visual_render.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_work_packet.invalid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_work_packet.invalid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_work_packet.invalid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/abs_iface_work_packet.valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_work_packet.valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/abs_iface_work_packet.valid.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "09_tests_evals/interface_fixtures/README.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:09_tests_evals/interface_fixtures/README.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:09_tests_evals/interface_fixtures/README.md"
     },
     {
       "artifact_class": "TEST_ASSET",
@@ -5428,187 +5428,187 @@
       "artifact_class": "BLUEPRINT_SOURCE",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/blueprint/architecture.dot",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/blueprint/architecture.dot"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/blueprint/architecture.dot"
     },
     {
       "artifact_class": "VISUAL_DERIVATIVE",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/blueprint/architecture.svg",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/blueprint/architecture.svg"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/blueprint/architecture.svg"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/blueprint/BLUEPRINT.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/blueprint/BLUEPRINT.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/blueprint/BLUEPRINT.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/blueprint/visual_manifest.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/blueprint/visual_manifest.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/blueprint/visual_manifest.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/CHANGELOG.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/CHANGELOG.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/CHANGELOG.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/integration/consumed_interfaces.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/integration/consumed_interfaces.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/integration/consumed_interfaces.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/integration/dependencies.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/integration/dependencies.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/integration/dependencies.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/integration/provided_interfaces.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/integration/provided_interfaces.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/integration/provided_interfaces.json"
     },
     {
       "artifact_class": "MACHINE_SCHEMA",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/machine/contract.schema.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/machine/contract.schema.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/machine/contract.schema.json"
     },
     {
       "artifact_class": "EXAMPLE",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/machine/examples/valid.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/machine/examples/valid.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/machine/examples/valid.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/machine/policy.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/machine/policy.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/machine/policy.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/MODULE.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/MODULE.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/MODULE.md"
     },
     {
       "artifact_class": "MODULE_MANIFEST",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/MODULE_MANIFEST.yaml",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/MODULE_MANIFEST.yaml"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/MODULE_MANIFEST.yaml"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/publication/plain_english.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/publication/plain_english.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/publication/plain_english.md"
     },
     {
       "artifact_class": "CONFIGURATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/publication/publication_manifest.yaml",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/publication/publication_manifest.yaml"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/publication/publication_manifest.yaml"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/publication/quick_reference.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/publication/quick_reference.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/publication/quick_reference.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/requirements.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/requirements.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/requirements.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/tests/adversarial/authority_override.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/tests/adversarial/authority_override.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/tests/adversarial/authority_override.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/tests/negative/missing_evidence.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/tests/negative/missing_evidence.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/tests/negative/missing_evidence.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/tests/positive/valid_instance.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/tests/positive/valid_instance.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/tests/positive/valid_instance.json"
     },
     {
       "artifact_class": "TEST_ASSET",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "10_runtime/tests/TEST_PLAN.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:10_runtime/tests/TEST_PLAN.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:10_runtime/tests/TEST_PLAN.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "absolute",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:absolute"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:absolute"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "blueprint/COMPLETENESS.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:blueprint/COMPLETENESS.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:blueprint/COMPLETENESS.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "blueprint/SURFACES.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:blueprint/SURFACES.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:blueprint/SURFACES.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "blueprint/system.d2",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:blueprint/system.d2"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:blueprint/system.d2"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "blueprint/SYSTEM.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:blueprint/SYSTEM.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:blueprint/SYSTEM.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "blueprint/system.layout.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:blueprint/system.layout.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:blueprint/system.layout.json"
     },
     {
       "artifact_class": "VISUAL_DERIVATIVE",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "blueprint/system.layout.svg",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:blueprint/system.layout.svg"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:blueprint/system.layout.svg"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "blueprint/SYSTEM.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:blueprint/SYSTEM.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:blueprint/SYSTEM.md"
     },
     {
       "artifact_class": "BLUEPRINT_SOURCE",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "blueprint/system.mmd",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:blueprint/system.mmd"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:blueprint/system.mmd"
     },
     {
       "artifact_class": "RELEASE_INTEGRITY_METADATA",
       "derivative_status": "GENERATED_BUILD_CONTROL",
       "path": "CANDIDATE_SOURCE_MANIFEST.json",
-      "source_identity": "ABS.RELEASE.1.3.0:GENERATED_BUILD_CONTROL:CANDIDATE_SOURCE_MANIFEST.json"
+      "source_identity": "ABS.RELEASE.1.3.1:GENERATED_BUILD_CONTROL:CANDIDATE_SOURCE_MANIFEST.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
@@ -5626,97 +5626,97 @@
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/GUIDE-100/HISTORY.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/GUIDE-100/HISTORY.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/GUIDE-100/HISTORY.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/GUIDE-100/v1/GUIDE-100-project-guide.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/GUIDE-100/v1/GUIDE-100-project-guide.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/GUIDE-100/v1/GUIDE-100-project-guide.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/GUIDE-140/HISTORY.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/GUIDE-140/HISTORY.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/GUIDE-140/HISTORY.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/GUIDE-140/v1/GUIDE-140-operations-verification.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/GUIDE-140/v1/GUIDE-140-operations-verification.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/GUIDE-140/v1/GUIDE-140-operations-verification.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/GUIDE-170/HISTORY.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/GUIDE-170/HISTORY.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/GUIDE-170/HISTORY.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/GUIDE-170/v1/GUIDE-170-repository-release.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/GUIDE-170/v1/GUIDE-170-repository-release.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/GUIDE-170/v1/GUIDE-170-repository-release.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/REF-130/HISTORY.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/REF-130/HISTORY.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/REF-130/HISTORY.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/REF-130/v1/REF-130-extension-points.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/REF-130/v1/REF-130-extension-points.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/REF-130/v1/REF-130-extension-points.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/REF-150/HISTORY.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/REF-150/HISTORY.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/REF-150/HISTORY.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/REF-150/v1/REF-150-evidence-limitations.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/REF-150/v1/REF-150-evidence-limitations.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/REF-150/v1/REF-150-evidence-limitations.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/REF-160/HISTORY.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/REF-160/HISTORY.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/REF-160/HISTORY.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/REF-160/v1/REF-160-agent-blueprint-guide.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/REF-160/v1/REF-160-agent-blueprint-guide.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/REF-160/v1/REF-160-agent-blueprint-guide.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/SYS-110/HISTORY.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/SYS-110/HISTORY.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/SYS-110/HISTORY.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/SYS-110/v1/SYS-110-architecture.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/SYS-110/v1/SYS-110-architecture.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/SYS-110/v1/SYS-110-architecture.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/SYS-120/HISTORY.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/SYS-120/HISTORY.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/SYS-120/HISTORY.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/archive/SYS-120/v1/SYS-120-runtime-enforcement.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/archive/SYS-120/v1/SYS-120-runtime-enforcement.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/archive/SYS-120/v1/SYS-120-runtime-enforcement.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
@@ -5728,49 +5728,49 @@
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/design/doc-system/CLASSIFICATION.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/design/doc-system/CLASSIFICATION.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/design/doc-system/CLASSIFICATION.md"
     },
     {
       "artifact_class": "REGISTRY",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/design/doc-system/CONTENT_INDEX.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/design/doc-system/CONTENT_INDEX.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/design/doc-system/CONTENT_INDEX.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/design/doc-system/CONTRADICTION.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/design/doc-system/CONTRADICTION.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/design/doc-system/CONTRADICTION.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/design/doc-system/DOC_MANIFEST.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/design/doc-system/DOC_MANIFEST.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/design/doc-system/DOC_MANIFEST.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/design/doc-system/RULEBOOK.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/design/doc-system/RULEBOOK.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/design/doc-system/RULEBOOK.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/design/doc-system/TAXONOMY.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/design/doc-system/TAXONOMY.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/design/doc-system/TAXONOMY.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/design/doc-system/update_impact_map.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/design/doc-system/update_impact_map.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/design/doc-system/update_impact_map.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/design/doc-system/VERSION.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/design/doc-system/VERSION.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/design/doc-system/VERSION.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
@@ -5806,7 +5806,7 @@
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/RC3_REMEDIATION_DESIGN.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/RC3_REMEDIATION_DESIGN.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/RC3_REMEDIATION_DESIGN.md"
     },
     {
       "artifact_class": "REGISTRY",
@@ -5860,7 +5860,7 @@
       "artifact_class": "REGISTRY",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/registries/MACHINE_CONTRACT_INDEX.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/registries/MACHINE_CONTRACT_INDEX.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/registries/MACHINE_CONTRACT_INDEX.json"
     },
     {
       "artifact_class": "REGISTRY",
@@ -5884,7 +5884,7 @@
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/RUNTIME_GUIDE.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/RUNTIME_GUIDE.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/RUNTIME_GUIDE.md"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
@@ -5896,361 +5896,361 @@
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/DOCS_INDEX.html",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/DOCS_INDEX.html"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/DOCS_INDEX.html"
     },
     {
       "artifact_class": "VISUAL_DERIVATIVE",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/rendered/document-rail.svg",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/rendered/document-rail.svg"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/rendered/document-rail.svg"
     },
     {
       "artifact_class": "VISUAL_DERIVATIVE",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/rendered/domain-dependencies.svg",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/rendered/domain-dependencies.svg"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/rendered/domain-dependencies.svg"
     },
     {
       "artifact_class": "VISUAL_DERIVATIVE",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/rendered/project-rail.svg",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/rendered/project-rail.svg"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/rendered/project-rail.svg"
     },
     {
       "artifact_class": "VISUAL_DERIVATIVE",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/rendered/release-pipeline.svg",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/rendered/release-pipeline.svg"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/rendered/release-pipeline.svg"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/source/document-rail.mmd",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/source/document-rail.mmd"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/source/document-rail.mmd"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/source/domain-dependencies.mmd",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/source/domain-dependencies.mmd"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/source/domain-dependencies.mmd"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/source/project-rail.mmd",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/source/project-rail.mmd"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/source/project-rail.mmd"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/source/release-pipeline.mmd",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/source/release-pipeline.mmd"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/source/release-pipeline.mmd"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/structure/graph-data.js",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/structure/graph-data.js"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/structure/graph-data.js"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/structure/graph-view.html",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/structure/graph-view.html"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/structure/graph-view.html"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/structure/graph.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/structure/graph.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/structure/graph.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/structure/vendor/3d-force-graph.min.js",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/structure/vendor/3d-force-graph.min.js"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/structure/vendor/3d-force-graph.min.js"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/graphs/structure/vendor/force-graph.min.js",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/graphs/structure/vendor/force-graph.min.js"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/graphs/structure/vendor/force-graph.min.js"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-100-project-guide.html",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-100-project-guide.html"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-100-project-guide.html"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-100-project-guide.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-100-project-guide.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-100-project-guide.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-100-project-guide.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-100-project-guide.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-100-project-guide.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-100-project-guide_spec.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-100-project-guide_spec.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-100-project-guide_spec.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-140-operations-verification.html",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-140-operations-verification.html"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-140-operations-verification.html"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-140-operations-verification.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-140-operations-verification.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-140-operations-verification.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-140-operations-verification.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-140-operations-verification.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-140-operations-verification.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-140-operations-verification_spec.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-140-operations-verification_spec.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-140-operations-verification_spec.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-170-repository-release.html",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-170-repository-release.html"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-170-repository-release.html"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-170-repository-release.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-170-repository-release.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-170-repository-release.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-170-repository-release.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-170-repository-release.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-170-repository-release.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/GUIDE-170-repository-release_spec.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/GUIDE-170-repository-release_spec.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/GUIDE-170-repository-release_spec.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/machine/agent-usability-result.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/machine/agent-usability-result.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/machine/agent-usability-result.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/machine/document-index.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/machine/document-index.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/machine/document-index.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/machine/domain-model.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/machine/domain-model.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/machine/domain-model.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/machine/evaluation-baseline.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/machine/evaluation-baseline.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/machine/evaluation-baseline.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/machine/extension-points.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/machine/extension-points.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/machine/extension-points.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/machine/inventory.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/machine/inventory.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/machine/inventory.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/machine/limitations-register.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/machine/limitations-register.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/machine/limitations-register.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/machine/module-dependencies.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/machine/module-dependencies.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/machine/module-dependencies.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/machine/release-model.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/machine/release-model.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/machine/release-model.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/machine/runtime-model.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/machine/runtime-model.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/machine/runtime-model.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/machine/verification-model.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/machine/verification-model.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/machine/verification-model.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/README.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/README.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/README.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-130-extension-points.html",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-130-extension-points.html"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-130-extension-points.html"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-130-extension-points.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-130-extension-points.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-130-extension-points.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-130-extension-points.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-130-extension-points.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-130-extension-points.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-130-extension-points_spec.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-130-extension-points_spec.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-130-extension-points_spec.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-150-evidence-limitations.html",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-150-evidence-limitations.html"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-150-evidence-limitations.html"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-150-evidence-limitations.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-150-evidence-limitations.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-150-evidence-limitations.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-150-evidence-limitations.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-150-evidence-limitations.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-150-evidence-limitations.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-150-evidence-limitations_spec.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-150-evidence-limitations_spec.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-150-evidence-limitations_spec.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-160-agent-blueprint-guide.html",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-160-agent-blueprint-guide.html"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-160-agent-blueprint-guide.html"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-160-agent-blueprint-guide.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-160-agent-blueprint-guide.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-160-agent-blueprint-guide.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-160-agent-blueprint-guide.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-160-agent-blueprint-guide.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-160-agent-blueprint-guide.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REF-160-agent-blueprint-guide_spec.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REF-160-agent-blueprint-guide_spec.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REF-160-agent-blueprint-guide_spec.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/REGENERATE.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/REGENERATE.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/REGENERATE.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/scripts/derive_documentation_model.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/scripts/derive_documentation_model.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/scripts/derive_documentation_model.py"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/SYS-110-architecture.html",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/SYS-110-architecture.html"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/SYS-110-architecture.html"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/SYS-110-architecture.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/SYS-110-architecture.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/SYS-110-architecture.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/SYS-110-architecture.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/SYS-110-architecture.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/SYS-110-architecture.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/SYS-110-architecture_spec.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/SYS-110-architecture_spec.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/SYS-110-architecture_spec.json"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/SYS-120-runtime-enforcement.html",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/SYS-120-runtime-enforcement.html"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/SYS-120-runtime-enforcement.html"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/SYS-120-runtime-enforcement.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/SYS-120-runtime-enforcement.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/SYS-120-runtime-enforcement.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/SYS-120-runtime-enforcement.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/SYS-120-runtime-enforcement.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/SYS-120-runtime-enforcement.md"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "docs/ultimate-engine/SYS-120-runtime-enforcement_spec.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:docs/ultimate-engine/SYS-120-runtime-enforcement_spec.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:docs/ultimate-engine/SYS-120-runtime-enforcement_spec.json"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
@@ -6316,7 +6316,7 @@
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/rc2_baseline_provenance.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/rc2_baseline_provenance.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/rc2_baseline_provenance.json"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
@@ -6346,83 +6346,83 @@
       "artifact_class": "BLUEPRINT_SOURCE",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/blueprint/architecture.dot",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/blueprint/architecture.dot"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/blueprint/architecture.dot"
     },
     {
       "artifact_class": "VISUAL_DERIVATIVE",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/blueprint/architecture.svg",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/blueprint/architecture.svg"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/blueprint/architecture.svg"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/blueprint/BLUEPRINT.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/blueprint/BLUEPRINT.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/blueprint/BLUEPRINT.md"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/blueprint/visual_manifest.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/blueprint/visual_manifest.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/blueprint/visual_manifest.json"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/CONFIGURATION_RECORDS.jsonl",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/CONFIGURATION_RECORDS.jsonl"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/CONFIGURATION_RECORDS.jsonl"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/CONFIGURATION_TRACEABILITY_MATRIX.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/CONFIGURATION_TRACEABILITY_MATRIX.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/CONFIGURATION_TRACEABILITY_MATRIX.md"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/CONTRACT_COMPATIBILITY_MANIFEST.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/CONTRACT_COMPATIBILITY_MANIFEST.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/CONTRACT_COMPATIBILITY_MANIFEST.json"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/CONVERSATION_DECISION_EXECUTION.jsonl",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/CONVERSATION_DECISION_EXECUTION.jsonl"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/CONVERSATION_DECISION_EXECUTION.jsonl"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/DECISION_EXECUTION_REPORT.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/DECISION_EXECUTION_REPORT.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/DECISION_EXECUTION_REPORT.md"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/EXECUTABLE_SURFACE_RECORDS.jsonl",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/EXECUTABLE_SURFACE_RECORDS.jsonl"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/EXECUTABLE_SURFACE_RECORDS.jsonl"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/EXECUTABLE_SURFACE_TRACEABILITY_MATRIX.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/EXECUTABLE_SURFACE_TRACEABILITY_MATRIX.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/EXECUTABLE_SURFACE_TRACEABILITY_MATRIX.md"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/coverage_closure_v3/v2_contracts/V2_CONTRACT_COMPATIBILITY.md",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/V2_CONTRACT_COMPATIBILITY.md"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/coverage_closure_v3/v2_contracts/V2_CONTRACT_COMPATIBILITY.md"
     },
     {
       "artifact_class": "GOVERNANCE_RECORD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "governance/SUPERSESSION_LEDGER.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:governance/SUPERSESSION_LEDGER.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:governance/SUPERSESSION_LEDGER.json"
     },
     {
       "artifact_class": "LICENSE",
-      "derivative_status": "PRESERVED_EXACT_FROM_BASELINE",
+      "derivative_status": "MODIFIED_SINCE_BASELINE",
       "path": "LICENSE.md",
       "source_identity": "ABS.RELEASE.1.0.0-RC2:LICENSE.md@sha256:ceb75faecf99f2de135c2ca6f7f123905239005811757d9146a716848caf6767"
     },
@@ -6436,7 +6436,7 @@
       "artifact_class": "RELEASE_INTEGRITY_METADATA",
       "derivative_status": "GENERATED_BUILD_CONTROL",
       "path": "MANIFEST.json",
-      "source_identity": "ABS.RELEASE.1.3.0:GENERATED_BUILD_CONTROL:MANIFEST.json"
+      "source_identity": "ABS.RELEASE.1.3.1:GENERATED_BUILD_CONTROL:MANIFEST.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
@@ -6454,13 +6454,13 @@
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "PROJECT_INDEX.html",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:PROJECT_INDEX.html"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:PROJECT_INDEX.html"
     },
     {
       "artifact_class": "REGISTRY",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "PROJECT_INDEX.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:PROJECT_INDEX.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:PROJECT_INDEX.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
@@ -6478,7 +6478,7 @@
       "artifact_class": "RELEASE_INTEGRITY_METADATA",
       "derivative_status": "GENERATED_BUILD_CONTROL",
       "path": "RELEASE_ALLOWLIST.json",
-      "source_identity": "ABS.RELEASE.1.3.0:GENERATED_BUILD_CONTROL:RELEASE_ALLOWLIST.json"
+      "source_identity": "ABS.RELEASE.1.3.1:GENERATED_BUILD_CONTROL:RELEASE_ALLOWLIST.json"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
@@ -6490,67 +6490,67 @@
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "runtime/__init__.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:runtime/__init__.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:runtime/__init__.py"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "runtime/cli.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:runtime/cli.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:runtime/cli.py"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "runtime/documents.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:runtime/documents.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:runtime/documents.py"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "runtime/docvalidate.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:runtime/docvalidate.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:runtime/docvalidate.py"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "runtime/engine.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:runtime/engine.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:runtime/engine.py"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "runtime/errors.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:runtime/errors.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:runtime/errors.py"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "runtime/ledger.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:runtime/ledger.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:runtime/ledger.py"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "runtime/project.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:runtime/project.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:runtime/project.py"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "runtime/rail.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:runtime/rail.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:runtime/rail.py"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "runtime/util.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:runtime/util.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:runtime/util.py"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "runtime/verify.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:runtime/verify.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:runtime/verify.py"
     },
     {
       "artifact_class": "NORMATIVE_DOCUMENTATION",
@@ -6562,13 +6562,13 @@
       "artifact_class": "RELEASE_INTEGRITY_METADATA",
       "derivative_status": "GENERATED_BUILD_CONTROL",
       "path": "SHA256SUMS.txt",
-      "source_identity": "ABS.RELEASE.1.3.0:GENERATED_BUILD_CONTROL:SHA256SUMS.txt"
+      "source_identity": "ABS.RELEASE.1.3.1:GENERATED_BUILD_CONTROL:SHA256SUMS.txt"
     },
     {
       "artifact_class": "OTHER_CANONICAL_PAYLOAD",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "system.spec.json",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:system.spec.json"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:system.spec.json"
     },
     {
       "artifact_class": "TEST_ASSET",
@@ -6586,25 +6586,25 @@
       "artifact_class": "EXECUTABLE_TOOL",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "tools/check_no_loss.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:tools/check_no_loss.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:tools/check_no_loss.py"
     },
     {
       "artifact_class": "EXECUTABLE_TOOL",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "tools/deep_verify.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:tools/deep_verify.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:tools/deep_verify.py"
     },
     {
       "artifact_class": "EXECUTABLE_TOOL",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "tools/prepare_release_metadata.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:tools/prepare_release_metadata.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:tools/prepare_release_metadata.py"
     },
     {
       "artifact_class": "EXECUTABLE_TOOL",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "tools/restore_modes.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:tools/restore_modes.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:tools/restore_modes.py"
     },
     {
       "artifact_class": "EXECUTABLE_TOOL",
@@ -6622,13 +6622,13 @@
       "artifact_class": "EXECUTABLE_TOOL",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "tools/validate_v2_contracts.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:tools/validate_v2_contracts.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:tools/validate_v2_contracts.py"
     },
     {
       "artifact_class": "EXECUTABLE_TOOL",
       "derivative_status": "NEW_SINCE_BASELINE",
       "path": "tools/verifier_mutation_check.py",
-      "source_identity": "ABS.RELEASE.1.3.0:CANONICAL_NEW:tools/verifier_mutation_check.py"
+      "source_identity": "ABS.RELEASE.1.3.1:CANONICAL_NEW:tools/verifier_mutation_check.py"
     },
     {
       "artifact_class": "EXECUTABLE_TOOL",
@@ -6643,6 +6643,6 @@
       "source_identity": "ABS.RELEASE.1.0.0-RC2:VERSION@sha256:0c654c00f94741d78169de333d4d9e866be0667b41f9c54cafe3c6b700b15a43"
     }
   ],
-  "release_id": "ABS.RELEASE.1.3.0",
+  "release_id": "ABS.RELEASE.1.3.1",
   "schema_version": "1.0.0"
 }

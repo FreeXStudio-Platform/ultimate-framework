@@ -13,7 +13,7 @@ revision: 0
 produced_by: Ultimate Engine 1.0.5
 verified_state: verified
 ---
-<!-- artifact-hardened: Approved With Known Risks @ 6f99e3860d42 on 2026-09-07 via three-pass-v1 -->
+<!-- artifact-hardened: Approved With Known Risks @ 2e0367a07de3 on 2026-10-16 via three-pass-v1 -->
 
 # Absolute Canonical Framework Project Guide
 
@@ -30,7 +30,7 @@ requirements, interfaces, profiles, adapters, and concepts; its runtime enforces
 its verification tools inspect the release and, after installation, the project layered on top of
 it.
 
-This release's identity is `ABS.RELEASE.1.3.0`, candidate `ABS.CANDIDATE.1.3.0`, status
+This release's identity is `ABS.RELEASE.1.3.1`, candidate `ABS.CANDIDATE.1.3.1`, status
 `RELEASE_INTERNALLY_VERIFIED_INDEPENDENT_CERTIFICATION_PENDING`.
 
 The release explicitly does not certify itself. Internal verification and external independent

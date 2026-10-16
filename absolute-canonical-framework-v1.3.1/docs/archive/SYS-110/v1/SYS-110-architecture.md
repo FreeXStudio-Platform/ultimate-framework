@@ -13,7 +13,7 @@ revision: 0
 produced_by: Ultimate Engine 1.0.5
 verified_state: verified
 ---
-<!-- artifact-hardened: Approved With Known Risks @ 6f99e3860d42 on 2026-09-07 via three-pass-v1 -->
+<!-- artifact-hardened: Approved With Known Risks @ 2e0367a07de3 on 2026-10-16 via three-pass-v1 -->
 
 # Absolute Architecture and Domain Map
 
@@ -41,13 +41,13 @@ in [`machine/domain-model.json`](machine/domain-model.json).
 The repository holds four kinds of thing at its root, described here by role rather than by name,
 because the name of the release payload changes with every version:
 
-- the **release payload**, `absolute-canonical-framework-v1.3.0/` — the subject of every integrity
+- the **release payload**, `absolute-canonical-framework-v1.3.1/` — the subject of every integrity
   control this document and [SYS-120](SYS-120-runtime-enforcement.md) describe; its basename must
   equal the tooling's `ROOT_NAME`;
 - the **vendored instrument**, `engine/` — the documentation and blueprint engine that produced
   this document, not part of this release's identity;
-- the **sealed artifacts**, `_release/` — the current release's zip and detached SHA-256, plus
-  `_release/predecessors/` holding sealed predecessor releases;
+- the **sealed artifacts** — the current release's zip and detached SHA-256, written under
+  `_release/` by the procedure and published as GitHub Release assets rather than committed;
 - the **repository's own records** — `README.md`, `RELEASE_STAMP.json`, `MANIFEST.sha256`,
   `.gitignore`, and `docs/doc-pipeline/`.
 

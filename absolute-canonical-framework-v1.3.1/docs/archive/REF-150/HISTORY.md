@@ -10,4 +10,4 @@ A version is **superseded** exactly when a higher one exists below it. That is d
 
 | version | cut on | commit | sha256 | cut by |
 |---|---|---|---|---|
-| v1 | 2026-09-07 | `6f99e38` | `3d34c902b5dff3dd58ddf6bd9b5e4d3553626c1c95e8e5176568e7790d800a39` | docgen 1.0.5 |
+| v1 | 2026-10-16 | `2e0367a` | `24b8a42cf7086c0f9b6a8be9b927c6c527e8e2bd16f95be4806163ffbd578d64` | docgen 1.0.7 |

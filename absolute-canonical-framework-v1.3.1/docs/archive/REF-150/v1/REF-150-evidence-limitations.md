@@ -13,7 +13,7 @@ revision: 0
 produced_by: Ultimate Engine 1.0.5
 verified_state: verified
 ---
-<!-- artifact-hardened: Approved With Known Risks @ 6f99e3860d42 on 2026-09-07 via three-pass-v1 -->
+<!-- artifact-hardened: Approved With Known Risks @ 2e0367a07de3 on 2026-10-16 via three-pass-v1 -->
 
 # Absolute Evidence, Limitations, and Audit Notes
 
@@ -31,7 +31,7 @@ remains a limitation**, standing properties of the framework rather than a backl
 block is preserved deliberately — it is dated evidence about an earlier release, not a claim about
 this one, and rewriting it to look current would erase the record of what changed.
 
-This document describes release `ABS.RELEASE.1.3.0`, status
+This document describes release `ABS.RELEASE.1.3.1`, status
 `RELEASE_INTERNALLY_VERIFIED_INDEPENDENT_CERTIFICATION_PENDING`.
 
 ## The 2026-09-01 field trial — dated baseline
@@ -91,7 +91,7 @@ narrative, but it closes the same class of drift) plus two mutation controls
 ### F-06 — the test manifest
 
 `09_tests_evals/TEST_MANIFEST.json` named `ABS.TEST.SUITE.FRAMEWORK.RC2` and claimed a 32-module
-schema/fixture surface against a 33-module registry. It now names `ABS.TEST.SUITE.FRAMEWORK.1.3.0`,
+schema/fixture surface against a 33-module registry. It now names `ABS.TEST.SUITE.FRAMEWORK.1.3.1`,
 the measured 33/33/33/33 fixture surface, the V2 contract validator, the cross-representation pin,
 and the verifier liveness check.
 
@@ -130,7 +130,7 @@ declared `ABS.RELEASE.1.0.0-RC3` and held 879 records against a 1,079-file tree,
 position in `BASELINE_CHAIN`, which the 1.2.0 merge shifted from RC2 to RC1, so every baseline it
 was handed afterward was refused and the file was never regenerated.
 
-It is fixed and now read on every run: `ABS.RELEASE.1.3.0`, its record count read from
+It is fixed and now read on every run: `ABS.RELEASE.1.3.1`, its record count read from
 `RELEASE_ALLOWLIST.json`'s own `record_count` field — mirrored in
 [`machine/release-model.json`](machine/release-model.json)'s `allowlist` rather than typed here,
 because the count moves every time a file is added to or removed from the payload — verified
@@ -138,20 +138,18 @@ against the baseline by release id rather than by chain position. Six `FRAMEWORK
 one mutation control (`allowlist_record_removed_while_file_remains`, measured caught) keep it read
 going forward.
 
-### The allowlist generator's RC2 baseline is now in the repository
+### The allowlist generator's RC2 baseline is held by maintainers, not distributed
 
 `generate_release_allowlist.py` refuses any baseline directory not named
 `absolute-canonical-framework-v1.0.0-rc.2`, verified against its own detached checksum ledger. That
 immutable tree was not previously distributed with this repository, so a fresh clone could verify
 the committed allowlist but not regenerate it — a genuine custody gap, not a bug in the generator.
 
-**It is closed as of this release.** `_release/predecessors/` now holds the sealed
-`absolute-canonical-framework-v1.0.0-rc.2.zip` and its detached `.sha256`, alongside the sealed
-zips for every other entry in `BASELINE_CHAIN` (RC1, 1.0.0, 1.1.0, 1.2.0). A clone extracts the
-committed, checksum-verified RC2 archive into the gitignored `predecessor/` directory and runs the
-generator against it — the dependency is now on an extraction step this repository fully supports,
-not on material the repository does not contain. [GUIDE-170](GUIDE-170-repository-release.md)
-states the exact command.
+**This remains a limitation of the public distribution (1.3.1).** The public repository does not
+ship the predecessor archives, so a clone verifies the committed allowlist but cannot regenerate it;
+regeneration is a maintainer operation that needs the checksum-verified RC2 tree. Every chain entry's
+hashes are recorded in `BASELINE_CHAIN`, so nothing about verification depends on the archives.
+[GUIDE-170](GUIDE-170-repository-release.md) states the exact command and the maintainer workflow.
 
 ### The stale regeneration procedure
 
@@ -229,7 +227,7 @@ checker — execute.
 ### The test manifest is a description, not a control
 
 `09_tests_evals/TEST_MANIFEST.json`'s content is correct for this release — suite
-`ABS.TEST.SUITE.FRAMEWORK.1.3.0`, the measured 33/33/33/33 fixture surface, the V2 contract
+`ABS.TEST.SUITE.FRAMEWORK.1.3.1`, the measured 33/33/33/33 fixture surface, the V2 contract
 validator, the cross-representation pin, and the verifier liveness check are all named — but nothing
 under `runtime/`, `tools/`, or `09_tests_evals/` reads this file to check it against the registry it
 summarizes. Its content can drift out from under the registry again, silently, the same way F-06
@@ -261,7 +259,7 @@ reports **30 pass / 4 fail / 4 skip** (`STRUCT-03`, `STRUCT-04`, `STRUCT-06`, `S
 twice with identical results; with `node` absent from `PATH` the `SUITE-07` check skips instead of
 passing and the same command reads 29 / 4 / 5, so the pass and skip counts depend on the shell
 and the four failing ids are the stable fact. A
-standalone checkout of the same commit (`Cryptosours/ultimate-engine@185725a`, its own git root)
+standalone checkout of the upstream engine at the pinned commit (its own git root)
 instead reports its own unit suite clean — `python3 -m unittest discover -s tools/tests -t .` → **OK,
 587 tests**. The two do not disagree about the engine's health; they disagree about where "the
 repository root" is. The vendored copy's tests and hook/session checks resolve that root as the
