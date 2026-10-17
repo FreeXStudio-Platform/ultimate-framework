@@ -5,7 +5,7 @@
 Please report suspected vulnerabilities **privately**:
 
 - Use GitHub's [private vulnerability reporting](../../security/advisories/new) for this repository, or
-- email **admin@freexstudio.com** with "SECURITY" in the subject.
+- email **Admin@FreeXStudio.com** with "SECURITY" in the subject.
 
 Include the affected file and release (`VERSION`), what you observed, and — where you can — a minimal
 reproduction. Please do not open a public issue or publish exploit details before a fix is available.

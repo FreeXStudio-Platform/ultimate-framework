@@ -43,7 +43,7 @@
     }
   ],
   "built_from_allowlist": true,
-  "candidate_hash": "sha256:eba1cbb9da8e09fc0a7d8717f9187a64879ea0306c814e1aa75f7a52fd063ca0",
+  "candidate_hash": "sha256:3715764100a5c207ed3fa419a3d29884948e293b8b4dce619093a8bfb474c91e",
   "candidate_id": "ABS.CANDIDATE.1.3.1",
   "candidate_tree_exclusions": [
     "MANIFEST.json",
@@ -5376,7 +5376,7 @@
     {
       "bytes": 1492,
       "path": "SECURITY.md",
-      "sha256": "e25010a415c1b95c887e1878a33fa384f0417cd76578640886d43f15feec9e2b"
+      "sha256": "470da2a2920c7272c352095471c5ae1a5475b424723baf5b21d91a1a33c37976"
     },
     {
       "bytes": 3468,
