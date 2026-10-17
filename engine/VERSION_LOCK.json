@@ -1,11 +1,12 @@
 {
  "locked": "2026-08-23",
  "node_tested": "v26.5.0",
- "npm_lockfile_sha256": "a2e79edbd64270e8b5cdad03da04b15381dd66f638dd2d3c5a10609ed446eedf",
+ "npm_lockfile_sha256": "65c5d129fb8d702ebef1e2f3f5ae4bf7b02f9e1aaa5ca9ac858174dead21f8b8",
  "pinned": {
   "eslint": "^10.9.0"
  },
  "policy": "DEV-ONLY lint toolchain. Nothing here is a runtime dependency: the engine's Node code (tools/graphify, tools/lib, tools/mermaid-engine) has zero third-party runtime deps by design, and node_modules/ is gitignored and regenerated on demand. Upgrades re-run `npm run lint:js` and re-derive this hash.",
  "_review": "Reviewed before attesting, 2026-08-23, because an attestation asserted without reading the lockfile is a signature on an unread document. 70 packages, entirely eslint's transitive tree; ZERO carry an install script (`hasInstallScript`), which is the install-time code-execution surface that matters most for a lockfile nobody reads line by line. devDependencies only.",
- "_why_this_file_exists": "STRUCT-09 requires a sibling VERSION_LOCK.json for EVERY tracked npm lockfile, derived from `git ls-files` rather than a hardcoded path. This repository tracked two lockfiles while the check verified one, and a third (this one) arrived the same day the check was generalised \u2014 which is precisely the rot the generalisation exists to prevent, demonstrated within hours."
+ "_why_this_file_exists": "STRUCT-09 requires a sibling VERSION_LOCK.json for EVERY tracked npm lockfile, derived from `git ls-files` rather than a hardcoded path. This repository tracked two lockfiles while the check verified one, and a third (this one) arrived the same day the check was generalised — which is precisely the rot the generalisation exists to prevent, demonstrated within hours.",
+ "_review_2026_10_17": "Transitive-only bump of brace-expansion (Dependabot alert); `npm audit` 0 vulnerabilities."
 }
