@@ -53,7 +53,7 @@
     ".absolute/release/gate_evidence/*.json"
   ],
   "candidate_tree_hash_algorithm": "sha256-canonical-path-size-content-v1",
-  "candidate_tree_sha256": "eba1cbb9da8e09fc0a7d8717f9187a64879ea0306c814e1aa75f7a52fd063ca0",
+  "candidate_tree_sha256": "3715764100a5c207ed3fa419a3d29884948e293b8b4dce619093a8bfb474c91e",
   "framework_id": "ABS.FRAMEWORK.CANONICAL",
   "independent_certification": "PENDING_EXTERNAL_EXACT_HASH_REVIEW",
   "integrity_model": "non-circular-candidate-tree-plus-complete-detached-archive-binding-v1",
