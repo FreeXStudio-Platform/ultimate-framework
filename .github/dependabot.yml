@@ -4,18 +4,24 @@ updates:
     directory: /
     schedule: { interval: monthly }
     open-pull-requests-limit: 3
+    cooldown:
+      default-days: 7
     groups:
       actions: { patterns: ["*"] }
   - package-ecosystem: npm
     directory: /engine
     schedule: { interval: monthly }
     open-pull-requests-limit: 3
+    cooldown:
+      default-days: 7
     groups:
       engine-dev: { patterns: ["*"] }
   - package-ecosystem: npm
     directory: /engine/tools/visual-engine
     schedule: { interval: monthly }
     open-pull-requests-limit: 3
+    cooldown:
+      default-days: 7
     ignore:
       # exact-pinned; a major needs a compatibility pass, see engine/tools/visual-engine/VERSION_LOCK.json
       - dependency-name: zod
