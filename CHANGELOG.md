@@ -4,6 +4,16 @@ Changes to the **repository** — layout, the vendored instrument, sealed artifa
 Changes to the framework itself are recorded in the payload's own
 `absolute-canonical-framework-vX.Y.Z/CHANGELOG.md`, which is part of every sealed release.
 
+## 2026-10-17 — maintenance after publication
+
+- All open Dependabot alerts cleared (engine dev tooling: `@modelcontextprotocol/sdk` 1.32.1, `proxy-addr`,
+  `ip-address`, `brace-expansion`); `eslint` 10.12.0; `actions/checkout` 7.0.1 and `actions/setup-python`
+  7.0.0 (SHA-pinned). `VERSION_LOCK.json` lockfile hashes re-derived. The release payload is unchanged
+  (candidate tree `3715764100a5…`).
+- `SECURITY.md`: report by email (private vulnerability reporting is not enabled by org policy).
+- Dependabot now groups updates and ignores the `zod` major (exact-pinned, needs a compatibility pass).
+- `MANIFEST.sha256` regenerated.
+
 ## 2026-10-16 — public release 1.3.1
 
 - Repository published as `FreeXStudio-Platform/ultimate-framework` under Apache-2.0, as a fresh
