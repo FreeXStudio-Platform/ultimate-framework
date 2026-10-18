@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-label="Ultimate Framework — a FreeXStudio product">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E1A33"/><stop offset="1" stop-color="#070C18"/></linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#pg)"/>
+  <g transform="translate(96 108) scale(0.84)">
+    <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E1A33"/><stop offset="1" stop-color="#070C18"/></linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5EEAD4"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#ac)" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M256 92 L362 153 L362 275 L256 336 L150 275 L150 153 Z" stroke-width="22"/>
+    <path d="M190 220 L238 268 L330 168" stroke-width="28"/>
+    <path d="M256 336 L256 388" stroke-width="12" opacity=".7"/>
+    <path d="M166 388 L192 403 L192 433 L166 448 L140 433 L140 403 Z" stroke-width="12" opacity="0.5"/>
+    <path d="M256 388 L282 403 L282 433 L256 448 L230 433 L230 403 Z" stroke-width="12" opacity="0.7"/>
+    <path d="M346 388 L372 403 L372 433 L346 448 L320 433 L320 403 Z" stroke-width="12" opacity="0.9"/>
+    <path d="M198 418 L224 418" stroke-width="12" opacity=".7"/>
+    <path d="M288 418 L314 418" stroke-width="12" opacity=".7"/>
+  </g>
+
+  </g>
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" fill="#E6EDF7">
+    <text x="570" y="272" font-size="66" font-weight="700">Ultimate Framework</text>
+    <text x="570" y="342" font-size="34" fill="#9FB3D1">Completion claims that need evidence.</text>
+    <text x="570" y="388" font-size="34" fill="#9FB3D1">Releases you can verify yourself.</text>
+    <text x="570" y="500" font-size="28" fill="#5EEAD4">A FreeXStudio product  ·  Apache-2.0  ·  freexstudio.com</text>
+  </g>
+</svg>

@@ -4,6 +4,13 @@ Changes to the **repository** — layout, the vendored instrument, sealed artifa
 Changes to the framework itself are recorded in the payload's own
 `absolute-canonical-framework-vX.Y.Z/CHANGELOG.md`, which is part of every sealed release.
 
+## 2026-10-18 — README and artwork
+
+- README rewritten: the problem, the solution, which repository to use (this one already includes the
+  Ultimate Engine; engine-only users should clone `ultimate-engine`), a verified step-by-step
+  walkthrough, and the verification record.
+- Added `assets/` — icon (SVG + 512 px PNG) and a 1280×640 social-preview image.
+
 ## 2026-10-17 — maintenance after publication
 
 - All open Dependabot alerts cleared (engine dev tooling: `@modelcontextprotocol/sdk` 1.32.1, `proxy-addr`,
