@@ -19,7 +19,8 @@ verification and release to scoped authority and exact identity.</p>
 > going into the next version. Expect changes. For documents, use **[Ultimate Engine](https://github.com/FreeXStudio-Platform/ultimate-engine)**,
 > which is a **stable release** (2.1.0 and later): document types, the order to write them, document rules, blueprints
 > linked to documents and the machine-readable layer now live there. The framework keeps the process guardrails: goal
-> lock, bounded work packets, evidence, gates, independent review, recalibration and release.
+> lock, bounded work packets, evidence, gates, independent review, recalibration and release —
+> consolidated for the beta in [the process rules](docs/PROCESS_RULES.md).
 
 ## The problem
 
