@@ -8,12 +8,18 @@ verification and release to scoped authority and exact identity.</p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License: Apache-2.0" src="https://img.shields.io/badge/license-Apache--2.0-blue.svg"></a>
-  <a href="https://github.com/FreeXStudio-Platform/ultimate-framework/releases/latest"><img alt="Release" src="https://img.shields.io/badge/release-1.3.1-0e8a16.svg"></a>
+  <a href="https://github.com/FreeXStudio-Platform/ultimate-framework/releases/latest"><img alt="Release: 1.3.1 beta" src="https://img.shields.io/badge/release-1.3.1%20beta-orange.svg"></a>
   <a href="https://github.com/FreeXStudio-Platform/ultimate-framework/actions/workflows/verify.yml"><img alt="verify" src="https://github.com/FreeXStudio-Platform/ultimate-framework/actions/workflows/verify.yml/badge.svg"></a>
   <a href="https://freexstudio.com"><img alt="A FreeXStudio product" src="https://img.shields.io/badge/a%20product%20of-FreeXStudio-black.svg"></a>
 </p>
 
 ---
+
+> **Beta.** Ultimate Framework 1.3.1 is in **beta testing**: it is being used on real projects, and their lessons are
+> going into the next version. Expect changes. For documents, use **[Ultimate Engine](https://github.com/FreeXStudio-Platform/ultimate-engine)**,
+> which is a **stable release** (2.1.0 and later): document types, the order to write them, document rules, blueprints
+> linked to documents and the machine-readable layer now live there. The framework keeps the process guardrails: goal
+> lock, bounded work packets, evidence, gates, independent review, recalibration and release.
 
 ## The problem
 
@@ -42,13 +48,11 @@ Ultimate Framework makes an unsupported claim **impossible to record**:
 | You want to… | Use | Notes |
 |---|---|---|
 | Govern a project's work, evidence and releases | **this repository** | Includes everything below. |
-| Generate numbered, linked, machine-readable documents, figures and a project **graph** | **this repository** *or* [`ultimate-engine`](https://github.com/FreeXStudio-Platform/ultimate-engine) | The engine is a standalone product. |
-| *Only* the engine / graph tooling, nothing else | [`ultimate-engine`](https://github.com/FreeXStudio-Platform/ultimate-engine) | Smaller, and it carries the newest engine release. |
+| Write documents: types, order, rules, figures, blueprints, a document map for AI | [`ultimate-engine`](https://github.com/FreeXStudio-Platform/ultimate-engine) | The stable product: a signed download with an installer, or pinned inside a project. |
 
-**You do not need to download both.** This repository already contains the Ultimate Engine, vendored in
-[`engine/`](engine/) (a pinned snapshot, currently 1.0.7), because the framework uses it to generate and
-verify its own documentation. If you only want documents, figures or the graph, skip this repository and
-clone `ultimate-engine` on its own.
+The engine snapshot vendored in [`engine/`](engine/) (1.0.7) is the one this repository used to build and verify its
+own documentation. It predates the engine's document system and its signed releases; for your own documents, use
+Ultimate Engine itself.
 
 ## Walkthrough: govern your first project
 
