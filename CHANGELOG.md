@@ -4,6 +4,19 @@ Changes to the **repository** — layout, the vendored instrument, sealed artifa
 Changes to the framework itself are recorded in the payload's own
 `absolute-canonical-framework-vX.Y.Z/CHANGELOG.md`, which is part of every sealed release.
 
+## 2026-11-27 — beta channel; documents move to Ultimate Engine
+
+- The framework is marked **beta** (README, `STATUS.md`, the GitHub release). 1.3.1 is unchanged; the payload is not
+  touched.
+- Documents now belong to Ultimate Engine, a stable release from 2.1.0: document types and their writing order, the
+  document rules, links between documents and blueprints, and the machine-readable document map. The framework keeps the
+  process guardrails. The README no longer tells readers to clone the engine, whose source is private from 2.0.0.
+- **Process rules** (`docs/PROCESS_RULES.md`): thirteen guardrails consolidated from the projects that worked by
+  the framework — authority and scope, starting from the recorded state, goal lock, bounded packets, gates on evidence,
+  independence, converging review, blockers with a way out, bounded runs, close-out, safety, effort and decisions —
+  with their rank and the scenarios they were checked against. The payload takes them in the next version.
+- `MANIFEST.sha256` regenerated.
+
 ## 2026-10-18 — README and artwork
 
 - README rewritten: the problem, the solution, which repository to use (this one already includes the

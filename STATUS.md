@@ -1,5 +1,7 @@
 # Status
 
+**Release channel: beta.** 1.3.1 is in beta testing on real projects; their lessons go into the next version. Document rules, types and the document layer moved to Ultimate Engine (stable, 2.1.0 and later); the framework keeps process guardrails.
+
 **Current release: `ABS.RELEASE.1.3.1`** — internally verified; independent exact-hash certification
 (gate `C20`) is external and pending. The framework never certifies itself.
 
